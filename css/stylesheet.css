@@ -4,6 +4,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
+    background-color: #315659;
+    border-radius: 5px;
+     box-shadow: 13px 14px 15px -3px rgba(0,0,0,0.1);
 
   }
 .navKnapper{
