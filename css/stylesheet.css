@@ -1,0 +1,27 @@
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: #308a91;
+    border-radius: 5px;
+     box-shadow: 13px 14px 15px -3px rgba(0,0,0,0.1);
+
+  }
+.navKnapper{
+    display: block;
+    width: 20vw;
+    border: none;
+    color: rgb(224, 207, 195);
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #63b36f;
+  }
+
+.navKnapper:hover{
+    background-color: rgb(146, 146, 146);
+  }
