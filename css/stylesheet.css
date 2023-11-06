@@ -73,3 +73,14 @@ used code from https://www.shecodes.io/athena/36411-how-to-position-an-image-und
   align-items: center; 
   padding-right: 2em;
 }
+
+#healthpicture{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  line-height: 1.5; 
+}
