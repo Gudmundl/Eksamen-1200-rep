@@ -1,6 +1,6 @@
 body{
-  color: red;
-  background-color:coral;
+  color: black;
+  background-color:white;
 }
 
 .navbar{
@@ -29,3 +29,58 @@ body{
     background-color: rgb(146, 146, 146);
   }
 
+#digital-bilde{
+  height: 75%;
+  width: 75%;
+  padding-left: 10%;
+  
+  
+
+}
+
+.topical-body{
+  text-align: left;
+}
+/*
+Used code from https://cssgrid-generator.netlify.app/ to generate grids
+*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .grid1-topical { grid-area: 1 / 2 / 6 / 4; }
+  .grid2-topical { grid-area: 1 / 1 / 6 / 2; }
+  .grid3-topical { grid-area: 1 / 4 / 6 / 6; }
+
+  /*
+used code from https://www.shecodes.io/athena/36411-how-to-position-an-image-under-a-header-using-html-and-css to center image
+*/
+  .first-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-left: 7%;
+    height: 70%;
+    width: 70%;
+  }
+.heading-topical{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-right: 2em;
+}
+
+#healthpicture{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  line-height: 1.5; 
+}
