@@ -32,11 +32,6 @@ body{
   margin: 0;
 }
 
-#digital-bilde{
-  height: 75%;
-  width: 75%;
-  padding-left: 10%;
-  }
 .navbar a:hover, .dropdown-meny:hover .dropbtn {
   background-color: red;
 }
@@ -72,6 +67,11 @@ body{
 
 .topical-body{
   text-align: left;
+}
+#digital-bilde{
+  height: 75%;
+  width: 75%;
+  padding-left: 10%;
 }
 /*
 Used code from https://cssgrid-generator.netlify.app/ to generate grids
