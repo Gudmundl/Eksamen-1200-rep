@@ -13,7 +13,7 @@ body{
      box-shadow: 13px 14px 15px -3px rgba(0,0,0,0.1);
 
   }
-.navKnapper{
+.nav-knapper{
     display: block;
     border: none;
     color: rgb(224, 207, 195);
@@ -25,7 +25,53 @@ body{
     background-color: #44624892;
   }
 
-.navKnapper:hover{
+.nav-knapper:hover{
     background-color: rgb(146, 146, 146);
   }
+
+.burger-toggle{
+  display: none;
+}
+
+@media (min-width: 701px){
+  .dropdown-meny{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .dropdown-meny li{
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 700px){
+  .dropdown-meny{
+    list-style-type: none;
+  }
+  .meny-ikon{
+    display: block;
+    border: none;
+    color: rgb(224, 207, 195);
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #44624892;
+  }
+  .dropdown-meny li{
+    height: 0px;
+    overflow: hidden;
+  }
+  .burger-toggle:checked ~ .dropdown-meny li {
+    height: 1rem;
+    width: auto;
+    background-color: beige;
+  }
+nav {
+  display: flex;
+  height: 40px;
+}
+}
 
