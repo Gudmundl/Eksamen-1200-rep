@@ -1,77 +1,64 @@
 body{
   color: brown;
   background-color:beige;
+  padding: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    background-color: #308a91;
-    border-radius: 5px;
-     box-shadow: 13px 14px 15px -3px rgba(0,0,0,0.1);
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  }
-.nav-knapper{
-    display: block;
-    border: none;
-    color: rgb(224, 207, 195);
-    padding: 10px 20px;
-    text-align: center;
-    margin: 10px;
-    font-size: 20px;
-    font-weight: 900;
-    background-color: #44624892;
-  }
+.dropdown-meny {
+  float: left;
+  overflow: hidden;
+}
 
-.nav-knapper:hover{
-    background-color: rgb(146, 146, 146);
-  }
+.dropdown-meny .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 
-.burger-toggle{
+.navbar a:hover, .dropdown-meny:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
   display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-@media (min-width: 701px){
-  .dropdown-meny{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
-  }
-  .dropdown-meny li{
-    padding-right: 4rem;
-  }
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-@media (max-width: 700px){
-  .dropdown-meny{
-    list-style-type: none;
-  }
-  .meny-ikon{
-    display: block;
-    border: none;
-    color: rgb(224, 207, 195);
-    padding: 10px 20px;
-    text-align: center;
-    margin: 10px;
-    font-size: 20px;
-    font-weight: 900;
-    background-color: #44624892;
-  }
-  .dropdown-meny li{
-    height: 0px;
-    overflow: hidden;
-  }
-  .burger-toggle:checked ~ .dropdown-meny li {
-    height: 1rem;
-    width: auto;
-    background-color: beige;
-  }
-nav {
-  display: flex;
-  height: 40px;
-}
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
+.dropdown-meny:hover .dropdown-content {
+  display: block;
+}
