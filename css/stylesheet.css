@@ -68,7 +68,7 @@ p {
   display: block;
 }
 
-#digital-bilde {
+.digital-bilde {
   height: 60%;
   width: 60%;
   padding-left: 20%;
@@ -154,4 +154,17 @@ width: 100%;
   margin-top: 0;
 }
 
+@media(maxWidth: 800px){
+  #topical-heading{
+    display: flex;
+  flex-direction: row;
+  }
+  .digital-bilde {
+    flex: 1;
+    display: flex;
+  flex-direction: row;
+  }
 
+
+  
+    }
