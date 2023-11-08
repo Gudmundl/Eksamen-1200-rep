@@ -41,9 +41,7 @@ body {
   text-align: left;
 }
 
-/*
-Used code from https://cssgrid-generator.netlify.app/ to generate grids
-*/
+
 .container-topical {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
