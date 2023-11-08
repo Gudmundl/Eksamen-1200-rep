@@ -139,11 +139,19 @@ height: 30%;
 width: 100%;
 
 
+
 }
 #under-image-text{
   color: gray;
+  margin-top: 0;
 }
 
 #snl-link{
   color: black;
 }
+
+.digibildev2 + p {
+  margin-top: 0;
+}
+
+
