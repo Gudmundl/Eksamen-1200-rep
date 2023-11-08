@@ -30,12 +30,10 @@ body{
   }
 
 #digital-bilde{
-  height: 75%;
-  width: 75%;
-  padding-left: 10%;
+  height: 60%;
+  width: 60%;
+  padding-left: 20%;
   
-  
-
 }
 
 .topical-body{
@@ -44,7 +42,7 @@ body{
 /*
 Used code from https://cssgrid-generator.netlify.app/ to generate grids
 */
-.parent {
+.container-topical {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -59,20 +57,6 @@ Used code from https://cssgrid-generator.netlify.app/ to generate grids
   /*
 used code from https://www.shecodes.io/athena/36411-how-to-position-an-image-under-a-header-using-html-and-css to center image
 */
-  .first-picture {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding-left: 7%;
-    height: 70%;
-    width: 70%;
-  }
-.heading-topical{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  padding-right: 2em;
-}
 
 #healthpicture{
   display: grid;
@@ -83,4 +67,10 @@ used code from https://www.shecodes.io/athena/36411-how-to-position-an-image-und
 
 p {
   line-height: 1.5; 
+}
+
+#topical-heading{
+  display: grid;
+  place-items: center;
+
 }
