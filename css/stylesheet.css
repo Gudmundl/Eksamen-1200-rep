@@ -68,7 +68,6 @@ p {
   display: block;
 }
 
-
 #digital-bilde {
   height: 60%;
   width: 60%;
@@ -79,12 +78,6 @@ p {
 .topical-body {
   text-align: left;
 }
-#digital-bilde{
-  height: 75%;
-  width: 75%;
-  padding-left: 10%;
-}
-
 
 /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
 .container-topical {
@@ -137,4 +130,3 @@ p {
   place-items: center;
 
 }
-
