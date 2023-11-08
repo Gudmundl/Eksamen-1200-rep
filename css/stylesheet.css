@@ -113,7 +113,9 @@ p {
   grid-row-end: 4;
   grid-column-start: 5;
   grid-column-end: 4;
-  background-color: #308b9177;
+  justify-content: center;
+  
+
 
 }
 
@@ -129,5 +131,12 @@ p {
 #topical-heading {
   display: grid;
   place-items: center;
+
+}
+
+#digibildev2{
+height: 30%;
+width: 100%;
+
 
 }
