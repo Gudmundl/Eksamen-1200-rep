@@ -46,13 +46,13 @@ Used code from https://cssgrid-generator.netlify.app/ to generate grids
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
   }
-  
-  .grid1-topical { grid-area: 1 / 2 / 6 / 4; }
-  .grid2-topical {grid-area: 1 / 3 / 3 / 6; }
-  .grid3-topical { grid-area: 1 / 4 / 6 / 6; }
+
+  .grid-header-topical {grid-area: 1 / 3 / 3 / 6; }
+  .grid-body-topical { grid-area: 1 / 2 / 6 / 4; }
+  .grid-aside-topical { grid-area: 2 / 5 / 6 / 4; }
 
   /*
 used code from https://www.shecodes.io/athena/36411-how-to-position-an-image-under-a-header-using-html-and-css to center image
