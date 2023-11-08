@@ -1,6 +1,6 @@
-body{
+body {
   color: black;
-  background-color:white;
+  background-color: white;
 }
 .navbar {
   overflow: hidden;
@@ -14,6 +14,9 @@ body{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+p {
+  line-height: 1.5;
 }
 
 .dropdown-meny {
@@ -66,6 +69,14 @@ body{
 }
 
 .topical-body{
+#digital-bilde {
+  height: 60%;
+  width: 60%;
+  padding-left: 20%;
+
+}
+/*Left aligns all text in the body of topical */
+.topical-body {
   text-align: left;
 }
 #digital-bilde{
@@ -77,42 +88,55 @@ body{
 Used code from https://cssgrid-generator.netlify.app/ to generate grids
 */
 .parent {
+
+/*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
+.container-topical {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
-  
-  .grid1-topical { grid-area: 1 / 2 / 6 / 4; }
-  .grid2-topical { grid-area: 1 / 1 / 6 / 2; }
-  .grid3-topical { grid-area: 1 / 4 / 6 / 6; }
-
-  /*
-used code from https://www.shecodes.io/athena/36411-how-to-position-an-image-under-a-header-using-html-and-css to center image
-*/
-  .first-picture {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding-left: 7%;
-    height: 70%;
-    width: 70%;
-  }
-.heading-topical{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  padding-right: 2em;
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
 }
 
-#healthpicture{
+/*Makes a grid for the header in the page topical starting on row 1 and column 3 and ending on row 3 and column 6*/
+.grid-header-topical {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 6;
+
+  
+}
+
+/*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
+.grid-body-topical {
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+}
+
+/*Makes a grid for the header in the page topical starting on row 2 and column 5 and ending on row 6 and column 4*/
+.grid-aside-topical {
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 5;
+  grid-column-end: 4;
+
+}
+
+/*Styles the healthpicture with height 100% and width% and puts in in the center og the grid*/
+#healthpicture {
   display: grid;
   place-items: center;
   width: 100%;
   height: 100%;
 }
 
-p {
-  line-height: 1.5; 
+/*Makes the header in the page topical in the grid and centered*/
+#topical-heading {
+  display: grid;
+  place-items: center;
+
 }
