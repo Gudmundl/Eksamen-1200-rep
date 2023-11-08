@@ -68,7 +68,7 @@ p {
   display: block;
 }
 
-.topical-body{
+
 #digital-bilde {
   height: 60%;
   width: 60%;
@@ -84,10 +84,7 @@ p {
   width: 75%;
   padding-left: 10%;
 }
-/*
-Used code from https://cssgrid-generator.netlify.app/ to generate grids
-*/
-.parent {
+
 
 /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
 .container-topical {
@@ -140,3 +137,4 @@ Used code from https://cssgrid-generator.netlify.app/ to generate grids
   place-items: center;
 
 }
+
