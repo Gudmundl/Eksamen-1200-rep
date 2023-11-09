@@ -164,11 +164,16 @@ grid-column-end: 4;
   grid-row-end: 6;
   grid-column-start: 5;
   grid-column-end: 4;
+  background-color: aqua;
 }
 
 #kjeller-bygg2{
   display: grid;
   place-items: center;
+  width: 100%;
+  height: 100%;
+}
+#page5-kjeller-posisjon{
   width: 100%;
   height: 100%;
 }
