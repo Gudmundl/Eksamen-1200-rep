@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page5</title>
+    <link rel="stylesheet" href="../css/stylesheet.css" />
 </head>
-<body class="Page4and5">
+<body class="body4and5">    
     <header>
-        <div class="navbar">
-            <a href="index.html"><div class="navKnapper"><p>Main</p></div></a>
-            <a href="html/Accessibility.html"><div class="navKnapper"><p>Accessibility</p></div></a>
-            <a href="html/Topical.html"><div class="navKnapper"><p>Topical</p></div></a>
-            <a href="html/page4.html"><div class="navKnapper"><p>Page 4</p></div></a>
-            <a href="html/page5.html"><div class="navKnapper"><p>Page 5</p></div></a>
-          </div>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="Accessibility.html">Accessibility</a>
+            <a href="Topical.html">Topical</a>
+            <div class="dropdown-meny">
+              <button class="dropbtn">Public spaces</button>
+              <div class="dropdown-content">
+                <a href="page4.html">Page 4</a>
+                <a href="page5.html">Page 5</a>
+              </div>
+            </div> 
+        </nav>
     </header>
     <main>
-        <p>Jeg skal presentere et sted på campus, noe forslag?</p>
+
+        <! -- Link to first picture:
+        https://www.google.com/url?sa=i&url=https%3A%2F%2Fstudent.oslomet.no%2Fsiste-nytt%2F-%2Fnyhet%2Fevakueringsovelse-pa-campus-kjeller&psig=AOvVaw1_8Ebr2EJ_a8cR8rkPQhLw&ust=1699534759425000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNCFp7-6tIIDFQAAAAAdAAAAABAE-->
+
+        <! -- Link to second picture: 
+        https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxxlarge/4/5/8/2/42854-2-nor-NO/kjeller.jpg -->
+
+      <div class="grid-header-page5"><img id="kjeller-bygg2" src="../media/kjellerbygg2.jpg"
+          alt="This picture shows one of the two campus belonging to OsloMet. This one is located on Kjeller"> </div>
+      <div class="container-page5">
+        <div class="grid-body-page5">
+
+            <p> </p>
+        
+        </div>
+        <div class="grid-aside-page5">
+              <aside>Tekst og innhold på høyre side av html siden</aside>
+              <iframe id="page5-kjeller-posisjon" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.3297931972374!2d11.041985376855372!3d59.97644015905579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46417b7eb5aaaaab%3A0xb85ada4f69d527c6!2sOsloMet%20%E2%80%93%20storbyuniversitetet%20Studiested%20Kjeller!5e0!3m2!1sno!2sno!4v1699533277733!5m2!1sno!2sno"></iframe>
+        </div>
+
+    </main>
 </body>
 </html>
