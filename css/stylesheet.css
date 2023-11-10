@@ -1,6 +1,6 @@
-body {
-  color: black;
-  background-color: white;
+.topical-body {
+  color: #28262C;
+  background-color: 	#f1f9f7;
 }
 .navbar {
   overflow: hidden;
@@ -70,20 +70,23 @@ p {
 
 
 
-@media(maxWidth: 800px){
+@media(max-Width: 800px){
+  
+  .digital-bilde{
+    width: 100%;
+  }
 
-
-
+  .healthpicture{
+    width: 100%;
+  }
+  .digibildev2{
+    height: 100%;
+    width: 100%;
+  }
   
 
 
-    }
-
-    
-
-
-
-
+}
 
  
 
@@ -114,16 +117,7 @@ p {
     grid-row-gap: 3em;
   }
   
-  /*Makes a grid for the header in the page topical starting on row 1 and column 3 and ending on row 3 and column 6*/
-  .grid-header-topical {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 6;
-  
-    
-  }
-  
+
   /*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
   .grid-body-topical {
     grid-row-start: 1;
@@ -146,7 +140,7 @@ p {
   }
   
   /*Styles the healthpicture with height 100% and width% and puts in in the center og the grid*/
-  #healthpicture {
+  .healthpicture {
     display: grid;
     place-items: center;
     width: 100%;
@@ -154,7 +148,7 @@ p {
   }
   
   /*Makes the header in the page topical in the grid and centered*/
-  #topical-heading {
+  .topical-heading {
     display: grid;
     place-items: center;
   
@@ -166,24 +160,24 @@ p {
   
   
   
-  }
-  #under-image-text{
-    color: gray;
-    margin-top: 0;
-  }
-  
-  #snl-link{
-    color: black;
-  }
-  
-  .digibildev2 + p {
-    margin-top: 0;
-  }
-
-
+ 
 
 }
 
 
   
-    
+}
+#under-image-text{
+  color: gray;
+  margin-top: 0;
+}
+
+#snl-link{
+  color: black;
+}
+
+.digibildev2 + p {
+  margin-top: 0;
+}
+
+
