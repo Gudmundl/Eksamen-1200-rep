@@ -71,6 +71,9 @@ p {
 
 
 @media(max-Width: 800px){
+  .topical-body{
+   
+  }
   
   .digital-bilde{
     width: 100%;
