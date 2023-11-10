@@ -81,6 +81,28 @@ p {
   display: block;
 }
 
+.page4 iframe{
+  background-color: antiquewhite;
+}
+#boks1{
+  background-color: aqua;
+  grid-area: 1;
+}
+#boks2{
+  background-color: rgb(51, 255, 0);
+}
+#boks3{
+  background-color: rgb(55, 0, 255);
+}
+#boks4{
+  background-color: rgb(238, 0, 255);
+}
+#boks5{
+  background-color: rgb(255, 0, 8);
+}
+#boks6{
+  background-color: rgb(255, 225, 0);
+}
 
 
 @media(maxWidth: 800px){
