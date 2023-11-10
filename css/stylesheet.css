@@ -1,7 +1,12 @@
+p {
+  line-height: 1.5;
+}
+
 .topical-body {
   color: #28262C;
-  background-color: 	#f1f9f7;
+  background-color: #f1f9f7;
 }
+
 .navbar {
   overflow: hidden;
   background-color: #308a91;
@@ -15,9 +20,7 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-p {
-  line-height: 1.5;
-}
+
 
 .dropdown-meny {
   float: left;
@@ -25,7 +28,7 @@ p {
 }
 
 .dropdown-meny .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: rgb(224, 207, 195);
@@ -35,7 +38,8 @@ p {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown-meny:hover .dropbtn {
+.navbar a:hover,
+.dropdown-meny:hover .dropbtn {
   background-color: red;
 }
 
@@ -46,7 +50,7 @@ p {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -70,47 +74,50 @@ p {
 
 
 
-@media(max-Width: 800px){
-  .topical-body{
-   
-  }
-  
-  .digital-bilde{
+@media(max-Width: 800px) {
+
+  .digi-picture {
     width: 100%;
   }
 
-  .healthpicture{
+  .health-picture {
     width: 100%;
   }
-  .digibildev2{
-    height: 100%;
-    width: 100%;
-  }
-  
 
+  .topical-aside-picture {
+    height: 10em;
+    width: 40%;
+
+  }
 
 }
 
- 
 
-  
+
+
+
+
+
+
+
 
 
 
 
 @media (min-width: 801px) {
 
-  .digital-bilde {
+  .digi-picture {
     height: 60%;
     width: 60%;
     padding-left: 20%;
-  
+
   }
+
   /*Left aligns all text in the body of topical */
   .topical-body {
     text-align: left;
   }
-  
+
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
   .container-topical {
     display: grid;
@@ -119,7 +126,7 @@ p {
     grid-column-gap: 3em;
     grid-row-gap: 3em;
   }
-  
+
 
   /*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
   .grid-body-topical {
@@ -127,9 +134,9 @@ p {
     grid-row-end: 6;
     grid-column-start: 2;
     grid-column-end: 4;
-  
+
   }
-  
+
   /*Makes a grid for the header in the page topical starting on row 2 and column 5 and ending on row 6 and column 4*/
   .grid-aside-topical {
     grid-row-start: 2;
@@ -137,48 +144,39 @@ p {
     grid-column-start: 5;
     grid-column-end: 4;
     justify-content: center;
-    
-  
-  
   }
-  
+
   /*Styles the healthpicture with height 100% and width% and puts in in the center og the grid*/
-  .healthpicture {
+  .health-picture {
     display: grid;
     place-items: center;
     width: 100%;
     height: 100%;
   }
-  
+
   /*Makes the header in the page topical in the grid and centered*/
   .topical-heading {
     display: grid;
     place-items: center;
-  
+
   }
-  
-  .digibildev2{
-  height: 30%;
-  width: 100%;
-  
-  
-  
- 
 
+  .topical-aside-picture {
+    height: 30%;
+    width: 16em;
+  }
 }
 
-
-  
-}
-#under-image-text{
+#topical-under-header-text {
   color: gray;
   margin-top: 0;
 }
 
-#snl-link{
+.topical-aside-links {
   color: black;
 }
 
-.digibildev2 + p {
+/*Made all paragrafs under topical-aside-pictures have 0 margin*/
+.topical-aside-picture+p {
   margin-top: 0;
 }
