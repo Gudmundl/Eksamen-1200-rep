@@ -1,31 +1,182 @@
-body{
-  color: red;
-  background-color:coral;
+body {
+  color: rgb(0, 0, 0);
+  background-color: #05153f;
+  padding: 0;
 }
 
-.navbar{
+.navbar {
+  overflow: hidden;
+  background-color: #05153f;
+  border: #308a91 2px solid;
+  display: flex;
+  justify-content: right;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(224, 207, 195);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #F75C03;
+}
+
+.nav-buttons {
+  width: 5rem;
+}
+
+/*index sin css*/
+#index-body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 80%;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+
+#index-forside-bilde {
+  max-width: 100%;
+}
+
+
+
+/** Have attemptet to reuse code from example from Dev.Mozilla! **/
+/** https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout **/
+/** Hope that is more helpfull than confusing **/
+
+
+/*mobile veiw***/
+@media (max-width: 800px) {
+
+  main,
+  footer {
+    margin-left: 1rem;
+    margin-top: 0px;
+  }
+
+  article,
+  footer {
+    width: 90vw;
+  }
+
+  aside {
+    box-sizing: border-box;
+    width: 90vw;
+    background-color: blanchedalmond;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.4rem;
+  }
+
+  aside>h2 {
+    color: darkslategray;
+  }
+
+  aside>p {
+    font-style: oblique;
+    font-size: larger;
+  }
+
+  .secondary-box {
+    background-color: #036800;
+    background-size: cover;
+    width: 90vw;
+    height: 60vw;
+  }
+}
+
+/*PC veiw*/
+
+
+@media (min-width: 801px) {
+  main {
+    margin: auto;
+    width: 95%;
+  }
+
+  aside {
+    background-color: #436436;
+    color: #ffffff;
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+  }
+
+  aside>h2 {
+    color: #FBBC04;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  aside>p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: larger;
+  }
+
+  .wrapper {
+    display: grid;
+    margin: auto;
+    grid-auto-rows: minmax(100px, auto);
+    width: 95%;
+  }
+
+  .main-box {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+  .secondary-box {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    background-color: #05153f;
+    background-size: cover;
+    width: minmax(auto, 80vw);
+    height: 40vw;
+    max-height: 530px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    background-color: #308a91;
-    border-radius: 5px;
-     box-shadow: 13px 14px 15px -3px rgba(0,0,0,0.1);
-
-  }
-.navKnapper{
-    display: block;
-    border: none;
-    color: rgb(224, 207, 195);
-    padding: 10px 20px;
-    text-align: center;
-    margin: 10px;
-    font-size: 20px;
-    font-weight: 900;
-    background-color: #44624892;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
-.navKnapper:hover{
-    background-color: rgb(146, 146, 146);
+  .aside {
+    grid-column: 4 / 5;
+    grid-row: 1/2;
   }
 
+}
+
+/* The code below is the parts shared with "complete.css" **/
+
+.ingress {
+  font-weight: bolder;
+  color: #363636;
+}
+
+/*google maps*/
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+  height: auto;
+  width: auto;
+
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
