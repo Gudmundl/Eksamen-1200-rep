@@ -87,8 +87,17 @@ p {
   .topical-p{
     margin: 1em;
   }
-  .topical-heading{
+  .topical-heading1{
     margin: 0.5em;
+    
+  }
+  .topical-heading2{
+    margin: 0.5em;
+    
+  }
+ .topical-heading3{
+    margin: 0.5em;
+    
   }
 
   .digi-picture {
@@ -100,27 +109,35 @@ p {
   }
 
   .topical-aside-picture {
-    height: 5em;
-    width: 30%;
+    height: 6em;
+    width: 35%;
     margin-right: 0;
     padding-right: 0;
 
   }
 /*https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html*/
   .flex-container-topical{
-    display: flex;
-    justify-conten
-    align-items: ;
-
+    display: grid;
+    gr
   }
 
-  .topical-flex-aside-text{
-   
-
-
-
+  .topical-grid-aside-text{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 5em;
+    grid-column-gap: 0em;
   }
 
+  .topical-aside-links{
+    font-size:x-large;
+    margin-top: -7em;
+    margin-bottom: 2em;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 6;
+    grid-column-end: 12;
+  }
 
 
 }
@@ -139,6 +156,10 @@ p {
 
 @media (min-width: 801px) {
 
+  .topical-heading1{
+    text-align: center;
+    
+  }
   .digi-picture {
     height: 60%;
     width: 60%;
@@ -184,7 +205,7 @@ p {
     display: grid;
     place-items: center;
     width: 100%;
-    height: 100%;
+    height: 20%;
   }
 
   /*Makes the header in the page topical in the grid and centered*/
