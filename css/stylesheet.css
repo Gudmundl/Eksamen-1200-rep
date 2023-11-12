@@ -84,6 +84,7 @@ p {
 
   .grid-aside-topical{
     margin-left: 1em;
+    
   }
   .topical-p{
     margin: 1em;
@@ -101,10 +102,27 @@ p {
   }
 
   .topical-aside-picture {
-    height: 10em;
-    width: 40%;
+    height: 5em;
+    width: 30%;
+    margin-right: 0;
+    padding-right: 0;
 
   }
+/*https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html*/
+  .flex-container-topical{
+    display: flex;
+    justify-conten
+    align-items: ;
+
+  }
+
+  .topical-flex-aside-text{
+   
+
+
+
+  }
+
 
 
 }
