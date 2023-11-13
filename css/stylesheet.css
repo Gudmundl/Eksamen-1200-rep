@@ -2,13 +2,15 @@ p {
   line-height: 1.5;
 }
 
-footer{
-  background-color: #121216;
-  color: #847f6b;
+footer {
+  color: white;
   overflow: hidden;
   text-align: center;
+  background-color: #24262b;
+
 }
-footer a:hover{
+
+footer a:hover {
   color: white;
 }
 
@@ -86,9 +88,15 @@ footer a:hover{
 
 @media(max-Width: 800px) {
 
+  .footer-links {
+    color: black;
+    text-decoration: none;
+  }
+
+
   .topical-body {
     margin: 0;
-    
+
   }
 
   .grid-aside-topical {
@@ -131,11 +139,7 @@ footer a:hover{
 
   }
 
-  /*https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html*/
-  .flex-container-topical {
-    display: grid;
-    gr
-  }
+
 
   .topical-grid-aside-text {
     display: grid;
@@ -167,6 +171,59 @@ footer a:hover{
 
 
 @media (min-width: 801px) {
+
+  .grid-footer-left {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 8;
+
+  }
+
+  .grid-footer-middle {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 12;
+    grid-column-end: 14;
+
+  }
+
+  .grid-footer-rigth {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 18;
+    grid-column-end: 20;
+  }
+
+  .grid-footer-bottom{
+    background-color: #16171a;
+    padding: 0.5em;
+  }
+
+
+
+
+  .underline-red {
+    width: 1.5em;
+    border: 0.07em solid red;
+  }
+
+  .footer-links {
+    color: #D3D3D3;
+    text-decoration: none;
+  }
+
+
+
+  .flex-container-topical {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 0em;
+    grid-column-gap: 0em;
+  }
+
+
 
   .topical-heading1 {
     text-align: center;
@@ -247,4 +304,10 @@ footer a:hover{
 /*Made all paragrafs under topical-aside-pictures have 0 margin*/
 .topical-aside-picture+p {
   margin-top: 0;
+}
+
+.grid-footer-container {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
