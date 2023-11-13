@@ -3,9 +3,15 @@ p {
 }
 
 footer{
-  background-color: #1f1f1f;
-
+  background-color: #121216;
+  color: #847f6b;
+  overflow: hidden;
+  text-align: center;
 }
+footer a:hover{
+  color: white;
+}
+
 .topical-body {
   color: #1f1f1f;
   background-color: #fffef1;
@@ -82,6 +88,7 @@ footer{
 
   .topical-body {
     margin: 0;
+    
   }
 
   .grid-aside-topical {
@@ -141,7 +148,6 @@ footer{
   .topical-aside-links {
     font-size: x-large;
     margin-top: -7em;
-    margin-bottom: 2em;
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 6;
@@ -177,6 +183,7 @@ footer{
   /*Left aligns all text in the body of topical */
   .topical-body {
     text-align: left;
+    margin: 0;
   }
 
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
@@ -212,7 +219,7 @@ footer{
     display: grid;
     place-items: center;
     width: 100%;
-    height: 20%;
+    height: 18%;
   }
 
   /*Makes the header in the page topical in the grid and centered*/
