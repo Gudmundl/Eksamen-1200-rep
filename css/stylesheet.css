@@ -1,11 +1,12 @@
 body {
   color: black;
   background-color:whitesmoke;
+  padding: 0;
+  margin: 0;
 }
 .navbar {
   overflow: hidden;
   background-color: #a1a1a1;
-  border-radius: 4.5px;
   padding: 7.5px 7.5px 7.5px 3px;
 }
 
@@ -81,29 +82,46 @@ p {
   display: block;
 }
 
+.page4 main{
+  padding: 0;
+  margin: 0;
+  display: grid;
+  height: 300vh;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+}
 .page4 iframe{
   background-color: antiquewhite;
+  width: 60vw;
+  height:40vw;
 }
-#boks1{
-  background-color: aqua;
-  grid-area: 1;
+.boks1{
+  grid-area: 1/1/3/6;
+  text-align: center;
+  font-size: 6rem;
+  background: url(../media/Pilestredet-oversikt.jpeg) no-repeat center fixed;
+  background-size: cover;
+  color: yellow;
 }
-#boks2{
+.boks2{
   background-color: rgb(51, 255, 0);
 }
-#boks3{
+.boks3{
   background-color: rgb(55, 0, 255);
 }
-#boks4{
+.boks4{
   background-color: rgb(238, 0, 255);
 }
-#boks5{
+.boks5{
   background-color: rgb(255, 0, 8);
 }
-#boks6{
+.boks6{
   background-color: rgb(255, 225, 0);
 }
-
+#kart-pile{
+  grid-area: 6 / 2 / 7 / 4;
+}
 
 @media(maxWidth: 800px){
 
