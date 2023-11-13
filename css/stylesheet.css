@@ -2,14 +2,18 @@ p {
   line-height: 1.5;
 }
 
+footer{
+  background-color: #1f1f1f;
+
+}
 .topical-body {
-  color: #28262C;
-  background-color: #f1f9f7;
+  color: #1f1f1f;
+  background-color: #fffef1;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #308a91;
+  background-color: #1f1f1f;
 }
 
 .navbar a {
@@ -143,10 +147,7 @@ p {
     grid-column-start: 6;
     grid-column-end: 12;
   }
-
-
 }
-
 
 
 
