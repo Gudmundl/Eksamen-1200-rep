@@ -76,28 +76,32 @@ p {
 
 @media(max-Width: 800px) {
 
-  .topical-body{
+  .topical-body {
     margin: 0;
   }
 
-  .grid-aside-topical{
+  .grid-aside-topical {
     margin-left: 1em;
-    
+
   }
-  .topical-p{
+
+  .topical-p {
     margin: 1em;
   }
-  .topical-heading1{
+
+  .topical-heading1 {
     margin: 0.5em;
-    
+
   }
-  .topical-heading2{
+
+  .topical-heading2 {
     margin: 0.5em;
-    
+
   }
- .topical-heading3{
+
+  .topical-heading3 {
     margin: 0.5em;
-    
+
   }
 
   .digi-picture {
@@ -115,13 +119,14 @@ p {
     padding-right: 0;
 
   }
-/*https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html*/
-  .flex-container-topical{
+
+  /*https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html*/
+  .flex-container-topical {
     display: grid;
     gr
   }
 
-  .topical-grid-aside-text{
+  .topical-grid-aside-text {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -129,8 +134,8 @@ p {
     grid-column-gap: 0em;
   }
 
-  .topical-aside-links{
-    font-size:x-large;
+  .topical-aside-links {
+    font-size: x-large;
     margin-top: -7em;
     margin-bottom: 2em;
     grid-row-start: 1;
@@ -156,10 +161,11 @@ p {
 
 @media (min-width: 801px) {
 
-  .topical-heading1{
+  .topical-heading1 {
     text-align: center;
-    
+
   }
+
   .digi-picture {
     height: 60%;
     width: 60%;
