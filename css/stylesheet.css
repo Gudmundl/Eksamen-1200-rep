@@ -91,11 +91,7 @@ p {
   grid-template-columns: auto auto auto auto auto;
   grid-template-rows: auto auto auto auto auto auto auto;
 }
-.page4 iframe{
-  background-color: antiquewhite;
-  width: 60vw;
-  height:40vw;
-}
+
 .boks1{
   grid-area: 1/1/3/6;
   text-align: center;
@@ -106,23 +102,43 @@ p {
 }
 
 .boks2{
-  background-color: rgb(51, 255, 0);
+  background-color: yellow;
+  grid-area: 3/1/4/6;
+  text-align: center;
+  padding: 10vw 20vw ;
+  font-size: 1.7rem;
 }
+
+
+
+
 .boks3{
   background-color: rgb(55, 0, 255);
+
+  grid-area: 4/1/5/3;
 }
 .boks4{
   background-color: rgb(238, 0, 255);
+  grid-area: 4/3/5/6;
+  padding: 40px;
 }
 .boks5{
   background-color: rgb(255, 0, 8);
+  grid-area: 7/1/8/4;
+  width: 50vw;
 }
 .boks6{
   background-color: rgb(255, 225, 0);
+  grid-area: 7/4/8/6;
+
+  
 }
-#kart-pile{
-  grid-area: 6 / 2 / 7 / 4;
+.boks4 iframe{
+  width: 40vw;
+  height: 20vw;
+
 }
+
 
 @media(maxWidth: 800px){
 
