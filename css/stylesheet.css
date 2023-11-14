@@ -1,21 +1,26 @@
+/*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
 }
 
+/*Sets background and text colours for all the footers hides overflow and centers bottom footer*/
 footer {
   color: white;
   overflow: hidden;
   text-align: center;
   background-color: #24262b;
 
+
 }
 
+/*Makes links in the footer white when hovering. Improves responsivness*/
 footer a:hover {
   color: white;
 }
 
+/*General  colors for the page topical*/
 .topical-body {
-  color: #1f1f1f;
+  color: black;
   background-color: #fffef1;
 }
 
@@ -85,52 +90,50 @@ footer a:hover {
 }
 
 
-
+/*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-Width: 800px) {
 
-  .footer-links {
-    color: black;
-    text-decoration: none;
-  }
 
-
+  /*removes margin to make picture edge to edge in mobile*/
   .topical-body {
     margin: 0;
-
   }
 
+  /*Adds margin to asides */
   .grid-aside-topical {
     margin-left: 1em;
 
   }
-
+/*Adds margin to the paragraf to improve readability*/
   .topical-p {
     margin: 1em;
   }
 
+/*Adds margin to the heading to improve readability*/
   .topical-heading1 {
     margin: 0.5em;
 
   }
-
+/*Adds margin to the heading to improve readability*/
   .topical-heading2 {
     margin: 0.5em;
 
   }
-
+/*Adds margin to the heading to improve readability*/
   .topical-heading3 {
     margin: 0.5em;
 
   }
 
+  /*Makes the picture fit edge to edge and not spill over*/
   .digi-picture {
     width: 100%;
   }
-
+ /*Makes the picture fit edge to edge and not spill over*/
   .health-picture {
     width: 100%;
   }
-
+ /*Just styling for aesthetics*/
   .topical-aside-picture {
     height: 6em;
     width: 35%;
@@ -140,15 +143,15 @@ footer a:hover {
   }
 
 
-
+/*wraps the aside text in a div and makes a grid for them to be placed in*/
   .topical-grid-aside-text {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: (1, 1fr);
     grid-row-gap: 5em;
     grid-column-gap: 0em;
   }
-
+/*Places the links in the grid and adds styling for aesthetics*/
   .topical-aside-links {
     font-size: x-large;
     margin-top: -7em;
@@ -171,65 +174,45 @@ footer a:hover {
 
 
 @media (min-width: 801px) {
-
+/*Makes the footer flush with the main content*/
+  #topical-footer{
+    margin-top: -28%;
+  }
+/*Makes a container for the footer to be placed in a grid*/
+  .grid-footer-container {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+/*Puts som text in the left part of the footer*/
   .grid-footer-left {
-    grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
     grid-column-start: 6;
     grid-column-end: 8;
 
   }
-
+/*Puts som text in the middle part of the footer*/
   .grid-footer-middle {
-    grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
     grid-column-start: 12;
     grid-column-end: 14;
 
   }
-
+/*Puts som text in the rigth part of the footer*/
   .grid-footer-rigth {
-    grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
     grid-column-start: 18;
     grid-column-end: 20;
   }
-
-  .grid-footer-bottom{
-    background-color: #16171a;
-    padding: 0.5em;
-  }
-
-
-
-
-  .underline-red {
-    width: 1.5em;
-    border: 0.07em solid red;
-  }
-
-  .footer-links {
-    color: #D3D3D3;
-    text-decoration: none;
-  }
-
-
-
-  .flex-container-topical {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-row-gap: 0em;
-    grid-column-gap: 0em;
-  }
-
-
-
+/*Centers the first heading*/
   .topical-heading1 {
     text-align: center;
 
   }
-
+/*Sizes the main picture for aesthetics and adds padding for aesthetics*/
   .digi-picture {
     height: 60%;
     width: 60%;
@@ -241,6 +224,7 @@ footer a:hover {
   .topical-body {
     text-align: left;
     margin: 0;
+  
   }
 
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
@@ -256,7 +240,7 @@ footer a:hover {
   /*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
   .grid-body-topical {
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 4;
 
@@ -285,29 +269,49 @@ footer a:hover {
     place-items: center;
 
   }
-
+/*Sizes the aside pictures for aesthetics*/
   .topical-aside-picture {
     height: 30%;
     width: 16em;
   }
 }
-
+/*Makes the text under digi-picture grey and flush with the picture*/
 #topical-under-header-text {
   color: gray;
   margin-top: 0;
 }
-
+/*Makes the links black instead of blue for aesthetics*/
 .topical-aside-links {
   color: black;
 }
 
-/*Made all paragrafs under topical-aside-pictures have 0 margin*/
+/*Made all paragrafs under topical-aside-pictures have 0 margin for aesthetics*/
 .topical-aside-picture+p {
   margin-top: 0;
 }
 
-.grid-footer-container {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+/*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
+.grid-footer-bottom{
+  background-color: #16171a;
+  padding: 1em;
+
+}
+
+/*Makes a red underline for the footers links for stylistic choices*/
+.underline-red {
+  width: 1.5em;
+  border: 0.07em solid red;
+}
+/*Makes the links white and removes underline*/
+.footer-links {
+  color: #D3D3D3;
+  text-decoration: none;
+  
+}
+
+.footer-header{
+  font-size:larger;
+}
+#company-name{
+  font-size: x-large;
 }
