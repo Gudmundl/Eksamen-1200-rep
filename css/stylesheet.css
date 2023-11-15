@@ -1,12 +1,14 @@
-/*Set line height to 1.5 to make text more readable*/
-p {
-  line-height: 1.5;
-}
+
 body {
   color: black;
   background-color:whitesmoke;
   padding: 0;
   margin: 0;
+}
+
+/*Set line height to 1.5 to make text more readable*/
+p {
+  line-height: 1.5;
 }
 
 /*Sets background and text colours for all the footers hides overflow and centers bottom footer*/
@@ -15,7 +17,6 @@ footer {
   overflow: hidden;
   text-align: center;
   background-color: #24262b;
-
 
 }
 
@@ -160,7 +161,7 @@ footer a:hover {
 .boks4 iframe{
   width: 40vw;
   height: 20vw;
-
+}
 /*Media query makes the website scale diffrently from pc to mobile*/
 
 @media(maxWidth: 800px){
