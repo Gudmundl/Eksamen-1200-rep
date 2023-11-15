@@ -2,6 +2,12 @@
 p {
   line-height: 1.5;
 }
+body {
+  color: black;
+  background-color:whitesmoke;
+  padding: 0;
+  margin: 0;
+}
 
 /*Sets background and text colours for all the footers hides overflow and centers bottom footer*/
 footer {
@@ -22,13 +28,11 @@ footer a:hover {
 .topical-body {
   color: black;
   background-color:whitesmoke;
-  background-color: #fffef1;
 }
 
 .navbar {
   overflow: hidden;
   background-color: #a1a1a1;
-  border-radius: 4.5px;
   padding: 7.5px 7.5px 7.5px 3px;
 }
 
@@ -102,32 +106,64 @@ footer a:hover {
   display: block;
 }
 
-.page4 iframe{
-  background-color: antiquewhite;
+.page4 main{
+  padding: 0;
+  margin: 0;
+  display: grid;
+  height: 300vh;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
 }
-#boks1{
-  background-color: aqua;
-  grid-area: 1;
+
+.boks1{
+  grid-area: 1/1/3/6;
+  text-align: center;
+  font-size: 6rem;
+  background: url(../media/Pilestredet-oversikt.jpeg) no-repeat center fixed;
+  background-size: cover;
+  color: yellow;
 }
-#boks2{
-  background-color: rgb(51, 255, 0);
+
+.boks2{
+  background-color: yellow;
+  grid-area: 3/1/4/6;
+  text-align: center;
+  padding: 10vw 20vw ;
+  font-size: 1.7rem;
 }
-#boks3{
+
+
+
+
+.boks3{
   background-color: rgb(55, 0, 255);
+
+  grid-area: 4/1/5/3;
 }
-#boks4{
+.boks4{
   background-color: rgb(238, 0, 255);
+  grid-area: 4/3/5/6;
+  padding: 40px;
 }
-#boks5{
+.boks5{
   background-color: rgb(255, 0, 8);
+  grid-area: 7/1/8/4;
+  width: 50vw;
 }
-#boks6{
+.boks6{
   background-color: rgb(255, 225, 0);
+  grid-area: 7/4/8/6;
+
+  
 }
+.boks4 iframe{
+  width: 40vw;
+  height: 20vw;
 
 /*Media query makes the website scale diffrently from pc to mobile*/
-@media(max-Width: 800px) {
 
+@media(maxWidth: 800px){
 
   /*removes margin to make picture edge to edge in mobile*/
   .topical-body {
