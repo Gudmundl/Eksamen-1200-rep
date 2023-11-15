@@ -111,10 +111,10 @@ footer a:hover {
   padding: 0;
   margin: 0;
   display: grid;
-  height: 300vh;
+  height: 360vh;
   justify-content: space-between;
   grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
 }
 
 .boks1{
@@ -134,30 +134,44 @@ footer a:hover {
   font-size: 1.7rem;
 }
 
+.Omraader{
+  grid-area: 4/1/5/6;
+  display: grid;
+  column-gap: 4vw;
+  grid-template-columns: 28vw 28vw 28vw;
+  grid-template-rows: 90vh;
+  background-color: aqua;
+  margin: 0 0 0 4vw;
+  text-align: center;
+}
+.Omraader div{
+  background-color: aliceblue;
+}
+.Omraader h3{
+  font-size: 3rem;
+  margin: 8vh 0 48vh 0;
+}
+.Kantina{
 
+}
+.Biblotek{
 
+}
+.Datatorget{
+
+}
 
 .boks3{
   background-color: rgb(55, 0, 255);
 
-  grid-area: 4/1/5/3;
+  grid-area: 7/1/8/4;
 }
 .boks4{
   background-color: rgb(238, 0, 255);
-  grid-area: 4/3/5/6;
+  grid-area: 7/4/8/6;
   padding: 40px;
 }
-.boks5{
-  background-color: rgb(255, 0, 8);
-  grid-area: 7/1/8/4;
-  width: 50vw;
-}
-.boks6{
-  background-color: rgb(255, 225, 0);
-  grid-area: 7/4/8/6;
 
-  
-}
 .boks4 iframe{
   width: 40vw;
   height: 20vw;
