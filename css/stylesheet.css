@@ -316,10 +316,13 @@ footer a:hover {
   color: gray;
   margin-top: 0;
 }
+
 /*Makes the links black instead of blue for aesthetics*/
 .topical aside a {
   color: black;
 }
+
+
 
 /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
 .grid-footer-bottom{
@@ -329,12 +332,12 @@ footer a:hover {
 }
 
 /*Makes a red underline under the footers links for stylistic choices*/
-.topical footer hr {
+#footer hr {
   width: 1.5em;
   border: 0.07em solid red;
 }
 /*Makes the links white and removes underline*/
-.topical footer a{
+#footer a{
   color: #D3D3D3;
   text-decoration: none;
   
@@ -342,10 +345,15 @@ footer a:hover {
 /*Makes the header in the page topical in the grid and centered*/
 
 
-.topical footer h4{
-  font-size:larger;
-}
+#footer h4{
+  font-size:larger; 
 
+}
+#footer{
+  margin-right: -1%;
+  margin-left: -1%;
+  margin-bottom: -1%;
+}
 
 /*Styling for Topical(page3 ends here)*/
 
