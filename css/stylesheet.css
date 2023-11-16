@@ -490,6 +490,7 @@ footer a:hover {
 
 
 #bilde-kjeller-kantine-div{
+  background-image: url(kjeller-kantine.jpg);
   display: grid;
   grid-column-start: 1;
   grid-column-end: 4;
@@ -497,7 +498,6 @@ footer a:hover {
   grid-row-end: 7;
   background-position: center center;
   background-size: cover;
-  background-image: url(kjeller-kantine.jpg);
 }
 
 
@@ -536,6 +536,7 @@ footer a:hover {
 
 
 #bilde-kjeller-bibliotek-div{
+  background-image: url(kjeller-bibliotek.jpg);
   display: grid;
   grid-column-start:5 ;
   grid-column-end: 7;
@@ -543,5 +544,4 @@ footer a:hover {
   grid-row-end: 7;
   background-position: center center;
   background-size: cover;
-  background-image: url(kjeller-bibliotek.jpg);
 }
