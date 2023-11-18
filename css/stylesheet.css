@@ -25,11 +25,6 @@ footer a:hover {
   color: white;
 }
 
-/*General  colors for the page topical*/
-.topical-body {
-  color: black;
-  background-color:whitesmoke;
-}
 
 .navbar {
   overflow: hidden;
@@ -166,47 +161,49 @@ footer a:hover {
 
 @media(maxWidth: 800px){
 
+  
+
+/*Styling for Topical(page3) starts here*/
   /*removes margin to make picture edge to edge in mobile*/
-  .topical-body {
+  .topical{
     margin: 0;
   }
 
   /*Adds margin to asides */
-  .grid-aside-topical {
+  .topical aside{
     margin-left: 1em;
 
   }
 /*Adds margin to the paragraf to improve readability*/
-  .topical-p {
+  .topical p {
     margin: 1em;
   }
 
-/*Adds margin to the heading to improve readability*/
-  .topical-heading1 {
+  .topical h1 {
     margin: 0.5em;
 
   }
-/*Adds margin to the heading to improve readability*/
-  .topical-heading2 {
+
+  .topical h2 {
     margin: 0.5em;
 
   }
-/*Adds margin to the heading to improve readability*/
-  .topical-heading3 {
+
+  .topical h3 {
     margin: 0.5em;
 
   }
 
   /*Makes the picture fit edge to edge and not spill over*/
-  .digi-picture {
+  .topical-header-digi-picture {
     width: 100%;
   }
- /*Makes the picture fit edge to edge and not spill over*/
-  .health-picture {
+
+  .topical-body-health-picture {
     width: 100%;
   }
  /*Just styling for aesthetics*/
-  .topical-aside-picture {
+  .topical aside img{
     height: 6em;
     width: 35%;
     margin-right: 0;
@@ -216,7 +213,7 @@ footer a:hover {
 
 
 /*wraps the aside text in a div and makes a grid for them to be placed in*/
-  .topical-grid-aside-text {
+  .topical-aside-grid-text{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: (1, 1fr);
@@ -224,7 +221,7 @@ footer a:hover {
     grid-column-gap: 0em;
   }
 /*Places the links in the grid and adds styling for aesthetics*/
-  .topical-aside-links {
+  .topical aside a {
     font-size: x-large;
     margin-top: -7em;
     grid-row-start: 1;
@@ -246,8 +243,77 @@ footer a:hover {
 
 
 @media (min-width: 801px) {
-/*Makes the footer flush with the main content*/
-  #topical-footer{
+
+/*Centers the first heading*/
+  .topical h1 {
+    text-align: center;
+    font-size: 3em;
+
+  }
+/*Sizes the main picture for aesthetics and adds padding for aesthetics*/
+  .topical-header-digi-picture {
+    width: 50em;
+    height: 25em;
+    padding-left: 18vw;
+
+  }
+
+  /*Left aligns all text in the body of topical */
+  .topical{
+    text-align: left;
+    margin: 0;
+  
+  }
+
+
+  /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
+  .topical-main-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+  }
+
+
+  /*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
+  .grid-body-topical {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+  }
+
+  /*Makes a grid for the header in the page topical starting on row 2 and column 5 and ending on row 6 and column 4*/
+  .topical aside{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 4;
+    justify-content: center;
+  }
+
+  /*Styles the healthpicture with height 100% and width 18% to not spill over to other content*/
+  .topical-body-health-picture{
+    width: 100%;
+    height: 18%;
+  }
+
+ 
+/*Sizes the aside pictures for aesthetics*/
+  .topical aside img{
+    height: 30%;
+    width: 16em;
+  }
+
+  .topical aside p {
+    margin-top: 0;
+    padding-left: 2%;
+  }
+
+  /*Makes the footer flush with the main content*/
+  .topical footer{
     margin-top: -28%;
   }
 /*Makes a container for the footer to be placed in a grid*/
@@ -279,88 +345,21 @@ footer a:hover {
     grid-column-start: 18;
     grid-column-end: 20;
   }
-/*Centers the first heading*/
-  .topical-heading1 {
-    text-align: center;
 
-  }
-/*Sizes the main picture for aesthetics and adds padding for aesthetics*/
-  .digi-picture {
-    height: 60%;
-    width: 60%;
-    padding-left: 20%;
+} /*End of media quearry for pc*/
 
-  }
-
-  /*Left aligns all text in the body of topical */
-  .topical-body {
-    text-align: left;
-    margin: 0;
-  
-  }
-
-  /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
-  .container-topical {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 3em;
-    grid-row-gap: 3em;
-  }
-
-
-  /*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
-  .grid-body-topical {
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 4;
-
-  }
-
-  /*Makes a grid for the header in the page topical starting on row 2 and column 5 and ending on row 6 and column 4*/
-  .grid-aside-topical {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 5;
-    grid-column-end: 4;
-    justify-content: center;
-  }
-
-  /*Styles the healthpicture with height 100% and width% and puts in in the center og the grid*/
-  .health-picture {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 18%;
-  }
-
-  /*Makes the header in the page topical in the grid and centered*/
-  .topical-heading {
-    display: grid;
-    place-items: center;
-
-  }
-/*Sizes the aside pictures for aesthetics*/
-  .topical-aside-picture {
-    height: 30%;
-    width: 16em;
-  }
-}
 /*Makes the text under digi-picture grey and flush with the picture*/
-#topical-under-header-text {
+#topical-under-header-text{
   color: gray;
   margin-top: 0;
 }
+
 /*Makes the links black instead of blue for aesthetics*/
-.topical-aside-links {
+.topical aside a {
   color: black;
 }
 
-/*Made all paragrafs under topical-aside-pictures have 0 margin for aesthetics*/
-.topical-aside-picture+p {
-  margin-top: 0;
-}
+
 
 /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
 .grid-footer-bottom{
@@ -369,30 +368,38 @@ footer a:hover {
 
 }
 
-/*Makes a red underline for the footers links for stylistic choices*/
-.underline-red {
+/*Makes a red underline under the footers links for stylistic choices*/
+#footer hr {
   width: 1.5em;
   border: 0.07em solid red;
 }
 /*Makes the links white and removes underline*/
-.footer-links {
+#footer a{
   color: #D3D3D3;
   text-decoration: none;
   
 }
 /*Makes the header in the page topical in the grid and centered*/
 
-#topical-heading {
-  display: grid;
-  place-items: center;
+
+#footer h4{
+  font-size:larger; 
+
+}
+#footer{
+  margin-right: -1%;
+  margin-left: -1%;
+  margin-bottom: -1%;
 }
 
-.footer-header{
-  font-size:larger;
-}
-#company-name{
-  font-size: x-large;
-}
+/*Styling for Topical(page3 ends here)*/
+
+
+
+
+
+
+
 /* The styling for page 5 starts here:*/
 
 .body4and5{
