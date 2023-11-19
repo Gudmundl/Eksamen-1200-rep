@@ -111,71 +111,90 @@ footer a:hover {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-areas: 
-  'Overskrift Overskrift'
-  'Intro Intro'
-  'Kantinebilde Kantine'
-  'Biblotek Biblotekbilde'
-  'Datatorgbilde Datatorg'
-  'Karttekst Kart';
+  grid-template-columns: 1fr 1fr;
+
 }
 
 .boks1{
-  grid-area: Overskrift;
+  grid-column-start: 1;
+  grid-column-end: 3;
   text-align: center;
   font-size: 6rem;
   background: url(../media/Pilestredet-oversikt.jpeg) no-repeat center fixed;
   background-size: cover;
-  color: yellow;
+  color: purple;
+  height: 100vh;
 }
 
 .boks2{
-  background-color: yellow;
-  grid-area: Intro;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: grey;
+  color: whitesmoke;
   text-align: center;
   padding: 10vw 20vw ;
   font-size: 1.7rem;
 }
 .Kantina-bilde{
-  background: url(../media/Pilestredet-oversikt.jpeg) no-repeat center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: url(../media/Pilestredet-oversikt.jpeg) center;
+  background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  grid-area: Kantinebilde;
+  height: 50vh;
 }
 .Kantina{
-  grid-area: Kantine;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 50vh;
 
 }
 .Biblotek{
-  grid-area: Biblotek;
-
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 50vh;
 }
 .Biblotek-bilde{
-  background: url(../media/Pilestredet-oversikt.jpeg) no-repeat center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: url(../media/Pilestredet-oversikt.jpeg) center;
+  background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  grid-area: Biblotekbilde;
+  height: 50vh;
 }
 .Datatorget-bilde{
+  grid-column-start: 1;
+  grid-column-end: 2;
   background: url(../media/Pilestredet-oversikt.jpeg) no-repeat center;
   position: relative;
   background-size: cover;
-  grid-area: Datatorgbilde;
+  height: 50vh;
 }
 .Datatorget{
-  grid-area: Datatorg;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 50vh;
 }
 
 .boks3{
+  grid-column-start: 1;
+  grid-column-end: 3;
   background-color: rgb(55, 0, 255);
-
-  grid-area: Karttekst;
+  height: 20vh;
 }
 .boks4{
-  background-color: rgb(238, 0, 255);
-  grid-area: Kart;
-  padding: 40px;
+  grid-column-start: 1;
+  grid-column-end: 3;  
+  height: 50vh;  
 }
+#pilestredkart{
+
+
+}
+
+
 
 
 /*Media query makes the website scale diffrently from pc to mobile*/
