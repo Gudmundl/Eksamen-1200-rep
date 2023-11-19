@@ -533,14 +533,10 @@ footer a:hover {
   min-height: 0;
 }
 
-
-
-
 #campus-kjeller-posisjon{
   width: 100%;
   height: 100%;
 }
-
 
 /*
 #bilde-kjeller-kantine {
@@ -557,7 +553,6 @@ footer a:hover {
   min-height: 0;
 }
 */
-
 
 #picture-kjeller-cafeteria-div{
   background-image: url(/media/kjeller-kantine.jpg);
@@ -643,7 +638,6 @@ footer a:hover {
   border-radius: 20px 20px 20px 20px;
 }
 
-
 #picture-lillestrøm-div{
   background-image: url(/media/lillestrøm-picture.jpg);
   grid-column-start: 1;
@@ -657,16 +651,3 @@ footer a:hover {
   margin-left: 10%;
   border-radius: 50px 50px 50px 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
