@@ -519,7 +519,7 @@ footer a:hover {
 }
 
 
-.grid-kjeller-posisjon{
+.grid-kjeller-position{
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 4;
@@ -559,7 +559,7 @@ footer a:hover {
 */
 
 
-#bilde-kjeller-kantine-div{
+#picture-kjeller-cafeteria-div{
   background-image: url(/media/kjeller-kantine.jpg);
   grid-column-start: 1;
   grid-column-end: 4;
@@ -574,7 +574,7 @@ footer a:hover {
 }
 
 
-.grid-kjeller-kantine{
+.grid-kjeller-cafeteria{
   grid-column-start: 4;
   grid-column-end: 8;
   grid-row-start: 3;
@@ -589,7 +589,7 @@ footer a:hover {
 }
 
 
-.grid-kjeller-bibliotek{
+#grid-kjeller-library{
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 5;
@@ -604,7 +604,7 @@ footer a:hover {
 }
 
 
-#bilde-kjeller-bibliotek-div{
+#picture-kjeller-library-div{
   background-image: url(/media/kjeller-bibliotek.jpg);
   grid-column-start: 4;
   grid-column-end: 7;
