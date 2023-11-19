@@ -1,4 +1,5 @@
 
+
 body {
   color: black;
   background-color:whitesmoke;
@@ -6,10 +7,12 @@ body {
   margin: 0;
 }
 
+
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
 }
+
 
 /*Sets background and text colours for all the footers hides overflow and centers bottom footer*/
 footer {
@@ -18,12 +21,15 @@ footer {
   text-align: center;
   background-color: #24262b;
 
+
 }
+
 
 /*Makes links in the footer white when hovering. Improves responsivness*/
 footer a:hover {
   color: white;
 }
+
 
 /*General  colors for the page topical*/
 .topical-body {
@@ -31,11 +37,13 @@ footer a:hover {
   background-color:whitesmoke;
 }
 
+
 .navbar {
   overflow: hidden;
   background-color: #a1a1a1;
   padding: 7.5px 7.5px 7.5px 3px;
 }
+
 
 .navbar a {
   float: left;
@@ -50,10 +58,13 @@ footer a:hover {
 }
 
 
+
+
 .dropdown-meny {
   float: left;
   overflow: hidden;
 }
+
 
 .dropdown-meny .dropbtn {
   font-size: 16px;
@@ -68,13 +79,17 @@ footer a:hover {
   margin-left: 4.5px;
 }
 
+
 .navbar a:hover, .dropdown-meny:hover .dropbtn {
   background-color: #7a7a7af2
 }
 
+
 .navbar a:enabled {
   background-color: aqua;
 }
+
+
 
 
 .dropdown-content {
@@ -86,6 +101,7 @@ footer a:hover {
   align-self: center;
   border-radius: 4.5px;
 }
+
 
 .dropdown-content a {
   float: none;
@@ -99,13 +115,16 @@ footer a:hover {
   margin: 4.5px;
 }
 
+
 .dropdown-content a:hover {
   background-color: 7a7a7af2;
 }
 
+
 .dropdown-meny:hover .dropdown-content {
   display: block;
 }
+
 
 .page4 main{
   padding: 0;
@@ -117,6 +136,7 @@ footer a:hover {
   grid-template-rows: auto auto auto auto auto auto auto;
 }
 
+
 .boks1{
   grid-area: 1/1/3/6;
   text-align: center;
@@ -125,6 +145,7 @@ footer a:hover {
   background-size: cover;
   color: yellow;
 }
+
 
 .boks2{
   background-color: yellow;
@@ -137,8 +158,13 @@ footer a:hover {
 
 
 
+
+
+
+
 .boks3{
   background-color: rgb(55, 0, 255);
+
 
   grid-area: 4/1/5/3;
 }
@@ -156,7 +182,8 @@ footer a:hover {
   background-color: rgb(255, 225, 0);
   grid-area: 7/4/8/6;
 
-  
+
+ 
 }
 .boks4 iframe{
   width: 40vw;
@@ -164,16 +191,20 @@ footer a:hover {
 }
 /*Media query makes the website scale diffrently from pc to mobile*/
 
+
 @media(maxWidth: 800px){
+
 
   /*removes margin to make picture edge to edge in mobile*/
   .topical-body {
     margin: 0;
   }
 
+
   /*Adds margin to asides */
   .grid-aside-topical {
     margin-left: 1em;
+
 
   }
 /*Adds margin to the paragraf to improve readability*/
@@ -181,21 +212,26 @@ footer a:hover {
     margin: 1em;
   }
 
+
 /*Adds margin to the heading to improve readability*/
   .topical-heading1 {
     margin: 0.5em;
+
 
   }
 /*Adds margin to the heading to improve readability*/
   .topical-heading2 {
     margin: 0.5em;
 
+
   }
 /*Adds margin to the heading to improve readability*/
   .topical-heading3 {
     margin: 0.5em;
 
+
   }
+
 
   /*Makes the picture fit edge to edge and not spill over*/
   .digi-picture {
@@ -212,7 +248,10 @@ footer a:hover {
     margin-right: 0;
     padding-right: 0;
 
+
   }
+
+
 
 
 /*wraps the aside text in a div and makes a grid for them to be placed in*/
@@ -245,6 +284,18 @@ footer a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 801px) {
 /*Makes the footer flush with the main content*/
   #topical-footer{
@@ -263,6 +314,7 @@ footer a:hover {
     grid-column-start: 6;
     grid-column-end: 8;
 
+
   }
 /*Puts som text in the middle part of the footer*/
   .grid-footer-middle {
@@ -270,6 +322,7 @@ footer a:hover {
     grid-row-end: 6;
     grid-column-start: 12;
     grid-column-end: 14;
+
 
   }
 /*Puts som text in the rigth part of the footer*/
@@ -283,6 +336,7 @@ footer a:hover {
   .topical-heading1 {
     text-align: center;
 
+
   }
 /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
   .digi-picture {
@@ -290,14 +344,17 @@ footer a:hover {
     width: 60%;
     padding-left: 20%;
 
+
   }
+
 
   /*Left aligns all text in the body of topical */
   .topical-body {
     text-align: left;
     margin: 0;
-  
+ 
   }
+
 
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
   .container-topical {
@@ -309,6 +366,8 @@ footer a:hover {
   }
 
 
+
+
   /*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
   .grid-body-topical {
     grid-row-start: 1;
@@ -316,7 +375,9 @@ footer a:hover {
     grid-column-start: 2;
     grid-column-end: 4;
 
+
   }
+
 
   /*Makes a grid for the header in the page topical starting on row 2 and column 5 and ending on row 6 and column 4*/
   .grid-aside-topical {
@@ -327,6 +388,7 @@ footer a:hover {
     justify-content: center;
   }
 
+
   /*Styles the healthpicture with height 100% and width% and puts in in the center og the grid*/
   .health-picture {
     display: grid;
@@ -335,10 +397,12 @@ footer a:hover {
     height: 18%;
   }
 
+
   /*Makes the header in the page topical in the grid and centered*/
   .topical-heading {
     display: grid;
     place-items: center;
+
 
   }
 /*Sizes the aside pictures for aesthetics*/
@@ -357,17 +421,21 @@ footer a:hover {
   color: black;
 }
 
+
 /*Made all paragrafs under topical-aside-pictures have 0 margin for aesthetics*/
 .topical-aside-picture+p {
   margin-top: 0;
 }
+
 
 /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
 .grid-footer-bottom{
   background-color: #16171a;
   padding: 1em;
 
+
 }
+
 
 /*Makes a red underline for the footers links for stylistic choices*/
 .underline-red {
@@ -378,14 +446,16 @@ footer a:hover {
 .footer-links {
   color: #D3D3D3;
   text-decoration: none;
-  
+ 
 }
 /*Makes the header in the page topical in the grid and centered*/
+
 
 #topical-heading {
   display: grid;
   place-items: center;
 }
+
 
 .footer-header{
   font-size:larger;
@@ -395,10 +465,12 @@ footer a:hover {
 }
 /* The styling for page 5 starts here:-------------------------------*/
 
+
 .body-5{
   text-align: left;
   background-color:   rgb(192,192,192);
 }
+
 
 #bilde-kjeller-campus{
   width: 90%;
@@ -418,6 +490,7 @@ footer a:hover {
   text-shadow: rgb(0, 0, 0) 3px 2px 3px;
 }
 
+
 #kjeller-main-container{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -428,6 +501,7 @@ footer a:hover {
   min-height: 0;
 }
 
+
 .grid-intro-kjeller{
   grid-row-start: 1;
   grid-row-end: 3;
@@ -435,28 +509,31 @@ footer a:hover {
   grid-column-end: 4;
   background-color: rgb(176,176,176);
   border-radius: 1%;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 10%;
   padding-left: 5%;
   margin-right: 10%;
   padding-right: 5%;
-  margin-bottom: 15%;
   min-width: 0;
   min-height: 0;
 }
+
 
 .grid-kjeller-posisjon{
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 4;
   grid-column-end: 7;
-  margin-top: 10%;
+  margin-top: 5%;
   padding-right: 5%;
   margin-right: 5%;
   padding-left: 10%;
   border-radius: 0%;
-  margin-bottom: 15%;
+  min-width: 0;
+  min-height: 0;
 }
+
+
 
 
 #campus-kjeller-posisjon{
@@ -465,29 +542,39 @@ footer a:hover {
 }
 
 
+/*
+#bilde-kjeller-kantine {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  margin-left: 5%;
+  min-width: 0;
+  min-height: 0;
+}
+*/
 
-#picture-kjeller-cafeteria-div{
+
+#bilde-kjeller-kantine-div{
+  background-image: url(/media/kjeller-kantine.jpg);
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 5;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 30%;
+  border-radius: 0px 50px 0px 50px;
 }
 
-#picture-kjeller-cafeteria-div > #picture-kjeller-cafeteria{
-width: auto;
-height: auto;
-max-width: 100%;
-max-height: 100%;
-border-radius: 0px 50px 0px 50px;
-min-width: 100%;
-max-width: 100%;
-object-fit: contain;
-}
 
-.grid-kjeller-cafeteria{
+.grid-kjeller-kantine{
   grid-column-start: 4;
   grid-column-end: 8;
   grid-row-start: 3;
@@ -498,54 +585,48 @@ object-fit: contain;
   border-radius: 1%;
   margin-right: 10%;
   margin-left: 10%;
-  margin-bottom: 30%;
+  margin-top:10%;
 }
 
-.grid-kjeller-library{
+
+.grid-kjeller-bibliotek{
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 7;
   padding-left: 5%;
   padding-right: 5%;
   background-color: rgb(176,176,176);
   border-radius: 1%;
-  margin-top: 30%;
+  margin-top: 10%;
   margin-right: 10%;
   margin-left: 10%;
-  margin-bottom: 10%;
 }
 
-#picture-kjeller-library-div{
+
+#bilde-kjeller-bibliotek-div{
+  background-image: url(/media/kjeller-bibliotek.jpg);
   grid-column-start: 4;
   grid-column-end: 7;
-  grid-row-start: 4;
-  grid-row-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  background-position: center center;
+  background-size: cover;
   margin-right: 10%;
   margin-left: 10%;
-  margin-top: 30%;
-  margin-bottom: 10%;
-}
-
-#picture-kjeller-library-div > #picture-kjeller-library {
-width: auto;
-height: auto;
-max-width: 100%;
-max-height: 100%;
-border-radius: 0px 50px 0px 50px;
-min-width: 100%;
-max-width: 100%;
-object-fit: contain;
+  margin-top: 10%;
+  border-radius: 50px 0px 50px 0px;
 }
 
 
 #h5-grid-lillestrøm{
+  margin-top: 2%;
   grid-column-start: 1;
   grid-column-end: 7;
-  grid-row-start: 6;
-  grid-row-end: 8;
+  grid-row-start: 7;
+  grid-row-end: 9;
   text-align: center;
-  
+ 
 }
 #h2-lillestrøm{
   font-size:xx-large;
@@ -553,36 +634,39 @@ object-fit: contain;
 #grid-lillestrøm-content{
   grid-column-start: 2;
   grid-column-end: 6;
-  grid-row-start: 6;
-  grid-row-end: 8;
+  grid-row-start: 7;
+  grid-row-end: 9;
   margin-top: 12%;
-  margin-bottom: 20%;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-bottom: 5%;
   background-color:rgb(176,176,176);
   text-align: center;
   border-radius: 20px 20px 20px 20px;
 }
 
+
 #picture-lillestrøm-div{
+  background-image: url(/media/lillestrøm-picture.jpg);
   grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 7;
-  grid-row-end: 19;
+  grid-column-end: 7;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  background-position: center center;
+  background-size: cover;
   margin-bottom: 5;
   margin-right: 10%;
   margin-left: 10%;
-  margin-top: 10%;
+  border-radius: 50px 50px 50px 50px;
 }
 
-#picture-lillestrøm-div > #picture-lillestrøm {
-width: auto;
-height: auto;
-max-width: 100%;
-max-height: 100%;
-border-radius: 50px 50px 50px 50px;
-object-fit: contain;
-}
+
+
+
+
+
+
+
+
+
 
 
 
