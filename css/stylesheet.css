@@ -360,9 +360,9 @@ footer a:hover {
   .container-topical {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 3em;
-    grid-row-gap: 3em;
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
   }
 
 
