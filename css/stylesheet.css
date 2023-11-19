@@ -545,12 +545,12 @@ footer a:hover {
   margin-left: 15%;
 }
 
-#picture-kjeller-cafeteria-div > #picture-kjeller-library {
+#picture-kjeller-cafeteria-div > #picture-kjeller-cafeteria {
   width: 100%;
   height: auto;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 50px 0px 50px 0px;
+  border-radius: 0px 50px 0px 50px;
 }
 
 .grid-kjeller-cafeteria{
@@ -562,7 +562,7 @@ footer a:hover {
   padding-right: 5%;
   background-color: rgb(176,176,176);
   border-radius: 1%;
-  height: 80%;
+  height: 75%;
   width: 65%;
   margin-left: 10%;
   margin-right: 0%;
@@ -612,7 +612,6 @@ footer a:hover {
  
 }
 #h2-lillestrøm{
-  padding: 2%;
   font-size:xx-large;
 }
 #grid-lillestrøm-content{
@@ -622,21 +621,25 @@ footer a:hover {
   grid-row-end: 9;
   margin-top: 12%;
   margin-bottom: 5%;
+  padding: 2%;
   text-align: center;
   background-color:rgb(176,176,176);
   border-radius: 20px 20px 20px 20px;
 }
 
 #picture-lillestrøm-div{
-  background-image: url(/media/lillestrøm-picture.jpg);
   grid-column-start: 1;
-  grid-column-end: 7;
+  grid-column-end: 8;
   grid-row-start: 9;
   grid-row-end: 12;
-  background-position: center center;
-  background-size: cover;
-  margin-bottom: 5;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-left: 12%;
+}
+
+#picture-lillestrøm-div > #picture-lillestrøm {
+  width: 75%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 6%;
   border-radius: 50px 50px 50px 50px;
 }
