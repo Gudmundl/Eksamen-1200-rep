@@ -582,7 +582,7 @@ footer a:hover {
   margin-left: 10%;
 }
 
-/*Using heigth,width and margin to place the div containing the picture.*/
+/*Using heigth, width and margin to place the div containing the picture.*/
 
 #picture-kjeller-library-div{
   grid-column-start: 4;
@@ -636,6 +636,8 @@ footer a:hover {
   border-radius: 20px 20px 20px 20px;
 }
 
+/*Using heigth, width and margin to place the div containing the picture.*/
+
 #picture-lillestrøm-div{
   grid-column-start: 1;
   grid-column-end: 8;
@@ -643,6 +645,8 @@ footer a:hover {
   grid-row-end: 12;
   margin-left: 12%;
 }
+
+/*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
 
 #picture-lillestrøm-div > #picture-lillestrøm {
   width: 75%;
@@ -653,6 +657,8 @@ footer a:hover {
   border-radius: 50px 50px 50px 50px;
 }
 }
+
+/*Media quarry for phone sized displays. When the width is lower then 800px the display will shift from grid to block*/
 
 @media(max-width: 800px){
  
