@@ -535,36 +535,23 @@ footer a:hover {
   height: 100%;
 }
 
-/*
-#bilde-kjeller-kantine {
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 7;
-  width: 100%;
-  height: 100%;
-  border-radius: 10%;
-  margin-left: 5%;
-  min-width: 0;
-  min-height: 0;
-}
-*/
-
 #picture-kjeller-cafeteria-div{
-  background-image: url(/media/kjeller-kantine.jpg);
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 5;
-  background-position: center center;
-  background-size: cover;
   height: 75%;
   width: 80%;
   margin-left: 15%;
-  border-radius: 0px 50px 0px 50px;
 }
 
+#picture-kjeller-cafeteria-div > #picture-kjeller-library {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50px 0px 50px 0px;
+}
 
 .grid-kjeller-cafeteria{
   grid-column-start: 4;
@@ -635,8 +622,8 @@ footer a:hover {
   grid-row-end: 9;
   margin-top: 12%;
   margin-bottom: 5%;
-  background-color:rgb(176,176,176);
   text-align: center;
+  background-color:rgb(176,176,176);
   border-radius: 20px 20px 20px 20px;
 }
 
