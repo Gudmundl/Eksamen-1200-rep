@@ -1,27 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="css/stylesheet.css"/>
+    <title>OsloMet Campus</title>
+    <!--Links the stylesheet to the html-page-->
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <!--Adds a favicon, where the image is taken from: https://kommunikasjon.ntb.no/data/images/00386/e13af02a-52b6-4701-8766-f0a0d9fab213-w_960.png, and converted on:https://favicon.io/favicon-converter/-->
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
-<body>
-<header>
-    <div class="navbar">
-        <a href="index.html"><div class="navKnapper"><p>Main</p></div></a>
-        <a href="html/Accessibility.html"><div class="navKnapper"><p>Accessibility</p></div></a>
-        <a href="html/Topical.html"><div class="navKnapper"><p>Topical</p></div></a>
-        <a href="html/page4.html"><div class="navKnapper"><p>Page 4</p></div></a>
-        <a href="html/page5.html"><div class="navKnapper"><p>Page 5</p></div></a>
-      </div>
-</header>
-<main>
-    <p>hei eg er ein gud</p>
 
-</main>
-<footer>
+<body id="index-body">
+    <!--ALL TEXT (meaning nearly every paragraf, and not the code) IS PROVIDED IN THIS DOCUMENT IS AI-GENERATED AND IS NOT MENT AS A FACTUAL AND ACCURATE TEXT-->
+    <!--Header-element containing a header-image and a navigation bar-->
+    <header id="index-header-container">
+        <!--Image orgin:https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxxlarge/8/3/1/4/164138-4-eng-GB/oslomet.jpg, and cropped localy to be slimmer horizontaly-->
+        <img id="index-header-img" src="media/oslomet-header.webp.jpg"
+            alt="colorful fasade on one of oslomets buildings with the word 'oslomet' as a sign on it ">
+        <!--Creating a semantic element to host the nav-->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="Accessibility.html">Accessibility</a>
+            <a href="Topical.html">Topical</a>
+            <!--Creating a div to add a dropdown meny-->
+            <div class="dropdown-meny">
+                <button class="dropbtn">Campuses</button>
+                <div class="dropdown-content">
+                    <a href="page4.html">Page 4</a>
+                    <a href="page5.html">Page 5</a>
+                </div>
+            </div>
+    </header>
+    <!--The main-part of the website, using the semantic element: main, with id to separate it from the other pages. In the stylsheet this element will be given grid in "computer-veiw"-->
+    <main id="index-main-container">
+        <!--Creating a div to place the h1 in the grid-->
+        <section id="index-h1-container">
+            <!--Using a span-element around "OSLOMET" to style that spesific word-->
+            <h1 id="index-h1"><span class="index-oslomet-span">OSLOMET</span> CAMPUS</h1>
+        </section>
+        <!--Creating a div to place the introduction in the main-grid-->
+        <article id="index-intro-p">
+            <!--Using "<strong>" to emphasize some text so it cacthes the attention of the veiwer-->
+            <p class="index-p">
+                <strong>Welcome to OsloMet</strong>,Welcome to OsloMet, a public university in Norway that offers a wide
+                range of academic programs and research activities in various fields of study, such as health, social
+                sciences, education, technology, art, and design. OsloMet is a
+                diverse, inclusive, modern, and innovative university that focuses on social responsibility and
+                sustainable development. OsloMet is a university that contributes to a more sustainable welfare state
+                and a better society for everyone. <strong>Join us and discover your potential at OsloMet!</strong>
+            </p>
+        </article>
+        <!--Again using a div to provide a room in the grid for the image-->
+        <section id="index-under-intro-img-div">
+            <!--Image taken from: https://www.oslomet.no/var/oslomet/storage/images/5/5/1/9/119155-2-eng-GB/P35-2400-1200.jpg,  Foto: Benjamin A. Ward-->
+            <img id="index-under-intro-img" src="media/oslomet-bilde.jpg"
+                alt="outside of p35, one of the buildings on pilestredet campus">
+            <p class="index-p"> Foto: Benjamin A. Ward</p>
+            <hr>
+        </section>
+        <!--Using a div to place the element in the grid system, aswell as-->
+        <div id="index-under-intro-area">
+            <!--Another div that acts like a "phone-screen" in pc-veiw, as well as being a container for the list inside-->
+            <article id="index-under-intro-white-area">
+                <h2>DID YOU KNOW?</h2>
+                <ul>
+                    <li class="index-under-intro-li">OsloMet is the fourth largest university in Norway, with over
+                        20,000 students and 2,000 employees.</li>
+                    <li class="index-under-intro-li">OsloMet offers 59 bachelor’s programs, 44 master’s programs, and 8
+                        PhD programs in various fields of study.</li>
+                    <li class="index-under-intro-li">OsloMet was established as a university in 2018, but its history
+                        dates back to 1813 when the first teacher training college in Norway was founded.</li>
+                    <li class="index-under-intro-li">OsloMet is a diverse and inclusive university, with students and
+                        staff from over 140 countries4. OsloMet also has a strong focus on social responsibility and
+                        sustainable development.</li>
+                    <li class="index-under-intro-li">OsloMet is a modern and innovative university, with
+                        state-of-the-art facilities and cutting-edge research. OsloMet is also a leading provider of
+                        online and blended learning in Norway.</li>
+                </ul>
+            </article>
+        </div>
+        <!--Div used to place the content in the grid, aswell as being a container for the content inside-->
+        <div id="index-secondary-box">
+            <h2 class="index-h2">Faculties</h2>
+            <p class="index-p">OsloMet is a public university that offers a wide range of academic programs and
+                research
+                activities. The university has four faculties, each with its own focus and expertise.</p>
+                <section id="index-secondary-box-flex-container">
+                <!--Creating four different divs for each of the four faculties on Oslomet-->
+                <article class="index-secondary-box-div">
+                    <!--Image taken from: https://img.freepik.com/premium-photo/digital-transformation-technology-strategy-iot-internet-things-transformation-ideas-adoption-technology-business-digital-age-enhancing-global-business-capabilities-ai_265022-17354.jpg?w=2000, downsized and cropped localy, 
+                    foto: @armmypicca-->
+                    <img class="index-secondary-box-img" src="media/tkd-right-size.jpg"
+                        alt="Computer with overlaying diagram representing the posibilities that technology can give the user">
+                    <h3 class="index-secondary-box-">"T.K.D"</h3>
+                    <p class="index-p">T.K.D. is the Faculty of Technology, Art and Design at OsloMet. T.K.D. offers
+                        higher education and research and development within
+                        technical subjects, arts and design. T.K.D. has five departments, two PhD programs, and several
+                        research labs.</p>
+                </article>
+                <article class="index-secondary-box-div">
+                    <!--Image taken from: https://dam.no/content/uploads/2022/08/Helse-hoved.png, downsized and cropped localy, 
+                    foto: ?-->
+                    <img class="index-secondary-box-img" src="media/hv-right-size.jpg"
+                        alt="Hand holding two people representing the way the health-system is taking care of people">
+                    <h3 class="index-secondary-box-">"H.V"</h3>
+                    <p class="index-p">H.V. is the Faculty of Health Sciences at OsloMet.
+                        H.V. educates health professionals and conducts research on health and welfare issues. H.V. has
+                        six departments, including nursing, physiotherapy, occupational therapy, social work, and public
+                        health. </p>
 
-</footer>
+                </article>
+                <article class="index-secondary-box-div">
+                    <!--Image taken from: https://images.inc.com/uploaded_files/image/1920x1080/getty_180105171_222111.jpg, downsized and cropped localy, 
+                    foto: getty image-->
+                    <img class="index-secondary-box-img" src="media/lui-right-size.jpg" alt="">
+                    <h3 class="index-secondary-box-">"L.U.I"</h3>
+                    <p class="index-p">L.U.I. is the Faculty of Education and International Studies at OsloMet. L.U.I.
+                        prepares teachers, educators, and international development
+                        experts. L.U.I. has four departments, including education, early childhood education,
+                        international studies and interpreting, and lifelong learning.</p>
+                </article>
+                <article class="index-secondary-box-div">
+                    <!--Image taken from: https://static.wixstatic.com/media/6dae59_ba865c879bca4b8d9b2673978097d35c~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/6dae59_ba865c879bca4b8d9b2673978097d35c~mv2.jpg, downsized and cropped localy, 
+                    foto: ?-->
+                    <img class="index-secondary-box-img" src="media/sosial-science-right-size.jpg" alt="">
+                    <h3 class="index-secondary-box-">"S.A.M"</h3>
+                    <p class="index-p">S.A.M. is the Faculty of Social Sciences at OsloMet,that explores social
+                        phenomena and challenges through various disciplines and
+                        perspectives. S.A.M. has five departments, including journalism and media studies, psychology,
+                        sociology and social work, public administration and welfare studies, and economics and
+                        administration.</p>
+                </article>
+            </section>
+        </div>
+        <!--Creating a div container to place in the grid-->
+        <div id="index-third-box">
+            <h2 class="index-h2">Campuses</h2>
+            <p class="index-p">Oslomet is a state university that has two campuses in Norway: Pilestredet and
+                Kjeller.
+                Each campus has its own unique features and advantages, but they both share the same vision of
+                providing
+                high-quality education, research and collaboration opportunities for students and staff.</p>
+            <!--Creating a div as a container for using flexbox to place the elements inside-->
+            <div id="index-third-box-flex">
+                <!--two nearly identical divs (except for the text), that acts as a introduction to the two campuses-->
+                <article class="index-third-campus-div">
+                    <h3 class="index-h3">Campus Pilestredet</h3>
+                    <p class="index-campus-p">Pilestredet campus is located in the centre of Oslo,
+                        the
+                        capital city of
+                        Norway and a cultural hub that offers endless possibilities for entertainment, recreation
+                        and
+                        exploration. Pilestredet campus is surrounded by cafes, restaurants, shops, parks and the
+                        Oslo
+                        fjord. It is also well-connected by public transport, making it easy to get around the city
+                        and
+                        beyond. </p>
+                    <a class="index-campus-clickable-a" href="#">
+                        <section class="index-campus-img-div">
+                            <img class="index-campus-img" src="media/pilestredet-campus.jpg"
+                                alt="clickable image of the main building on the Pilestredet campus that leads to an article with more info."
+                                id="index-pilestredet-img">
+                        </section>
+                    </a>
+                    <p class="index-campus-img-p"><strong>Click the image for more info!</strong></p>
+                </article>
+                <br>
+                <!--two nearly identical divs (except for the text), that acts as a introduction to the two campuses-->
+                <articlel class="index-third-campus-div">
+                    <h3 class="index-h3">Campus Kjeller</h3>
+                    <p class="index-campus-p">
+                        Kjeller campus is located in Kjeller, near the city of Lillestrøm, about 20 km northeast of
+                        Oslo.
+                        Kjeller campus is situated in a green and peaceful area, close to nature and scenery. It is
+                        also
+                        part of a research park that houses several national and international research institutes
+                        and
+                        companies, creating a stimulating and innovative environment for students and staff.
+                    </p>
+                    <a class="index-campus-clickable-a" href="">
+                        <section class="index-campus-img-div">
+                            <img class="index-campus-img" src="media/kjeller-campus.jpg"
+                                alt="clickable image of the main building on the Kjeller campus that leads to an article with more info.">
+                        </section>
+                    </a>
+                    <p class="index-campus-img-p"><strong>Click the image for more info!</strong></p>
+                </articlel>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer id="footer">
+            <div class="grid-footer-container">
+                <div class="grid-footer-left">
+                    <h4>Socials</h4>
+                    <hr>
+                    <a href="">
+                        <p>E-ml</p>
+                    </a>
+                    <a href="">
+                        <p>Facebook</p>
+                    </a>
+                    <a href="">
+                        <p>Instagram</p>
+                    </a>
+                    <a href="">
+                        <p>Linkedin</p>
+                    </a>
+                </div>
+
+                <div class="grid-footer-middle">
+                    <h4>Contact</h4>
+                    <hr>
+                    <a href="#">
+                        <p>Jobs</p>
+                    </a>
+                    <a href="#">
+                        <p>About us</p>
+                    </a>
+                    <a href="#">
+                        <p>Contact us</p>
+                    </a>
+                    <a href="#">
+                        <p>Licenses</p>
+                    </a>
+                </div>
+
+                <div class="grid-footer-rigth">
+                    <h4>Help</h4>
+                    <hr>
+                    <a href="#">
+                        <p>User support</p>
+                    </a>
+                    <a href="#">
+                        <p>Accessibility</p>
+                    </a>
+                    <a href="#">
+                        <p>Privacy</p>
+                    </a>
+                    <a href="#">
+                        <p>User cookies</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-footer-bottom">
+                <h4>Süssmann Productions</h4>
+                <p>Ansvarlig redaktør: Aron Süssmann</p>
+                <p>Med ånnaser: Didrik, Trym og Gudmund</p>
+
+        </footer>
+    </footer>
 </body>
+
 </html>
