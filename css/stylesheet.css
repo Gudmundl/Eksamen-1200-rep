@@ -297,7 +297,7 @@ height: 100%;
 
 /*The styling for phone display for page 5 starts here*/
 
-#body-page5{
+.page5-body{
   display: block;
 }
 
@@ -320,7 +320,7 @@ height: 100%;
 }
 
 
-#h1-kjeller{
+.page5-body h1 {
   color: yellow;
   margin-left: 20%;
   position: absolute;
@@ -329,7 +329,7 @@ height: 100%;
 }
 
 
-#grid-intro-kjeller{
+#page5-main-intro{
   margin-top: 20%;
   background-color: white;
   padding:3%;
@@ -337,7 +337,7 @@ height: 100%;
 }
 
 
-.grid-kjeller-position{
+.page5-main-position{
   width: 100%;
   height: 20em;
   max-width: 100%;
@@ -351,7 +351,7 @@ height: 100%;
 }
 
 
-#campus-kjeller-position{
+#page5-main-iframe{
   width: 100%;
   height: 100%;
   min-height: 100%;
@@ -379,7 +379,6 @@ height: 100%;
 
 
 #grid-kjeller-library{
-  background-color: white;
   padding:3%;
   margin-left: 1%;
 }
@@ -556,7 +555,7 @@ height: 100%;
     
   /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
   
-  #h1-kjeller{
+  .page5-body h1{
     position:absolute;
     left: 25%;
     top: 35%;
@@ -571,7 +570,7 @@ height: 100%;
   /*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
   
   
-  #kjeller-main-container{
+  #page5-main-container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(11, 1fr);
@@ -583,7 +582,7 @@ height: 100%;
   /*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
   
   
-  #grid-intro-kjeller{
+  #page5-main-intro{
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -601,7 +600,7 @@ height: 100%;
   /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
   
   
-  .grid-kjeller-position{
+  .page5-main-position{
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 4;
@@ -617,7 +616,7 @@ height: 100%;
   /*Making the iframe cover the whole div.*/
   
   
-  #campus-kjeller-position{
+  #page5-main-iframe{
     width: 100%;
     height: 100%;
   }
@@ -721,7 +720,6 @@ height: 100%;
     grid-row-start: 7;
     grid-row-end: 9;
     text-align: center;
-   
   }
   
   
@@ -827,12 +825,12 @@ height: 100%;
 /* The general styling for page 5 starts here:*/
 
 /*Asigning general thing to the body of the html page regardless of the size of the display*/
-#body-page5{
+.page5-body{
   text-align: left;
   background-color:  #12275c;
 }
 
-#grid-intro-kjeller{
+#page5-main-intro{
   background-color: white;
 }
 
