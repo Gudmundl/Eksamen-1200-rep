@@ -279,11 +279,17 @@ footer a:hover {
   color: #ffffff;
 }
 
+.page4{
+  margin: 0;
+  padding: 0;
+}
+.page4 .navbar{
+  border-radius: 0;
+}
 .page4 main {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   text-align: center;
 }
 
@@ -300,8 +306,6 @@ footer a:hover {
 }
 
 .boks1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
   text-align: center;
   position: relative;
 
@@ -324,39 +328,28 @@ justify-content: center;
 }
 
 .boks2{
-  grid-column-start: 1;
-  grid-column-end: 3;
   text-align: center;
-  padding: 10vw 20vw;
-  font-size: 1.7rem;
+
 }
 
 .kantine-bilde-boks {
-  grid-column-start: 1;
-  grid-column-end: 2;
   width: 100%;
   justify-content: center;
 
 }
 
 .biblotek-bilde-boks {
-  grid-column-start: 2;
-  grid-column-end: 3;
   width: 100%;
   justify-content: center;
 
 }
 
 .datatorg-bilde-boks {
-  grid-column-start: 1;
-  grid-column-end: 2;
   width: 100%;
   justify-content: center;
 }
 
 .kantina{
-  grid-column-start: 2;
-  grid-column-end: 3;
   height: 60vh;
 }
 #kantine-bilde{
@@ -364,8 +357,6 @@ justify-content: center;
   height: 100%;
 }
 .bibliotek{
-  grid-column-start: 1;
-  grid-column-end: 2;
   height: 60vh;
 }
 #bibliotek-bilde{
@@ -373,8 +364,6 @@ justify-content: center;
   height: 100%;
 }
 .datatorget{
-  grid-column-start: 2;
-  grid-column-end: 3;
   height: 60vh;
 }
 #datatorg-bilde{
@@ -383,14 +372,11 @@ justify-content: center;
 }
 
 .boks3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
+
   height: 60vh;
 }
 
 .boks4 {
-  grid-column-start: 2;
-  grid-column-end: 3;
   height: 60;
 }
 #pilestredkart{
@@ -439,6 +425,62 @@ justify-content: center;
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-width: 800px){
 
+  .page4 main {
+    grid-template-columns: 1fr;
+  }
+  .boks1{
+    height:100vh;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .boks2{
+    padding-top: 5vh;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .kantina{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 60vh;
+  }
+  .kantine-bilde-boks{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    height: 60vh;
+  }
+  .bibliotek{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    height: 60vh;
+  }
+  .biblotek-bilde-boks{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    height: 60vh;
+  }
+  .datatorget{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    height: 60vh;
+  }
+  .datatorg-bilde-boks{
+    grid-row-start: 8;
+    grid-row-end: 9;
+    height: 60vh;
+  }
+  .boks3{
+    grid-row-start: 9;
+    grid-row-end: 10;
+    height: 60vh;
+  }
+  .boks4{
+    grid-row-start: 10;
+    grid-row-end: 11;
+    height: 60vh;
+  }
   /*Start of page2 styling*/
   /*Makes the text more readable on mobile*/
   .accessibility p {
@@ -728,6 +770,54 @@ justify-content: center;
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
 
+  .page4 main {
+  grid-template-columns: 1fr 1fr;    
+  }
+  .boks1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .boks2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 1.7rem;
+    padding-top: 10vw;
+    padding-right: 20vw;
+    padding-bottom: 10vw;
+    padding-left: 20vw;
+  }
+  .kantine-bilde-boks {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .biblotek-bilde-boks {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .datatorg-bilde-boks {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .kantina{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .bibliotek{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .datatorget{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .boks3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .boks4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
   .accessibility-main-container-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
