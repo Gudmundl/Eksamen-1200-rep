@@ -358,7 +358,7 @@ body-5{
 }
 
 
-.grid-kjeller-cafeteria{
+#grid-kjeller-cafeteria{
   background-color: white;
   padding:3%;
   margin-left: 1%;
@@ -398,10 +398,13 @@ body-5{
 
 
 #h5-grid-lillestrøm{
-  background-color: white;
   margin-bottom: 0%;
   padding-left: 2%;
   margin-left: 1%;
+}
+
+#h2-lillestrøm{
+  color: white;
 }
 
 
@@ -662,7 +665,7 @@ body-5{
   /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
   
   
-  .grid-kjeller-cafeteria{
+  #grid-kjeller-cafeteria{
     grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 3;
