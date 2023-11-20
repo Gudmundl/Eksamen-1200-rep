@@ -416,7 +416,246 @@ height: 100%;
     grid-column-end: 20;
   }
 
-} /*End of media quearry for pc*/
+
+  #picture-kjeller-campus{
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:  3%;
+  }
+  
+  
+  /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
+  
+  
+  
+  
+  #h1-kjeller{
+    position:absolute;
+    left: 15%;
+    top: 20%;
+    font-size:10em;
+    color: yellow;
+    text-align: center;
+    /*background-color: #16171aa7;*/
+    text-shadow: rgb(0, 0, 0) 3px 2px 3px;
+  }
+  
+  
+  /*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
+  
+  
+  #kjeller-main-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
+  }
+  
+  
+  /*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
+  
+  
+  .grid-intro-kjeller{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1%;
+    height: 75%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  
+  /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+  
+  
+  .grid-kjeller-position{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    margin-top: 5%;
+    height: 75%;
+    width: 85%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  
+  
+  /*Making the iframe cover the whole div.*/
+  
+  
+  #campus-kjeller-posisjon{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  /*Using heigth,width and margin to place the div containing the picture.*/
+  
+  
+  #picture-kjeller-cafeteria-div{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: 75%;
+    width: 80%;
+    margin-left: 15%;
+  }
+  
+  
+  /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
+  
+  
+  #picture-kjeller-cafeteria-div > #picture-kjeller-cafeteria {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0px 50px 0px 50px;
+  }
+  
+  
+  /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+  
+  
+  .grid-kjeller-cafeteria{
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1%;
+    height: 75%;
+    width: 65%;
+    margin-left: 10%;
+    margin-right: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  
+  /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+  
+  
+  #grid-kjeller-library{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1%;
+    height: 75%;
+    width: 75%;
+    margin-left: 10%;
+  }
+  
+  
+  /*Using heigth, width and margin to place the div containing the picture.*/
+  
+  
+  #picture-kjeller-library-div{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    width: 80%;
+    height: 75%;
+    margin-left: 10%;
+  }
+  
+  
+  /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
+  
+  
+  #picture-kjeller-library-div > #picture-kjeller-library {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px 0px 50px 0px;
+  }
+  
+  
+  /*Giving the header a div of its own to make it stand out more. aligns the text in the center to match the rest of the following content*/
+  
+  
+  #h5-grid-lillestrøm{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    text-align: center;
+   
+  }
+  
+  
+  /*Giving the header a larger font size*/
+  
+  
+  #h2-lillestrøm{
+    font-size:xx-large;
+    color: white;
+  }
+  
+  
+  /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+  
+  
+  #grid-lillestrøm-content{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    margin-top: 12%;
+    margin-bottom: 5%;
+    padding: 2%;
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  
+  /*Using heigth, width and margin to place the div containing the picture.*/
+  
+  
+  #picture-lillestrøm-div{
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    margin-left: 12%;
+  }
+  
+  
+  /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
+  
+  
+  #picture-lillestrøm-div > #picture-lillestrøm {
+    width: 75%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 6%;
+    border-radius: 50px 50px 50px 50px;
+  }
+  
+}
+
+/*End of media quearry for pc*/
 
 /*Makes the text under digi-picture grey and flush with the picture*/
 #topical-under-header-text{
@@ -483,248 +722,12 @@ height: 100%;
 /*Making a media quarry for personal computers*/
 
 
-@media(min-width: 801px){
+
 
 
 /*Giving the picture a large percentage og heigth and width to make it cover the top of the page*/
 
 
-#picture-kjeller-campus{
-  width: 90%;
-  height: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top:  3%;
-}
-
-
-/*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
-
-
-
-
-#h1-kjeller{
-  position:absolute;
-  left: 15%;
-  top: 20%;
-  font-size:10em;
-  color: yellow;
-  text-align: center;
-  /*background-color: #16171aa7;*/
-  text-shadow: rgb(0, 0, 0) 3px 2px 3px;
-}
-
-
-/*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
-
-
-#kjeller-main-container{
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(11, 1fr);
-  grid-column-gap: 0em;
-  grid-row-gap: 0em;
-}
-
-
-/*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
-
-
-.grid-intro-kjeller{
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: rgb(255, 255, 255);
-  border-radius: 1%;
-  height: 75%;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-
-/*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
-
-
-.grid-kjeller-position{
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 4;
-  grid-column-end: 7;
-  margin-top: 5%;
-  height: 75%;
-  width: 85%;
-  margin-top: 5%;
-  margin-left: 5%;
-}
-
-
-/*Making the iframe cover the whole div.*/
-
-
-#campus-kjeller-posisjon{
-  width: 100%;
-  height: 100%;
-}
-
-
-/*Using heigth,width and margin to place the div containing the picture.*/
-
-
-#picture-kjeller-cafeteria-div{
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  height: 75%;
-  width: 80%;
-  margin-left: 15%;
-}
-
-
-/*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
-
-
-#picture-kjeller-cafeteria-div > #picture-kjeller-cafeteria {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 0px 50px 0px 50px;
-}
-
-
-/*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
-
-
-.grid-kjeller-cafeteria{
-  grid-column-start: 4;
-  grid-column-end: 8;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 1%;
-  height: 75%;
-  width: 65%;
-  margin-left: 10%;
-  margin-right: 0%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-
-/*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
-
-
-#grid-kjeller-library{
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 5;
-  grid-row-end: 7;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 1%;
-  height: 75%;
-  width: 75%;
-  margin-left: 10%;
-}
-
-
-/*Using heigth, width and margin to place the div containing the picture.*/
-
-
-#picture-kjeller-library-div{
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 5;
-  grid-row-end: 7;
-  width: 80%;
-  height: 75%;
-  margin-left: 10%;
-}
-
-
-/*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
-
-
-#picture-kjeller-library-div > #picture-kjeller-library {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 50px 0px 50px 0px;
-}
-
-
-/*Giving the header a div of its own to make it stand out more. aligns the text in the center to match the rest of the following content*/
-
-
-#h5-grid-lillestrøm{
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 7;
-  grid-row-end: 9;
-  text-align: center;
- 
-}
-
-
-/*Giving the header a larger font size*/
-
-
-#h2-lillestrøm{
-  font-size:xx-large;
-  color: white;
-}
-
-
-/*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
-
-
-#grid-lillestrøm-content{
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 7;
-  grid-row-end: 9;
-  margin-top: 12%;
-  margin-bottom: 5%;
-  padding: 2%;
-  text-align: center;
-  background-color:rgb(255, 255, 255);
-  border-radius: 20px 20px 20px 20px;
-}
-
-
-/*Using heigth, width and margin to place the div containing the picture.*/
-
-
-#picture-lillestrøm-div{
-  grid-column-start: 1;
-  grid-column-end: 8;
-  grid-row-start: 9;
-  grid-row-end: 12;
-  margin-left: 12%;
-}
-
-
-/*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
-
-
-#picture-lillestrøm-div > #picture-lillestrøm {
-  width: 75%;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  margin-left: 6%;
-  border-radius: 50px 50px 50px 50px;
-}
-}
 
 
 /*Media quarry for phone sized displays. When the width is lower then 800px the display will shift from grid to block*/
