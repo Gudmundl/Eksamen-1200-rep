@@ -158,28 +158,38 @@ footer a:hover {
   font-size: 1.7rem;
 }
 
-.page4-bilde-boks-v1{
+.kantine-bilde-boks{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 60vh;
+  width: 40vw;
+  justify-content: center;
+
+}
+.biblotek-bilde-boks{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 60vh;
+  width: 40vw;
+  justify-content: center;
+
+}
+.datatorg-bilde-boks{
   grid-column-start: 1;
   grid-column-end: 2;
   height: 60vh;
   width: 40vw;
   justify-content: center;
 }
-.page4-bilde-boks-v2{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  height: 60vh;
-  width: 40vw;
-  justify-content: center;
-}
+
 .Kantina{
   grid-column-start: 2;
   grid-column-end: 3;
   height: 60vh;
 }
 #kantine-bilde{
-  width: 100%;
-  height: 100%;
+  width: 40vw;
+  height: 50vh;
 }
 .Biblotek{
   grid-column-start: 1;
@@ -187,8 +197,8 @@ footer a:hover {
   height: 60vh;
 }
 #biblotek-bilde{
-  width: 100%;
-  height: 100%;
+  width: 40vw;
+  height: 50vh;
 }
 .Datatorget{
   grid-column-start: 2;
@@ -196,8 +206,8 @@ footer a:hover {
   height: 60vh;
 }
 datatorg-bilde{
-  width: 100%;
-  height: 100%;
+width: 40vw;
+height: 50vh;
 }
 .boks3{
   grid-column-start: 1;
