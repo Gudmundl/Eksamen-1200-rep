@@ -309,7 +309,6 @@ height: 100%;
   height: 100%;
   max-width: 100%;
   max-height: 100%;
-  z-index: 1;
   margin-left: 0.5%;
 }
 
@@ -317,13 +316,12 @@ height: 100%;
 
 .page5-body h1 {
   color: yellow;
-  margin-left: 20%;
+  margin-left: 25%;
   position: absolute;
   text-align: center;
-  z-index: 2;
 }
 
-/**/
+/*Placing the paragraphs and pictures everyother to improve visibility. Setting background image to white to make it more readable*/
 
 #page5-main-intro{
   margin-top: 20%;
@@ -332,6 +330,7 @@ height: 100%;
   margin-left: 1%;
 }
 
+/*Placing the iframe div*/
 
 .page5-main-position{
   width: 100%;
@@ -346,6 +345,7 @@ height: 100%;
   margin-bottom: 1%;
 }
 
+/*Making the ifram use all availiable space*/
 
 #page5-main-iframe{
   width: 100%;
@@ -354,6 +354,7 @@ height: 100%;
   min-width: 100%;
 }
 
+/*Placing paragraph about the cafeteria*/
 
 #page5-main-cafeteria{
   padding:3%;
@@ -361,6 +362,7 @@ height: 100%;
   margin-bottom: 1%;
 }
 
+/*Placing cafeteria image*/
 
 #page5-main-cafeteria-img{
   max-width: 100%;
@@ -373,12 +375,14 @@ height: 100%;
   margin-bottom: 1%;
 }
 
+/*Placin library paragraph*/
 
 #page5-main-library{
   padding:3%;
   margin-left: 1%;
 }
 
+/*Placing library image*/
 
 #page5-main-library-img{
   max-width: 100%;
@@ -391,6 +395,7 @@ height: 100%;
   margin-bottom: 1%;
 }
 
+/*Placing the div containing the Lillestrøm header, i wanted this header to stand out more from the typical formation until now.*/
 
 #page5-main-lillestrøm-h2-div{
   margin-bottom: 0%;
@@ -402,17 +407,16 @@ height: 100%;
   color: white;
 }
 
+/*Placing lillestrøm content*/
 
 #page5-main-lillestrøm{
-  background-color: white;
   margin-top: 0%;
   padding: 3%;
   margin-left: 1%;
   margin-bottom: 1%;
 }
 
-
-
+/*Placing the large lillestrøm image*/
 
 #page5-main-lillestrøm-img{
   max-width: 100%;
@@ -423,10 +427,9 @@ height: 100%;
   margin-right: 0.5%;
 }
 
-
 }
 
-
+/*End of media quearry for mobile phones*/
 
 @media (min-width: 801px) {
 
