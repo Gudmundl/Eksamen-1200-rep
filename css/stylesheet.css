@@ -440,24 +440,24 @@ justify-content: center;
 @media(max-width: 800px){
 
   /*Start of page2 styling*/
-
+  /*Makes the text more readable on mobile*/
   .accessibility p {
     font-size: 1.5em;
   }
-
+   /*Using flex to align everything vertically*/
   .accessibility-main-container-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
   }
-
+     /*Using flex to align everything vertically*/
   .accessibility-main-text-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+     /*Using flex to align everything vertically*/
   .accessibility-main-img-grid {
     display: flex;
     flex-direction: column;
@@ -465,7 +465,7 @@ justify-content: center;
     height: 100%;
     width: 100%;
   }
-
+     /*0 margin to make */
   .accessibility footer {
     margin: 0;
   }
@@ -497,10 +497,6 @@ justify-content: center;
 
   /*Makes the picture fit edge to edge and not spill over*/
   .topical-header-digi-picture,
-  .topical-body-health-picture {
-    width: 100%;
-  }
-
   .topical-body-health-picture {
     width: 100%;
   }
