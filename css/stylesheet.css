@@ -77,10 +77,6 @@ footer a:hover {
 }
 
 
-.navbar a:enabled {
-  background-color: aqua;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -139,18 +135,27 @@ footer a:hover {
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
-  padding-top: 4%;
-  padding-left: 11vw;
-  padding-right: 11vw;
-  background: url(../media/Pilestredet-oversikt.jpeg) center fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 101vh;
+  position: relative;
+
+}
+.boks1 h1{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8vw;
+  color: blueviolet;
+
 }
 
 
+#pilestredet-bilde{
+width: 100%;
+height: 100%;
+justify-content: center;
+}
+
 .boks2{
-  background-color: yellow;
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
@@ -161,53 +166,50 @@ footer a:hover {
 .kantine-bilde-boks{
   grid-column-start: 1;
   grid-column-end: 2;
-  height: 60vh;
-  width: 40vw;
+  width: 100%;
   justify-content: center;
 
 }
 .biblotek-bilde-boks{
   grid-column-start: 2;
   grid-column-end: 3;
-  height: 60vh;
-  width: 40vw;
+  width: 100%;
   justify-content: center;
 
 }
 .datatorg-bilde-boks{
   grid-column-start: 1;
   grid-column-end: 2;
-  height: 60vh;
-  width: 40vw;
+  width: 100%;
   justify-content: center;
 }
 
-.Kantina{
+.kantina{
   grid-column-start: 2;
   grid-column-end: 3;
   height: 60vh;
 }
 #kantine-bilde{
-  width: 40vw;
-  height: 50vh;
+  width: 100%;
+  height: 100%;
 }
-.Biblotek{
+.bibliotek{
   grid-column-start: 1;
   grid-column-end: 2;
   height: 60vh;
 }
-#biblotek-bilde{
-  width: 40vw;
-  height: 50vh;
+#bibliotek-bilde{
+  width: 100%;
+  height: 100%;
 }
-.Datatorget{
+.datatorget{
   grid-column-start: 2;
   grid-column-end: 3;
   height: 60vh;
 }
-datatorg-bilde{
-width: 40vw;
-height: 50vh;
+#datatorg-bilde{
+  width: 100%;
+  height: 100%;
 }
 .boks3{
   grid-column-start: 1;
@@ -220,8 +222,8 @@ height: 50vh;
   height: 60;  
 }
 #pilestredkart{
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 
