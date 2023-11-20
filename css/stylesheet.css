@@ -297,7 +297,7 @@ height: 100%;
 
 /*The styling for phone display for page 5 starts here*/
 
-body-5{
+#body-page5{
   display: block;
 }
 
@@ -310,7 +310,7 @@ body-5{
 }
 
 
-#picture-kjeller-campus {
+#page5-header-campus-img {
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -546,7 +546,7 @@ body-5{
 
   /*Giving the picture a large percentage og heigth and width to make it cover the top of the page*/
 
-  #picture-kjeller-campus{
+  #page5-header-campus-img{
     width: 90%;
     height: 90%;
     margin-left: 5%;
@@ -828,7 +828,7 @@ body-5{
 /* The general styling for page 5 starts here:*/
 
 /*Asigning general thing to the body of the html page regardless of the size of the display*/
-.body-5{
+#body-page5{
   text-align: left;
   background-color:  #12275c;
 }
