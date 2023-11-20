@@ -130,10 +130,6 @@ Styling of third box
   border-radius: 1%
 }
 
-.index-campus-img:hover {
-  opacity: 80%;
-}
-
 .index-campus-img-p {
   background-color: #064b88;
   color: #f0f8ff;
@@ -179,7 +175,13 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
   display: flex;
   justify-content: center;
 }
-
+.index-campus-clickable-a{
+  text-decoration: none;
+}
+.index-campus-clickable-a:hover{
+  text-decoration: underline;
+  opacity: 70%;
+}
 /*END of tags that does not change depending on the size of the screen*/
 /*END of styling for index outside of the media-quarry*/
 
@@ -593,6 +595,7 @@ justify-content: center;
   .index-h3 {
     margin: 1rem;
   }
+
 
   #index-secondary-box-flex-container {
     flex-direction: column;
