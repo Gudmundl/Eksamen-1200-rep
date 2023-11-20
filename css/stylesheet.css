@@ -200,6 +200,30 @@ footer a:hover {
 
 @media (min-width: 801px) {
 
+
+  /*Start of page 2 (accessibility)*/
+  #accessibility-main-container-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+
+  }
+
+  #accessibility-main-grid{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 9;
+
+  }
+
+  
+
+
+  /*End of page 2 (accessibility)*/
+
 /*Centers the first heading*/
   .topical h1 {
     text-align: center;
@@ -208,8 +232,8 @@ footer a:hover {
   }
 /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
   .topical-header-digi-picture {
-    width: 45em;
-    height: 25em;
+    width: 60em;
+    height: 30em;
     padding-left: 19vw;
 
   }
