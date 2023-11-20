@@ -1404,7 +1404,7 @@ justify-content: center;
 
 }
 
-/*Makes the text under digi-picture grey and flush with the picture*/
+/*Makes the text under digi-picture black and flush with the picture*/
 #topical-under-header-text {
   color: #000000;
   margin-top: 0;
@@ -1423,10 +1423,13 @@ justify-content: center;
   padding: 1em;
 }
 
-/*Makes a red underline under the footers links for stylistic choices*/
+/*Makes a yellow underline under the footers links for stylistic choices*/
 #footer hr {
   width: 1.5em;
-  border: 0.07em solid #ffcc00;
+  border-style: solid;
+  border-color: #ffcc00;
+  border-width: 0.07em;
+
 }
 
 /*Makes the links white and removes underline*/
@@ -1435,12 +1438,12 @@ justify-content: center;
   text-decoration: none;
 
 }
-
+/*Make the h4 larger to make i easier to read*/
 #footer h4 {
   font-size: larger;
 }
 
-
+/*makes the footer flush with footer*/
 #footer {
   margin-right: -1%;
   margin-left: -1%;
