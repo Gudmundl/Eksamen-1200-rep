@@ -788,13 +788,10 @@ height: 100%;
 }
 
 
-
 /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
 .grid-footer-bottom{
   background-color: #16171a;
   padding: 1em;
-
-
 }
 
 /*Makes a red underline under the footers links for stylistic choices*/
