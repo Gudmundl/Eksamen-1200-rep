@@ -625,7 +625,7 @@ height: 100%;
   /*Using heigth,width and margin to place the div containing the picture.*/
   
   
-  #picture-kjeller-cafeteria-div{
+  #page5-main-cafeteria-img-div{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -639,7 +639,7 @@ height: 100%;
   /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
   
   
-  #picture-kjeller-cafeteria-div > #picture-kjeller-cafeteria {
+  #page5-main-cafeteria-img-div > #picture-kjeller-cafeteria {
     width: 100%;
     height: auto;
     max-width: 100%;
