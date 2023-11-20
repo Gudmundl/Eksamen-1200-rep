@@ -407,7 +407,7 @@ height: 100%;
 }
 
 
-#page5-main-lillestrøm-content{
+#page5-main-lillestrøm{
   background-color: white;
   margin-top: 0%;
   padding: 3%;
@@ -735,7 +735,7 @@ height: 100%;
   /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
   
   
-  #page5-main-lillestrøm-content{
+  #page5-main-lillestrøm{
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 7;
@@ -842,6 +842,6 @@ height: 100%;
   background-color: white;
 }
 
-#page5-main-lillestrøm-content{
+#page5-main-lillestrøm{
   background-color: white;
 }
