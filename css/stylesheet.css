@@ -1,3 +1,154 @@
+/*STYLING OF INDEX-ELEMENTS THAT DOES NOT RECUIER AN MEDIA-QUARRY*/
+#index-body {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #05153F;
+}
+
+header {
+  background-color: rgb(15, 0, 128);
+}
+
+#index-header-img {
+  width: 100vw;
+}
+
+#index-main-container {
+  background-color: rgb(192, 220, 229);
+}
+
+.index-under-intro-li {
+  background-color: rgb(19, 120, 252);
+  color: white;
+  font-weight: 500;
+  border-radius: 20px 20px 20px 0px;
+  box-shadow: 2px 2px 2px grey;
+  margin-top: 5%;
+  margin-right: 20px;
+  padding: 10px;
+  list-style: none;
+}
+
+/**/
+/*Styling of elements in the secondary box*/
+/**/
+
+#index-secondary-box {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+#index-secondary-box-flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.index-secondary-box-div {
+  background-color: rgb(196, 196, 196);
+  color: rgb(0, 0, 0);
+  margin: 1%;
+  padding: 1%;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.index-secondary-box-img {
+  width: 100%;
+  height: 25%;
+}
+
+
+/**/
+/*END of Styling of elements in the secondary box*/
+/**/
+
+/**/
+/*Styling of third box*/
+/**/
+
+#index-third-box-flex {
+  display: flex
+}
+
+#index-pilestredet-img-div {
+  width: 95%;
+  height: 200px;
+}
+
+.index-campus-clickable-a {
+  width: 100%;
+  height: 200px;
+}
+
+.index-campus-img-div {
+  width: 100%;
+  height: 200px;
+}
+
+.index-campus-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px
+}
+
+#index-under-intro-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px
+}
+
+.index-campus-img:hover {
+  opacity: 80%;
+}
+
+.index-campus-img-p {
+  background-color: rgb(6, 75, 136);
+  color: aliceblue;
+}
+
+/**/
+/*END og styling of third box*/
+/**/
+
+.index-p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+
+.index-oslomet-span {
+  color: rgb(255, 204, 0);
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.index-campus-p {
+  padding: 1rem;
+  margin-bottom: 5%;
+}
+
+#index-third-box {
+  background-color: #05153F;
+  color: white;
+}
+
+.index-third-campus-div {
+  background-color: aliceblue;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+/*END of tags that does not change depending on the size of the screen*/
+/*END of styling for index outside of the media-quarry*/
+
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
@@ -409,7 +560,6 @@ footer a:hover {
     grid-column-end: 20;
   }
 
-
   /*Giving the picture a large percentage og heigth and width to make it cover the top of the page*/
 
   #picture-kjeller-campus {
@@ -421,8 +571,6 @@ footer a:hover {
   }
 
   /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
-
-
   #h1-kjeller {
     position: absolute;
     left: 15%;
@@ -435,7 +583,6 @@ footer a:hover {
   }
 
   /*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
-
   #kjeller-main-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -445,7 +592,6 @@ footer a:hover {
   }
 
   /*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
-
   .grid-intro-kjeller {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -462,7 +608,6 @@ footer a:hover {
   }
 
   /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
-
   .grid-kjeller-position {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -476,14 +621,12 @@ footer a:hover {
   }
 
   /*Making the iframe cover the whole div.*/
-
   #campus-kjeller-posisjon {
     width: 100%;
     height: 100%;
   }
 
   /*Using heigth,width and margin to place the div containing the picture.*/
-
   #picture-kjeller-cafeteria-div {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -495,7 +638,6 @@ footer a:hover {
   }
 
   /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
-
   #picture-kjeller-cafeteria-div>#picture-kjeller-cafeteria {
     width: 100%;
     height: auto;
@@ -505,7 +647,6 @@ footer a:hover {
   }
 
   /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
-
   .grid-kjeller-cafeteria {
     grid-column-start: 4;
     grid-column-end: 8;
@@ -524,7 +665,6 @@ footer a:hover {
   }
 
   /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
-
   #grid-kjeller-library {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -540,7 +680,6 @@ footer a:hover {
   }
 
   /*Using heigth, width and margin to place the div containing the picture.*/
-
   #picture-kjeller-library-div {
     grid-column-start: 4;
     grid-column-end: 7;
@@ -552,7 +691,6 @@ footer a:hover {
   }
 
   /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
-
   #picture-kjeller-library-div>#picture-kjeller-library {
     width: 100%;
     height: auto;
@@ -681,11 +819,10 @@ footer a:hover {
 }
 
 /*Makes the header in the page topical in the grid and centered*/
-
 #footer h4 {
   font-size: larger;
-
 }
+
 
 #footer {
   margin-right: -1%;
@@ -702,156 +839,3 @@ footer a:hover {
   text-align: left;
   background-color: #05153F;
 }
-
-
-/*DIDRIK STYLING*/
-
-/*tags that does not change depending on the size of the screen*/
-body {
-  width: 100vw;
-  max-width: 100vw;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  background-color: #05153F;
-}
-
-header {
-  background-color: rgb(15, 0, 128);
-}
-
-#index-header-img {
-  width: 100vw;
-}
-
-#index-main-container {
-  background-color: rgb(192, 220, 229);
-}
-
-.index-under-intro-li {
-  background-color: rgb(19, 120, 252);
-  color: white;
-  font-weight: 500;
-  border-radius: 20px 20px 20px 0px;
-  box-shadow: 2px 2px 2px grey;
-  margin-top: 5%;
-  margin-right: 20px;
-  padding: 10px;
-  list-style: none;
-}
-
-/**/
-/*Styling of elements in the secondary box*/
-/**/
-
-#index-secondary-box {
-  background-color: rgb(31, 31, 31);
-  color: white;
-  justify-content: center;
-  text-align: center;
-}
-
-#index-secondary-box-flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-.index-secondary-box-div {
-  background-color: rgb(196, 196, 196);
-  color: rgb(0, 0, 0);
-  margin: 1%;
-  padding: 1%;
-  border-radius: 5px;
-  text-align: left;
-}
-
-.index-secondary-box-img {
-  width: 100%;
-  height: 25%;
-}
-
-
-/**/
-/*END of Styling of elements in the secondary box*/
-/**/
-
-/**/
-/*Styling of third box*/
-/**/
-
-#index-third-box-flex {
-  display: flex
-}
-
-#index-pilestredet-img-div {
-  width: 95%;
-  height: 200px;
-}
-
-.index-campus-clickable-a {
-  width: 100%;
-  height: 200px;
-}
-
-.index-campus-img-div {
-  width: 100%;
-  height: 200px;
-}
-
-.index-campus-img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px
-}
-
-#index-under-intro-img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px
-}
-
-.index-campus-img:hover {
-  opacity: 80%;
-}
-
-.index-campus-img-p {
-  background-color: rgb(6, 75, 136);
-  color: aliceblue;
-}
-
-/**/
-/*END og styling of third box*/
-/**/
-
-.index-p {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px;
-  letter-spacing: 1px;
-}
-
-.index-oslomet-span {
-  color: rgb(255, 204, 0);
-  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-  font-size: 1.5em;
-  font-weight: bolder;
-}
-
-.index-campus-p {
-  padding: 1rem;
-  margin-bottom: 5%;
-}
-
-#index-third-box {
-  background-color: #05153F;
-  color: white;
-}
-
-.index-third-campus-div {
-  background-color: aliceblue;
-  color: black;
-  display: flex;
-  justify-content: center;
-}
-/*END of tags that does not change depending on the size of the screen*/
-/*END of styling for index outside of the media-quarry*/
