@@ -45,10 +45,13 @@ list-style:none is used to get rid of the dot in front of li-items, to make it m
   margin-right: 5%;
   padding: 10px;
   list-style: none;
+}
+
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
 }
+
 #index-under-intro-img {
   width: 100%;
   height: auto;
@@ -59,6 +62,7 @@ p {
   background-color: #05153F;
   color: white;
 }
+
 /*Styling of elements in the secondary box*/
 
 /*
@@ -80,6 +84,7 @@ justify content is just used to place the items inside the container in the cent
   flex-wrap: nowrap;
   justify-content: center;
 }
+
 /*
 aligned the text to left to improve the readability
 */
@@ -312,7 +317,7 @@ footer a:hover {
 }
 
 
-.boks2{
+.boks2 {
   background-color: yellow;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -321,7 +326,7 @@ footer a:hover {
   font-size: 1.7rem;
 }
 
-.kantine-bilde-boks{
+.kantine-bilde-boks {
   grid-column-start: 1;
   grid-column-end: 2;
   height: 60vh;
@@ -329,7 +334,8 @@ footer a:hover {
   justify-content: center;
 
 }
-.biblotek-bilde-boks{
+
+.biblotek-bilde-boks {
   grid-column-start: 2;
   grid-column-end: 3;
   height: 60vh;
@@ -337,7 +343,8 @@ footer a:hover {
   justify-content: center;
 
 }
-.datatorg-bilde-boks{
+
+.datatorg-bilde-boks {
   grid-column-start: 1;
   grid-column-end: 2;
   height: 60vh;
@@ -360,34 +367,40 @@ footer a:hover {
 }
 
 
-.Kantina{
+.Kantina {
   grid-column-start: 2;
   grid-column-end: 3;
   height: 60vh;
 }
-#kantine-bilde{
+
+#kantine-bilde {
   width: 40vw;
   height: 50vh;
 }
-.Biblotek{
+
+.Biblotek {
   grid-column-start: 1;
   grid-column-end: 2;
   height: 60vh;
 }
-#biblotek-bilde{
+
+#biblotek-bilde {
   width: 40vw;
   height: 50vh;
 }
-.Datatorget{
+
+.Datatorget {
   grid-column-start: 2;
   grid-column-end: 3;
   height: 60vh;
 }
-datatorg-bilde{
-width: 40vw;
-height: 50vh;
+
+.datatorg-bilde {
+  width: 40vw;
+  height: 50vh;
 }
-.boks3{
+
+.boks3 {
   grid-column-start: 1;
   grid-column-end: 2;
   height: 60vh;
@@ -408,7 +421,7 @@ height: 50vh;
 
 
 /*Media query makes the website scale diffrently from pc to mobile*/
-@media(max-Width: 800px) {
+@media(max-width: 800px){
 
   /*Start of page2 styling*/
 
@@ -427,8 +440,6 @@ height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
   }
 
   .accessibility-main-img-grid {
@@ -437,19 +448,13 @@ height: 50vh;
     justify-content: center;
     height: 100%;
     width: 100%;
-
-
   }
 
- .accessibility footer{
-  margin: 0;
- }
-
- 
-
+  .accessibility footer {
+    margin: 0;
+  }
 
   /*End of page 2 styling */
-
 
   /*Styling for Topical(page3) starts here*/
   /*removes margin to make picture edge to edge in mobile*/
@@ -460,9 +465,6 @@ height: 50vh;
   /*Adds margin to asides */
   .topical aside {
     margin-left: 1em;
-  }
-
-
   }
 
   /*Adds margin to the paragraf to improve readability*/
@@ -489,10 +491,9 @@ height: 50vh;
 
   /*Just styling for aesthetics*/
   .topical aside img {
-    height: 6em;
-    width: 35%;
-    margin-right: 0;
-    padding-right: 0;
+    height: 30%;
+    width: 16em;
+   
   }
 
   /*wraps the aside text in a div and makes a grid for them to be placed in*/
@@ -525,11 +526,12 @@ height: 50vh;
     padding: 30px;
   }
 
-  .index-p{
+  .index-p {
     margin: 1rem;
   }
 
-  .index-h2, .index-h3{
+  .index-h2,
+  .index-h3 {
     margin: 1rem;
   }
 
@@ -556,9 +558,9 @@ height: 50vh;
     flex-direction: column;
     width: 100%;
   }
-
-  /*STYLING OF INDEX IN MOBILE VEIW ENDS HERE*/
 }
+
+/*STYLING OF INDEX IN MOBILE VEIW ENDS HERE*/
 
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
@@ -609,20 +611,14 @@ height: 50vh;
 
   }
 
-
-
-
-
   /*End of page 2 (accessibility)*/
 
   /*Centers the first heading*/
   .topical h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
-
-  }
 
   /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
   .topical-header-digi-picture {
@@ -642,8 +638,8 @@ height: 50vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0em;
-    grid-row-gap: 0em;
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
   }
 
   /*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
@@ -702,7 +698,6 @@ height: 50vh;
     grid-column-end: 8;
   }
 
-  }
 
   /*Puts som text in the middle part of the footer*/
   .grid-footer-middle {
@@ -712,7 +707,6 @@ height: 50vh;
     grid-column-end: 14;
   }
 
-  }
 
   /*Puts som text in the rigth part of the footer*/
   .grid-footer-rigth {
@@ -722,74 +716,65 @@ height: 50vh;
     grid-column-end: 20;
   }
 
+/*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
+#h1-kjeller {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  font-size: 10em;
+  color: #ffff00;
+  text-align: center;
+  /*background-color: #16171aa7;*/
+  text-shadow: #000000 3px 2px 3px;
 }
 
-/*End of media quearry for pc*/
-
-/*Makes the text under digi-picture grey and flush with the picture*/
-#topical-under-header-text {
-  color: gray;
-  margin-top: 0;
+/*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
+#kjeller-main-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0em;
+  grid-row-gap: 0em;
 }
 
-  /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
-  #h1-kjeller {
-    position: absolute;
-    left: 15%;
-    top: 20%;
-    font-size: 10em;
-    color: #ffff00;
-    text-align: center;
-    /*background-color: #16171aa7;*/
-    text-shadow: #000000 3px 2px 3px;
-  }
-
-  /*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
-  #kjeller-main-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 0em;
-    grid-row-gap: 0em;
-  }
-
-  /*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
-  .grid-intro-kjeller {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    background-color: #ffffff;
-    border-radius: 1%;
-    height: 75%;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+/*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
+.grid-intro-kjeller {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #ffffff;
+  border-radius: 1%;
+  height: 75%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
 /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
 .grid-footer-bottom {
   background-color: #16171a;
   padding: 1em;
+}
 
-  /*Making the iframe cover the whole div.*/
-  #campus-kjeller-posisjon {
-    width: 100%;
-    height: 100%;
-  }
+/*Making the iframe cover the whole div.*/
+#campus-kjeller-posisjon {
+  width: 100%;
+  height: 100%;
+}
 
-  /*Using heigth,width and margin to place the div containing the picture.*/
-  #picture-kjeller-cafeteria-div {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    height: 75%;
-    width: 80%;
-    margin-left: 15%;
-  }
+/*Using heigth,width and margin to place the div containing the picture.*/
+#picture-kjeller-cafeteria-div {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  height: 75%;
+  width: 80%;
+  margin-left: 15%;
+}
 
 /*Makes a red underline under the footers links for stylistic choices*/
 #footer hr {
@@ -817,116 +802,117 @@ height: 50vh;
   margin-bottom: -1%;
 }
 
-  /*Using heigth, width and margin to place the div containing the picture.*/
-  #picture-kjeller-library-div {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    width: 80%;
-    height: 75%;
-    margin-left: 10%;
-  }
-
-  /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
-  #picture-kjeller-library-div>#picture-kjeller-library {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 50px 0px 50px 0px;
-  }
-
-  /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
-  #index-body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-
-  #index-main-container {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(30, 1fr);
-  }
-
-  /*(index)Elements related to main*/
-  #index-h1-container {
-    grid-column: 2/11;
-  }
-
-  #index-intro-p {
-    grid-column: 2/11;
-    grid-row: 2/5;
-    columns: 2;
-    column-gap: 5%;
-    font-size: x-large;
-  }
-
-  #index-under-intro-img-div {
-    grid-column: 2/11;
-    grid-row: 5/9;
-    border-radius: 100px 0px 100px 0px;
-  }
-
-  #index-under-intro-area {
-    grid-column: 4/9;
-    grid-row: 10/16;
-    background-color: #1f1f1f;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 5px 5px 5px #323232;
-  }
-
-  #index-under-intro-white-area {
-    background-color: #ffffff;
-    width: 90%;
-    height: 90%;
-    margin: auto;
-
-  }
-
-  #index-secondary-box {
-    grid-column: 1/12;
-    grid-row: 17/23;
-  }
-
-  .index-secondary-box-div {
-    width: 20%;
-    height: 600px;
-  }
-
-  #index-third-box {
-    grid-column: 2/11;
-    grid-row: 24/32;
-    padding: 1em;
-  }
-
-  #index-third-box-flex {
-    flex-direction: row;
-  }
-
-  .index-third-campus-div {
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    height: 600px;
-
-  }
-
-  /*STYLING OF INDEX IN PC-VEIW ENDS HERE*/
+/*Using heigth, width and margin to place the div containing the picture.*/
+#picture-kjeller-library-div {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  width: 80%;
+  height: 75%;
+  margin-left: 10%;
 }
 
+/*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
+#picture-kjeller-library-div>#picture-kjeller-library {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50px 0px 50px 0px;
+}
+
+/*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
+#index-body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#index-main-container {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+}
+
+/*(index)Elements related to main*/
+#index-h1-container {
+  grid-column: 2/11;
+}
+
+#index-intro-p {
+  grid-column: 2/11;
+  grid-row: 2/5;
+  columns: 2;
+  column-gap: 5%;
+  font-size: x-large;
+}
+
+#index-under-intro-img-div {
+  grid-column: 2/11;
+  grid-row: 5/9;
+  border-radius: 100px 0px 100px 0px;
+}
+
+#index-under-intro-area {
+  grid-column: 4/9;
+  grid-row: 10/16;
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 5px #323232;
+}
+
+#index-under-intro-white-area {
+  background-color: #ffffff;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+
+}
+
+#index-secondary-box {
+  grid-column: 1/12;
+  grid-row: 17/23;
+}
+
+.index-secondary-box-div {
+  width: 20%;
+  height: 600px;
+}
+
+#index-third-box {
+  grid-column: 2/11;
+  grid-row: 24/32;
+  padding: 1em;
+}
+
+#index-third-box-flex {
+  flex-direction: row;
+}
+
+.index-third-campus-div {
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 600px;
+
+}
+
+/*STYLING OF INDEX IN PC-VEIW ENDS HERE*/
+
+
 /*End of media quearry for pc*/
+}
 
 /*Makes the text under digi-picture grey and flush with the picture*/
 #topical-under-header-text {
-  color: #808080;
+  color: #000000;
   margin-top: 0;
 }
 
@@ -976,6 +962,4 @@ height: 50vh;
 .body-5 {
   text-align: left;
   background-color: #05153F;
-}
-
 }
