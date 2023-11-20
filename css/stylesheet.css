@@ -434,14 +434,6 @@ body-5{
 
 
 
-
-
-
-
-
-
-
-
 @media (min-width: 801px) {
 
 /*Centers the first heading*/
@@ -562,18 +554,14 @@ body-5{
     margin-top:  3%;
     border-radius: 0.5%;
   }
-  
-  
+    
   /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
-  
-  
-  
   
   #h1-kjeller{
     position:absolute;
-    left: 20%;
-    top: 30%;
-    font-size:8em;
+    left: 25%;
+    top: 35%;
+    font-size:7em;
     color: yellow;
     text-align: center;
     /*background-color: #16171aa7;*/
@@ -848,3 +836,12 @@ body-5{
   text-align: left;
   background-color:  #12275c;
 }
+
+.grid-intro-kjeller{
+  background-color: white;
+}
+
+.grid-kjeller.cafeteria{
+  background-color: white;
+}
+
