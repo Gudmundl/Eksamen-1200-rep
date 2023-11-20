@@ -477,7 +477,7 @@ footer a:hover {
   text-shadow: rgb(0, 0, 0) 3px 2px 3px;
 }
 
-/*This is whre the main content goes within. To be able to place elemtsn with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
+/*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
 
 #kjeller-main-container{
   display: grid;
