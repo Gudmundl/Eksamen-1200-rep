@@ -416,6 +416,10 @@ height: 100%;
     grid-column-end: 20;
   }
 
+  /*The pc display styling for page 5 starts here*/
+
+  /*Giving the picture a large percentage og heigth and width to make it cover the top of the page*/
+
 
   #picture-kjeller-campus{
     width: 90%;
@@ -703,11 +707,6 @@ height: 100%;
 
 /*Styling for Topical(page3 ends here)*/
 
-
-
-
-
-
 /* The styling for page 5 starts here:*/
 
 
@@ -717,18 +716,6 @@ height: 100%;
   text-align: left;
   background-color:  #05153F;
 }
-
-
-/*Making a media quarry for personal computers*/
-
-
-
-
-
-/*Giving the picture a large percentage og heigth and width to make it cover the top of the page*/
-
-
-
 
 /*Media quarry for phone sized displays. When the width is lower then 800px the display will shift from grid to block*/
 
