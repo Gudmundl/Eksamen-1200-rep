@@ -1,10 +1,9 @@
-
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
 }
 
-body{
+.accessibility {
   background-color: #05153F;
   color: white;
 }
@@ -39,7 +38,7 @@ footer a:hover {
   text-decoration: none;
   border-radius: 4.5px;
   background-color: #868686d3;
-  margin: 0 2.5px 0 5px ;
+  margin: 0 2.5px 0 5px;
 }
 
 .dropdown-meny {
@@ -60,7 +59,8 @@ footer a:hover {
   margin-left: 4.5px;
 }
 
-.navbar a:hover, .dropdown-meny:hover .dropbtn {
+.navbar a:hover,
+.dropdown-meny:hover .dropbtn {
   background-color: #7a7a7af2
 }
 
@@ -98,50 +98,107 @@ footer a:hover {
   display: block;
 }
 
-.page4 iframe{
+.page4 iframe {
   background-color: antiquewhite;
 }
-#boks1{
+
+#boks1 {
   background-color: aqua;
   grid-area: 1;
 }
-#boks2{
+
+#boks2 {
   background-color: rgb(51, 255, 0);
 }
-#boks3{
+
+#boks3 {
   background-color: rgb(55, 0, 255);
 }
-#boks4{
+
+#boks4 {
   background-color: rgb(238, 0, 255);
 }
-#boks5{
+
+#boks5 {
   background-color: rgb(255, 0, 8);
 }
-#boks6{
+
+#boks6 {
   background-color: rgb(255, 225, 0);
 }
 
-#accessibility{
+#accessibility {
   background-color: #05153F;
 }
+
+
+.accessibility section {
+  background-color: white;
+  border-radius: 1%;
+  margin: 1em;
+  padding: 1em;
+  color: black;
+
+}
+
 
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-Width: 800px) {
 
-  
+  /*Start of page2 styling*/
 
-/*Styling for Topical(page3) starts here*/
+  .accessibility p {
+    font-size: 1.5em;
+  }
+
+  .accessibility-main-container-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .accessibility-main-text-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+  }
+
+  .accessibility-main-img-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+
+  }
+
+ .accessibility footer{
+  margin: 0;
+ }
+
+ 
+
+
+  /*End of page 2 styling */
+
+
+  /*Styling for Topical(page3) starts here*/
   /*removes margin to make picture edge to edge in mobile*/
-  .topical{
+  .topical {
     margin: 0;
   }
 
   /*Adds margin to asides */
-  .topical aside{
+  .topical aside {
     margin-left: 1em;
 
   }
-/*Adds margin to the paragraf to improve readability*/
+
+  /*Adds margin to the paragraf to improve readability*/
   .topical p {
     margin: 1em;
   }
@@ -169,8 +226,9 @@ footer a:hover {
   .topical-body-health-picture {
     width: 100%;
   }
- /*Just styling for aesthetics*/
-  .topical aside img{
+
+  /*Just styling for aesthetics*/
+  .topical aside img {
     height: 6em;
     width: 35%;
     margin-right: 0;
@@ -178,15 +236,16 @@ footer a:hover {
 
   }
 
-/*wraps the aside text in a div and makes a grid for them to be placed in*/
-  .topical-aside-grid-text{
+  /*wraps the aside text in a div and makes a grid for them to be placed in*/
+  .topical-aside-grid-text {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: (1, 1fr);
     grid-row-gap: 5em;
     grid-column-gap: 0em;
   }
-/*Places the links in the grid and adds styling for aesthetics*/
+
+  /*Places the links in the grid and adds styling for aesthetics*/
   .topical aside a {
     font-size: x-large;
     margin-top: -7em;
@@ -209,68 +268,66 @@ footer a:hover {
 
 @media (min-width: 801px) {
 
-  .accessibility h2{
-    padding-left: 1em;
-  }
-
-  /*Start of page 2 (accessibility)*/
-  .accessibility-main-container-grid{
+  .accessibility-main-container-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0em;
     grid-row-gap: 0em;
 
   }
 
-  .accessibility-main-grid{
+  .accessibility img {
+    width: 30em;
+  }
+
+  .accessibility h2 {
+    padding-left: 1em;
+  }
+
+  /*Start of page 2 (accessibility)*/
+
+  .accessibility-main-grid {
     grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 5;
-  grid-column-end: 12;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 12;
 
   }
-.accessibility-main-img-grid{
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 7;
-  grid-column-end: 12;
-  margin-top: 10em;
 
-}
+  .accessibility-main-img-grid {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    margin-top: 10em;
 
-.accessibility-main-text-grid{
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  margin-top: 10em;
+  }
 
- 
+  .accessibility-main-text-grid {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin-top: 10em;
 
 
-}
+  }
 
-.accessibility section{
-  background-color: white;
-  border-radius: 1%;
-  margin: 1em;
-  padding: 1em;
-  color: black;
 
-}
-  
+
 
 
   /*End of page 2 (accessibility)*/
 
-/*Centers the first heading*/
+  /*Centers the first heading*/
   .topical h1 {
     text-align: center;
     font-size: 3em;
 
   }
-/*Sizes the main picture for aesthetics and adds padding for aesthetics*/
+
+  /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
   .topical-header-digi-picture {
     width: 60em;
     height: 30em;
@@ -279,14 +336,14 @@ footer a:hover {
   }
 
   /*Left aligns all text in the body of topical */
-  .topical{
+  .topical {
     text-align: left;
     margin: 0;
-  
+
   }
 
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
-  .topical-main-container{
+  .topical-main-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -304,7 +361,7 @@ footer a:hover {
   }
 
   /*Makes a grid for the header in the page topical starting on row 2 and column 5 and ending on row 6 and column 4*/
-  .topical aside{
+  .topical aside {
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 5;
@@ -313,14 +370,14 @@ footer a:hover {
   }
 
   /*Styles the healthpicture with height 100% and width 18% to not spill over to other content*/
-  .topical-body-health-picture{
+  .topical-body-health-picture {
     width: 100%;
     height: 18%;
   }
 
- 
-/*Sizes the aside pictures for aesthetics*/
-  .topical aside img{
+
+  /*Sizes the aside pictures for aesthetics*/
+  .topical aside img {
     height: 30%;
     width: 16em;
   }
@@ -331,16 +388,18 @@ footer a:hover {
   }
 
   /*Makes the footer flush with the main content*/
-  .topical footer{
+  .topical footer {
     margin-top: -28%;
   }
-/*Makes a container for the footer to be placed in a grid*/
+
+  /*Makes a container for the footer to be placed in a grid*/
   .grid-footer-container {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: repeat(6, 1fr);
   }
-/*Puts som text in the left part of the footer*/
+
+  /*Puts som text in the left part of the footer*/
   .grid-footer-left {
     grid-row-start: 2;
     grid-row-end: 6;
@@ -348,7 +407,8 @@ footer a:hover {
     grid-column-end: 8;
 
   }
-/*Puts som text in the middle part of the footer*/
+
+  /*Puts som text in the middle part of the footer*/
   .grid-footer-middle {
     grid-row-start: 2;
     grid-row-end: 6;
@@ -356,7 +416,8 @@ footer a:hover {
     grid-column-end: 14;
 
   }
-/*Puts som text in the rigth part of the footer*/
+
+  /*Puts som text in the rigth part of the footer*/
   .grid-footer-rigth {
     grid-row-start: 2;
     grid-row-end: 6;
@@ -364,10 +425,12 @@ footer a:hover {
     grid-column-end: 20;
   }
 
-} /*End of media quearry for pc*/
+}
+
+/*End of media quearry for pc*/
 
 /*Makes the text under digi-picture grey and flush with the picture*/
-#topical-under-header-text{
+#topical-under-header-text {
   color: gray;
   margin-top: 0;
 }
@@ -379,7 +442,7 @@ footer a:hover {
 
 
 /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
-.grid-footer-bottom{
+.grid-footer-bottom {
   background-color: #16171a;
   padding: 1em;
 
@@ -390,19 +453,22 @@ footer a:hover {
   width: 1.5em;
   border: 0.07em solid red;
 }
+
 /*Makes the links white and removes underline*/
-#footer a{
+#footer a {
   color: #D3D3D3;
   text-decoration: none;
-  
+
 }
+
 /*Makes the header in the page topical in the grid and centered*/
 
-#footer h4{
-  font-size:larger; 
+#footer h4 {
+  font-size: larger;
 
 }
-#footer{
+
+#footer {
   margin-right: -1%;
   margin-left: -1%;
   margin-bottom: -1%;
@@ -417,11 +483,11 @@ footer a:hover {
 
 /* The styling for page 5 starts here:*/
 
-.body4and5{
+.body4and5 {
   text-align: left;
 }
 
-.container-page5{
+.container-page5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -429,21 +495,21 @@ footer a:hover {
   grid-row-gap: 3em;
 }
 
-.grid-header-page5{
+.grid-header-page5 {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 6;
 }
 
-.grid-body-page5{
-grid-row-start: 1;
-grid-row-end: 6;
-grid-column-start: 2;
-grid-column-end: 4;
+.grid-body-page5 {
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
-.grid-aside-page5{
+.grid-aside-page5 {
   grid-row-start: 2;
   grid-row-end: 6;
   grid-column-start: 5;
@@ -451,14 +517,14 @@ grid-column-end: 4;
   background-color: aqua;
 }
 
-#kjeller-bygg2{
+#kjeller-bygg2 {
   display: grid;
   place-items: center;
   width: 100%;
   height: 100%;
 }
-#page5-kjeller-posisjon{
+
+#page5-kjeller-posisjon {
   width: 100%;
   height: 100%;
 }
-
