@@ -397,13 +397,13 @@ height: 100%;
 
 /*Placing the div containing the Lillestrøm header, i wanted this header to stand out more from the typical formation until now.*/
 
-#page5-main-lillestrøm-h2-div{
+#page5-main-lillestrøm-h3-div{
   margin-bottom: 0%;
   padding-left: 2%;
   margin-left: 1%;
 }
 
-#page5-main-lillestrøm-h2{
+#page5-main-lillestrøm-h3{
   color: white;
 }
 
@@ -710,7 +710,7 @@ height: 100%;
   /*Giving the header a div of its own to make it stand out more and to break up the previous system. Aligns the text in the center to match the rest of the following content*/
   
   
-  #page5-main-lillestrøm-h2-div{
+  #page5-main-lillestrøm-h3-div{
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 7;
@@ -722,7 +722,7 @@ height: 100%;
   /*Giving the header a large font size*/
   
   
-  #page5-main-lillestrøm-h2{
+  #page5-main-lillestrøm-h3{
     font-size:xx-large;
     color: white;
   }
