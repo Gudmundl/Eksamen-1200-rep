@@ -584,7 +584,7 @@ height: 100%;
     grid-column-end: 4;
     border-radius: 1%;
     height: 75%;
-    width: 80%;
+    width: 75%;
     margin-left: 10%;
     margin-top: 5%;
     padding-left: 5%;
@@ -602,9 +602,9 @@ height: 100%;
     grid-column-end: 7;
     margin-top: 5%;
     height: 75%;
-    width: 85%;
+    width: 80%;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
   }
   
   
