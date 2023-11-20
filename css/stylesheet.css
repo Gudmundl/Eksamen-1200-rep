@@ -730,6 +730,7 @@ justify-content: center;
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
 
+  /*grid container for accesability*/
   .accessibility-main-container-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -738,17 +739,17 @@ justify-content: center;
     grid-row-gap: 0em;
 
   }
-
+  /*styles img for readablility*/
   .accessibility img {
     width: 30em;
   }
-
+  /*ads padding for improved readability*/
   .accessibility h2 {
     padding-left: 1em;
   }
 
   /*Start of page 2 (accessibility)*/
-
+      /*puts main content in a grid*/
   .accessibility-main-grid {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -756,7 +757,7 @@ justify-content: center;
     grid-column-end: 12;
 
   }
-
+      /*puts imges in the grid*/
   .accessibility-main-img-grid {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -765,7 +766,7 @@ justify-content: center;
     margin-top: 10em;
 
   }
-
+    
   .accessibility-main-text-grid {
     grid-row-start: 1;
     grid-row-end: 3;
