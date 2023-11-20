@@ -1,8 +1,18 @@
 
+
+body {
+  color: black;
+  background-color:whitesmoke;
+  padding: 0;
+  margin: 0;
+}
+
+
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
 }
+
 
 /*Sets background and text colours for all the footers hides overflow and centers bottom footer*/
 footer {
@@ -11,12 +21,15 @@ footer {
   text-align: center;
   background-color: #24262b;
 
+
 }
+
 
 /*Makes links in the footer white when hovering. Improves responsivness*/
 footer a:hover {
   color: white;
 }
+
 
 
 .navbar {
@@ -25,6 +38,7 @@ footer a:hover {
   border-radius: 4.5px;
   padding: 7.5px 7.5px 7.5px 3px;
 }
+
 
 .navbar a {
   float: left;
@@ -43,6 +57,7 @@ footer a:hover {
   overflow: hidden;
 }
 
+
 .dropdown-meny .dropbtn {
   font-size: 16px;
   border: none;
@@ -56,9 +71,11 @@ footer a:hover {
   margin-left: 4.5px;
 }
 
+
 .navbar a:hover, .dropdown-meny:hover .dropbtn {
   background-color: #7a7a7af2
 }
+
 
 .navbar a:enabled {
   background-color: aqua;
@@ -74,6 +91,7 @@ footer a:hover {
   border-radius: 4.5px;
 }
 
+
 .dropdown-content a {
   float: none;
   color: rgb(255, 255, 255);
@@ -86,13 +104,16 @@ footer a:hover {
   margin: 4.5px;
 }
 
+
 .dropdown-content a:hover {
   background-color: 7a7a7af2;
 }
 
+
 .dropdown-meny:hover .dropdown-content {
   display: block;
 }
+
 
 .page4 main{
   padding: 0;
@@ -126,6 +147,7 @@ footer a:hover {
   background-size: cover;
   height: 101vh;
 }
+
 
 .boks2{
   background-color: yellow;
@@ -208,9 +230,11 @@ height: 100%;
     margin: 0;
   }
 
+
   /*Adds margin to asides */
   .topical aside{
     margin-left: 1em;
+
 
   }
 /*Adds margin to the paragraf to improve readability*/
@@ -221,17 +245,21 @@ height: 100%;
   .topical h1 {
     margin: 0.5em;
 
+
   }
 
   .topical h2 {
     margin: 0.5em;
+
 
   }
 
   .topical h3 {
     margin: 0.5em;
 
+
   }
+
 
   /*Makes the picture fit edge to edge and not spill over*/
   .topical-header-digi-picture {
@@ -247,6 +275,7 @@ height: 100%;
     width: 35%;
     margin-right: 0;
     padding-right: 0;
+
 
   }
 
@@ -286,6 +315,7 @@ height: 100%;
     text-align: center;
     font-size: 2.5em;
 
+
   }
 /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
   .topical-header-digi-picture {
@@ -293,13 +323,15 @@ height: 100%;
     height: 25em;
     padding-left: 19vw;
 
+
   }
+
 
   /*Left aligns all text in the body of topical */
   .topical{
     text-align: left;
     margin: 0;
-  
+ 
   }
 
 
@@ -307,9 +339,9 @@ height: 100%;
   .topical-main-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 3em;
-    grid-row-gap: 3em;
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
   }
 
   /*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
@@ -319,7 +351,9 @@ height: 100%;
     grid-column-start: 2;
     grid-column-end: 4;
 
+
   }
+
 
   /*Makes a grid for the header in the page topical starting on row 2 and column 5 and ending on row 6 and column 4*/
   .topical aside{
@@ -402,6 +436,7 @@ height: 100%;
   background-color: #16171a;
   padding: 1em;
 
+
 }
 
 /*Makes a red underline under the footers links for stylistic choices*/
@@ -413,7 +448,7 @@ height: 100%;
 #footer a{
   color: #D3D3D3;
   text-decoration: none;
-  
+ 
 }
 /*Makes the header in the page topical in the grid and centered*/
 
@@ -436,48 +471,164 @@ height: 100%;
 
 /* The styling for page 5 starts here:*/
 
-.body4and5{
+/*Asigning general thing to the body of the html page regardless of the size of the display*/
+.body-5{
   text-align: left;
+  background-color:  #05153F;
 }
 
-.container-page5{
+/*Making a media quarry for personal computers*/
+
+@media(min-width: 801px){
+
+/*Giving the picture a large percentage og heigth and width to make it cover the top of the page*/
+
+#picture-kjeller-campus{
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top:  3%;
+}
+
+/*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
+
+
+#h1-kjeller{
+  position:absolute;
+  left: 15%;
+  top: 20%;
+  font-size:10em;
+  color: yellow;
+  text-align: center;
+  /*background-color: #16171aa7;*/
+  text-shadow: rgb(0, 0, 0) 3px 2px 3px;
+}
+
+/*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
+
+#kjeller-main-container{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 3em;
-  grid-row-gap: 3em;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0em;
+  grid-row-gap: 0em;
 }
 
-.grid-header-page5{
+/*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
+
+.grid-intro-kjeller{
   grid-row-start: 1;
   grid-row-end: 3;
-  grid-column-start: 3;
-  grid-column-end: 6;
-}
-
-.grid-body-page5{
-grid-row-start: 1;
-grid-row-end: 6;
-grid-column-start: 2;
-grid-column-end: 4;
-}
-
-.grid-aside-page5{
-  grid-row-start: 2;
-  grid-row-end: 6;
-  grid-column-start: 5;
+  grid-column-start: 1;
   grid-column-end: 4;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1%;
+  height: 75%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-#kjeller-bygg2{
-  display: grid;
-  place-items: center;
+/*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+
+.grid-kjeller-position{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  margin-top: 5%;
+  height: 75%;
+  width: 85%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+/*Making the iframe cover the whole div.*/
+
+#campus-kjeller-posisjon{
   width: 100%;
   height: 100%;
 }
-#page5-kjeller-posisjon{
+
+/*Using heigth,width and margin to place the div containing the picture.*/
+
+#picture-kjeller-cafeteria-div{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  height: 75%;
+  width: 80%;
+  margin-left: 15%;
+}
+
+/*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
+
+#picture-kjeller-cafeteria-div > #picture-kjeller-cafeteria {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0px 50px 0px 50px;
+}
+
+/*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+
+.grid-kjeller-cafeteria{
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1%;
+  height: 75%;
+  width: 65%;
+  margin-left: 10%;
+  margin-right: 0%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+
+#grid-kjeller-library{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1%;
+  height: 75%;
+  width: 75%;
+  margin-left: 10%;
+}
+
+/*Using heigth, width and margin to place the div containing the picture.*/
+
+#picture-kjeller-library-div{
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  width: 80%;
+  height: 75%;
+  margin-left: 10%;
+}
+
+/*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
+
+#picture-kjeller-library-div > #picture-kjeller-library {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50px 0px 50px 0px;
 }
 
