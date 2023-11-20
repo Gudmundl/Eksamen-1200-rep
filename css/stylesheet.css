@@ -296,6 +296,14 @@ height: 100%;
     grid-column-start: 6;
     grid-column-end: 12;
   }
+
+
+/*The styling for phone display for page 5 starts here*/
+
+.body-5{
+  display: block;
+}
+
 }
 
 
@@ -419,7 +427,6 @@ height: 100%;
   /*The pc display styling for page 5 starts here*/
 
   /*Giving the picture a large percentage og heigth and width to make it cover the top of the page*/
-
 
   #picture-kjeller-campus{
     width: 90%;
@@ -717,37 +724,5 @@ height: 100%;
   background-color:  #05153F;
 }
 
-/*Media quarry for phone sized displays. When the width is lower then 800px the display will shift from grid to block*/
 
 
-@media(max-width: 800px){
- 
-.body-5{
-  display: block;
-}
-
-
-
-
-#picture-kjeller-campus{
-  width: 90%;
-  height: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top:  3%;
-}
-
-
-#h1-kjeller{
-  position:absolute;
-  left: 15%;
-  top: 20%;
-  font-size:10em;
-  color: yellow;
-  text-align: center;
-  /*background-color: #16171aa7;*/
-  text-shadow: rgb(0, 0, 0) 3px 2px 3px;
-}
-
-
-}
