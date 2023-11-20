@@ -23,8 +23,8 @@ Box-sizing:border-box makes that the padding and border are included in the widt
 }
 
 #index-main-container {
-  background-color: #12275C;
-  color: #ffffff;
+  background-color: whitesmoke;
+  color: #000000;
 }
 
 /*
@@ -405,28 +405,33 @@ justify-content: center;
 /*Asigning general things to the body of the html page regardless of the size of the display. Setting general background-color and the background-color of all the text boxes */
 .page5-body{
   text-align: left;
-  background-color:  #12275c;
+ /* background-color:  #12275c;*/
+ background-color: white;
 }
 
-#page5-main-intro{
+#page5-main-intro, #page5-main-cafeteria,
+#page5-main-library,
+#page5-main-lillestrøm
+{
+  background-color: #12275c;
+  color: white;
+}
+
+/*
+{
   background-color: white;
 }
 
 
-#page5-main-cafeteria{
+{
   background-color: white;
 }
 
 
-#page5-main-library{
+{
   background-color: white;
 }
-
-
-#page5-main-lillestrøm{
-  background-color: white;
-}
-
+*/
 
 
 
@@ -592,7 +597,6 @@ justify-content: center;
   
   /*Making the main header large and placing it beneath the main picture. Both these things ensures good visibility on a phone screen*/
   
-  
   .page5-body h1 {
     color: yellow;
     margin-left: 25%;
@@ -600,20 +604,15 @@ justify-content: center;
     text-align: center;
   }
   
-  
   /*Placing the paragraphs and pictures everyother to improve visibility. Setting background image to white to make it more readable*/
-  
   
   #page5-main-intro{
     margin-top: 20%;
-    background-color: white;
     padding:3%;
     margin-left: 1%;
   }
   
-  
   /*Placing the iframe div*/
-  
   
   .page5-main-position{
     width: 100%;
@@ -700,7 +699,7 @@ justify-content: center;
   
   
   #page5-main-lillestrøm-h3{
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   
@@ -947,7 +946,6 @@ justify-content: center;
 /*Makes a red underline under the footers links for stylistic choices*/
 #footer hr {
   width: 1.5em;
-  border: 0.07em solid red;
 }
 
 /*Makes the links white and removes underline*/
@@ -1264,7 +1262,7 @@ justify-content: center;
  
   #page5-main-lillestrøm-h3{
     font-size:xx-large;
-    color: white;
+    color: rgb(0, 0, 0);
   }
  
  
@@ -1339,7 +1337,7 @@ justify-content: center;
 /*Makes a red underline under the footers links for stylistic choices*/
 #footer hr {
   width: 1.5em;
-  border: 0.07em solid #ff0000;
+  border: 0.07em solid #ffcc00;
 }
 
 /*Makes the links white and removes underline*/
