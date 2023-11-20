@@ -41,7 +41,7 @@ footer a:hover {
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   text-align: center;
   padding: 7.5px 10px;
@@ -58,12 +58,12 @@ footer a:hover {
 
 
 .dropdown-meny .dropbtn {
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: white;
   padding: 7.5px 10px;
-  background-color: rgb(26, 25, 25);
+  background-color: #24262b;
   font-family: inherit;
   border-radius: 4.5px;
   width: 110px;
