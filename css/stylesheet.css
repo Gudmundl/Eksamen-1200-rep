@@ -329,7 +329,7 @@ body-5{
 }
 
 
-.grid-intro-kjeller{
+#grid-intro-kjeller{
   margin-top: 20%;
   background-color: white;
   padding:3%;
@@ -584,12 +584,11 @@ body-5{
   /*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
   
   
-  .grid-intro-kjeller{
+  #grid-intro-kjeller{
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: rgb(255, 255, 255);
     border-radius: 1%;
     height: 75%;
     width: 80%;
@@ -661,7 +660,6 @@ body-5{
     grid-row-end: 5;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: rgb(255, 255, 255);
     border-radius: 1%;
     height: 75%;
     width: 65%;
@@ -682,7 +680,6 @@ body-5{
     grid-row-end: 7;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: rgb(255, 255, 255);
     border-radius: 1%;
     height: 75%;
     width: 75%;
@@ -750,7 +747,6 @@ body-5{
     margin-bottom: 5%;
     padding: 2%;
     text-align: center;
-    background-color:rgb(255, 255, 255);
     border-radius: 20px 20px 20px 20px;
   }
   
@@ -837,11 +833,11 @@ body-5{
   background-color:  #12275c;
 }
 
-.grid-intro-kjeller{
+#grid-intro-kjeller{
   background-color: white;
 }
 
-.grid-kjeller.cafeteria{
+#grid-kjeller-cafeteria{
   background-color: white;
 }
 
