@@ -151,56 +151,54 @@ footer a:hover {
 
 .boks2{
   background-color: yellow;
-  grid-area: 3/1/4/6;
+  grid-column-start: 1;
+  grid-column-end: 3;
   text-align: center;
   padding: 10vw 20vw ;
   font-size: 1.7rem;
 }
 
-.Kantina-bilde{
+.page4-bilde-boks-v1{
   grid-column-start: 1;
   grid-column-end: 2;
-  background: url(../media/Pilestredet-oversikt.jpeg) center;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
   height: 60vh;
+  width: 40vw;
+  justify-content: center;
+}
+.page4-bilde-boks-v2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 60vh;
+  width: 40vw;
+  justify-content: center;
 }
 .Kantina{
   grid-column-start: 2;
   grid-column-end: 3;
   height: 60vh;
-
+}
+#kantine-bilde{
+  width: 100%;
+  height: 100%;
 }
 .Biblotek{
   grid-column-start: 1;
   grid-column-end: 2;
   height: 60vh;
 }
-.Biblotek-bilde{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background: url(../media/Pilestredet-oversikt.jpeg) center;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
-  height: 60vh;
-}
-.Datatorget-bilde{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  background: url(../media/Pilestredet-oversikt.jpeg) center;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
-  height: 60vh;
+#biblotek-bilde{
+  width: 100%;
+  height: 100%;
 }
 .Datatorget{
   grid-column-start: 2;
   grid-column-end: 3;
   height: 60vh;
 }
-
+datatorg-bilde{
+  width: 100%;
+  height: 100%;
+}
 .boks3{
   grid-column-start: 1;
   grid-column-end: 2;
