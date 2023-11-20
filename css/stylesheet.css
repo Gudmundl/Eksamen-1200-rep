@@ -195,7 +195,7 @@ p {
   padding: 7.5px 7.5px 7.5px 3px;
 }
 
-.navbar .nav-btn {
+.navbar a {
   float: left;
   font-size: 16px;
   color: #ffffff;
@@ -212,7 +212,7 @@ p {
 }
 
 
-.dropdown-meny #dropbtn {
+.dropdown-meny .dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -226,7 +226,7 @@ p {
 
 
 .navbar a:hover,
-.dropdown-meny:hover #dropbtn {
+.dropdown-meny:hover .dropbtn {
   background-color: #064b88;
 }
 
@@ -249,7 +249,6 @@ p {
   text-decoration: none;
   display: block;
   text-align: center;
-  background-color: #868686;
   border-radius: 4.5px;
   margin: 4.5px;
 }
