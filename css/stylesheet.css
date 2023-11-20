@@ -521,7 +521,7 @@ height: 100%;
 #kjeller-main-container{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(11, 1fr);
   grid-column-gap: 0em;
   grid-row-gap: 0em;
 }
