@@ -473,8 +473,6 @@ height: 100%;
     grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 4;
-
-
   }
 
 
@@ -521,7 +519,6 @@ height: 100%;
     grid-row-end: 6;
     grid-column-start: 6;
     grid-column-end: 8;
-
   }
 /*Puts som text in the middle part of the footer*/
   .grid-footer-middle {
@@ -529,7 +526,6 @@ height: 100%;
     grid-row-end: 6;
     grid-column-start: 12;
     grid-column-end: 14;
-
   }
 /*Puts som text in the rigth part of the footer*/
   .grid-footer-rigth {
@@ -541,7 +537,7 @@ height: 100%;
 
   /*The pc display styling for page 5 starts here*/
 
-  /*Giving the picture a large percentage og heigth and width to make it cover the top of the page*/
+  /*Giving the picture a large percentage on heigth and width to make stand out on top of the main picture*/
 
   #page5-header-campus-img{
     width: 90%;
@@ -566,7 +562,7 @@ height: 100%;
   }
   
   
-  /*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
+  /*This is where the main content goes within. To be able to place elements with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
   
   
   #page5-main-container{
@@ -596,7 +592,7 @@ height: 100%;
   }
   
   
-  /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+  /*Using heigth, width and margin i place and shape the div to be aestethic*/
   
   
   .page5-main-position{
