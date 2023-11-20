@@ -663,7 +663,7 @@ height: 100%;
   }
   
   
-  /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+  /*Using heigth, with and margin to place and shape the div to be the most aestethic.*/
   
   
   #page5-main-library{
@@ -706,7 +706,7 @@ height: 100%;
   }
   
   
-  /*Giving the header a div of its own to make it stand out more. aligns the text in the center to match the rest of the following content*/
+  /*Giving the header a div of its own to make it stand out more and to break up the previous system. Aligns the text in the center to match the rest of the following content*/
   
   
   #page5-main-lillestrøm-h2-div{
@@ -718,7 +718,7 @@ height: 100%;
   }
   
   
-  /*Giving the header a larger font size*/
+  /*Giving the header a large font size*/
   
   
   #page5-main-lillestrøm-h2{
@@ -727,7 +727,7 @@ height: 100%;
   }
   
   
-  /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
+  /*Using heigth, with and margin to place and shape the div to be the most aestethic.*/
   
   
   #page5-main-lillestrøm{
@@ -816,7 +816,7 @@ height: 100%;
 
 /* The general styling for page 5 starts here:*/
 
-/*Asigning general thing to the body of the html page regardless of the size of the display*/
+/*Asigning general things to the body of the html page regardless of the size of the display. Setting general background-color and the background-color of all the text boxes */
 .page5-body{
   text-align: left;
   background-color:  #12275c;
