@@ -190,12 +190,12 @@ p {
 
 .navbar {
   overflow: hidden;
-  background-color: #a1a1a1;
+  background-color: #05153F;
   border-radius: 4.5px;
   padding: 7.5px 7.5px 7.5px 3px;
 }
 
-.navbar a {
+.navbar .nav-btn {
   float: left;
   font-size: 16px;
   color: #ffffff;
@@ -203,7 +203,6 @@ p {
   padding: 7.5px 10px;
   text-decoration: none;
   border-radius: 4.5px;
-  background-color: #868686d3;
   margin: 0 2.5px 0 5px;
 }
 
@@ -213,13 +212,12 @@ p {
 }
 
 
-.dropdown-meny .dropbtn {
+.dropdown-meny #dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
   color: #ffffff;
   padding: 7.5px 10px;
-  background-color: #868686d3;
   font-family: inherit;
   border-radius: 4.5px;
   width: 110px;
@@ -228,15 +226,15 @@ p {
 
 
 .navbar a:hover,
-.dropdown-meny:hover .dropbtn {
-  background-color: #7a7a7af2
+.dropdown-meny:hover #dropbtn {
+  background-color: #064b88;
 }
 
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #a1a1a1;
+  background-color: #05153F;
   min-width: 119px;
   z-index: 1;
   align-self: center;
@@ -251,14 +249,14 @@ p {
   text-decoration: none;
   display: block;
   text-align: center;
-  background-color: #868686d3;
+  background-color: #868686;
   border-radius: 4.5px;
   margin: 4.5px;
 }
 
 
 .dropdown-content a:hover {
-  background-color: #7a7a7af2;
+  background-color: #064b88;
 }
 
 
@@ -440,24 +438,24 @@ justify-content: center;
 @media(max-width: 800px){
 
   /*Start of page2 styling*/
-  /*Makes the text more readable on mobile*/
+
   .accessibility p {
     font-size: 1.5em;
   }
-   /*Using flex to align everything vertically*/
+
   .accessibility-main-container-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
   }
-     /*Using flex to align everything vertically*/
+
   .accessibility-main-text-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-     /*Using flex to align everything vertically*/
+
   .accessibility-main-img-grid {
     display: flex;
     flex-direction: column;
@@ -465,7 +463,7 @@ justify-content: center;
     height: 100%;
     width: 100%;
   }
-     /*0 margin to make */
+
   .accessibility footer {
     margin: 0;
   }
@@ -497,6 +495,10 @@ justify-content: center;
 
   /*Makes the picture fit edge to edge and not spill over*/
   .topical-header-digi-picture,
+  .topical-body-health-picture {
+    width: 100%;
+  }
+
   .topical-body-health-picture {
     width: 100%;
   }
@@ -1343,7 +1345,6 @@ justify-content: center;
 
 }
 
-/*Makes the header in the page topical in the grid and centered*/
 #footer h4 {
   font-size: larger;
 }
