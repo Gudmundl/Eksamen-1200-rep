@@ -4,6 +4,10 @@ p {
   line-height: 1.5;
 }
 
+body{
+  background-color: #05153F;
+  color: white;
+}
 
 /*Sets background and text colours for all the footers hides overflow and centers bottom footer*/
 footer {
@@ -205,12 +209,15 @@ footer a:hover {
 
 @media (min-width: 801px) {
 
+  .accessibility h2{
+    padding-left: 1em;
+  }
 
   /*Start of page 2 (accessibility)*/
   .accessibility-main-container-grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0em;
     grid-row-gap: 0em;
 
@@ -236,10 +243,20 @@ footer a:hover {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 2;
-  grid-column-end: 5;
+  grid-column-end: 6;
   margin-top: 10em;
-  background-color: white;
 
+ 
+
+
+}
+
+.accessibility section{
+  background-color: white;
+  border-radius: 1%;
+  margin: 1em;
+  padding: 1em;
+  color: black;
 
 }
   
