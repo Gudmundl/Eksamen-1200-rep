@@ -358,10 +358,11 @@ body-5{
 }
 
 
-#grid-kjeller-cafeteria{
+.grid-kjeller-cafeteria{
   background-color: white;
   padding:3%;
   margin-left: 1%;
+  margin-bottom: 1%;
 }
 
 
