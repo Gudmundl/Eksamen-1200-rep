@@ -384,7 +384,7 @@ height: 100%;
 }
 
 
-#page5-main-library-img{
+#picture-kjeller-library{
   max-width: 100%;
   max-height: 100%;
   height: 100%;
@@ -396,18 +396,18 @@ height: 100%;
 }
 
 
-#page5-main-lillestrøm-h2-div{
+#h5-grid-lillestrøm{
   margin-bottom: 0%;
   padding-left: 2%;
   margin-left: 1%;
 }
 
-#page5-main-lillestrøm-h2{
+#h2-lillestrøm{
   color: white;
 }
 
 
-#page5-main-lillestrøm{
+#grid-lillestrøm-content{
   background-color: white;
   margin-top: 0%;
   padding: 3%;
@@ -418,7 +418,7 @@ height: 100%;
 
 
 
-#page5-main-lillestrøm-img{
+#picture-lillestrøm{
   max-width: 100%;
   max-height: 100%;
   height: 100%;
@@ -688,7 +688,7 @@ height: 100%;
   /*Using heigth, width and margin to place the div containing the picture.*/
   
   
-  #page5-main-library-img-div{
+  #picture-kjeller-library-div{
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 5;
@@ -702,7 +702,7 @@ height: 100%;
   /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
   
   
-  #page5-main-library-img-div > #page5-main-library-img {
+  #picture-kjeller-library-div > #picture-kjeller-library {
     width: 100%;
     height: auto;
     max-width: 100%;
@@ -714,7 +714,7 @@ height: 100%;
   /*Giving the header a div of its own to make it stand out more. aligns the text in the center to match the rest of the following content*/
   
   
-  #page5-main-lillestrøm-h2-div{
+  #h5-grid-lillestrøm{
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 7;
@@ -726,7 +726,7 @@ height: 100%;
   /*Giving the header a larger font size*/
   
   
-  #page5-main-lillestrøm-h2{
+  #h2-lillestrøm{
     font-size:xx-large;
     color: white;
   }
@@ -735,7 +735,7 @@ height: 100%;
   /*Using heigth, with and margin i place and shape the div to where i want it and what i want it to look like.*/
   
   
-  #page5-main-lillestrøm{
+  #grid-lillestrøm-content{
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 7;
@@ -751,7 +751,7 @@ height: 100%;
   /*Using heigth, width and margin to place the div containing the picture.*/
   
   
-  #page5-main-lillestrøm-img-div{
+  #picture-lillestrøm-div{
     grid-column-start: 1;
     grid-column-end: 8;
     grid-row-start: 9;
@@ -763,7 +763,7 @@ height: 100%;
   /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
   
   
-  #page5-main-lillestrøm-img-div > #page5-main-lillestrøm-img {
+  #picture-lillestrøm-div > #picture-lillestrøm {
     width: 75%;
     height: auto;
     max-width: 100%;
@@ -842,6 +842,6 @@ height: 100%;
   background-color: white;
 }
 
-#page5-main-lillestrøm{
+#grid-lillestrøm-content{
   background-color: white;
 }
