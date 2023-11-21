@@ -449,6 +449,9 @@ justify-content: center;
     grid-row-start: 1;
     grid-row-end: 2;
   }
+  .boks1 h1{
+    font-size: 9vw;
+  }
   .boks2{
     padding-top: 5vh;
     padding-right: 5vw;
