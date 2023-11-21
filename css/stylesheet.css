@@ -200,31 +200,33 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
 /*END of tags that does not change depending on the size of the screen*/
 /*END of styling for index outside of the media-quarry*/
 
-
+/*Styling the navbar behind the buttons */
 .navbar {
+ /* Decides what to do elements overflowing navbar box */
   overflow: hidden;
   background-color: #05153F;
-  border-radius: 4.5px;
   padding: 7.5px 7.5px 7.5px 3px;
 }
-
+/* Styles the links in the navbar aka the buttons */
 .navbar a {
-  float: left;
+  float: left;  
   font-size: 16px;
   color: #ffffff;
   text-align: center;
-  padding: 7.5px 10px;
-  text-decoration: none;
+  padding: 7.5px 10px;  
+  text-decoration: none; /* removes underlines */
   border-radius: 4.5px;
   margin: 0 2.5px 0 5px;
 }
 
+/*Dropdown menu template source:https://www.w3schools.com/css/css_dropdowns.asp*/
+/* lets elements float to the left */
 .dropdown-meny {
   float: left;
   overflow: hidden;
 }
 
-
+/* styles the button that activates the menu */
 .dropdown-meny .dropbtn {
   font-size: 16px;
   border: none;
@@ -238,13 +240,13 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
   margin-left: 4.5px;
 }
 
-
+/* makes hovering over the navbar links highlight them */
 .navbar a:hover,
 .dropdown-meny:hover .dropbtn {
   background-color: #064b88;
 }
 
-
+/* styling the box around the buttons dropping down */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -255,7 +257,7 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
   border-radius: 4.5px;
 }
 
-
+/* styles the dropdown links */
 .dropdown-content a {
   float: none;
   color: #ffffff;
@@ -267,12 +269,10 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
   margin: 4.5px;
 }
 
-
+/* highligts dropdown links*/
 .dropdown-content a:hover {
   background-color: #064b88;
 }
-
-
 .dropdown-meny:hover .dropdown-content {
   display: block;
 }
@@ -289,40 +289,35 @@ footer {
 footer a:hover {
   color: #ffffff;
 }
-
+/* general styling for page 4 starts here */
 .page4{
   margin: 0;
   padding: 0;
 }
-.page4 .navbar{
-  border-radius: 0;
-}
+/* styles main inside page 4(pilestredet) */
 .page4 main {
-  padding: 0;
-  margin: 0;
   display: grid;
   text-align: center;
   background-color: #05153F;
   color: #ffffff;
 }
-
+/* styles level 3 headings inside page 4 main */
 .page4 main h3 {
   padding-top: 7%;
   font-size: 1.7rem;
 }
-
+/* styles all p inside page 4 main */
 .page4 main p {
   padding-top: 5%;
   font-size: 1.3rem;
   padding-right: 8%;
   padding-left: 8%;
 }
-
 .page4-heading {
   text-align: center;
   position: relative;
-
 }
+/* styles h1 and sets its position on top of the background */
 .page4-heading h1{
   position: absolute;
   top: 30%;
@@ -333,7 +328,7 @@ footer a:hover {
   background-color: rgba(190, 189, 189, 0.553);
 }
 
-
+/* styles pic to fill gridbox */
 #pilestredet-picture{
 width: 100%;
 height: 100%;
@@ -342,7 +337,6 @@ justify-content: center;
 
 .page4-underheading{
   text-align: center;
-
 }
 
 .cafeteria-pic-box {
@@ -365,21 +359,21 @@ justify-content: center;
 .cafeteria{
   height: 60vh;
 }
-#cafeteria-picture{
+#cafeteria-picture{/* styles pic to fill gridbox */
   width: 100%;
   height: 100%;
 }
 .library{
   height: 60vh;
 }
-#library-picture{
+#library-picture{/* styles pic to fill gridbox */
   width: 100%;
   height: 100%;
 }
 .computer-square{
   height: 60vh;
 }
-#computer-picture{
+#computer-picture{/* styles pic to fill gridbox */
   width: 100%;
   height: 100%;
 }
@@ -396,6 +390,7 @@ justify-content: center;
   width: 100%;
   height: 100%;
 }
+/* general styling for page 4 stops here */
 
 /*TRYM*/
 /* The general styling for page 5 starts here:*/
@@ -415,29 +410,14 @@ justify-content: center;
   background-color: #12275c;
   color: white;
 }
-
-/*
-{
-  background-color: white;
-}
-
-
-{
-  background-color: white;
-}
-
-
-{
-  background-color: white;
-}
-*/
-
+/* The general styling for page 5 stops here:*/
 
 
 
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-width: 800px){
-
+/* The mobile styling for page 4 starts here:*/
+/*  */
   .page4 main {
     grid-template-columns: 1fr;
   }
@@ -497,6 +477,8 @@ justify-content: center;
     grid-row-end: 11;
     height: 60vh;
   }
+  /* The mobile styling for page 4 stops here:*/
+  
   /*Start of page2 styling*/
 
   .accessibility p {
