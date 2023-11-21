@@ -189,7 +189,7 @@ using letter
 
 /*height is set to auto, while that the img is given a width, so that the browser automaticaly calculates the height so that the img keeps its ratio */
 #index-header-img {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
