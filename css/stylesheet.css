@@ -1097,7 +1097,8 @@ using letter
     grid-column-end: 11;
   }
 
-  /*places content in the grid*/
+  /*places content in the grid, makes the "phone" only visible in 
+  pc-veiw due to that the mobile-screen size would make the text too small */
   #index-under-intro-area {
     grid-row-start: 10;
     grid-row-end: 15;
