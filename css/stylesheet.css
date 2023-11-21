@@ -868,7 +868,9 @@ using letter
   /*Left aligns all text in the body of topical */
   .topical {
     text-align: left;
+    margin-bottom: 1em;
   }
+
 
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
   .topical-main-container {
@@ -915,7 +917,7 @@ using letter
 
   /*Makes the footer flush with the main content*/
   .topical footer {
-    margin-top: -22em;
+    margin-top: -10%;
   }
 
   /*Page Topical computer styling ends here*/
