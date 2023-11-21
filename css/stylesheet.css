@@ -1136,7 +1136,7 @@ using letter
   #index-under-intro-img-div {
     border-radius: 1%;
     grid-row-start: 5;
-    grid-row-end: 9;
+    grid-row-end: 10;
     grid-column-start: 2;
     grid-column-end: 11;
   }
@@ -1150,18 +1150,21 @@ using letter
     background-color: #1f1f1f;
     text-align: center;
     box-shadow: 1em 1em 1em #323232;
-    border-radius: 1%;
+    border-radius: 5%;
+    margin-left: 5em;
+    margin-right: 5em;
   }
 
   /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
   #index-under-intro-white-area {
     background-color: #ffffff;
-    width: 90%;
+    width: 95%;
     height: 90%;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 1%;
   }
 
   /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
