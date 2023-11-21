@@ -322,12 +322,12 @@ footer a:hover {
   padding-left: 8%;
 }
 
-.boks1 {
+.page4-heading {
   text-align: center;
   position: relative;
 
 }
-.boks1 h1{
+.page4-heading h1{
   position: absolute;
   top: 30%;
   left: 50%;
@@ -338,18 +338,18 @@ footer a:hover {
 }
 
 
-#pilestredet-bilde{
+#pilestredet-picture{
 width: 100%;
 height: 100%;
 justify-content: center;
 }
 
-.boks2{
+.page4-underheading{
   text-align: center;
 
 }
 
-.kantine-bilde-boks {
+.cafeteria-pic-box {
   width: 100%;
   justify-content: center;
 
@@ -361,42 +361,42 @@ justify-content: center;
 
 }
 
-.datatorg-bilde-boks {
+.computer-picture-box {
   width: 100%;
   justify-content: center;
 }
 
-.kantina{
+.cafeteria{
   height: 60vh;
 }
-#kantine-bilde{
+#cafeteria-picture{
   width: 100%;
   height: 100%;
 }
-.bibliotek{
+.library{
   height: 60vh;
 }
-#bibliotek-bilde{
+#library-picture{
   width: 100%;
   height: 100%;
 }
-.datatorget{
+.computer-square{
   height: 60vh;
 }
-#datatorg-bilde{
+#computer-picture{
   width: 100%;
   height: 100%;
 }
 
-.boks3 {
+.page4-map-text {
 
   height: 60vh;
 }
 
-.boks4 {
+.page4-map {
   height: 60;
 }
-#pilestredkart{
+#pilestred-map{
   width: 100%;
   height: 100%;
 }
@@ -445,14 +445,14 @@ justify-content: center;
   .page4 main {
     grid-template-columns: 1fr;
   }
-  .boks1{
+  .page4-heading{
     grid-row-start: 1;
     grid-row-end: 2;
   }
-  .boks1 h1{
+  .page4-heading h1{
     font-size: 9vw;
   }
-  .boks2{
+  .page4-underheading{
     padding-top: 5vh;
     padding-right: 5vw;
     padding-bottom: 5vh;
@@ -460,17 +460,18 @@ justify-content: center;
     grid-row-start: 2;
     grid-row-end: 3;
   }
-  .kantina{
+
+  .cafeteria{
     grid-row-start: 3;
     grid-row-end: 4;
     height: 60vh;
   }
-  .kantine-bilde-boks{
+  .cafeteria-pic-box{
     grid-row-start: 4;
     grid-row-end: 5;
     height: 60vh;
   }
-  .bibliotek{
+  .library{
     grid-row-start: 5;
     grid-row-end: 6;
     height: 60vh;
@@ -480,22 +481,22 @@ justify-content: center;
     grid-row-end: 7;
     height: 60vh;
   }
-  .datatorget{
+  .computer-square{
     grid-row-start: 7;
     grid-row-end: 8;
     height: 60vh;
   }
-  .datatorg-bilde-boks{
+  .computer-picture-box{
     grid-row-start: 8;
     grid-row-end: 9;
     height: 60vh;
   }
-  .boks3{
+  .page4-map-text{
     grid-row-start: 9;
     grid-row-end: 10;
     height: 60vh;
   }
-  .boks4{
+  .page4-map{
     grid-row-start: 10;
     grid-row-end: 11;
     height: 60vh;
@@ -800,11 +801,11 @@ justify-content: center;
   .page4 main {
   grid-template-columns: 1fr 1fr;    
   }
-  .boks1 {
+  .page4-heading {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .boks2{
+  .page4-underheading{
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.7rem;
@@ -813,7 +814,7 @@ justify-content: center;
     padding-bottom: 10vw;
     padding-left: 20vw;
   }
-  .kantine-bilde-boks {
+  .cafeteria-pic-box {
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -821,27 +822,27 @@ justify-content: center;
     grid-column-start: 2;
     grid-column-end: 3;
   }
-  .datatorg-bilde-boks {
+  .computer-picture-box {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  .kantina{
+  .cafeteria{
     grid-column-start: 2;
     grid-column-end: 3;
   }
-  .bibliotek{
+  .library{
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  .datatorget{
+  .computer-square{
     grid-column-start: 2;
     grid-column-end: 3;
   }
-  .boks3 {
+  .page4-map-text {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  .boks4 {
+  .page4-map {
     grid-column-start: 2;
     grid-column-end: 3;
   }
