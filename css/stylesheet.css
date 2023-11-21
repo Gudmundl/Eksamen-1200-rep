@@ -1065,30 +1065,37 @@ using letter
 
   /*Places h1 tag in cloumn 2 start 11 end*/
   #index-h1-container {
-    grid-column: 2/11;
+    grid-column-start: 2;
+    grid-column-end: 11;
   }
   /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
   #index-intro-p {
-    grid-column: 2/11;
-    grid-row: 2/5;
     columns: 2;
     column-gap: 5%;
     font-size: x-large;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 11;
   }
-  /*Places img in the grid*/
+  /*Places img in the grid in the top half of the page  in the middle*/
   #index-under-intro-img-div {
-    grid-column: 2/11;
-    grid-row: 5/9;
-    border-radius: 100px 0px 100px 0px;
+    border-radius: 1%;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    grid-column-start: 2;
+    grid-column-end: 11;
   }
   /*places content in the grid*/
   #index-under-intro-area {
-    grid-column: 4/9;
-    grid-row: 10/16;
+    grid-row-start: 10;
+    grid-row-end: 16;
+    grid-column-start: 4;
+    grid-column-end: 9;
     background-color: #1f1f1f;
-    border-radius: 20px;
     text-align: center;
-    box-shadow: 5px 5px 5px #323232;
+    box-shadow: 1em 1em 1em #323232;
+    border-radius: 1%;
   }
   /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
   #index-under-intro-white-area {
@@ -1097,36 +1104,37 @@ using letter
     height: 90%;
     margin: auto;
   }
-/*Places the second box in the grid*/
+/*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
   #index-secondary-box {
-    grid-column: 1/12;
-    grid-row: 17/23;
+    grid-row-start: 17;
+    grid-row-end: 23;
+    grid-column-start: 1;
+    grid-column-end: 12;
   }
-
+  /*Ads appropriate heigth and width relative to the main page*/
   .index-secondary-box-div {
     width: 20%;
     height: 40em;
   }
-  /*Places the third box in the grid*/
+  /*Places the campus in the bottom half of the page and in the middle of the columns*/
   #index-third-box {
-    grid-column: 2/11;
-    grid-row: 24/32;
+    grid-row-start: 24;
+    grid-row-end: 32;
+    grid-column-start: 2;
+    grid-column-end: 11;
     padding: 1em;
   }
 
-  #index-third-box-flex {
-    flex-direction: row;
-  }
-
+  /*Places campus images next to eachother and ads padding and margin and border radius for style*/
   .index-third-campus-div {
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
+    border-radius: 1%;
+    margin: 0.3em;
+    padding: 0.3em;;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    height: 600px;
+    height: 40em;
   }
 
   /*The pc display styling for page 5 starts here*/
