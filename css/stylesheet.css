@@ -133,7 +133,7 @@ footer a:hover {
 }
 
 /*Makes the bottom footer black and adds padding to remove extra space at the bottom*/
-.grid-footer-bottom {
+#grid-footer-bottom {
   background-color: #16171a;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -919,14 +919,14 @@ using letter
   /*Footer computer styling starts here*/
 
   /*Makes a container for the footer to be placed in a grid*/
-  .grid-footer-container {
+  #grid-footer-container {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: repeat(6, 1fr);
   }
 
   /*Puts som text in the left part of the footer*/
-  .grid-footer-left {
+  #grid-footer-left {
     grid-row-start: 2;
     grid-row-end: 6;
     grid-column-start: 6;
@@ -934,7 +934,7 @@ using letter
   }
 
   /*Puts som text in the middle part of the footer*/
-  .grid-footer-middle {
+  #grid-footer-middle {
     grid-row-start: 2;
     grid-row-end: 6;
     grid-column-start: 12;
@@ -942,7 +942,7 @@ using letter
   }
 
   /*Puts som text in the rigth part of the footer*/
-  .grid-footer-rigth {
+  #grid-footer-right {
     grid-row-start: 2;
     grid-row-end: 6;
     grid-column-start: 18;
@@ -987,7 +987,7 @@ using letter
   }
 
   /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
-  .grid-footer-bottom {
+  #grid-footer-bottom {
     background-color: #16171a;
     padding-top: 1em;
     padding-bottom: 1em;
