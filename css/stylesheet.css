@@ -564,8 +564,27 @@ using letter
   /*Index mobile styling ends here*/
 
    /*Start of page2 (accesability) mobile styling*/
- 
- 
+
+   /*sets height to auto to adjust for large amounths of text*/
+  .accesibility-main-div-pic{
+    height: auto;
+    padding-bottom: 4vh;
+  }
+   /* places elements below eachother and sets their height */
+   .accesibility-main-features-box{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    height: auto;
+    padding-bottom: 4vh;
+  }
+
+  /* places elements below eachother and sets their height */
+  .accesibility-main-edge-text{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: auto;
+    padding-bottom: 4vh;
+  }
   /*end of page2 (accesability) mobile styling*/
 
   /*mobile styling for Topical(page3) starts here*/
@@ -657,11 +676,12 @@ using letter
   }
 
   /* places elements below eachother and sets their height */
-  .cafeteria, .accesibility-main-edge-text{
+  .cafeteria{
     grid-row-start: 3;
     grid-row-end: 4;
     height: 60vh;
   }
+
 
   /* places elements below eachother and sets their height */
   .cafeteria-pic-box, .accesibility-main-edge-pic {
@@ -685,7 +705,7 @@ using letter
   }
 
   /* places elements below eachother and sets their height */
-  .computer-square, .accesibility-main-features-box {
+  .computer-square  {
     grid-row-start: 7;
     grid-row-end: 8;
     height: 60vh;
