@@ -5,62 +5,78 @@ p {
   line-height: 1.5;
 }
 
-/*general navbar styling STARTS here*/
-/*Styling the navbar behind the buttons */
+/*general navbar styling STARTS here/*
+
+/*Styling the navbar behind the buttons
+hides elements when elements overflow in navbar box*/
 .navbar {
- /* Decides what to do elements overflowing navbar box */
   overflow: hidden;
   background-color: #05153F;
-  padding: 7.5px 7.5px 7.5px 3px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
-/* Styles the links in the navbar aka the buttons */
+/*Styles the text in the "navbar buttons to white, right size, aligns them to the senter of the element,
+removes the undelines, as well as some margin and padding fixing to improve readability*/
 .navbar a {
   float: left;  
-  font-size: 16px;
+  font-size: 1rem;
   color: #ffffff;
   text-align: center;
-  padding: 7.5px 10px;  
-  text-decoration: none; /* removes underlines */
-  border-radius: 4.5px;
-  margin: 0 2.5px 0 5px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 5%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  text-decoration: none;
 }
 
 /*Dropdown menu template source:https://www.w3schools.com/css/css_dropdowns.asp*/
-/* lets elements float to the left */
+/*lets elements float to the left and hides elements that overflow*/
 .dropdown-meny {
   float: left;
   overflow: hidden;
 }
 
-/* styles the button that activates the menu */
+/*styles the button that activates the menu so that they have similare styling to the other a elements in the nav*/
 .dropdown-meny .dropbtn {
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   outline: none;
   color: #ffffff;
   background-color: #05153F;
-  padding: 7.5px 10px;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   font-family: inherit;
-  border-radius: 4.5px;
-  width: 110px;
-  margin-left: 4.5px;
+  border-radius: 5%;
+  text-align: center;
 }
 
-/* makes hovering over the navbar links highlight them */
+/*makes hovering over the navbar links highlight them*/
 .navbar a:hover,
 .dropdown-meny:hover .dropbtn {
   background-color: #064b88;
 }
 
-/* styling the box around the buttons dropping down */
+/*Hides the dropdown buttons as a standard and gives it a absolut positioning, aswell as genereal styling to match the rest of the nav*/
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #05153F;
-  min-width: 119px;
+  min-width: 1rem;
   z-index: 1;
   align-self: center;
-  border-radius: 4.5px;
+  border-radius: 5%;
 }
 
 /* styles the dropdown links */
