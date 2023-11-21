@@ -110,57 +110,58 @@
 
 
   </main>
-  <footer id="footer">
-    <div class="grid-footer-container">
-      <div class="grid-footer-left">
-        <h4>Socials</h4>
-        <hr>
-        <a href="abcde1234@oslomet.no">
-          <p>Mail</p>
-        </a>
-        <a href="https://www.facebook.com/oslomet/?locale=nb_NO">
-          <p>Facebook</p>
-        </a>
-        <a href="https://www.instagram.com/oslomet/">
-          <p>Instagram</p>
-        </a>
-      </div>
-      <div class="grid-footer-middle">
-        <h4>Contact</h4>
-        <hr>
-        <a href="#">
-          <p>Jobs</p>
-        </a>
-        <a href="#">
-          <p>About us</p>
-        </a>
-        <a href="#">
-          <p>Contact us</p>
-        </a>
-      </div>
-
-      <div class="grid-footer-rigth">
-        <h4>Help</h4>
-        <hr>
-        <a href="#">
-          <p>User support</p>
-        </a>
-        <a href="accessibility.html">
-          <p>Accessibility</p>
-        </a>
-        <a href="#">
-          <p>Privacy</p>
-        </a>
-      </div>
+   <!--adding the semantic element "footer" so that the browser has the ability to veiw it as a footer, so that for example when entering reader-mode, it will be gone-->
+   <footer id="footer">
+    <!--div elements that acts like a container for the three different sections inside-->
+    <div id="grid-footer-container">
+        <!--devides the links in the footer into three different sections, with different links in each. --->
+        <section id="grid-footer-left">
+            <h4>Socials</h4>
+            <hr>
+            <a href="abcde1234@oslomet.no">
+                <p>Mail</p>
+            </a>
+            <a href="https://www.facebook.com/oslomet/?locale=nb_NO">
+                <p>Facebook</p>
+            </a>
+            <a href="https://www.instagram.com/oslomet/">
+                <p>Instagram</p>
+            </a>
+        </section>
+        <section id="grid-footer-middle">
+            <h4>Contact</h4>
+            <hr>
+            <a href="#">
+                <p>Jobs</p>
+            </a>
+            <a href="#">
+                <p>About us</p>
+            </a>
+            <a href="#">
+                <p>Contact us</p>
+            </a>
+        </section>
+        <section id="grid-footer-right">
+            <h4>Help</h4>
+            <hr>
+            <a href="#">
+                <p>User support</p>
+            </a>
+            <a href="accessibility.html">
+                <p>Accessibility</p>
+            </a>
+            <a href="#">
+                <p>Privacy</p>
+            </a>
+        </section>
     </div>
-
-    <div class="grid-footer-bottom">
-      <h4>Süssmann Productions</h4>
-      <p>Ansvarlig redaktør: Aron Süssmann</p>
-      <p>Med: Didrik, Trym og Gudmund</p>
-
-  </footer>
-
+    <!--Extra footer at the bottom of the footer with the names of the people that have worked on this page-->
+    <section id="grid-footer-bottom">
+        <h4>Süssmann Productions</h4>
+        <p>Ansvarlig redaktør: Aron Süssmann</p>
+        <p>Med: Didrik, Trym og Gudmund</p>
+    </section>
+</footer>
 </body>
 
 </html>
