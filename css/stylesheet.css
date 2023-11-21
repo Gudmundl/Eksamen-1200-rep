@@ -17,6 +17,7 @@ hides elements when elements overflow in navbar box*/
   padding-left: 1em;
   padding-right: 1em;
 }
+
 /*Styles the text in the "navbar buttons to white, right size, aligns them to the senter of the element,
 removes the undelines, as well as some margin and padding fixing to improve readability*/
 .navbar a {
@@ -68,7 +69,7 @@ removes the undelines, as well as some margin and padding fixing to improve read
   background-color: #064b88;
 }
 
-/*Hides the dropdown buttons as a standard and gives it a absolut positioning, aswell as genereal styling to match the rest of the nav*/
+/*Hides the dropdown buttons as a standard and gives it a absolute positioning, aswell as genereal styling to match the rest of the nav*/
 .dropdown-content {
   display: none;
   position: absolute;
@@ -79,7 +80,7 @@ removes the undelines, as well as some margin and padding fixing to improve read
   border-radius: 5%;
 }
 
-/* styles the dropdown links */
+/* styles the dropdown links to match the nav*/
 .dropdown-content a {
   float: none;
   color: #ffffff;
@@ -91,7 +92,7 @@ removes the undelines, as well as some margin and padding fixing to improve read
   margin: 4.5px;
 }
 
-/* highligts dropdown links*/
+/*highligts dropdown links and displays them on hover*/
 .dropdown-content a:hover {
   background-color: #064b88;
 }
@@ -100,9 +101,8 @@ removes the undelines, as well as some margin and padding fixing to improve read
 }
 /*general navbar styling ENDS here*/
 
-
 /*general footer styling STARTS here*/
-/*Sets background and text colours for all the footers hides overflow and centers bottom footer*/
+/*Sets background and text colours for all the footers, hides overflow and centers bottom footer*/
 footer {
   color: #ffffff;
   overflow: hidden;
@@ -110,12 +110,12 @@ footer {
   background-color: #24262b;
 }
 
-/*Makes links in the footer white when hovering. Improves responsivness*/
+/*Makes links in the footer white when hovering. Improves accessability*/
 footer a:hover {
   color: #ffffff;
 }
 
-/*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
+/*Makes the bottom footer black and adds padding to remove extra space at the bottom*/
 .grid-footer-bottom {
   background-color: #16171a;
   padding: 1em;
@@ -151,19 +151,25 @@ footer a:hover {
 /*general footer styling ENDS here*/
 
 /*  General styling of index STARTS here*/
-/*
-Setting the width to 100vw, means that the width of the page expands to match the current screen, the same applies to hight,
-but here it is used vh insted. Margin and padding is set to 0px, because that sets a standard for the whole page, that you 
-could later add to individual elements insted.
-Box-sizing:border-box makes that the padding and border are included in the width and height.
-*/
+
+/*Settinng the width so the page expands to match the current screen. Margin and padding is set to 0px, because that sets a standard for the whole page, that you 
+could later add to individual elements insted. Border-box makes that the padding and border are included in the width and height.*/
 #index-body {
   width: 100vw;
   max-width: 100vw;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: #05153F;
+}
+
+/*
+Setting a common font family to nearly all p-elements by using a class
+using letter 
+*/
+.index-p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  letter-spacing: 0.1rem;
 }
 
 /*height is set to auto, while that the img is given a width, so that the browser automaticaly calculates the height so that the img keeps its ratio */
@@ -172,20 +178,21 @@ Box-sizing:border-box makes that the padding and border are included in the widt
   height: auto;
 }
 
+/*Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-font-border, on the text-shadow.*/
+.index-oslomet-span {
+  color: #ffcc00;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+/*sets background color on the main container as well as sets black as the standard textcolor*/
 #index-main-container {
   background-color: whitesmoke;
   color: #000000;
 }
 
-
-/*
-Font weight 600 to increase readability
-border radius with different values for the different corners to imitate the "messenger bubbles"
-Box-shadow to make the different li-items stand out from the background
-margin(top and right) is used to space the item further apart
-padding is used so the text is "more" inside the bubble
-list-style:none is used to get rid of the dot in front of li-items, to make it more "messenger-like"
-*/
+/*Increses font weight for readability, removes dot in front of li elements, styling to mimic the FB "messenger" text bubbles*/
 .index-under-intro-li {
   background-color: #006efe;
   color: #ffffff;
@@ -198,147 +205,111 @@ list-style:none is used to get rid of the dot in front of li-items, to make it m
   list-style: none;
 }
 
+/*Streches the img to fit inside the container it is in, smoothing of cornes for asthetics*/
 #index-under-intro-img {
   width: 100%;
   height: auto;
   border-radius: 5px
 }
 
+/*Styling of elements in the secondary box in index under*/
 
-/*Styling of elements in the secondary box*/
-
-/*
-text-align is used to align the header and short introduction in the container to the center
-*/
+/*aligning the text in the container to center as well as color-styling*/
 #index-secondary-box {
   background-color: #1f1f1f;
   color: #ffffff;
   text-align: center;
 }
 
-/*
-Display flex is used to position the items inside the container
-flex-wrap is set to nowrap beacause the items is not supposed to stay on the same colum/row depending on the screen-size.
-justify content is just used to place the items inside the container in the center
-*/
+/*Displaying flex on the container to center the element inside, nowrap on the elements to prevent them from wrapping*/
 #index-secondary-box-flex-container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
 }
 
-/*
-aligned the text to left to improve the readability
-*/
+/*aligned the text to left to improve the readability, as well as asthetic styling*/
 .index-secondary-box-div {
   background-color: #e4e4e4;
   color: #000000;
-  margin: 1%;
-  padding: 1%;
-  border-radius: 5px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 2%;
   text-align: left;
 }
 
+/*stretching the img to fit the container, forcing the hight insted of auto to have the same size on the pictures*/
 .index-secondary-box-img {
   width: 100%;
   height: 25%;
 }
+/*END of Styling of elements in the secondary box*/
 
-/*
-END of Styling of elements in the secondary box
-*/
-
-/*
-Styling of third box
-*/
-
+/*Styling of third box*/
+/*Displaying flex on the content inside the container, for later to set colum/row in the media-quarries*/
 #index-third-box-flex {
   display: flex
 }
 
-#index-pilestredet-img-div {
-  width: 95%;
-  height: 25%;
-}
-
-.index-campus-img-div {
-  width: 100%;
-  height: 100%;
-}
-
+/*Streches the img to the containers width, some smoothing of corners*/
 .index-campus-img {
   width: 100%;
   height: auto;
   border-radius: 1%
 }
 
-.index-campus-img-p {
-  background-color: #064b88;
-  color: #f0f8ff;
-}
-
-/**/
-/*END og styling of third box*/
-/**/
-
-/*
-Setting a common font family to nearly all p-elements by using a class
-using letter 
-*/
-.index-p {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px;
-  letter-spacing: 0.1rem;
-}
-
-/*
-Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-font-border, on the text-shadow.
-*/
-.index-oslomet-span {
-  color: #ffcc00;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  font-size: 1.5em;
-  font-weight: bolder;
-}
-
+/*padding and margin to improve readability*/
 .index-campus-p {
   padding: 1rem;
   margin-bottom: 5%;
 }
 
+/*Color-styling, margin and padding for accessability and asthetics, smoothing of corners*/
 #index-third-box {
   background-color: #05153F;
   color: #ffffff;
   padding-top: 1vh;
   padding-bottom: 3vh;
   margin-top: 3vh;
-  border-radius: 3px;
+  border-radius: 2%;
 }
+/*making the h2 larger as well as positining it out from the left-side*/
 #index-third-box h2{
   font-size: 2rem;
   padding-left: 1vw;
 }
-
+/*making the h3 larger as well as positining it out from the left-side*/
 #index-third-box h3{
   font-size: 1.7rem;
   padding-left: 1vw;
 }
 
+/*Color-styling for readability and asthetics, displaying flex to position the elements inside in the center*/
 .index-third-campus-div {
   background-color: #f0f8ff;
   color: #000000;
   display: flex;
   justify-content: center;
 }
+
+/*removing the underline on the link*/
 .index-campus-clickable-a{
   text-decoration: none;
   color: #000000;
 }
+/*styling on hover, with reduces opacity and underline on text, for accessebility.*/
 .index-campus-clickable-a:hover{
   text-decoration: underline;
   opacity: 70%;
 }
-/*END of tags that does not change depending on the size of the screen*/
+
+/*END og styling of third box*/
 /*END of styling for index outside of the media-quarry*/
 
 
@@ -357,6 +328,7 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
 /*general Styling for Topical(page3 ENDS here)*/
 
 /* general Styling for accesability page STARTS here*/
+/*Color-styling for better contrast*/
 .accessibility {
   background-color: #05153F;
   color: white;
@@ -365,11 +337,12 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
 
 
 /* general styling for page 4 starts here */
+/*Removing margin and padding for the page*/
 .page4{
   margin: 0;
   padding: 0;
 }
-/* styles main inside page 4(pilestredet) */
+/* styles main inside page 4(pilestredet), aligns the text*/
 .page4 main {
   display: grid;
   text-align: center;
@@ -388,11 +361,13 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
   padding-right: 8%;
   padding-left: 8%;
 }
+
+/*aligns the heading to center, and positions it relativ*/
 .page4-heading {
   text-align: center;
   position: relative;
 }
-/* styles h1 and sets its position on top of the background */
+/*styles h1 and sets its position on top of the background */
 .page4-heading h1{
   position: absolute;
   top: 30%;
@@ -400,7 +375,7 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
   transform: translate(-50%, -50%);
   font-size: 8vw;
   color: #05153F;
-  background-color: rgba(190, 189, 189, 0.553);
+  background-color: #bebdbd8d;
 }
 
 /* styles pic to fill gridbox */
@@ -410,6 +385,7 @@ height: 100%;
 justify-content: center;
 }
 
+/*aligns the text*/
 .page4-underheading{
   text-align: center;
 }
@@ -480,6 +456,7 @@ justify-content: center;
     height: 100%;
   }
 /* The general styling for page 5 stops here:*/
+/*END of tags that does not change depending on the size of the screen*/
 
 
 
@@ -978,14 +955,12 @@ justify-content: center;
   #footer a {
     color: #D3D3D3;
     text-decoration: none;
-
   }
 
   /*Makes the header in the page topical in the grid and centered*/
 
   #footer h4 {
     font-size: larger;
-
   }
 
   #footer {
@@ -1093,14 +1068,8 @@ justify-content: center;
     flex-direction: column;
     width: 50%;
     height: 600px;
-
   }
-
  /*The pc display styling for page 5 starts here*/
-
-
   /*Giving the picture a large percentage on heigth and width to make stand out on top of the main picture*/
-
-
 }
 /*End of media quearry for pc*/
