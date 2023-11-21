@@ -353,20 +353,12 @@ using letter
 
 /*general Styling for Topical(page3 ENDS here)*/
 
-/* general Styling for accesability page STARTS here*/
-/*Color-styling for better contrast*/
-.accessibility {
-  background-color: #05153F;
-  color: white;
-}
-
-/* general Styling for accesability page ENDS here*/
 
 
 /* general styling for page 4 starts here */
 
 /* styles main inside page 4(pilestredet), aligns the text*/
-.campuses main {
+.campuses main, .accesibility main {
   display: grid;
   text-align: center;
   background-color: #05153F;
@@ -374,14 +366,13 @@ using letter
 }
 
 /* styles level 3 headings inside page 4 main */
-.campuses main h3 {
+.campuses main h3, .accesibility main h3 {
   padding-top: 7%;
   font-size: 1.7rem;
 }
 
 /* styles all p inside page 4 main */
-.campuses main p {
-  font-size: 1.3rem;
+.campuses main p, .accesibility main p {
   padding-top: 5%;
   padding-left: 8%;
   padding-right: 8%;
@@ -390,13 +381,13 @@ using letter
 }
 
 /*aligns the heading to center, and positions it relativ*/
-.campuses-heading {
+.campuses-heading, .accesibility-heading {
   text-align: center;
   position: relative;
 }
 
 /*styles h1 and sets its position on top of the background */
-.campuses-heading h1 {
+.campuses-heading h1, .accesibility-heading h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -407,19 +398,19 @@ using letter
 }
 
 /* styles pic to fill gridbox */
-#pilestredet-picture, #accesibility-main-img {
+#pilestredet-picture {
   width: 100%;
   height: 100%;
   justify-content: center;
 }
 
 /*aligns the text*/
-.campuses-underheading {
+.campuses-underheading, .accesibility-underheading {
   text-align: center;
 }
 
 /*Aligns the content and make i width 100% to fit the page*/
-.cafeteria-pic-box {
+.cafeteria-pic-box, .accesibility-main-edge-pic {
   width: 100%;
   justify-content: center;
 }
@@ -431,7 +422,7 @@ using letter
 }
 
 /*Aligns the content and make i width 100% to fit the page*/
-.computer-picture-box {
+.computer-picture-box{
   width: 100%;
   justify-content: center;
 }
@@ -442,29 +433,29 @@ using letter
 }
 
 /* styles pic to fill gridbox */
-#cafeteria-picture {
+#cafeteria-picture, #accesibility-main-pic-edge {
   width: 100%;
   height: 100%;
 }
 
 /*Makes the content scale with viewheigth */
-.library {
+.library  {
   height: 60vh;
 }
 
 /*Styles pic to fill grid*/
-#library-picture {
+#library-picture, #accesibility-main-pic-edge-2 {
   width: 100%;
   height: 100%;
 }
 
 /*Makes the content scale with viewheigth */
-.computer-square {
+.computer-square, .accesibility-main-features-box {
   height: 60vh;
 }
 
 /* styles pic to fill gridbox */
-#computer-picture {
+#computer-picture, #accesibility-main-features-image {
   width: 100%;
   height: 100%;
 }
@@ -485,7 +476,7 @@ using letter
 /* The general styling for page 5 starts here:*/
 
 /*Make the main image fill the screen and centered*/
-#kjeller-picture {
+#kjeller-picture, #accesibility-picture-main{
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -574,44 +565,9 @@ using letter
 
   /*Index mobile styling ends here*/
 
-  /*Start of page2 (accesability) mobile styling*/
-
-  /*Makes the text bigger for mobile*/
-  .accessibility p {
-    font-size: 1.5em;
-  }
-
-  /* places elements below eachother for mobile view*/
-  .accessibility-main-container-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  /* places elements below eachother for mobile view*/
-  .accessibility-main-text-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  /* places elements below eachother for mobile view*/
-  .accessibility-main-img-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-  }
-
-  /*Makes the footer fit edge to edge*/
-  .accessibility footer {
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    margin-right: 0em;
-  }
-
+   /*Start of page2 (accesability) mobile styling*/
+ 
+ 
   /*end of page2 (accesability) mobile styling*/
 
   /*mobile styling for Topical(page3) starts here*/
@@ -677,23 +633,23 @@ using letter
 
   /* The mobile styling for page 4 starts here:*/
   /* decides that mobile version only has 1 column */
-  .campuses main {
+  .campuses main, .accesibility main {
     grid-template-columns: 1fr;
   }
 
   /* decides positions of elements with grid-column start and end */
-  .campuses-heading {
+  .campuses-heading, .accesibility-heading {
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
   /* sets fitting font size for mobile */
-  .campuses-heading h1 {
+  .campuses-heading h1, .accesibility-heading h1 {
     font-size: 9vw;
   }
 
   /* places underheading in a mobile frendly format */
-  .campuses-underheading {
+  .campuses-underheading, .accesibility-underheading {
     padding-top: 5vh;
     padding-right: 5vw;
     padding-bottom: 5vh;
@@ -703,14 +659,14 @@ using letter
   }
 
   /* places elements below eachother and sets their height */
-  .cafeteria {
+  .cafeteria, .accesibility-main-edge-text{
     grid-row-start: 3;
     grid-row-end: 4;
     height: 60vh;
   }
 
   /* places elements below eachother and sets their height */
-  .cafeteria-pic-box {
+  .cafeteria-pic-box, .accesibility-main-edge-pic {
     grid-row-start: 4;
     grid-row-end: 5;
     height: 60vh;
@@ -731,7 +687,7 @@ using letter
   }
 
   /* places elements below eachother and sets their height */
-  .computer-square {
+  .computer-square, .accesibility-main-features-box {
     grid-row-start: 7;
     grid-row-end: 8;
     height: 60vh;
@@ -768,18 +724,18 @@ using letter
   /*Page 4 pilestredet computer styling starts here*/
 
   /* Makes grid in main two columns with same width */
-  .campuses main {
+  .campuses main, .accesibility main {
     grid-template-columns: 1fr 1fr;
   }
 
   /* places heading */
-  .campuses-heading {
+  .campuses-heading, .accesibility-heading{
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
   /* places underheading in a computer friendly format */
-  .campuses-underheading{
+  .campuses-underheading, .accesibility-underheading{
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.7rem;
@@ -790,7 +746,7 @@ using letter
   }
 
   /* Places content in boxes next to eachother in the main*/
-  .cafeteria-pic-box {
+  .cafeteria-pic-box, .accesibility-main-edge-pic{
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -808,7 +764,7 @@ using letter
   }
 
   /* Places content in boxes next to eachother in the main*/
-  .cafeteria {
+  .cafeteria, .accesibility-main-edge-text {
     grid-column-start: 2;
     grid-column-end: 3;
   }
@@ -818,9 +774,8 @@ using letter
     grid-column-start: 1;
     grid-column-end: 2;
   }
-
-  /* Places content in boxes next to eachother in the main*/
-  .computer-square {
+    /* Places content in boxes next to eachother in the main*/
+  .computer-square, .accesibility-main-features-box {
     grid-column-start: 2;
     grid-column-end: 3;
   }
