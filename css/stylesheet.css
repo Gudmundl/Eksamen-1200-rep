@@ -160,13 +160,6 @@ footer a:hover {
   font-size: larger;
 }
 
-/*makes the footer flush with footer*/
-#footer {
-  margin-right: -1%;
-  margin-left: -1%;
-  margin-bottom: -1%;
-}
-
 /*general footer styling ENDS here*/
 
 /*  General styling of index STARTS here*/
@@ -1021,13 +1014,6 @@ using letter
   /*Makes the headers larger to make it easier to read*/
   #footer h4 {
     font-size: larger;
-  }
-
-  /*Removes margin to make it edge to edge*/
-  #footer {
-    margin-right: -1%;
-    margin-left: -1%;
-    margin-bottom: -1%;
   }
 
   /*Using heigth, width and margin to place the div containing the picture.*/
