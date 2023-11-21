@@ -2,177 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kjeller</title>
-    <link rel="stylesheet" href="../css/stylesheet.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus pilestredet</title>
+  <link rel="stylesheet" href="../css/stylesheet.css" />
+
 </head>
 
-<body class="page5-body">
-    <!--Making a header with header picture, header and a navigation bar.-->
-    <header id="header-kjeller">
-        <!--Creating a semantic element to host the nav-->
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="accessibility.html">Accessibility</a>
-            <a href="topical.html">Topical</a>
-            <!--Creating a div to add a dropdown meny-->
-            <div class="dropdown-meny">
-            <button class="dropbtn">Campuses</button>
-            <div class="dropdown-content">
-                <a href="page4.html">Pilestredet</a>
-                <a href="page5.html">Kjeller</a>
-            </div>
-            </div> 
-        </nav>
+<body class="campuses">
+  <header>
+<!--Creating a semantic element to host the nav-->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="accessibility.html">Accessibility</a>
+  <a href="topical.html">Topical</a>
+  <!--Creating a div to add a dropdown meny-->
+  <div class="dropdown-meny">
+    <button class="dropbtn">Campuses</button>
+    <div class="dropdown-content">
+      <a href="page4.html">Pilestredet</a>
+      <a href="page5.html">Kjeller</a>
+    </div>
+  </div> 
+</nav>
+
+  </header>
+  <!--this is the start of the main portion of the site-->
+  <main>
+    <div class="campuses-heading">
+      <!--main heading in a div to easelly place it on the grid-->
+      <h1>Campus Kjeller</h1>
         <!-- Link to main picture "kjeller-campus2" taken by Benjamin A. Ward:
-        https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxxlarge/4/5/8/2/42854-2-nor-NO/kjeller.jpg -->
-        <img id="page5-header-campus-img" src="../media/kjeller-campus2.jpg"
-            alt="The campus of OsloMet. Grey, white and black building with lots of windows.">
-        <h1>Campus Kjeller</h1>
-    </header>
-    <!--Giving the main an id as an container. Which will store the main content of the website-->
-    <main id="page5-main-container">
-        <!--This div is containing the text that introduce the campus at Kjeller. I am making several div containers with different content in.-->
-        <section id="page5-main-intro">
-            <h2>Campus</h2>
-            <p>
-                OsloMet's campus at Kjeller is located in Lillestrøm municipality, approximately 20 kilometers
-                north-east of Oslo city centre. This campus is known for being a technological and innovative center for
-                higher education and research. It houses faculties such as technology, arts and health sciences, and
-                offers a wide range of study programmes.
-            </p>
-            <p>
-                The Kjeller campus has modern facilities, including well-equipped laboratories, teaching rooms and a
-                library. Students benefit from an active and diverse study environment, with various student
-                organizations and events that help create an engaging student experience.
-            </p>
-        </section>
-        <!--This div is created to help position the iframe. This iframe displays a map and is retrieved from google maps.-->
-        <section class="page5-main-position">
-            <iframe id="page5-main-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.3297931972374!2d11.041985376855372!3d59.97644015905579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46417b7eb5aaaaab%3A0xb85ada4f69d527c6!2sOsloMet%20%E2%80%93%20storbyuniversitetet%20Studiested%20Kjeller!5e0!3m2!1sno!2sno!4v1699533277733!5m2!1sno!2sno"
-                title="kjeller-campus-position"></iframe>
-        </section>
-        <!--This div contain a header and paragraphs which describes the cafeteria og Campus Kjeller. Placing things inside a div makes it easier to place in a grid.-->
-        <section id="page5-main-cafeteria">
-            <h2>Cafeteria</h2>
-            <p>OsloMet's canteen is an important meeting point for students, staff and visitors on campus. The canteen
-                offers a varied selection of food and drink, with options that cater for different tastes and dietary
-                preferences. It is a pleasant place where people can take a break, socialize and enjoy a meal in a
-                relaxed atmosphere. With a focus on quality and variety, the canteen provides an excellent place for
-                community and cultural exchange, where students and staff from different disciplines can meet and share
-                ideas.
-            </p>
-        </section>
+        https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxxlarge/4/5/8/2/42854-2-nor-NO/kjeller.jpg -->      
+        <img id="kjeller-picture" src="../media/kjeller-campus2.jpg" 
+      alt="Picture of pilestredet campus">
+    </div>
+    <div class="campuses-underheading">
+        <!-- text under heading in its own div-->
+      <h2>
+        Lillestrøm, situated in the Akershus county of Norway, has gained recognition as a thriving student
+        city, attracting students with its vibrant atmosphere and diverse cultural offerings. The city is host
+        to several educational institutions and various vocational schools, establishing itself as an academic
+        hub. These institutions provide students with access to modern facilities, experienced faculty, and a
+        range of academic programs, fostering a dynamic and intellectually stimulating environment.
+      </h2>
+
+    </div>
+    <!--Div for cafeteria pic-->
+    <div class="cafeteria-pic-box">
         <!-- Link to the cafeteria picture from foodtech's website:
             https://foodtech.no/wp-content/uploads/2019/04/toma_youngskvartalet_artikkel.jpg-->
-        <!--This div contains a picture which makes it easier to place in the grid system-->
-        <section id="page5-main-cafeteria-img-div"><img id="page5-main-cafeteria-img" src="../media/kjeller-kantine.jpg"
-                alt="The cafeteria of Kjeller Campus">
-        </section>
-        <!--Link to library picture taken by Nikolaj Blegvad: https://www.nb.no/content/uploads/2022/06/Nittedal_bibliotek_NETT-52-1024x684-1.jpg
-        -->
-        <!--This div contains header and paragraphs abut the library in Kjeller campus.-->
-        <div id="page5-main-library">
-            <h2>Library</h2>
-            <p>
-                The library offers support for research, teaching and learning through the librarians' guidance,
-                workshops and access to electronic databases. Students and staff have access to a varied selection of
-                books, journals and electronic resources that support the university's academic programmes. There are
-                also rooms for group work and individual study, as well as computers and equipment for printing and
-                copying.
-            </p>
-            <p>
-                The library is an important resource for everyone associated with OsloMet. The library offers a wide
-                range of services and activities that can help improve your studies and everyday working life.
-            </p>
-        </div>
-        <!--This div contains a picture, this makes it easier to place in the grid.-->
-        <div id="page5-main-library-img-div">
-            <img id="page5-main-library-img" src="../media/kjeller-bibliotek.jpg"
-                alt="A library with multiple rows filled with books">
-        </div>
-        <!--Link to Lillestrøm picture from the website belonging to Lillestrøm kommune:
-        https://www.lillestrom.kommune.no/globalassets/mediaflow/oversiktsbilder-lillestrom-kommune.jpg
-        -->
-        <!--This div contains a header because i wanted this one to stand more out from the rest of the paragraph beneath.-->
-        <div id="page5-main-lillestrøm-h3-div">
-            <h3 id="page5-main-lillestrøm-h3">The student city Lillestrøm</h3>
-        </div>
-        <!--This div contains the paragraphs of content about Lillestrøm as a student city-->
-        <div id="page5-main-lillestrøm">
-            <p>
-                Lillestrøm, situated in the Akershus county of Norway, has gained recognition as a thriving student
-                city, attracting students with its vibrant atmosphere and diverse cultural offerings. The city is host
-                to several educational institutions and various vocational schools, establishing itself as an academic
-                hub. These institutions provide students with access to modern facilities, experienced faculty, and a
-                range of academic programs, fostering a dynamic and intellectually stimulating environment.
-            </p>
-            <p>
-                Cultural diversity is a hallmark of Lillestrøm, contributing to its identity as a welcoming student
-                city. Throughout the year, the city hosts numerous cultural events, festivals, and performances,
-                allowing students to engage with various cultural expressions. This inclusive atmosphere enhances the
-                overall student experience and promotes a global perspective, creating an enriching backdrop for
-                academic pursuits.
-            </p>
-        </div>
-        <!--This div contains a picture, this makes it easier to place in the grid system-->
-        <div id="page5-main-lillestrøm-img-div">
-            <img id="page5-main-lillestrøm-img" src="../media/lillestrøm-picture.jpg"
-                alt="View of Lillestrøm from above. A gruping of buildings divided by a river in the middle.">
-        </div>
-    </main>
+                  <img id="cafeteria-picture" src="../media/kjeller-kantine.jpg" 
+      alt="The cafeteria of Kjeller Campus">
+    </div>
+    <!--Div for cafeteria text-->
+    <div class="cafeteria">
+      <!--subheading above all small textboxes-->
+      <h3>Cafeteria</h3>
+      <p>OsloMet's canteen is an important meeting point for students, staff and visitors on campus. The canteen
+        offers a varied selection of food and drink, with options that cater for different tastes and dietary
+        preferences. It is a pleasant place where people can take a break, socialize and enjoy a meal in a
+        relaxed atmosphere. With a focus on quality and variety, the canteen provides an excellent place for
+        community and cultural exchange, where students and staff from different disciplines can meet and share
+        ideas.</p>
+    </div>
+    <div class="library">
+         <!--Div for library text-->
+      <h3>Library</h3>
+      <p>                
+        The library offers support for research, teaching and learning through the librarians' guidance,
+        workshops and access to electronic databases. Students and staff have access to a varied selection of
+        books, journals and electronic resources that support the university's academic programmes. There are
+        also rooms for group work and individual study, as well as computers and equipment for printing and
+        copying.</p>
+    </div>
+       <!--Div for cafeteria pic-->
+    <div class="library-picture-box">
+      <!--Photo source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oslomet.no%2Fstudier%2Fstudenthistorier%2Fma-vere-sosial-for-a-vere-bibliotekar&psig=AOvVaw1eZgQhUh9gnJoJir-mc39L&ust=1700590726509000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjYw6OY04IDFQAAAAAdAAAAABAE-->
+      <img id="library-picture" src="../media/kjeller-bibliotek.jpg" 
+      alt="A library with multiple rows filled with books">
+    </div>
+    <div class="computer-picture-box">
+    <!--Div for computer pic-->
+      <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indeed.com%2Fcareer-advice%2Fcareer-development%2Fhow-to-become-a-computer-programmer&psig=AOvVaw0bEwfroVDY3k34XXXgbQ41&ust=1700591186228000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjplf-Z04IDFQAAAAAdAAAAABAI-->
+      <img id="computer-picture" src="../media/pilestredet-datatorg.jpeg" 
+      alt="example-picture of computer-square">
+    </div>
+       <!--Div for computer text-->
+    <div class="computer-square">
+      <h3>Advanced computer square</h3>
+      <p>The data center on the Pilestredet Campus is an innovative meeting point, equipped with modern computer terminals and
+        technological resources, created to strengthen students' digital skills and support project work.</p>
+    </div>
+       <!--Div for map text-->
+    <div class="campuses-map-text">
+      
+      <h3>Campus</h3>
+      <p>OsloMet's campus at Kjeller is located in Lillestrøm municipality, approximately 20 kilometers
+        north-east of Oslo city centre. This campus is known for being a technological and innovative center for
+        higher education and research. It houses faculties such as technology, arts and health sciences, and
+        offers a wide range of study programmes.</p>
+    </div>
+       <!--Div for the map-->
+    <div class="campuses-map">
+   <!--We use the element iframe to insert maps-->
+      <!-- The src code comes from google maps -->
+      <iframe id="kjeller-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.3297931972374!2d11.041985376855372!3d59.97644015905579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46417b7eb5aaaaab%3A0xb85ada4f69d527c6!2sOsloMet%20%E2%80%93%20storbyuniversitetet%20Studiested%20Kjeller!5e0!3m2!1sno!2sno!4v1699533277733!5m2!1sno!2sno"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+
+
+  </main>
     <footer id="footer">
         <div class="grid-footer-container">
             <div class="grid-footer-left">
                 <h4>Socials</h4>
                 <hr>
-                <a href="">
-                    <p>E-mail</p>
+                <a href="abcde1234@oslomet.no">
+                    <p>Mail</p>
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/oslomet/?locale=nb_NO">
                     <p>Facebook</p>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/oslomet/">
                     <p>Instagram</p>
                 </a>
-                <a href="">
-                    <p>Linkedin</p>
-                </a>
             </div>
-
             <div class="grid-footer-middle">
                 <h4>Contact</h4>
                 <hr>
-                <a href="">
+                <a href="#">
                     <p>Jobs</p>
                 </a>
-                <a href="">
+                <a href="#">
                     <p>About us</p>
                 </a>
-                <a href="">
+                <a href="#">
                     <p>Contact us</p>
-                </a>
-                <a href="">
-                    <p>Licenses</p>
                 </a>
             </div>
 
             <div class="grid-footer-rigth">
                 <h4>Help</h4>
                 <hr>
-                <a href="">
+                <a href="#">
                     <p>User support</p>
                 </a>
-                <a href="">
+                <a href="accessibility.html">
                     <p>Accessibility</p>
                 </a>
-                <a href="">
+                <a href="#">
                     <p>Privacy</p>
-                </a>
-                <a href="">
-                    <p>User cookies</p>
                 </a>
             </div>
         </div>
@@ -180,9 +163,10 @@
         <div class="grid-footer-bottom">
             <h4>Süssmann Productions</h4>
             <p>Ansvarlig redaktør: Aron Süssmann</p>
-            <p>Med ånnaser: Didrik, Trym og Gudmund</p>
+            <p>Med: Didrik, Trym og Gudmund</p>
 
     </footer>
+
 </body>
 
 </html>
