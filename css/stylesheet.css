@@ -1112,7 +1112,7 @@ using letter
   #index-main-container {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(30, 1fr);
+    grid-template-rows: repeat(28, 1fr);
   }
 
   /*Places h1 tag in cloumn 2 start 11 end*/
@@ -1144,7 +1144,7 @@ using letter
   /*places content in the grid*/
   #index-under-intro-area {
     grid-row-start: 10;
-    grid-row-end: 16;
+    grid-row-end: 15;
     grid-column-start: 4;
     grid-column-end: 9;
     background-color: #1f1f1f;
@@ -1166,10 +1166,11 @@ using letter
 
   /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
   #index-secondary-box {
-    grid-row-start: 17;
-    grid-row-end: 23;
+    grid-row-start: 15;
+    grid-row-end: 22;
     grid-column-start: 1;
     grid-column-end: 12;
+    margin-top: 3em;
   }
 
   /*Ads appropriate heigth and width relative to the main page*/
@@ -1180,8 +1181,8 @@ using letter
 
   /*Places the campus in the bottom half of the page and in the middle of the columns*/
   #index-third-box {
-    grid-row-start: 24;
-    grid-row-end: 32;
+    grid-row-start: 22;
+    grid-row-end: 28;
     grid-column-start: 2;
     grid-column-end: 11;
     padding-top: 1em;
