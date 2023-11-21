@@ -331,6 +331,22 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
 /*END of tags that does not change depending on the size of the screen*/
 /*END of styling for index outside of the media-quarry*/
 
+
+/* START of general styling for topical */
+/*Makes the text under digi-picture black and flush with the picture*/
+#topical-under-header-text {
+  color: #000000;
+  margin-top: 0;
+}
+
+/*Makes the links black instead of blue for aesthetics*/
+.topical aside a {
+  color: #000000;
+}
+
+/*Styling for Topical(page3 ENDS here)*/
+
+
 /* general styling for page 4 starts here */
 .page4{
   margin: 0;
@@ -1455,24 +1471,3 @@ justify-content: center;
 
 }
 /*End of media quearry for pc*/
-/* Start fo general styling for topical */
-/*Makes the text under digi-picture black and flush with the picture*/
-#topical-under-header-text {
-  color: #000000;
-  margin-top: 0;
-}
-
-/*Makes the links black instead of blue for aesthetics*/
-.topical aside a {
-  color: #000000;
-}
-
-/*Styling for Topical(page3 ends here)*/
-
-/* The styling for page 5 starts here:*/
-
-/*Asigning general thing to the body of the html page regardless of the size of the display*/
-.body-5 {
-  text-align: left;
-  background-color: #05153F;
-}
