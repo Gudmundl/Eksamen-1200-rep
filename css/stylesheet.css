@@ -343,6 +343,10 @@ using letter
 .topical aside a {
   color: #000000;
 }
+/*makes topical footer flush with the edges of the page*/
+.topical #footer{
+  margin-bottom: -1em;
+}
 
 /*general Styling for Topical(page3 ENDS here)*/
 
