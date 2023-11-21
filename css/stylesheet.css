@@ -350,13 +350,13 @@ using letter
 
 /* general styling for page 4 starts here */
 /*Removing margin and padding for the page*/
-.page4 {
+.campuses {
   margin: 0;
   padding: 0;
 }
 
 /* styles main inside page 4(pilestredet), aligns the text*/
-.page4 main {
+.campuses main {
   display: grid;
   text-align: center;
   background-color: #05153F;
@@ -364,13 +364,13 @@ using letter
 }
 
 /* styles level 3 headings inside page 4 main */
-.page4 main h3 {
+.campuses main h3 {
   padding-top: 7%;
   font-size: 1.7rem;
 }
 
 /* styles all p inside page 4 main */
-.page4 main p {
+.campuses main p {
   padding-top: 5%;
   font-size: 1.3rem;
   padding-right: 8%;
@@ -378,13 +378,13 @@ using letter
 }
 
 /*aligns the heading to center, and positions it relativ*/
-.page4-heading {
+.campuses-heading {
   text-align: center;
   position: relative;
 }
 
 /*styles h1 and sets its position on top of the background */
-.page4-heading h1 {
+.campuses-heading h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -402,7 +402,7 @@ using letter
 }
 
 /*aligns the text*/
-.page4-underheading {
+.campuses-underheading {
   text-align: center;
 }
 
@@ -459,7 +459,7 @@ using letter
 }
 
 /*Makes the content scale with viewheigth */
-.page4-map-text {
+.campuses-map-text {
   height: 60vh;
 }
 
@@ -496,23 +496,23 @@ using letter
 
   /* The mobile styling for page 4 starts here:*/
   /* decides that mobile version only has 1 column */
-  .page4 main {
+  .campuses main {
     grid-template-columns: 1fr;
   }
 
   /* decides positions of elements with grid-column start and end */
-  .page4-heading {
+  .campuses-heading {
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
   /* sets fitting font size for mobile */
-  .page4-heading h1 {
+  .campuses-heading h1 {
     font-size: 9vw;
   }
 
   /* places underheading in a mobile frendly format */
-  .page4-underheading {
+  .campuses-underheading {
     padding-top: 5vh;
     padding-right: 5vw;
     padding-bottom: 5vh;
@@ -564,14 +564,14 @@ using letter
   }
 
   /* places elements below eachother and sets their height */
-  .page4-map-text {
+  .campuses-map-text {
     grid-row-start: 9;
     grid-row-end: 10;
     height: 60vh;
   }
 
   /* places elements below eachother and sets their height */
-  .page4-map {
+  .campuses-map {
     grid-row-start: 10;
     grid-row-end: 11;
     height: 60vh;
@@ -743,18 +743,18 @@ using letter
   /*Page 4 pilestredet computer styling starts here*/
 
   /* Makes grid in main two columns with same width */
-  .page4 main {
+  .campuses main {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* places heading  in middle of the grid*/
-  .page4-heading {
+  /* places heading */
+  .campuses-heading {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-  /* places underheadings in grid boxes*/
-  .page4-underheading {
+  /* places underheading in a computer friendly format */
+  .campuses-underheading {
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.7rem;
@@ -794,13 +794,13 @@ using letter
     grid-column-start: 2;
     grid-column-end: 3;
   }
-    /* Places content in boxes next to eachother in the main*/
-  .page4-map-text {
+
+  .campuses-map-text {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  /* Places content in boxes next to eachother in the main*/
-  .page4-map {
+
+  .campuses-map {
     grid-column-start: 2;
     grid-column-end: 3;
   }
