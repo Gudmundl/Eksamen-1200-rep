@@ -10,10 +10,10 @@ hides elements when elements overflow in navbar box*/
 .navbar {
   overflow: hidden;
   background-color: #05153F;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: .5em;
+  padding-right: .5em;
 }
 
 /*Styles the text in the "navbar buttons to white, right size, aligns them to the senter of the element,
@@ -23,10 +23,10 @@ removes the undelines, as well as some margin and padding fixing to improve read
   font-size: 1rem;
   color: #ffffff;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-top: .7em;
+  padding-bottom: .7em;
+  padding-left: .7em;
+  padding-right: .7em;
   border-radius: 5%;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -49,9 +49,10 @@ removes the undelines, as well as some margin and padding fixing to improve read
   outline: none;
   color: #ffffff;
   background-color: #05153F;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-top: .7em;
+  padding-bottom: .7em;
+  padding-left: .7em;
+  padding-right: .7em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: 0.5em;
@@ -82,12 +83,18 @@ removes the undelines, as well as some margin and padding fixing to improve read
 .dropdown-content a {
   float: none;
   color: #ffffff;
-  padding: 7.5px 10px;
+  padding-top: .7em;
+  padding-bottom: .7em;
+  padding-left: .7em;
+  padding-right: .7em;
   text-decoration: none;
   display: block;
   text-align: center;
-  border-radius: 4.5px;
-  margin: 4.5px;
+  border-radius: 5%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 /*highligts dropdown links and displays them on hover*/
