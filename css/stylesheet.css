@@ -200,10 +200,6 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
 /*END of tags that does not change depending on the size of the screen*/
 /*END of styling for index outside of the media-quarry*/
 
-/*Set line height to 1.5 to make text more readable*/
-p {
-  line-height: 1.5;
-}
 
 .navbar {
   overflow: hidden;
