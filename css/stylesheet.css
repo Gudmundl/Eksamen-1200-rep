@@ -147,14 +147,12 @@ footer a:hover {
   border-style: solid;
   border-color: #ffcc00;
   border-width: 0.07em;
-
 }
 
 /*Makes the links white and removes underline*/
 #footer a {
   color: #D3D3D3;
   text-decoration: none;
-
 }
 
 /*Make the h4 larger to make i easier to read*/
@@ -427,7 +425,6 @@ using letter
 .biblotek-bilde-boks {
   width: 100%;
   justify-content: center;
-
 }
 
 /*Aligns the content and make i width 100% to fit the page*/
@@ -527,7 +524,6 @@ using letter
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-
   }
 
   /*Ads margin to make headers easier to read*/
@@ -589,7 +585,6 @@ using letter
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
   /* places elements below eachother for mobile view*/
@@ -763,19 +758,12 @@ using letter
   }
 
   /* The mobile styling for page 4 stops here:*/
-
 }
 
 /*STYLING for MOBILE view ENDS HERE*/
 
-
-
-
-
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
-  /*Styling for normal computer view starts here*/
-
   /*Page 4 pilestredet computer styling starts here*/
 
   /* Makes grid in main two columns with same width */
@@ -857,7 +845,6 @@ using letter
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0em;
     grid-row-gap: 0em;
-
   }
 
   /*styles img for readablility*/
@@ -920,7 +907,6 @@ using letter
     text-align: left;
     margin-bottom: 1em;
   }
-
 
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
   .topical-main-container {
@@ -1220,7 +1206,6 @@ using letter
     width: 50%;
     height: 40em;
   }
-
 }
 
 /*End of media quearry for pc*/
