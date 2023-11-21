@@ -407,7 +407,7 @@ using letter
 }
 
 /*Aligns the content and make i width 100% to fit the page*/
-.computer-picture-box {
+.computer-picture-box{
   width: 100%;
   justify-content: center;
 }
@@ -537,12 +537,8 @@ using letter
 
    /*Start of page2 (accesability) mobile styling*/
  
-
+ 
   /*end of page2 (accesability) mobile styling*/
-  .accesibility-main-edge-text{
-    height: 100em;
-   
-  }
 
   /*mobile styling for Topical(page3) starts here*/
 
