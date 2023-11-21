@@ -988,7 +988,7 @@ justify-content: center;
   /*Styles the healthpicture with height 100% and width 18% to not spill over to other content*/
   .topical-body-health-picture {
     width: 100%;
-    height: 18%;
+    height: 25%;
   }
 
   /*Sizes the aside pictures for aesthetics*/
@@ -1004,7 +1004,7 @@ justify-content: center;
 
   /*Makes the footer flush with the main content*/
   .topical footer {
-    margin-top: -28%;
+    margin-top: -22%;
   }
    /*Page Topical computer styling ends here*/
 
