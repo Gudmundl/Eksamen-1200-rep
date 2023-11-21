@@ -4,12 +4,6 @@
 p {
   line-height: 1.5;
 }
-.accessibility {
-  background-color: #05153F;
-  color: white;
-}
-
-
 
 /*general navbar styling STARTS here*/
 /*Styling the navbar behind the buttons */
@@ -344,7 +338,14 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
   color: #000000;
 }
 
-/*Styling for Topical(page3 ENDS here)*/
+/*general Styling for Topical(page3 ENDS here)*/
+
+/* general Styling for accesability page STARTS here*/
+.accessibility {
+  background-color: #05153F;
+  color: white;
+}
+/* general Styling for accesability page ENDS here*/
 
 
 /* general styling for page 4 starts here */
@@ -1466,8 +1467,5 @@ justify-content: center;
     margin-left: 5.5%;
     border-radius: 20px 20px 20px 20px;
   }
-
-
-
 }
 /*End of media quearry for pc*/
