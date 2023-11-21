@@ -1,6 +1,146 @@
-/*
-STYLING OF INDEX-ELEMENTS THAT DOES NOT RECUIER AN MEDIA-QUARRY
-*/
+
+
+/*Set line height to 1.5 to make text more readable*/
+p {
+  line-height: 1.5;
+}
+.accessibility {
+  background-color: #05153F;
+  color: white;
+}
+
+
+
+/*general navbar styling STARTS here*/
+/*Styling the navbar behind the buttons */
+.navbar {
+ /* Decides what to do elements overflowing navbar box */
+  overflow: hidden;
+  background-color: #05153F;
+  padding: 7.5px 7.5px 7.5px 3px;
+}
+/* Styles the links in the navbar aka the buttons */
+.navbar a {
+  float: left;  
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  padding: 7.5px 10px;  
+  text-decoration: none; /* removes underlines */
+  border-radius: 4.5px;
+  margin: 0 2.5px 0 5px;
+}
+
+/*Dropdown menu template source:https://www.w3schools.com/css/css_dropdowns.asp*/
+/* lets elements float to the left */
+.dropdown-meny {
+  float: left;
+  overflow: hidden;
+}
+
+/* styles the button that activates the menu */
+.dropdown-meny .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #05153F;
+  padding: 7.5px 10px;
+  font-family: inherit;
+  border-radius: 4.5px;
+  width: 110px;
+  margin-left: 4.5px;
+}
+
+/* makes hovering over the navbar links highlight them */
+.navbar a:hover,
+.dropdown-meny:hover .dropbtn {
+  background-color: #064b88;
+}
+
+/* styling the box around the buttons dropping down */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #05153F;
+  min-width: 119px;
+  z-index: 1;
+  align-self: center;
+  border-radius: 4.5px;
+}
+
+/* styles the dropdown links */
+.dropdown-content a {
+  float: none;
+  color: #ffffff;
+  padding: 7.5px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: 4.5px;
+  margin: 4.5px;
+}
+
+/* highligts dropdown links*/
+.dropdown-content a:hover {
+  background-color: #064b88;
+}
+.dropdown-meny:hover .dropdown-content {
+  display: block;
+}
+/*general navbar styling ENDS here*/
+
+
+/*general footer styling STARTS here*/
+/*Sets background and text colours for all the footers hides overflow and centers bottom footer*/
+footer {
+  color: #ffffff;
+  overflow: hidden;
+  text-align: center;
+  background-color: #24262b;
+}
+
+/*Makes links in the footer white when hovering. Improves responsivness*/
+footer a:hover {
+  color: #ffffff;
+}
+
+/*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
+.grid-footer-bottom {
+  background-color: #16171a;
+  padding: 1em;
+}
+
+/*Makes a yellow underline under the footers links for stylistic choices*/
+#footer hr {
+  width: 1.5em;
+  border-style: solid;
+  border-color: #ffcc00;
+  border-width: 0.07em;
+
+}
+
+/*Makes the links white and removes underline*/
+#footer a {
+  color: #D3D3D3;
+  text-decoration: none;
+
+}
+/*Make the h4 larger to make i easier to read*/
+#footer h4 {
+  font-size: larger;
+}
+
+/*makes the footer flush with footer*/
+#footer {
+  margin-right: -1%;
+  margin-left: -1%;
+  margin-bottom: -1%;
+}
+
+/*general footer styling ENDS here*/
+
+/*  General styling of index STARTS here*/
 /*
 Setting the width to 100vw, means that the width of the page expands to match the current screen, the same applies to hight,
 but here it is used vh insted. Margin and padding is set to 0px, because that sets a standard for the whole page, that you 
@@ -27,8 +167,9 @@ Box-sizing:border-box makes that the padding and border are included in the widt
   color: #000000;
 }
 
+
 /*
-Font weight 500 to increase readability
+Font weight 600 to increase readability
 border radius with different values for the different corners to imitate the "messenger bubbles"
 Box-shadow to make the different li-items stand out from the background
 margin(top and right) is used to space the item further apart
@@ -47,21 +188,12 @@ list-style:none is used to get rid of the dot in front of li-items, to make it m
   list-style: none;
 }
 
-/*Set line height to 1.5 to make text more readable*/
-p {
-  line-height: 1.5;
-}
-
 #index-under-intro-img {
   width: 100%;
   height: auto;
   border-radius: 5px
 }
 
-.accessibility {
-  background-color: #05153F;
-  color: white;
-}
 
 /*Styling of elements in the secondary box*/
 
@@ -182,7 +314,6 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
   padding-left: 1vw;
 }
 
-
 .index-third-campus-div {
   background-color: #f0f8ff;
   color: #000000;
@@ -200,95 +331,6 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
 /*END of tags that does not change depending on the size of the screen*/
 /*END of styling for index outside of the media-quarry*/
 
-/*Styling the navbar behind the buttons */
-.navbar {
- /* Decides what to do elements overflowing navbar box */
-  overflow: hidden;
-  background-color: #05153F;
-  padding: 7.5px 7.5px 7.5px 3px;
-}
-/* Styles the links in the navbar aka the buttons */
-.navbar a {
-  float: left;  
-  font-size: 16px;
-  color: #ffffff;
-  text-align: center;
-  padding: 7.5px 10px;  
-  text-decoration: none; /* removes underlines */
-  border-radius: 4.5px;
-  margin: 0 2.5px 0 5px;
-}
-
-/*Dropdown menu template source:https://www.w3schools.com/css/css_dropdowns.asp*/
-/* lets elements float to the left */
-.dropdown-meny {
-  float: left;
-  overflow: hidden;
-}
-
-/* styles the button that activates the menu */
-.dropdown-meny .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: #ffffff;
-  background-color: #05153F;
-  padding: 7.5px 10px;
-  font-family: inherit;
-  border-radius: 4.5px;
-  width: 110px;
-  margin-left: 4.5px;
-}
-
-/* makes hovering over the navbar links highlight them */
-.navbar a:hover,
-.dropdown-meny:hover .dropbtn {
-  background-color: #064b88;
-}
-
-/* styling the box around the buttons dropping down */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #05153F;
-  min-width: 119px;
-  z-index: 1;
-  align-self: center;
-  border-radius: 4.5px;
-}
-
-/* styles the dropdown links */
-.dropdown-content a {
-  float: none;
-  color: #ffffff;
-  padding: 7.5px 10px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  border-radius: 4.5px;
-  margin: 4.5px;
-}
-
-/* highligts dropdown links*/
-.dropdown-content a:hover {
-  background-color: #064b88;
-}
-.dropdown-meny:hover .dropdown-content {
-  display: block;
-}
-
-/*Sets background and text colours for all the footers hides overflow and centers bottom footer*/
-footer {
-  color: #ffffff;
-  overflow: hidden;
-  text-align: center;
-  background-color: #24262b;
-}
-
-/*Makes links in the footer white when hovering. Improves responsivness*/
-footer a:hover {
-  color: #ffffff;
-}
 /* general styling for page 4 starts here */
 .page4{
   margin: 0;
@@ -392,7 +434,7 @@ justify-content: center;
 }
 /* general styling for page 4 stops here */
 
-/*TRYM*/
+
 /* The general styling for page 5 starts here:*/
 
 
@@ -1174,7 +1216,6 @@ justify-content: center;
 
   }
 
-/*TRYYYYYYYYYYYYYYYYYYYYMMMMMMMMMM*/
  /*The pc display styling for page 5 starts here*/
 
 
@@ -1412,13 +1453,9 @@ justify-content: center;
 
 
 
-
-/*End of media quearry for pc*/
-
-/*TRYYYYYYYYYYYYYYYYYYYYMMMMMMMMMM*/
-
 }
-
+/*End of media quearry for pc*/
+/* Start fo general styling for topical */
 /*Makes the text under digi-picture black and flush with the picture*/
 #topical-under-header-text {
   color: #000000;
@@ -1428,41 +1465,6 @@ justify-content: center;
 /*Makes the links black instead of blue for aesthetics*/
 .topical aside a {
   color: #000000;
-}
-
-
-
-/*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
-.grid-footer-bottom {
-  background-color: #16171a;
-  padding: 1em;
-}
-
-/*Makes a yellow underline under the footers links for stylistic choices*/
-#footer hr {
-  width: 1.5em;
-  border-style: solid;
-  border-color: #ffcc00;
-  border-width: 0.07em;
-
-}
-
-/*Makes the links white and removes underline*/
-#footer a {
-  color: #D3D3D3;
-  text-decoration: none;
-
-}
-/*Make the h4 larger to make i easier to read*/
-#footer h4 {
-  font-size: larger;
-}
-
-/*makes the footer flush with footer*/
-#footer {
-  margin-right: -1%;
-  margin-left: -1%;
-  margin-bottom: -1%;
 }
 
 /*Styling for Topical(page3 ends here)*/
