@@ -417,18 +417,19 @@ justify-content: center;
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-width: 800px){
 /* The mobile styling for page 4 starts here:*/
-/*  */
+/* decides that mobile version only has 1 column */
   .page4 main {
     grid-template-columns: 1fr;
   }
+  /* decides positions of elements with grid-column start and end */
   .page4-heading{
     grid-row-start: 1;
     grid-row-end: 2;
   }
-  .page4-heading h1{
+  .page4-heading h1{/* sets fitting font size for mobile */
     font-size: 9vw;
   }
-  .page4-underheading{
+  .page4-underheading{ /* places underheading in a mobile frendly format */
     padding-top: 5vh;
     padding-right: 5vw;
     padding-bottom: 5vh;
@@ -436,7 +437,7 @@ justify-content: center;
     grid-row-start: 2;
     grid-row-end: 3;
   }
-
+/* places elements and sets their height */
   .cafeteria{
     grid-row-start: 3;
     grid-row-end: 4;
@@ -479,7 +480,7 @@ justify-content: center;
   }
   /* The mobile styling for page 4 stops here:*/
   
-  /*Start of page2 styling*/
+  /*Start of page2 (accesability) mobile styling*/
 
   .accessibility p {
     font-size: 1.5em;
@@ -510,9 +511,9 @@ justify-content: center;
     margin: 0;
   }
 
-  /*End of page 2 styling */
+/*end of page2 (accesability) mobile styling*/
 
-  /*Styling for Topical(page3) starts here*/
+  /*mobile styling for Topical(page3) starts here*/
   /*removes margin to make picture edge to edge in mobile*/
   .topical {
     margin: 0;
@@ -572,6 +573,7 @@ justify-content: center;
     grid-column-start: 6;
     grid-column-end: 12;
   }
+  /*Mobile styling for Topical(page3) ends here*/
 
   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
   #index-body {
@@ -621,13 +623,12 @@ justify-content: center;
     width: 100%;
   }
 
-  /*TRYYYYYYYYM*/
+  /*Page 5 kjeller mobile styling starts here*/
   .page5-body{
     display: block;
   }
   
-  
-  /*Makeing the main picture large to ensure that it takes up the whole part of its place. This ensures a systematic view on a phone display*/
+  /*Making the main picture large to ensure that it takes up the whole part of its place. This ensures a systematic view on a phone display*/
   
   
   #page5-header-campus-img {
@@ -768,21 +769,26 @@ justify-content: center;
     margin-left: 0.5%;
     margin-right: 0.5%;
   }
-/*TRYYYYYYYYYYYYMM*/  
+ /*Page 5 kjeller mobile styling starts here*/ 
 }
 
-/*STYLING OF INDEX IN MOBILE VEIW ENDS HERE*/
+/*STYLING for MOBILE view ENDS HERE*/
+
+ /*Styling for normal computer view starts here*/
 
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
-
-  .page4 main {
+ /*Page 4 pilestredet computer styling starts here*/ 
+  /* Makes grid in main two columns with same width */
+ .page4 main {
   grid-template-columns: 1fr 1fr;    
   }
+    /* places heading */
   .page4-heading {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+    /* places underheading in a computer friendly format */
   .page4-underheading{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -792,6 +798,7 @@ justify-content: center;
     padding-bottom: 10vw;
     padding-left: 20vw;
   }
+    /* decides placement for all remaining grid elements in main */
   .cafeteria-pic-box {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -824,6 +831,10 @@ justify-content: center;
     grid-column-start: 2;
     grid-column-end: 3;
   }
+   /*Page 4 pilestredet computer styling ends here*/
+
+   /*Page accesability computer styling starts here*/
+
   /*grid container for accesability*/
   .accessibility-main-container-grid {
     display: grid;
@@ -867,18 +878,17 @@ justify-content: center;
     grid-column-start: 2;
     grid-column-end: 6;
     margin-top: 10em;
-
-
   }
 
-  /*End of page 2 (accessibility)*/
+    /*Page accesability computer styling ends here*/
+
+   /*Page Topical computer styling starts here*/
 
   /*Centers the first heading*/
   .topical h1 {
     text-align: center;
     font-size: 3em;
   }
-
 
   /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
   .topical-header-digi-picture {
@@ -910,7 +920,6 @@ justify-content: center;
     grid-column-end: 4;
   }
 
-
   /*Makes a grid for the header in the page topical starting on row 2 and column 5 and ending on row 6 and column 4*/
   .topical aside {
     grid-row-start: 2;
@@ -925,7 +934,6 @@ justify-content: center;
     width: 100%;
     height: 18%;
   }
-
 
   /*Sizes the aside pictures for aesthetics*/
   .topical aside img {
@@ -942,6 +950,9 @@ justify-content: center;
   .topical footer {
     margin-top: -28%;
   }
+   /*Page Topical computer styling ends here*/
+
+  /*Footer computer styling starts here*/
 
   /*Makes a container for the footer to be placed in a grid*/
   .grid-footer-container {
@@ -958,7 +969,6 @@ justify-content: center;
     grid-column-end: 8;
   }
 
-
   /*Puts som text in the middle part of the footer*/
   .grid-footer-middle {
     grid-row-start: 2;
@@ -966,7 +976,6 @@ justify-content: center;
     grid-column-start: 12;
     grid-column-end: 14;
   }
-
 
   /*Puts som text in the rigth part of the footer*/
   .grid-footer-rigth {
@@ -976,192 +985,194 @@ justify-content: center;
     grid-column-end: 20;
   }
 
-/*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
-#h1-kjeller {
-  position: absolute;
-  left: 15%;
-  top: 20%;
-  font-size: 10em;
-  color: #ffff00;
-  text-align: center;
-  /*background-color: #16171aa7;*/
-  text-shadow: #000000 3px 2px 3px;
-}
+    /*Footer computer styling starts here*/
 
-/*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
-#kjeller-main-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 0em;
-  grid-row-gap: 0em;
-}
+  /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
+  #h1-kjeller {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    font-size: 10em;
+    color: #ffff00;
+    text-align: center;
+    /*background-color: #16171aa7;*/
+    text-shadow: #000000 3px 2px 3px;
+  }
 
-/*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
-.grid-intro-kjeller {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: #ffffff;
-  border-radius: 1%;
-  height: 75%;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
+  /*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
+  #kjeller-main-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
+  }
 
-/*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
-.grid-footer-bottom {
-  background-color: #16171a;
-  padding: 1em;
-}
+  /*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
+  .grid-intro-kjeller {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #ffffff;
+    border-radius: 1%;
+    height: 75%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-/*Making the iframe cover the whole div.*/
-#campus-kjeller-posisjon {
-  width: 100%;
-  height: 100%;
-}
+  /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
+  .grid-footer-bottom {
+    background-color: #16171a;
+    padding: 1em;
+  }
 
-/*Using heigth,width and margin to place the div containing the picture.*/
-#picture-kjeller-cafeteria-div {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  height: 75%;
-  width: 80%;
-  margin-left: 15%;
-}
+  /*Making the iframe cover the whole div.*/
+  #campus-kjeller-posisjon {
+    width: 100%;
+    height: 100%;
+  }
 
-/*Makes a red underline under the footers links for stylistic choices*/
-#footer hr {
-  width: 1.5em;
-}
+  /*Using heigth,width and margin to place the div containing the picture.*/
+  #picture-kjeller-cafeteria-div {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: 75%;
+    width: 80%;
+    margin-left: 15%;
+  }
 
-/*Makes the links white and removes underline*/
-#footer a {
-  color: #D3D3D3;
-  text-decoration: none;
+  /*Makes a red underline under the footers links for stylistic choices*/
+  #footer hr {
+    width: 1.5em;
+  }
 
-}
+  /*Makes the links white and removes underline*/
+  #footer a {
+    color: #D3D3D3;
+    text-decoration: none;
 
-/*Makes the header in the page topical in the grid and centered*/
+  }
 
-#footer h4 {
-  font-size: larger;
+  /*Makes the header in the page topical in the grid and centered*/
 
-}
+  #footer h4 {
+    font-size: larger;
 
-#footer {
-  margin-right: -1%;
-  margin-left: -1%;
-  margin-bottom: -1%;
-}
+  }
 
-/*Using heigth, width and margin to place the div containing the picture.*/
-#picture-kjeller-library-div {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 5;
-  grid-row-end: 7;
-  width: 80%;
-  height: 75%;
-  margin-left: 10%;
-}
+  #footer {
+    margin-right: -1%;
+    margin-left: -1%;
+    margin-bottom: -1%;
+  }
 
-/*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
-#picture-kjeller-library-div>#picture-kjeller-library {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 50px 0px 50px 0px;
-}
+  /*Using heigth, width and margin to place the div containing the picture.*/
+  #picture-kjeller-library-div {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    width: 80%;
+    height: 75%;
+    margin-left: 10%;
+  }
 
-/*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
-#index-body {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
+  /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
+  #picture-kjeller-library-div>#picture-kjeller-library {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px 0px 50px 0px;
+  }
 
-#index-main-container {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(30, 1fr);
-}
+  /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
+  #index-body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
 
-/*(index)Elements related to main*/
-#index-h1-container {
-  grid-column: 2/11;
-}
+  #index-main-container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+  }
 
-#index-intro-p {
-  grid-column: 2/11;
-  grid-row: 2/5;
-  columns: 2;
-  column-gap: 5%;
-  font-size: x-large;
-}
+  /*(index)Elements related to main*/
+  #index-h1-container {
+    grid-column: 2/11;
+  }
 
-#index-under-intro-img-div {
-  grid-column: 2/11;
-  grid-row: 5/9;
-  border-radius: 100px 0px 100px 0px;
-}
+  #index-intro-p {
+    grid-column: 2/11;
+    grid-row: 2/5;
+    columns: 2;
+    column-gap: 5%;
+    font-size: x-large;
+  }
 
-#index-under-intro-area {
-  grid-column: 4/9;
-  grid-row: 10/16;
-  background-color: #1f1f1f;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 5px 5px 5px #323232;
-}
+  #index-under-intro-img-div {
+    grid-column: 2/11;
+    grid-row: 5/9;
+    border-radius: 100px 0px 100px 0px;
+  }
 
-#index-under-intro-white-area {
-  background-color: #ffffff;
-  width: 90%;
-  height: 90%;
-  margin: auto;
+  #index-under-intro-area {
+    grid-column: 4/9;
+    grid-row: 10/16;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #323232;
+  }
 
-}
+  #index-under-intro-white-area {
+    background-color: #ffffff;
+    width: 90%;
+    height: 90%;
+    margin: auto;
 
-#index-secondary-box {
-  grid-column: 1/12;
-  grid-row: 17/23;
-}
+  }
 
-.index-secondary-box-div {
-  width: 20%;
-  height: 600px;
-}
+  #index-secondary-box {
+    grid-column: 1/12;
+    grid-row: 17/23;
+  }
 
-#index-third-box {
-  grid-column: 2/11;
-  grid-row: 24/32;
-  padding: 1em;
-}
+  .index-secondary-box-div {
+    width: 20%;
+    height: 600px;
+  }
 
-#index-third-box-flex {
-  flex-direction: row;
-}
+  #index-third-box {
+    grid-column: 2/11;
+    grid-row: 24/32;
+    padding: 1em;
+  }
 
-.index-third-campus-div {
-  border-radius: 5px;
-  margin: 5px;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 50%;
-  height: 600px;
+  #index-third-box-flex {
+    flex-direction: row;
+  }
 
-}
+  .index-third-campus-div {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 600px;
+
+  }
 
 /*TRYYYYYYYYYYYYYYYYYYYYMMMMMMMMMM*/
  /*The pc display styling for page 5 starts here*/
