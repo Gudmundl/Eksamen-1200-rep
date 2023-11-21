@@ -73,7 +73,6 @@ removes the undelines, as well as some margin and padding fixing to improve read
   display: none;
   position: absolute;
   background-color: #05153F;
-  min-width: 1rem;
   z-index: 1;
   align-self: center;
   border-radius: 5%;
