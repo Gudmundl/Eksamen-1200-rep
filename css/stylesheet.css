@@ -1,5 +1,3 @@
-
-
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
@@ -21,7 +19,7 @@ hides elements when elements overflow in navbar box*/
 /*Styles the text in the "navbar buttons to white, right size, aligns them to the senter of the element,
 removes the undelines, as well as some margin and padding fixing to improve readability*/
 .navbar a {
-  float: left;  
+  float: left;
   font-size: 1rem;
   color: #ffffff;
   text-align: center;
@@ -96,9 +94,11 @@ removes the undelines, as well as some margin and padding fixing to improve read
 .dropdown-content a:hover {
   background-color: #064b88;
 }
+
 .dropdown-meny:hover .dropdown-content {
   display: block;
 }
+
 /*general navbar styling ENDS here*/
 
 /*general footer styling STARTS here*/
@@ -136,6 +136,7 @@ footer a:hover {
   text-decoration: none;
 
 }
+
 /*Make the h4 larger to make i easier to read*/
 #footer h4 {
   font-size: larger;
@@ -249,6 +250,7 @@ using letter
   width: 100%;
   height: 25%;
 }
+
 /*END of Styling of elements in the secondary box*/
 
 /*Styling of third box*/
@@ -279,13 +281,15 @@ using letter
   margin-top: 3vh;
   border-radius: 2%;
 }
+
 /*making the h2 larger as well as positining it out from the left-side*/
-#index-third-box h2{
+#index-third-box h2 {
   font-size: 2rem;
   padding-left: 1vw;
 }
+
 /*making the h3 larger as well as positining it out from the left-side*/
-#index-third-box h3{
+#index-third-box h3 {
   font-size: 1.7rem;
   padding-left: 1vw;
 }
@@ -299,12 +303,13 @@ using letter
 }
 
 /*removing the underline on the link*/
-.index-campus-clickable-a{
+.index-campus-clickable-a {
   text-decoration: none;
   color: #000000;
 }
+
 /*styling on hover, with reduces opacity and underline on text, for accessebility.*/
-.index-campus-clickable-a:hover{
+.index-campus-clickable-a:hover {
   text-decoration: underline;
   opacity: 70%;
 }
@@ -333,15 +338,17 @@ using letter
   background-color: #05153F;
   color: white;
 }
+
 /* general Styling for accesability page ENDS here*/
 
 
 /* general styling for page 4 starts here */
 /*Removing margin and padding for the page*/
-.page4{
+.page4 {
   margin: 0;
   padding: 0;
 }
+
 /* styles main inside page 4(pilestredet), aligns the text*/
 .page4 main {
   display: grid;
@@ -349,11 +356,13 @@ using letter
   background-color: #05153F;
   color: #ffffff;
 }
+
 /* styles level 3 headings inside page 4 main */
 .page4 main h3 {
   padding-top: 7%;
   font-size: 1.7rem;
 }
+
 /* styles all p inside page 4 main */
 .page4 main p {
   padding-top: 5%;
@@ -367,8 +376,9 @@ using letter
   text-align: center;
   position: relative;
 }
+
 /*styles h1 and sets its position on top of the background */
-.page4-heading h1{
+.page4-heading h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -379,103 +389,124 @@ using letter
 }
 
 /* styles pic to fill gridbox */
-#pilestredet-picture{
-width: 100%;
-height: 100%;
-justify-content: center;
+#pilestredet-picture {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 /*aligns the text*/
-.page4-underheading{
+.page4-underheading {
   text-align: center;
 }
 
+/*Aligns the content and make i width 100% to fit the page*/
 .cafeteria-pic-box {
   width: 100%;
   justify-content: center;
-
 }
 
+/*Aligns the content and make i width 100% to fit the page*/
 .biblotek-bilde-boks {
   width: 100%;
   justify-content: center;
 
 }
 
+/*Aligns the content and make i width 100% to fit the page*/
 .computer-picture-box {
   width: 100%;
   justify-content: center;
 }
 
-.cafeteria{
+/*Makes the content scale with viewheigth */
+.cafeteria {
   height: 60vh;
 }
-#cafeteria-picture{/* styles pic to fill gridbox */
-  width: 100%;
-  height: 100%;
-}
-.library{
-  height: 60vh;
-}
-#library-picture{/* styles pic to fill gridbox */
-  width: 100%;
-  height: 100%;
-}
-.computer-square{
-  height: 60vh;
-}
-#computer-picture{/* styles pic to fill gridbox */
+
+/* styles pic to fill gridbox */
+#cafeteria-picture {
   width: 100%;
   height: 100%;
 }
 
+/*Makes the content scale with viewheigth */
+.library {
+  height: 60vh;
+}
+
+/*Styles pic to fill grid*/
+#library-picture {
+  width: 100%;
+  height: 100%;
+}
+
+/*Makes the content scale with viewheigth */
+.computer-square {
+  height: 60vh;
+}
+
+/* styles pic to fill gridbox */
+#computer-picture {
+  width: 100%;
+  height: 100%;
+}
+
+/*Makes the content scale with viewheigth */
 .page4-map-text {
-
   height: 60vh;
 }
 
-.page4-map {
-  height: 60;
-}
-#pilestred-map{
+/*Makes the content fit to fill the grid*/
+#pilestred-map {
   width: 100%;
   height: 100%;
 }
+
 /* general styling for page 4 stops here */
 
-
 /* The general styling for page 5 starts here:*/
-#kjeller-picture{
+
+/*Make the main image fill the screen and centered*/
+#kjeller-picture {
   width: 100%;
   height: 100%;
   justify-content: center;
-  }
+}
 
-  #kjeller-map{
-    width: 100%;
-    height: 100%;
-  }
+/*Make the map fill the screen and centered*/
+#kjeller-map {
+  width: 100%;
+  height: 100%;
+}
+
 /* The general styling for page 5 stops here:*/
 /*END of tags that does not change depending on the size of the screen*/
 
 
 
 /*Media query makes the website scale diffrently from pc to mobile*/
-@media(max-width: 800px){
-/* The mobile styling for page 4 starts here:*/
-/* decides that mobile version only has 1 column */
+@media(max-width: 800px) {
+
+  /* The mobile styling for page 4 starts here:*/
+  /* decides that mobile version only has 1 column */
   .page4 main {
     grid-template-columns: 1fr;
   }
+
   /* decides positions of elements with grid-column start and end */
-  .page4-heading{
+  .page4-heading {
     grid-row-start: 1;
     grid-row-end: 2;
   }
-  .page4-heading h1{/* sets fitting font size for mobile */
+
+  /* sets fitting font size for mobile */
+  .page4-heading h1 {
     font-size: 9vw;
   }
-  .page4-underheading{ /* places underheading in a mobile frendly format */
+
+  /* places underheading in a mobile frendly format */
+  .page4-underheading {
     padding-top: 5vh;
     padding-right: 5vw;
     padding-bottom: 5vh;
@@ -483,55 +514,73 @@ justify-content: center;
     grid-row-start: 2;
     grid-row-end: 3;
   }
-/* places elements and sets their height */
-  .cafeteria{
+
+  /* places elements below eachother and sets their height */
+  .cafeteria {
     grid-row-start: 3;
     grid-row-end: 4;
     height: 60vh;
   }
-  .cafeteria-pic-box{
+
+  /* places elements below eachother and sets their height */
+  .cafeteria-pic-box {
     grid-row-start: 4;
     grid-row-end: 5;
     height: 60vh;
   }
-  .library{
+
+  /* places elements below eachother and sets their height */
+  .library {
     grid-row-start: 5;
     grid-row-end: 6;
     height: 60vh;
   }
-  .biblotek-bilde-boks{
+
+  /* places elements below eachother and sets their height */
+  .biblotek-bilde-boks {
     grid-row-start: 6;
     grid-row-end: 7;
     height: 60vh;
   }
-  .computer-square{
+
+  /* places elements below eachother and sets their height */
+  .computer-square {
     grid-row-start: 7;
     grid-row-end: 8;
     height: 60vh;
   }
-  .computer-picture-box{
+
+  /* places elements below eachother and sets their height */
+  .computer-picture-box {
     grid-row-start: 8;
     grid-row-end: 9;
     height: 60vh;
   }
-  .page4-map-text{
+
+  /* places elements below eachother and sets their height */
+  .page4-map-text {
     grid-row-start: 9;
     grid-row-end: 10;
     height: 60vh;
   }
-  .page4-map{
+
+  /* places elements below eachother and sets their height */
+  .page4-map {
     grid-row-start: 10;
     grid-row-end: 11;
     height: 60vh;
   }
+
   /* The mobile styling for page 4 stops here:*/
-  
+
   /*Start of page2 (accesability) mobile styling*/
 
+  /*Makes the text bigger for mobile*/
   .accessibility p {
     font-size: 1.5em;
   }
 
+  /* places elements below eachother for mobile view*/
   .accessibility-main-container-grid {
     display: flex;
     flex-direction: column;
@@ -539,12 +588,14 @@ justify-content: center;
 
   }
 
+  /* places elements below eachother for mobile view*/
   .accessibility-main-text-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
+  /* places elements below eachother for mobile view*/
   .accessibility-main-img-grid {
     display: flex;
     flex-direction: column;
@@ -552,12 +603,12 @@ justify-content: center;
     height: 100%;
     width: 100%;
   }
-
+ /*Makes the footer fit edge to edge*/
   .accessibility footer {
     margin: 0;
   }
 
-/*end of page2 (accesability) mobile styling*/
+  /*end of page2 (accesability) mobile styling*/
 
   /*mobile styling for Topical(page3) starts here*/
   /*removes margin to make picture edge to edge in mobile*/
@@ -565,7 +616,7 @@ justify-content: center;
     margin: 0;
   }
 
-  /*Adds margin to asides */
+  /*Adds margin to asides to make images easier to see */
   .topical aside {
     margin-left: 1em;
   }
@@ -589,13 +640,13 @@ justify-content: center;
   }
 
 
-  /*Just styling for aesthetics*/
+  /* styling for aesthetics*/
   .topical aside img {
     height: 6em;
     width: 35%;
-    margin-right: 0px;
-    padding-right: 0px;
-   
+    margin-right: 0em;
+    padding-right: 0em;
+
   }
 
   /*wraps the aside text in a div and makes a grid for them to be placed in*/
@@ -607,7 +658,7 @@ justify-content: center;
     grid-column-gap: 0em;
   }
 
-  /*Places the links in the grid and adds styling for aesthetics*/
+  /*Places the links in the grid to the rigth of the images and adds styling for readability*/
   .topical aside a {
     font-size: x-large;
     margin-top: -7em;
@@ -616,6 +667,7 @@ justify-content: center;
     grid-column-start: 6;
     grid-column-end: 12;
   }
+
   /*Mobile styling for Topical(page3) ends here*/
 
   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
@@ -668,27 +720,30 @@ justify-content: center;
 
   /*Page 5 kjeller mobile styling starts here*/
 
- /*Page 5 kjeller mobile styling ENDS here*/ 
+  /*Page 5 kjeller mobile styling ENDS here*/
 }
 
 /*STYLING for MOBILE view ENDS HERE*/
 
- /*Styling for normal computer view starts here*/
+/*Styling for normal computer view starts here*/
 
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
- /*Page 4 pilestredet computer styling starts here*/ 
+
+  /*Page 4 pilestredet computer styling starts here*/
   /* Makes grid in main two columns with same width */
- .page4 main {
-  grid-template-columns: 1fr 1fr;    
+  .page4 main {
+    grid-template-columns: 1fr 1fr;
   }
-    /* places heading */
+
+  /* places heading */
   .page4-heading {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-    /* places underheading in a computer friendly format */
-  .page4-underheading{
+
+  /* places underheading in a computer friendly format */
+  .page4-underheading {
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.7rem;
@@ -697,42 +752,51 @@ justify-content: center;
     padding-bottom: 10vw;
     padding-left: 20vw;
   }
-    /* decides placement for all remaining grid elements in main */
+
+  /* decides placement for all remaining grid elements in main */
   .cafeteria-pic-box {
     grid-column-start: 1;
     grid-column-end: 2;
   }
+
   .biblotek-bilde-boks {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
   .computer-picture-box {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  .cafeteria{
+
+  .cafeteria {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-  .library{
+
+  .library {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  .computer-square{
+
+  .computer-square {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
   .page4-map-text {
     grid-column-start: 1;
     grid-column-end: 2;
   }
+
   .page4-map {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-   /*Page 4 pilestredet computer styling ends here*/
 
-   /*Page accesability computer styling starts here*/
+  /*Page 4 pilestredet computer styling ends here*/
+
+  /*Page accesability computer styling starts here*/
 
   /*grid container for accesability*/
   .accessibility-main-container-grid {
@@ -743,17 +807,19 @@ justify-content: center;
     grid-row-gap: 0em;
 
   }
+
   /*styles img for readablility*/
   .accessibility img {
     width: 30em;
   }
+
   /*ads padding for improved readability*/
   .accessibility h2 {
     padding-left: 1em;
   }
 
   /*Start of page 2 (accessibility)*/
-      /*puts main content in a grid*/
+  /*puts main content in a grid*/
   .accessibility-main-grid {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -761,7 +827,8 @@ justify-content: center;
     grid-column-end: 12;
 
   }
-      /*puts imges in the grid*/
+
+  /*puts imges in the grid*/
   .accessibility-main-img-grid {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -770,7 +837,7 @@ justify-content: center;
     margin-top: 10em;
 
   }
-    
+
   .accessibility-main-text-grid {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -779,9 +846,9 @@ justify-content: center;
     margin-top: 10em;
   }
 
-    /*Page accesability computer styling ends here*/
+  /*Page accesability computer styling ends here*/
 
-   /*Page Topical computer styling starts here*/
+  /*Page Topical computer styling starts here*/
 
   /*Centers the first heading*/
   .topical h1 {
@@ -849,7 +916,8 @@ justify-content: center;
   .topical footer {
     margin-top: -22%;
   }
-   /*Page Topical computer styling ends here*/
+
+  /*Page Topical computer styling ends here*/
 
   /*Footer computer styling starts here*/
 
@@ -884,7 +952,7 @@ justify-content: center;
     grid-column-end: 20;
   }
 
-    /*Footer computer styling starts here*/
+  /*Footer computer styling starts here*/
 
   /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
   #h1-kjeller {
@@ -1069,7 +1137,9 @@ justify-content: center;
     width: 50%;
     height: 600px;
   }
- /*The pc display styling for page 5 starts here*/
+
+  /*The pc display styling for page 5 starts here*/
   /*Giving the picture a large percentage on heigth and width to make stand out on top of the main picture*/
 }
+
 /*End of media quearry for pc*/
