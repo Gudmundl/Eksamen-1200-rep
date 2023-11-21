@@ -2,7 +2,10 @@
 p {
   line-height: 1.5;
 }
-
+body{
+  margin: 0;
+  padding: 0;
+}
 /*general navbar styling STARTS here/*
 
 /*Styling the navbar behind the buttons
@@ -164,8 +167,6 @@ could later add to individual elements insted. Border-box makes that the padding
 #index-body {
   width: 100vw;
   max-width: 100vw;
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -349,11 +350,6 @@ using letter
 
 
 /* general styling for page 4 starts here */
-/*Removing margin and padding for the page*/
-.page4 {
-  margin: 0;
-  padding: 0;
-}
 
 /* styles main inside page 4(pilestredet), aligns the text*/
 .page4 main {
@@ -618,10 +614,6 @@ using letter
   /*end of page2 (accesability) mobile styling*/
 
   /*mobile styling for Topical(page3) starts here*/
-  /*removes margin to make picture edge to edge in mobile*/
-  .topical {
-    margin: 0;
-  }
 
   /*Adds margin to asides to make images easier to see */
   .topical aside {
