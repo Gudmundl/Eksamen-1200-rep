@@ -167,7 +167,21 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
 #index-third-box {
   background-color: #05153F;
   color: #ffffff;
+  padding-top: 1vh;
+  padding-bottom: 3vh;
+  margin-top: 3vh;
+  border-radius: 3px;
 }
+#index-third-box h2{
+  font-size: 2rem;
+  padding-left: 1vw;
+}
+
+#index-third-box h3{
+  font-size: 1.7rem;
+  padding-left: 1vw;
+}
+
 
 .index-third-campus-div {
   background-color: #f0f8ff;
@@ -177,6 +191,7 @@ Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-
 }
 .index-campus-clickable-a{
   text-decoration: none;
+  color: #000000;
 }
 .index-campus-clickable-a:hover{
   text-decoration: underline;
@@ -609,7 +624,10 @@ justify-content: center;
 
   #index-third-box-flex {
     flex-direction: column;
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
+
 
   .index-third-campus-div {
     border-radius: 5px;
