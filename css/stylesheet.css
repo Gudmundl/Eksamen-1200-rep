@@ -488,92 +488,61 @@ using letter
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-width: 800px) {
 
-  /* The mobile styling for page 4 starts here:*/
-  /* decides that mobile version only has 1 column */
-  .campuses main {
-    grid-template-columns: 1fr;
+   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
+  /*Using flex to make content below eachother*/
+  #index-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  /* decides positions of elements with grid-column start and end */
-  .campuses-heading {
-    grid-row-start: 1;
-    grid-row-end: 2;
+  /*Ads padding for improved readability*/
+  #index-main-container {
+    padding: 1em;
   }
 
-  /* sets fitting font size for mobile */
-  .campuses-heading h1 {
-    font-size: 9vw;
+  /*Ads padding for  readability*/
+  .index-p {
+    margin: 1rem;
   }
 
-  /* places underheading in a mobile frendly format */
-  .campuses-underheading {
-    padding-top: 5vh;
-    padding-right: 5vw;
-    padding-bottom: 5vh;
-    padding-left: 5vw;
-    grid-row-start: 2;
-    grid-row-end: 3;
+  /*Ads margin to make headers easier to read*/
+  .index-h2,
+  .index-h3 {
+    margin: 1rem;
   }
 
-  /* places elements below eachother and sets their height */
-  .cafeteria {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    height: 60vh;
+  /*Align content to a coloumn each below eachother for mobile view*/
+  #index-secondary-box-flex-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* places elements below eachother and sets their height */
-  .cafeteria-pic-box {
-    grid-row-start: 4;
-    grid-row-end: 5;
-    height: 60vh;
+  /*Styling for to make it an appropriate size for mobile view */
+  .index-secondary-box-div {
+    width: 90%;
+    height: auto;
   }
 
-  /* places elements below eachother and sets their height */
-  .library {
-    grid-row-start: 5;
-    grid-row-end: 6;
-    height: 60vh;
+  /*Styling for to make it an appropriate size for mobile view */
+  #index-third-box-flex {
+    flex-direction: column;
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
-
-  /* places elements below eachother and sets their height */
-  .biblotek-bilde-boks {
-    grid-row-start: 6;
-    grid-row-end: 7;
-    height: 60vh;
+  /*Ads styling for aesthetics and flex to for mobile view*/
+  .index-third-campus-div {
+    border-radius: 1%;
+    margin: 0em;
+    padding: 0em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
   }
+  /*Index mobile styling ends here*/
 
-  /* places elements below eachother and sets their height */
-  .computer-square {
-    grid-row-start: 7;
-    grid-row-end: 8;
-    height: 60vh;
-  }
-
-  /* places elements below eachother and sets their height */
-  .computer-picture-box {
-    grid-row-start: 8;
-    grid-row-end: 9;
-    height: 60vh;
-  }
-
-  /* places elements below eachother and sets their height */
-  .campuses-map-text {
-    grid-row-start: 9;
-    grid-row-end: 10;
-    height: 60vh;
-  }
-
-  /* places elements below eachother and sets their height */
-  .campuses-map {
-    grid-row-start: 10;
-    grid-row-end: 11;
-    height: 60vh;
-  }
-
-  /* The mobile styling for page 4 stops here:*/
-
-  /*Start of page2 (accesability) mobile styling*/
+   /*Start of page2 (accesability) mobile styling*/
 
   /*Makes the text bigger for mobile*/
   .accessibility p {
@@ -666,59 +635,89 @@ using letter
 
   /*Mobile styling for Topical(page3) ends here*/
 
-  /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
-  /*Using flex to make content below eachother*/
-  #index-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  /* The mobile styling for page 4 starts here:*/
+  /* decides that mobile version only has 1 column */
+  .campuses main {
+    grid-template-columns: 1fr;
   }
 
-  /*Ads padding for improved readability*/
-  #index-main-container {
-    padding: 1em;
+  /* decides positions of elements with grid-column start and end */
+  .campuses-heading {
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
-  /*Ads padding for  readability*/
-  .index-p {
-    margin: 1rem;
+  /* sets fitting font size for mobile */
+  .campuses-heading h1 {
+    font-size: 9vw;
   }
 
-  /*Ads margin to make headers easier to read*/
-  .index-h2,
-  .index-h3 {
-    margin: 1rem;
+  /* places underheading in a mobile frendly format */
+  .campuses-underheading {
+    padding-top: 5vh;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
-  /*Align content to a coloumn each below eachother for mobile view*/
-  #index-secondary-box-flex-container {
-    flex-direction: column;
-    align-items: center;
+  /* places elements below eachother and sets their height */
+  .cafeteria {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 60vh;
   }
 
-  /*Styling for to make it an appropriate size for mobile view */
-  .index-secondary-box-div {
-    width: 90%;
-    height: auto;
+  /* places elements below eachother and sets their height */
+  .cafeteria-pic-box {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    height: 60vh;
   }
 
-  /*Styling for to make it an appropriate size for mobile view */
-  #index-third-box-flex {
-    flex-direction: column;
-    margin-left: 3vw;
-    margin-right: 3vw;
-  }
-  /*Ads styling for aesthetics and flex to for mobile view*/
-  .index-third-campus-div {
-    border-radius: 1%;
-    margin: 0em;
-    padding: 0em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+  /* places elements below eachother and sets their height */
+  .library {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    height: 60vh;
   }
 
+  /* places elements below eachother and sets their height */
+  .biblotek-bilde-boks {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    height: 60vh;
+  }
+
+  /* places elements below eachother and sets their height */
+  .computer-square {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    height: 60vh;
+  }
+
+  /* places elements below eachother and sets their height */
+  .computer-picture-box {
+    grid-row-start: 8;
+    grid-row-end: 9;
+    height: 60vh;
+  }
+
+  /* places elements below eachother and sets their height */
+  .campuses-map-text {
+    grid-row-start: 9;
+    grid-row-end: 10;
+    height: 60vh;
+  }
+
+  /* places elements below eachother and sets their height */
+  .campuses-map {
+    grid-row-start: 10;
+    grid-row-end: 11;
+    height: 60vh;
+  }
+  /* The mobile styling for page 4 stops here:*/
 
 }/*STYLING for MOBILE view ENDS HERE*/
 
