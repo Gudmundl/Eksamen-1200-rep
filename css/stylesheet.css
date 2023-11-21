@@ -2,10 +2,18 @@
 p {
   line-height: 1.5;
 }
-body{
-  margin: 0;
-  padding: 0;
+
+body {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding-left: 0em;
+  padding-right: 0em;
 }
+
 /*general navbar styling STARTS here/*
 
 /*Styling the navbar behind the buttons
@@ -127,7 +135,10 @@ footer a:hover {
 /*Makes the bottom footer black and adds padding to remove extra space at the bottom*/
 .grid-footer-bottom {
   background-color: #16171a;
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /*Makes a yellow underline under the footers links for stylistic choices*/
@@ -207,7 +218,10 @@ using letter
   box-shadow: 1em 1em 1em #808080;
   margin-top: 5%;
   margin-right: 5%;
-  padding: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   list-style: none;
 }
 
@@ -273,7 +287,10 @@ using letter
 
 /*padding and margin to improve readability*/
 .index-campus-p {
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-bottom: 5%;
 }
 
@@ -488,7 +505,7 @@ using letter
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-width: 800px) {
 
-   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
+  /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
   /*Using flex to make content below eachother*/
   #index-body {
     display: flex;
@@ -498,18 +515,28 @@ using letter
 
   /*Ads padding for improved readability*/
   #index-main-container {
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   /*Ads padding for  readability*/
   .index-p {
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
   }
 
   /*Ads margin to make headers easier to read*/
   .index-h2,
   .index-h3 {
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   /*Align content to a coloumn each below eachother for mobile view*/
@@ -530,19 +557,27 @@ using letter
     margin-left: 3vw;
     margin-right: 3vw;
   }
+
   /*Ads styling for aesthetics and flex to for mobile view*/
   .index-third-campus-div {
     border-radius: 1%;
-    margin: 0em;
-    padding: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
   }
+
   /*Index mobile styling ends here*/
 
-   /*Start of page2 (accesability) mobile styling*/
+  /*Start of page2 (accesability) mobile styling*/
 
   /*Makes the text bigger for mobile*/
   .accessibility p {
@@ -575,7 +610,10 @@ using letter
 
   /*Makes the footer fit edge to edge*/
   .accessibility footer {
-    margin: 0;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
   }
 
   /*end of page2 (accesability) mobile styling*/
@@ -589,14 +627,20 @@ using letter
 
   /*Adds margin to the paragraf to improve readability*/
   .topical p {
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   /*Adds margin to the h1,h2 and h3 to improve readability*/
   .topical h1,
   .topical h2,
   .topical h3 {
-    margin: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
 
   /*Makes the picture fit edge to edge and not spill over*/
@@ -717,9 +761,12 @@ using letter
     grid-row-end: 11;
     height: 60vh;
   }
+
   /* The mobile styling for page 4 stops here:*/
 
-}/*STYLING for MOBILE view ENDS HERE*/
+}
+
+/*STYLING for MOBILE view ENDS HERE*/
 
 
 
@@ -727,7 +774,7 @@ using letter
 
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
-/*Styling for normal computer view starts here*/
+  /*Styling for normal computer view starts here*/
 
   /*Page 4 pilestredet computer styling starts here*/
 
@@ -758,27 +805,32 @@ using letter
     grid-column-start: 1;
     grid-column-end: 2;
   }
+
   /* Places content in boxes next to eachother in the main*/
   .biblotek-bilde-boks {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
   /* Places content in boxes next to eachother in the main*/
   .computer-picture-box {
     grid-column-start: 1;
     grid-column-end: 2;
   }
+
   /* Places content in boxes next to eachother in the main*/
   .cafeteria {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
   /* Places content in boxes next to eachother in the main*/
   .library {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-    /* Places content in boxes next to eachother in the main*/
+
+  /* Places content in boxes next to eachother in the main*/
   .computer-square {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -836,7 +888,8 @@ using letter
     margin-top: 10em;
 
   }
-    /*puts text in the grid to the left of the images*/
+
+  /*puts text in the grid to the left of the images*/
   .accessibility-main-text-grid {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -906,7 +959,8 @@ using letter
     height: 30%;
     width: 16em;
   }
-/*Makes the text flush with the imageand ads some padding for style*/
+
+  /*Makes the text flush with the imageand ads some padding for style*/
   .topical aside p {
     margin-top: 0;
     padding-left: 1%;
@@ -992,7 +1046,10 @@ using letter
   /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
   .grid-footer-bottom {
     background-color: #16171a;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   /*Making the iframe cover the whole div.*/
@@ -1017,10 +1074,12 @@ using letter
     color: #D3D3D3;
     text-decoration: none;
   }
+
   /*Makes the headers larger to make it easier to read*/
   #footer h4 {
     font-size: larger;
   }
+
   /*Removes margin to make it edge to edge*/
   #footer {
     margin-right: -1%;
@@ -1051,10 +1110,17 @@ using letter
   /*Makes some of the content edge to edge and all 100% width*/
   #index-body {
     width: 100%;
-    margin: 0em;
-    padding: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
     box-sizing: border-box;
   }
+
   /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
   #index-main-container {
     display: grid;
@@ -1067,6 +1133,7 @@ using letter
     grid-column-start: 2;
     grid-column-end: 11;
   }
+
   /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
   #index-intro-p {
     columns: 2;
@@ -1077,6 +1144,7 @@ using letter
     grid-column-start: 2;
     grid-column-end: 11;
   }
+
   /*Places img in the grid in the top half of the page  in the middle*/
   #index-under-intro-img-div {
     border-radius: 1%;
@@ -1085,6 +1153,7 @@ using letter
     grid-column-start: 2;
     grid-column-end: 11;
   }
+
   /*places content in the grid*/
   #index-under-intro-area {
     grid-row-start: 10;
@@ -1096,39 +1165,55 @@ using letter
     box-shadow: 1em 1em 1em #323232;
     border-radius: 1%;
   }
+
   /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
   #index-under-intro-white-area {
     background-color: #ffffff;
     width: 90%;
     height: 90%;
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
-/*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
+
+  /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
   #index-secondary-box {
     grid-row-start: 17;
     grid-row-end: 23;
     grid-column-start: 1;
     grid-column-end: 12;
   }
+
   /*Ads appropriate heigth and width relative to the main page*/
   .index-secondary-box-div {
     width: 20%;
     height: 40em;
   }
+
   /*Places the campus in the bottom half of the page and in the middle of the columns*/
   #index-third-box {
     grid-row-start: 24;
     grid-row-end: 32;
     grid-column-start: 2;
     grid-column-end: 11;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   /*Places campus images next to eachother and ads padding and margin and border radius for style*/
   .index-third-campus-div {
     border-radius: 1%;
-    margin: 0.3em;
-    padding: 0.3em;;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
     display: flex;
     justify-content: center;
     flex-direction: column;
