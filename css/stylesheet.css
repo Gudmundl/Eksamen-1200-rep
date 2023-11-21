@@ -385,6 +385,8 @@ using letter
   padding-top: 5%;
   padding-left: 8%;
   padding-right: 8%;
+  padding-left: 8%;
+  text-align: left;
 }
 
 /*aligns the heading to center, and positions it relativ*/
@@ -405,7 +407,7 @@ using letter
 }
 
 /* styles pic to fill gridbox */
-#pilestredet-picture {
+#pilestredet-picture, #accesibility-main-img {
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -777,7 +779,7 @@ using letter
   }
 
   /* places underheading in a computer friendly format */
-  .campuses-underheading {
+  .campuses-underheading{
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.7rem;
@@ -1208,3 +1210,4 @@ using letter
 }
 
 /*End of media quearry for pc*/
+
