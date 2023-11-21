@@ -603,7 +603,8 @@ using letter
     height: 100%;
     width: 100%;
   }
- /*Makes the footer fit edge to edge*/
+
+  /*Makes the footer fit edge to edge*/
   .accessibility footer {
     margin: 0;
   }
@@ -639,7 +640,6 @@ using letter
     width: 100%;
   }
 
-
   /* styling for aesthetics*/
   .topical aside img {
     height: 6em;
@@ -671,66 +671,71 @@ using letter
   /*Mobile styling for Topical(page3) ends here*/
 
   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
+  /*Using flex to make content below eachother*/
   #index-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
+  /*Ads padding for improved readability*/
   #index-main-container {
-    padding: 30px;
+    padding: 1em;
   }
 
+  /*Ads padding for  readability*/
   .index-p {
     margin: 1rem;
   }
 
+  /*Ads margin to make headers easier to read*/
   .index-h2,
   .index-h3 {
     margin: 1rem;
   }
 
-
+  /*Align content to a coloumn each below eachother for mobile view*/
   #index-secondary-box-flex-container {
     flex-direction: column;
     align-items: center;
   }
 
+  /*Styling for to make it an appropriate size for mobile view */
   .index-secondary-box-div {
     width: 90%;
     height: auto;
   }
 
+  /*Styling for to make it an appropriate size for mobile view */
   #index-third-box-flex {
     flex-direction: column;
     margin-left: 3vw;
     margin-right: 3vw;
   }
-
-
+  /*Ads styling for aesthetics and flex to for mobile view*/
   .index-third-campus-div {
-    border-radius: 5px;
-    margin: 0px;
-    padding: 0px;
+    border-radius: 1%;
+    margin: 0em;
+    padding: 0em;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
   }
 
-  /*Page 5 kjeller mobile styling starts here*/
 
-  /*Page 5 kjeller mobile styling ENDS here*/
-}
+}/*STYLING for MOBILE view ENDS HERE*/
 
-/*STYLING for MOBILE view ENDS HERE*/
 
-/*Styling for normal computer view starts here*/
+
+
 
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
+/*Styling for normal computer view starts here*/
 
   /*Page 4 pilestredet computer styling starts here*/
+  
   /* Makes grid in main two columns with same width */
   .page4 main {
     grid-template-columns: 1fr 1fr;
