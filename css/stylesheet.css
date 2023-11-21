@@ -741,19 +741,19 @@ using letter
 /*Styling for normal computer view starts here*/
 
   /*Page 4 pilestredet computer styling starts here*/
-  
+
   /* Makes grid in main two columns with same width */
   .page4 main {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* places heading */
+  /* places heading  in middle of the grid*/
   .page4-heading {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-  /* places underheading in a computer friendly format */
+  /* places underheadings in grid boxes*/
   .page4-underheading {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -764,42 +764,42 @@ using letter
     padding-left: 20vw;
   }
 
-  /* decides placement for all remaining grid elements in main */
+  /* Places content in boxes next to eachother in the main*/
   .cafeteria-pic-box {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-
+  /* Places content in boxes next to eachother in the main*/
   .biblotek-bilde-boks {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-
+  /* Places content in boxes next to eachother in the main*/
   .computer-picture-box {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-
+  /* Places content in boxes next to eachother in the main*/
   .cafeteria {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-
+  /* Places content in boxes next to eachother in the main*/
   .library {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-
+    /* Places content in boxes next to eachother in the main*/
   .computer-square {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-
+    /* Places content in boxes next to eachother in the main*/
   .page4-map-text {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-
+  /* Places content in boxes next to eachother in the main*/
   .page4-map {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -809,7 +809,7 @@ using letter
 
   /*Page accesability computer styling starts here*/
 
-  /*grid container for accesability*/
+  /*grid container for accessibility makes 12 similiar sized columns and 2 rows to put content in*/
   .accessibility-main-container-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -829,17 +829,16 @@ using letter
     padding-left: 1em;
   }
 
-  /*Start of page 2 (accessibility)*/
-  /*puts main content in a grid*/
+  /*puts header inside the grid to the middle*/
   .accessibility-main-grid {
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 1;
     grid-column-start: 5;
     grid-column-end: 12;
 
   }
 
-  /*puts imges in the grid*/
+  /*puts imges in the grid to the rigth of the text*/
   .accessibility-main-img-grid {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -848,7 +847,7 @@ using letter
     margin-top: 10em;
 
   }
-
+    /*puts text in the grid to the left of the images*/
   .accessibility-main-text-grid {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -877,10 +876,9 @@ using letter
   /*Left aligns all text in the body of topical */
   .topical {
     text-align: left;
-    margin: 0;
   }
 
-  /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3 times the font of the emelemt(em) */
+  /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
   .topical-main-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -889,7 +887,7 @@ using letter
     grid-row-gap: 3em;
   }
 
-  /*Makes a grid for the header in the page topical starting on row 1 and column 2 and ending on row 6 and column 4*/
+  /*Makes a grid for the body to put it in the left-middle*/
   .grid-body-topical {
     grid-row-start: 1;
     grid-row-end: 5;
@@ -897,7 +895,7 @@ using letter
     grid-column-end: 4;
   }
 
-  /*Makes a grid for the header in the page topical starting on row 2 and column 5 and ending on row 6 and column 4*/
+  /*Puts the aside to the rigth of the main text*/
   .topical aside {
     grid-row-start: 2;
     grid-row-end: 4;
@@ -906,26 +904,26 @@ using letter
     justify-content: center;
   }
 
-  /*Styles the healthpicture with height 100% and width 18% to not spill over to other content*/
+  /*Styles the healthpicture to fit well inside the grid*/
   .topical-body-health-picture {
     width: 100%;
-    height: 25%;
+    height: 30%;
   }
 
-  /*Sizes the aside pictures for aesthetics*/
+  /*Sizes the aside pictures to an appropriate size relative to the page*/
   .topical aside img {
     height: 30%;
     width: 16em;
   }
-
+/*Makes the text flush with the imageand ads some padding for style*/
   .topical aside p {
     margin-top: 0;
-    padding-left: 2%;
+    padding-left: 1%;
   }
 
   /*Makes the footer flush with the main content*/
   .topical footer {
-    margin-top: -22%;
+    margin-top: -22em;
   }
 
   /*Page Topical computer styling ends here*/
@@ -962,8 +960,6 @@ using letter
     grid-column-start: 18;
     grid-column-end: 20;
   }
-
-  /*Footer computer styling starts here*/
 
   /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
   #h1-kjeller {
@@ -1025,23 +1021,16 @@ using letter
     margin-left: 15%;
   }
 
-  /*Makes a red underline under the footers links for stylistic choices*/
-  #footer hr {
-    width: 1.5em;
-  }
-
   /*Makes the links white and removes underline*/
   #footer a {
     color: #D3D3D3;
     text-decoration: none;
   }
-
-  /*Makes the header in the page topical in the grid and centered*/
-
+  /*Makes the headers larger to make it easier to read*/
   #footer h4 {
     font-size: larger;
   }
-
+  /*Removes margin to make it edge to edge*/
   #footer {
     margin-right: -1%;
     margin-left: -1%;
@@ -1059,34 +1048,34 @@ using letter
     margin-left: 10%;
   }
 
-  /*Giving the picture some properties such as borderline radius and a set width. The heigth is auto to make sure the picture doesent get distorted.*/
+  /*Giving the picture some properties such as a set width. The heigth is auto to make sure the picture doesent get distorted.*/
   #picture-kjeller-library-div>#picture-kjeller-library {
     width: 100%;
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 50px 0px 50px 0px;
   }
 
   /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
+  /*Makes some of the content edge to edge and all 100% width*/
   #index-body {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0em;
+    padding: 0em;
     box-sizing: border-box;
   }
-
+  /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
   #index-main-container {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(30, 1fr);
   }
 
-  /*(index)Elements related to main*/
+  /*Places h1 tag in cloumn 2 start 11 end*/
   #index-h1-container {
     grid-column: 2/11;
   }
-
+  /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
   #index-intro-p {
     grid-column: 2/11;
     grid-row: 2/5;
@@ -1094,13 +1083,13 @@ using letter
     column-gap: 5%;
     font-size: x-large;
   }
-
+  /*Places img in the grid*/
   #index-under-intro-img-div {
     grid-column: 2/11;
     grid-row: 5/9;
     border-radius: 100px 0px 100px 0px;
   }
-
+  /*places content in the grid*/
   #index-under-intro-area {
     grid-column: 4/9;
     grid-row: 10/16;
@@ -1109,15 +1098,14 @@ using letter
     text-align: center;
     box-shadow: 5px 5px 5px #323232;
   }
-
+  /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
   #index-under-intro-white-area {
     background-color: #ffffff;
     width: 90%;
     height: 90%;
     margin: auto;
-
   }
-
+/*Places the second box in the grid*/
   #index-secondary-box {
     grid-column: 1/12;
     grid-row: 17/23;
@@ -1125,9 +1113,9 @@ using letter
 
   .index-secondary-box-div {
     width: 20%;
-    height: 600px;
+    height: 40em;
   }
-
+  /*Places the third box in the grid*/
   #index-third-box {
     grid-column: 2/11;
     grid-row: 24/32;
