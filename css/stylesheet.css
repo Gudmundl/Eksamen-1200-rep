@@ -342,7 +342,7 @@ using letter
 /* general styling for page 4 starts here */
 
 /* styles main inside page 4(pilestredet), aligns the text*/
-.campuses main {
+.campuses main, .accesibility main {
   display: grid;
   text-align: center;
   background-color: #05153F;
@@ -350,13 +350,13 @@ using letter
 }
 
 /* styles level 3 headings inside page 4 main */
-.campuses main h3 {
+.campuses main h3, .accesibility main h3 {
   padding-top: 7%;
   font-size: 1.7rem;
 }
 
 /* styles all p inside page 4 main */
-.campuses main p {
+.campuses main p, .accesibility main p {
   padding-top: 5%;
   font-size: 1.3rem;
   padding-right: 8%;
@@ -365,13 +365,13 @@ using letter
 }
 
 /*aligns the heading to center, and positions it relativ*/
-.campuses-heading {
+.campuses-heading, .accesibility-heading {
   text-align: center;
   position: relative;
 }
 
 /*styles h1 and sets its position on top of the background */
-.campuses-heading h1 {
+.campuses-heading h1, .accesibility-heading h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -389,7 +389,7 @@ using letter
 }
 
 /*aligns the text*/
-.campuses-underheading {
+.campuses-underheading, .accesibility-underheading {
   text-align: center;
 }
 
@@ -461,7 +461,7 @@ using letter
 /* The general styling for page 5 starts here:*/
 
 /*Make the main image fill the screen and centered*/
-#kjeller-picture {
+#kjeller-picture, #accesibility-picture-main{
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -598,23 +598,23 @@ using letter
 
   /* The mobile styling for page 4 starts here:*/
   /* decides that mobile version only has 1 column */
-  .campuses main {
+  .campuses main, .accesibility main {
     grid-template-columns: 1fr;
   }
 
   /* decides positions of elements with grid-column start and end */
-  .campuses-heading {
+  .campuses-heading, .accesibility-heading {
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
   /* sets fitting font size for mobile */
-  .campuses-heading h1 {
+  .campuses-heading h1, .accesibility-heading h1 {
     font-size: 9vw;
   }
 
   /* places underheading in a mobile frendly format */
-  .campuses-underheading {
+  .campuses-underheading, .accesibility-underheading {
     padding-top: 5vh;
     padding-right: 5vw;
     padding-bottom: 5vh;
@@ -693,18 +693,18 @@ using letter
   /*Page 4 pilestredet computer styling starts here*/
 
   /* Makes grid in main two columns with same width */
-  .campuses main {
+  .campuses main, .accesibility main {
     grid-template-columns: 1fr 1fr;
   }
 
   /* places heading */
-  .campuses-heading {
+  .campuses-heading, .accesibility-heading{
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
   /* places underheading in a computer friendly format */
-  .campuses-underheading{
+  .campuses-underheading, .accesibility-underheading{
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.7rem;
