@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accessibility</title>
-  <link rel="stylesheet" href="../css/stylesheet.css">
+  <title>Campus pilestredet</title>
+  <link rel="stylesheet" href="../css/stylesheet.css" />
+
 </head>
 
-<body class="accessibility">
+<body class="campuses">
   <header>
 <!--Creating a semantic element to host the nav-->
 <nav class="navbar">
@@ -26,129 +27,142 @@
 </nav>
 
   </header>
+  <!--this is the start of the main portion of the site-->
   <main>
     <div class="campuses-heading">
       <!--main heading in a div to easelly place it on the grid-->
-      <h1></h1>
-      <!--Photo source:https://epicassist.org/digital-accessibility-benefits-everyone/-->
-      <img id="pilestredet-picture" src="/media/accesibility-main.png" 
+        <!-- Link to main picture "kjeller-campus2" taken by Benjamin A. Ward:
+        https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxxlarge/4/5/8/2/42854-2-nor-NO/kjeller.jpg -->      
+        <img id="kjeller-picture" src="/media/accesibility-main.png" 
       alt="Picture of pilestredet campus">
     </div>
     <div class="campuses-underheading">
         <!-- text under heading in its own div-->
-      <h2>
+      <h1>
         The making of an accessible website
-      </h2>
+      </h1>
 
     </div>
     <!--Div for cafeteria pic-->
     <div class="cafeteria-pic-box">
-      <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fstudent.oslomet.no%2Fauditorier-undervisningsrom%2F-%2Fundervisningsrom%2Fcampus%2FPIL%2Fbygning%2FP32%2From%2FP32_ANDREA_SPISERI&psig=AOvVaw1WYPoIiHeq_PVEmF9UeEXY&ust=1700590371379000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiRuPqW04IDFQAAAAAdAAAAABAE-->
-      <img id="cafeteria-picture" src="/media/accessibility picture 3.PNG" 
-      alt="Picture of cafeteria at pilestredet">
+        <!-- Link to the cafeteria picture from foodtech's website:
+            https://foodtech.no/wp-content/uploads/2019/04/toma_youngskvartalet_artikkel.jpg-->
+                  <img id="cafeteria-picture" src="/media/accessibility picture 3.PNG" 
+      alt="The cafeteria of Kjeller Campus">
     </div>
     <!--Div for cafeteria text-->
     <div class="cafeteria">
       <!--subheading above all small textboxes-->
-      <h3>Modern canteens</h3>
-      <p>The canteen serves as a pleasant social meeting point for students and staff. With a relaxed atmosphere provides
-        it an ideal place to meet friends, colleagues or work informally between lectures.</p>
+      <h3>How we tested accessibility</h3>
+      <p> We used ligthhouse in microsoft edge and Wave web accessibility evaluation tool to evaluate the site pages
+        accessibility. To use these tests firstly download the extension live server. After that paste the live
+        server link in edge and go to settings and developer tools. Then click on lighthouse and run the tests for
+        phone and pc view. To use wave i forked the github repository and ran the repo on my own github pages. After
+        github pages is set up i paste the link from github pages into Wave and get the results.
+</p>
     </div>
     <div class="library">
          <!--Div for library text-->
-      <h3>The libraries</h3>
-      <p>Pilestredet Campus library at OsloMet is a modern knowledge arena, offers a wide selection of resources and
-        digital access, supported by helpful staff to promote students' academic success.</p>
+      <h3>The page we used</h3>
+      <p>                
+        For the accessibility test we decided to use the page topical to present. The page had already a high
+        accessibility test score something that indicates the students have high comprehension of the accessibility
+        lecture. But you can always be better with accessibility and the test showcased where the webpage hade low
+        contrast. Having low contrast make the website harder to read espeacially for the visually impaired and
+        elderly.</p>
     </div>
        <!--Div for cafeteria pic-->
     <div class="library-picture-box">
       <!--Photo source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oslomet.no%2Fstudier%2Fstudenthistorier%2Fma-vere-sosial-for-a-vere-bibliotekar&psig=AOvVaw1eZgQhUh9gnJoJir-mc39L&ust=1700590726509000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjYw6OY04IDFQAAAAAdAAAAABAE-->
-      <img id="library-picture" src="../media/pilestredet-bibliotek.jpeg" 
-      alt="Picture of pilestredet library">
+      <img id="library-picture" src="/media/accessibility picture 4.PNG" 
+      alt="A library with multiple rows filled with books">
     </div>
     <div class="computer-picture-box">
     <!--Div for computer pic-->
       <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indeed.com%2Fcareer-advice%2Fcareer-development%2Fhow-to-become-a-computer-programmer&psig=AOvVaw0bEwfroVDY3k34XXXgbQ41&ust=1700591186228000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjplf-Z04IDFQAAAAAdAAAAABAI-->
-      <img id="computer-picture" src="../media/pilestredet-datatorg.jpeg" 
+      <img id="computer-picture" src="/media/accesibility-picture-6.png" 
       alt="example-picture of computer-square">
     </div>
        <!--Div for computer text-->
     <div class="computer-square">
-      <h3>Advanced computer square</h3>
-      <p>The data center on the Pilestredet Campus is an innovative meeting point, equipped with modern computer terminals and
-        technological resources, created to strengthen students' digital skills and support project work.</p>
+      <h3>What we did to improve accessibility</h3>
+      <p>To fix these changes we changes the colors of the low contrasting text to text with higher contrasting
+        colors making the text more visible and easier to see. Other things we have done to make our page more
+        accesible is to have descriptive alt text on all images. We have also tried scaling our website down and see
+        how readable our text is. Making sure that no text is to small to be able to read is important to make sure
+        the site does not become less accessible for thoose with vision impairment.
+
+</p>
     </div>
        <!--Div for map text-->
     <div class="campuses-map-text">
       
-      <h3>Well positioned</h3>
-      <p>Pilestredet Campus is strategically located near public transport, which makes it easy
-        available to students from all over the city. With good connections to trams, buses and the subway, it's easy to get there
-        themselves to and from campus.</p>
+      <h3>Structure</h3>
+      <p>We have also used text shadow on some of the h1 tags to increase readability and make the h1 tags stand out
+        from the background. Having text blend into to the background may cause the viewer of the page to not
+        clearly see what is meant to be presented on the page. This results in a worse overall viewing experience,
+        and worse accessibility. We have also followed guidelines give to us på the Wave accessibility evaluation tool. For example here you can see the tools says we have a good structure </p>
     </div>
        <!--Div for the map-->
-    <div class="campuses-map">
+    <div class="accesibility-main-structure">
    <!--We use the element iframe to insert maps-->
       <!-- The src code comes from google maps -->
-      <iframe id="pilestred-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1699.1372603251643!2d10.735785914905398!3d59.92009622410797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416fab6bb97e7f%3A0x3f394a77d4dd9299!2sOsloMet!5e0!3m2!1sno!2sus!4v1700436927522!5m2!1sno!2sus"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+    <img src="/media/accesibility-picture-7.png" alt="">
     </div>
 
 
 
   </main>
-  <footer id="footer">
-    <div class="grid-footer-container">
-        <div class="grid-footer-left">
-            <h4>Socials</h4>
-            <hr>
-            <a href="abcde1234@oslomet.no">
-                <p>Mail</p>
-            </a>
-            <a href="https://www.facebook.com/oslomet/?locale=nb_NO">
-                <p>Facebook</p>
-            </a>
-            <a href="https://www.instagram.com/oslomet/">
-                <p>Instagram</p>
-            </a>
-        </div>
-        <div class="grid-footer-middle">
-            <h4>Contact</h4>
-            <hr>
-            <a href="#">
-                <p>Jobs</p>
-            </a>
-            <a href="#">
-                <p>About us</p>
-            </a>
-            <a href="#">
-                <p>Contact us</p>
-            </a>
+    <footer id="footer">
+        <div class="grid-footer-container">
+            <div class="grid-footer-left">
+                <h4>Socials</h4>
+                <hr>
+                <a href="abcde1234@oslomet.no">
+                    <p>Mail</p>
+                </a>
+                <a href="https://www.facebook.com/oslomet/?locale=nb_NO">
+                    <p>Facebook</p>
+                </a>
+                <a href="https://www.instagram.com/oslomet/">
+                    <p>Instagram</p>
+                </a>
+            </div>
+            <div class="grid-footer-middle">
+                <h4>Contact</h4>
+                <hr>
+                <a href="#">
+                    <p>Jobs</p>
+                </a>
+                <a href="#">
+                    <p>About us</p>
+                </a>
+                <a href="#">
+                    <p>Contact us</p>
+                </a>
+            </div>
+
+            <div class="grid-footer-rigth">
+                <h4>Help</h4>
+                <hr>
+                <a href="#">
+                    <p>User support</p>
+                </a>
+                <a href="accessibility.html">
+                    <p>Accessibility</p>
+                </a>
+                <a href="#">
+                    <p>Privacy</p>
+                </a>
+            </div>
         </div>
 
-        <div class="grid-footer-rigth">
-            <h4>Help</h4>
-            <hr>
-            <a href="#">
-                <p>User support</p>
-            </a>
-            <a href="accessibility.html">
-                <p>Accessibility</p>
-            </a>
-            <a href="#">
-                <p>Privacy</p>
-            </a>
-        </div>
-    </div>
+        <div class="grid-footer-bottom">
+            <h4>Süssmann Productions</h4>
+            <p>Ansvarlig redaktør: Aron Süssmann</p>
+            <p>Med: Didrik, Trym og Gudmund</p>
 
-    <div class="grid-footer-bottom">
-        <h4>Süssmann Productions</h4>
-        <p>Ansvarlig redaktør: Aron Süssmann</p>
-        <p>Med: Didrik, Trym og Gudmund</p>
-
-</footer>
+    </footer>
 
 </body>
 
