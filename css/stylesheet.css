@@ -425,7 +425,7 @@ using letter
 }
 
 /*Aligns the content and make i width 100% to fit the page*/
-.computer-picture-box{
+.computer-picture-box, .service-picture-box{
   width: 100%;
   justify-content: center;
 }
@@ -453,7 +453,7 @@ using letter
 }
 
 /* styles pic to fill gridbox */
-#computer-picture, #accesibility-main-features-image {
+#computer-picture, #accesibility-main-features-image, #page5-main-service-img {
   width: 100%;
   height: 100%;
 }
@@ -702,14 +702,14 @@ using letter
   }
 
   /* places elements below eachother and sets their height */
-  .computer-square, .accesibility-main-features-box{
+  .computer-square, .accesibility-main-features-box, .service-square{
     grid-row-start: 7;
     grid-row-end: 8;
     height: auto;
     margin-bottom: 4vh;
   }
   /* places elements below eachother and sets their height */
-  .computer-picture-box {
+  .computer-picture-box, .service-picture-box{
     grid-row-start: 8;
     grid-row-end: 9;
     height: auto;
@@ -1077,7 +1077,7 @@ using letter
   }
 
   /* Places content in boxes next to eachother in the main*/
-  .computer-picture-box {
+  .computer-picture-box, .service-picture-box {
     grid-column-start: 1;
     grid-column-end: 2;
   }
@@ -1094,7 +1094,7 @@ using letter
     grid-column-end: 2;
   }
     /* Places content in boxes next to eachother in the main*/
-  .computer-square, .accesibility-main-features-box {
+  .computer-square, .accesibility-main-features-box, .service-square{
     grid-column-start: 2;
     grid-column-end: 3;
     height: 60vh;
