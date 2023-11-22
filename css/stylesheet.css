@@ -452,11 +452,6 @@ using letter
   height: 100%;
 }
 
-/*Makes the content scale with viewheigth */
-.computer-square, .accesibility-main-features-box {
-  height: 60vh;
-}
-
 /* styles pic to fill gridbox */
 #computer-picture, #accesibility-main-features-image {
   width: 100%;
@@ -580,9 +575,11 @@ using letter
    /*sets height to auto to adjust for large amounths of text*/
   .accesibility-main-div-pic{
     height: auto;
-    padding-bottom: 4vh;
   }
-
+  .accesibility-main-edge-text-2{
+    margin-bottom: 7vh;
+    height: auto;
+  }
   /*end of page2 (accesability) mobile styling*/
 
   /*mobile styling for Topical(page3) starts here*/
@@ -678,7 +675,7 @@ using letter
   }
 
   /* places elements below eachother and sets their height */
-  .cafeteria,  .accesibility-main-edge-text{
+  .cafeteria,  .accesibility-main-edge-text-1{
     grid-row-start: 3;
     grid-row-end: 4;
     height: auto;
@@ -709,7 +706,7 @@ using letter
     grid-row-start: 7;
     grid-row-end: 8;
     height: auto;
-    padding-bottom: 4vh;
+    margin-bottom: 4vh;
   }
   /* places elements below eachother and sets their height */
   .computer-picture-box {
@@ -1086,7 +1083,7 @@ using letter
   }
 
   /* Places content in boxes next to eachother in the main*/
-  .cafeteria, .accesibility-main-edge-text {
+  .cafeteria, .accesibility-main-edge-text-1 {
     grid-column-start: 2;
     grid-column-end: 3;
   }
@@ -1100,6 +1097,7 @@ using letter
   .computer-square, .accesibility-main-features-box {
     grid-column-start: 2;
     grid-column-end: 3;
+    height: 60vh;
   }
 
   .campuses-map-text {
