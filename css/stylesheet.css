@@ -914,7 +914,81 @@ using letter
     width: 50%;
     height: 40em;
   }
-  /*Page 4 pilestredet computer styling starts here*/
+
+  /*Page Topical computer styling starts here*/
+
+  /*Centers the first heading*/
+  .topical h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
+  .topical-header-digi-picture {
+    width: 60em;
+    height: 30em;
+    padding-left: 19vw;
+  }
+
+  /*Left aligns all text in the body of topical */
+  .topical {
+    text-align: left;
+    margin-bottom: 1em;
+  }
+
+  /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
+  .topical-main-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+  }
+
+  /*Makes a grid for the body to put it in the left-middle*/
+  .grid-body-topical {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  /*Puts the aside to the rigth of the main text*/
+  .topical aside {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 4;
+    justify-content: center;
+  }
+
+  /*Styles the healthpicture to fit well inside the grid*/
+  .topical-body-health-picture {
+    width: 100%;
+    height: 30%;
+  }
+
+  /*Sizes the aside pictures to an appropriate size relative to the page*/
+  .topical aside img {
+    height: 30%;
+    width: 16em;
+  }
+
+  /*Makes the text flush with the imageand ads some padding for style*/
+  .topical aside p {
+    margin-top: 0;
+    padding-left: 1%;
+  }
+
+  /*Makes the footer flush with the main content*/
+  .topical footer {
+    margin-top: -10%;
+  }
+
+  /*Page Topical computer styling ends here*/
+
+
+  /*Page 4,5 computer styling starts here*/
 
   /* Makes grid in main two columns with same width */
   .campuses main, .accesibility main {
@@ -1039,79 +1113,6 @@ using letter
   }
 
   /*Page accesability computer styling ends here*/
-
-  /*Page Topical computer styling starts here*/
-
-  /*Centers the first heading*/
-  .topical h1 {
-    text-align: center;
-    font-size: 3em;
-  }
-
-  /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
-  .topical-header-digi-picture {
-    width: 60em;
-    height: 30em;
-    padding-left: 19vw;
-  }
-
-  /*Left aligns all text in the body of topical */
-  .topical {
-    text-align: left;
-    margin-bottom: 1em;
-  }
-
-  /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
-  .topical-main-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 3em;
-    grid-row-gap: 3em;
-  }
-
-  /*Makes a grid for the body to put it in the left-middle*/
-  .grid-body-topical {
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-
-  /*Puts the aside to the rigth of the main text*/
-  .topical aside {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 5;
-    grid-column-end: 4;
-    justify-content: center;
-  }
-
-  /*Styles the healthpicture to fit well inside the grid*/
-  .topical-body-health-picture {
-    width: 100%;
-    height: 30%;
-  }
-
-  /*Sizes the aside pictures to an appropriate size relative to the page*/
-  .topical aside img {
-    height: 30%;
-    width: 16em;
-  }
-
-  /*Makes the text flush with the imageand ads some padding for style*/
-  .topical aside p {
-    margin-top: 0;
-    padding-left: 1%;
-  }
-
-  /*Makes the footer flush with the main content*/
-  .topical footer {
-    margin-top: -10%;
-  }
-
-  /*Page Topical computer styling ends here*/
-
 
 
 }
