@@ -574,13 +574,6 @@ using letter
     padding-bottom: 4vh;
   }
 
-  /* places elements below eachother and sets their height */
-  .accesibility-main-edge-text{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    height: auto;
-    padding-bottom: 4vh;
-  }
   /*end of page2 (accesability) mobile styling*/
 
   /*mobile styling for Topical(page3) starts here*/
