@@ -741,6 +741,179 @@ using letter
 
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
+  
+  /*Footer computer styling starts here*/
+
+  /*Makes a container for the footer to be placed in a grid*/
+  #grid-footer-container {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  /*Puts som text in the left part of the footer*/
+  #grid-footer-left {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 6;
+    grid-column-end: 8;
+  }
+
+  /*Puts som text in the middle part of the footer*/
+  #grid-footer-middle {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 12;
+    grid-column-end: 14;
+  }
+
+  /*Puts som text in the rigth part of the footer*/
+  #grid-footer-right {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 18;
+    grid-column-end: 20;
+  }
+
+  /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
+  #grid-footer-bottom {
+    background-color: #16171a;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  /*Makes the links white and removes underline*/
+  #footer a {
+    color: #D3D3D3;
+    text-decoration: none;
+  }
+
+  /*Makes the headers larger to make it easier to read*/
+  #footer h4 {
+    font-size: larger;
+  }
+
+  /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
+  /*Makes some of the content edge to edge and all 100% width*/
+  #index-body {
+    width: 100%;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
+    box-sizing: border-box;
+  }
+
+  /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
+  #index-main-container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(28, 1fr);
+  }
+
+  /*Places h1 tag in cloumn 2 start 11 end*/
+  #index-h1-container {
+    grid-column-start: 2;
+    grid-column-end: 11;
+  }
+
+  /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
+  #index-intro-p {
+    columns: 2;
+    column-gap: 5%;
+    font-size: x-large;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 11;
+  }
+
+  /*Places img in the grid in the top half of the page  in the middle*/
+  #index-under-intro-img-div {
+    border-radius: 1%;
+    grid-row-start: 5;
+    grid-row-end: 10;
+    grid-column-start: 2;
+    grid-column-end: 11;
+  }
+
+  /*places content in the grid, makes the "phone" only visible in 
+  pc-veiw due to that the mobile-screen size would make the text too small */
+  #index-under-intro-area {
+    grid-row-start: 10;
+    grid-row-end: 15;
+    grid-column-start: 4;
+    grid-column-end: 9;
+    background-color: #1f1f1f;
+    text-align: center;
+    box-shadow: 1em 1em 1em #323232;
+    border-radius: 5%;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
+  #index-under-intro-white-area {
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1%;
+  }
+
+  /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
+  #index-secondary-box {
+    grid-row-start: 15;
+    grid-row-end: 22;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    margin-top: 3em;
+  }
+
+  /*Ads appropriate heigth and width relative to the main page*/
+  .index-secondary-box-div {
+    width: 20%;
+    height: 40em;
+  }
+
+  /*Places the campus in the bottom half of the page and in the middle of the columns*/
+  #index-third-box {
+    grid-row-start: 22;
+    grid-row-end: 28;
+    grid-column-start: 2;
+    grid-column-end: 11;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  /*Places campus images next to eachother and ads padding and margin and border radius for style*/
+  .index-third-campus-div {
+    border-radius: 1%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 40em;
+  }
   /*Page 4 pilestredet computer styling starts here*/
 
   /* Makes grid in main two columns with same width */
@@ -939,179 +1112,8 @@ using letter
 
   /*Page Topical computer styling ends here*/
 
-  /*Footer computer styling starts here*/
-
-  /*Makes a container for the footer to be placed in a grid*/
-  #grid-footer-container {
-    display: grid;
-    grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  /*Puts som text in the left part of the footer*/
-  #grid-footer-left {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 6;
-    grid-column-end: 8;
-  }
-
-  /*Puts som text in the middle part of the footer*/
-  #grid-footer-middle {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 12;
-    grid-column-end: 14;
-  }
-
-  /*Puts som text in the rigth part of the footer*/
-  #grid-footer-right {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 18;
-    grid-column-end: 20;
-  }
-
-  /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
-  #grid-footer-bottom {
-    background-color: #16171a;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  /*Makes the links white and removes underline*/
-  #footer a {
-    color: #D3D3D3;
-    text-decoration: none;
-  }
-
-  /*Makes the headers larger to make it easier to read*/
-  #footer h4 {
-    font-size: larger;
-  }
 
 
-  /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
-  /*Makes some of the content edge to edge and all 100% width*/
-  #index-body {
-    width: 100%;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    margin-right: 0em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0em;
-    padding-right: 0em;
-    box-sizing: border-box;
-  }
-
-  /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
-  #index-main-container {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(28, 1fr);
-  }
-
-  /*Places h1 tag in cloumn 2 start 11 end*/
-  #index-h1-container {
-    grid-column-start: 2;
-    grid-column-end: 11;
-  }
-
-  /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
-  #index-intro-p {
-    columns: 2;
-    column-gap: 5%;
-    font-size: x-large;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 11;
-  }
-
-  /*Places img in the grid in the top half of the page  in the middle*/
-  #index-under-intro-img-div {
-    border-radius: 1%;
-    grid-row-start: 5;
-    grid-row-end: 10;
-    grid-column-start: 2;
-    grid-column-end: 11;
-  }
-
-  /*places content in the grid, makes the "phone" only visible in 
-  pc-veiw due to that the mobile-screen size would make the text too small */
-  #index-under-intro-area {
-    grid-row-start: 10;
-    grid-row-end: 15;
-    grid-column-start: 4;
-    grid-column-end: 9;
-    background-color: #1f1f1f;
-    text-align: center;
-    box-shadow: 1em 1em 1em #323232;
-    border-radius: 5%;
-    margin-left: 5em;
-    margin-right: 5em;
-  }
-
-  /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
-  #index-under-intro-white-area {
-    background-color: #ffffff;
-    width: 95%;
-    height: 90%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1%;
-  }
-
-  /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
-  #index-secondary-box {
-    grid-row-start: 15;
-    grid-row-end: 22;
-    grid-column-start: 1;
-    grid-column-end: 12;
-    margin-top: 3em;
-  }
-
-  /*Ads appropriate heigth and width relative to the main page*/
-  .index-secondary-box-div {
-    width: 20%;
-    height: 40em;
-  }
-
-  /*Places the campus in the bottom half of the page and in the middle of the columns*/
-  #index-third-box {
-    grid-row-start: 22;
-    grid-row-end: 28;
-    grid-column-start: 2;
-    grid-column-end: 11;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  /*Places campus images next to eachother and ads padding and margin and border radius for style*/
-  .index-third-campus-div {
-    border-radius: 1%;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    margin-left: 0.3em;
-    margin-right: 0.3em;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    height: 40em;
-  }
 }
 
 /*End of media quearry for pc*/
