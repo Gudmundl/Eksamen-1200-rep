@@ -494,7 +494,16 @@ using letter
 
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-width: 800px) {
+/*Start of mobile styling for navbar*/
+/*Changes the definition of font size so the mobile navbar fits in one line*/
+  .navbar a {
+    font-size: 3.5vw;
+  }
+  .dropdown-meny .dropbtn {
+    font-size: 3.5vw;    
+  }
 
+/*end of mobile styling for navbar*/
   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
   /*Using flex to make content below eachother*/
   #index-body {
@@ -665,7 +674,7 @@ using letter
   }
 
   #campus-underhead-text{
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 
   /* places elements below eachother and sets their height */
