@@ -1,30 +1,38 @@
 <!DOCTYPE html>
+<!--Setting the language to english, so that some browser have the ability to translate the page to the users prefered language-->
 <html lang="en">
-
+<!--head with all the meta-data for the page-->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Topical</title>
-  <link rel="stylesheet" href="../css/stylesheet.css" />
+    <!--Setting the charset used on this page to UTF-8-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Adding a title to the page visible in the browser-->
+    <title>Topical</title>
+    <!--Links the stylesheet to the html-page-->
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <!--Adds a favicon, where the image is taken from: https://kommunikasjon.ntb.no/data/images/00386/e13af02a-52b6-4701-8766-f0a0d9fab213-w_960.png, and converted on:https://favicon.io/favicon-converter/-->
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
 
 <!--Make a class for the body so that it can be styled sepratly from the other bodyes-->
 <body class="topical">
+  <!--Making a semantic element with nav and a picture, that is not going to be visible if the veiwer is entering reading mode in the browser-->
   <header>
     <!--Creating a semantic element to host the nav-->
     <nav class="navbar">
+      <!--using a-element as clickable buttons that redirect the veiwer to the other pages-->
       <a href="index.html">Home</a>
       <a href="accessibility.html">Accessibility</a>
       <a href="topical.html">Topical</a>
       <!--Creating a div to add a dropdown meny-->
       <div class="dropdown-meny">
-      <button class="dropbtn">Campuses</button>
-      <div class="dropdown-content">
+        <button class="dropbtn">Campuses</button>
+        <div class="dropdown-content">
           <a href="page4.html">Pilestredet</a>
           <a href="page5.html">Kjeller</a>
+        </div>
       </div>
-      </div> 
-  </nav>
+    </nav>
     <!--Under is the main header and main image of the site -->
     <!-- Link to picture
       https://www.meistertask.com/blog/the-time-for-digitalization-has-come-push-your-business-to-the-next-level/-->
@@ -39,9 +47,9 @@
         <!--Has own id to make it flush with top image-->
         <p id="topical-under-header-text">The world is more connected than ever due to digitalization.</p>
         <hr>
-          <!--Under here starts the main text of the page-->
+        <!--Under here starts the main text of the page-->
         <h2>Digitalization</h2>
-        <p >Digital technology has opened new ways of collecting data and new ways of processing data.
+        <p>Digital technology has opened new ways of collecting data and new ways of processing data.
           This has
           expanded the possibilities for how data about a city can be gathered and how this data can be combined and
           analyzed to give insights that can be used in planning and administration. In this video, Marikken Wullf
@@ -72,7 +80,7 @@
           connected to the digitization in the health- and welfare sector.
         </p>
 
-        <! --Link to picture https://www.plansponsor.com/digitalization-health-care-expands-wearable-devices/ -->
+        <!--Link to picture https://www.plansponsor.com/digitalization-health-care-expands-wearable-devices/ -->
           <img class="topical-body-health-picture" src="../media/health-picture.jpg"
             alt="A picture showing technology and healthcare beeing interconnected">
 
@@ -94,12 +102,7 @@
               href="https://www.theguardian.com/australia-news/2020/jun/10/robodebt-total-value-of-debts-issued-under-unlawful-centrelink-scheme-to-exceed-1bn-refund">
               Link</a>
             <hr>
-
-
-
           </p>
-
-
       </div>
       <!-- Picture link https://www.brookings.edu/articles/digitalization-and-the-american-workforce/ 
          Created an aside tag that is put in a grid. Added a picture and wrapped it with <a> tags to make it clickable, also added strong text under img -->
@@ -113,7 +116,6 @@
             <p><strong>Read more about the wonders of digitalization here</strong></p>
         </a>
     </div>
-
     <hr>
     <!--Picture link https://woxapp.com/industries/digitalization-solutions-development/  
                 Created an aside tag that is put in a grid. Added a picture and wrapped it with a tags to make it clickable, also added strong text under img-->
@@ -132,9 +134,12 @@
   https://www.youtube.com/watch?v=nkZz9DOBzBI&t=398s 
     Makes a footer with a grid container and 3 elemts to be placed in the left center and middle of the footer
   using a tags to make the text clickable-->
-  <footer id="footer">
-    <div class="grid-footer-container">
-        <div class="grid-footer-left">
+   <!--adding the semantic element "footer" so that the browser has the ability to veiw it as a footer, so that for example when entering reader-mode, it will be gone-->
+   <footer id="footer">
+    <!--div elements that acts like a container for the three different sections inside-->
+    <div id="grid-footer-container">
+        <!--devides the links in the footer into three different sections, with different links in each. --->
+        <section id="grid-footer-left">
             <h4>Socials</h4>
             <hr>
             <a href="abcde1234@oslomet.no">
@@ -146,8 +151,8 @@
             <a href="https://www.instagram.com/oslomet/">
                 <p>Instagram</p>
             </a>
-        </div>
-        <div class="grid-footer-middle">
+        </section>
+        <section id="grid-footer-middle">
             <h4>Contact</h4>
             <hr>
             <a href="#">
@@ -159,9 +164,8 @@
             <a href="#">
                 <p>Contact us</p>
             </a>
-        </div>
-
-        <div class="grid-footer-rigth">
+        </section>
+        <section id="grid-footer-right">
             <h4>Help</h4>
             <hr>
             <a href="#">
@@ -173,14 +177,14 @@
             <a href="#">
                 <p>Privacy</p>
             </a>
-        </div>
+        </section>
     </div>
-
-    <div class="grid-footer-bottom">
+    <!--Extra footer at the bottom of the footer with the names of the people that have worked on this page-->
+    <section id="grid-footer-bottom">
         <h4>Süssmann Productions</h4>
         <p>Ansvarlig redaktør: Aron Süssmann</p>
         <p>Med: Didrik, Trym og Gudmund</p>
-
+    </section>
 </footer>
 </body>
 

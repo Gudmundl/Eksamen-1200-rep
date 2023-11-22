@@ -21,10 +21,10 @@ hides elements when elements overflow in navbar box*/
 .navbar {
   overflow: hidden;
   background-color: #05153F;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 /*Styles the text in the "navbar buttons to white, right size, aligns them to the senter of the element,
@@ -93,10 +93,6 @@ removes the undelines, as well as some margin and padding fixing to improve read
 .dropdown-content a {
   float: none;
   color: #ffffff;
-  padding-top: .7em;
-  padding-bottom: .7em;
-  padding-left: .7em;
-  padding-right: .7em;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -105,6 +101,10 @@ removes the undelines, as well as some margin and padding fixing to improve read
   margin-bottom: 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
 }
 
 /*highligts dropdown links and displays them on hover*/
@@ -127,13 +127,9 @@ footer {
   background-color: #24262b;
 }
 
-/*Makes links in the footer white when hovering. Improves accessability*/
-footer a:hover {
-  color: #ffffff;
-}
 
 /*Makes the bottom footer black and adds padding to remove extra space at the bottom*/
-.grid-footer-bottom {
+#grid-footer-bottom {
   background-color: #16171a;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -147,14 +143,17 @@ footer a:hover {
   border-style: solid;
   border-color: #ffcc00;
   border-width: 0.07em;
-
 }
 
 /*Makes the links white and removes underline*/
 #footer a {
   color: #D3D3D3;
   text-decoration: none;
+}
 
+/*Makes links in the footer white when hovering. Improves accessability*/
+#footer a:hover {
+  color: #ffffff;
 }
 
 /*Make the h4 larger to make i easier to read*/
@@ -162,23 +161,10 @@ footer a:hover {
   font-size: larger;
 }
 
-/*makes the footer flush with footer*/
-#footer {
-  margin-right: -1%;
-  margin-left: -1%;
-  margin-bottom: -1%;
-}
-
 /*general footer styling ENDS here*/
 
 /*  General styling of index STARTS here*/
 
-/*Settinng the width so the page expands to match the current screen. Border-box makes that the padding and border are included in the width and height.*/
-#index-body {
-  width: 100vw;
-  max-width: 100vw;
-  box-sizing: border-box;
-}
 
 /*
 Setting a common font family to nearly all p-elements by using a class
@@ -191,13 +177,14 @@ using letter
 
 /*height is set to auto, while that the img is given a width, so that the browser automaticaly calculates the height so that the img keeps its ratio */
 #index-header-img {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
 /*Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-font-border, on the text-shadow.*/
+/*adding style to make the word oslomet stand out*/
 .index-oslomet-span {
-  color: #ffcc00;
+  color: #ffbb00;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
   font-size: 1.5em;
   font-weight: bolder;
@@ -215,7 +202,7 @@ using letter
   color: #ffffff;
   font-weight: 600;
   border-radius: 2em 2em 2em 0em;
-  box-shadow: 1em 1em 1em #808080;
+  box-shadow: 0.1em 0.1em 0.1em #474747;
   margin-top: 5%;
   margin-right: 5%;
   padding-top: 0.5em;
@@ -236,7 +223,7 @@ using letter
 
 /*aligning the text in the container to center as well as color-styling*/
 #index-secondary-box {
-  background-color: #1f1f1f;
+  background-color: #05153F;
   color: #ffffff;
   text-align: center;
 }
@@ -341,7 +328,14 @@ using letter
 
 
 /* START of general styling for topical */
+
+/* Sets default styling for topical page */
+.topical{
+  color: #05153F;
+  background-color:#ffffff;
+}
 /*Makes the text under digi-picture black and flush with the picture*/
+
 #topical-under-header-text {
   color: #000000;
   margin-top: 0;
@@ -351,23 +345,19 @@ using letter
 .topical aside a {
   color: #000000;
 }
+/*makes topical footer flush with the edges of the page*/
+.topical #footer{
+  margin-bottom: -1em;
+}
 
 /*general Styling for Topical(page3 ENDS here)*/
 
-/* general Styling for accesability page STARTS here*/
-/*Color-styling for better contrast*/
-.accessibility {
-  background-color: #05153F;
-  color: white;
-}
-
-/* general Styling for accesability page ENDS here*/
 
 
-/* general styling for page 4 starts here */
+/* general styling for page 4,5 and similar accesibility classes STARTS here */
 
 /* styles main inside page 4(pilestredet), aligns the text*/
-.campuses main {
+.campuses main, .accesibility main {
   display: grid;
   text-align: center;
   background-color: #05153F;
@@ -375,27 +365,29 @@ using letter
 }
 
 /* styles level 3 headings inside page 4 main */
-.campuses main h3 {
+.campuses main h3, .accesibility main h3 {
   padding-top: 7%;
   font-size: 1.7rem;
 }
 
 /* styles all p inside page 4 main */
-.campuses main p {
+.campuses main p, .accesibility main p {
   padding-top: 5%;
-  font-size: 1.3rem;
+  padding-left: 8%;
   padding-right: 8%;
   padding-left: 8%;
+  text-align: left;
+  font-size: 1.3rem;
 }
 
 /*aligns the heading to center, and positions it relativ*/
-.campuses-heading {
+.campuses-heading, .accesibility-heading {
   text-align: center;
   position: relative;
 }
 
 /*styles h1 and sets its position on top of the background */
-.campuses-heading h1 {
+.campuses-heading h1, .accesibility-heading h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -413,25 +405,27 @@ using letter
 }
 
 /*aligns the text*/
-.campuses-underheading {
+.campuses-underheading, .accesibility-underheading {
   text-align: center;
 }
-
+/*adjusts text for text paragraph under heading*/
+#campus-underhead-text{
+  font-weight: 600;
+}
 /*Aligns the content and make i width 100% to fit the page*/
-.cafeteria-pic-box {
+.cafeteria-pic-box, .accesibility-main-edge-pic {
   width: 100%;
   justify-content: center;
 }
 
 /*Aligns the content and make i width 100% to fit the page*/
-.biblotek-bilde-boks {
+.library-picture-box {
   width: 100%;
   justify-content: center;
-
 }
 
 /*Aligns the content and make i width 100% to fit the page*/
-.computer-picture-box {
+.computer-picture-box{
   width: 100%;
   justify-content: center;
 }
@@ -442,29 +436,24 @@ using letter
 }
 
 /* styles pic to fill gridbox */
-#cafeteria-picture {
+#cafeteria-picture, #accesibility-main-pic-edge {
   width: 100%;
   height: 100%;
 }
 
 /*Makes the content scale with viewheigth */
-.library {
-  height: 60vh;
+.library  {
+  height: auto;
 }
 
 /*Styles pic to fill grid*/
-#library-picture {
+#library-picture, #accesibility-main-pic-edge-2 {
   width: 100%;
   height: 100%;
 }
 
-/*Makes the content scale with viewheigth */
-.computer-square {
-  height: 60vh;
-}
-
 /* styles pic to fill gridbox */
-#computer-picture {
+#computer-picture, #accesibility-main-features-image {
   width: 100%;
   height: 100%;
 }
@@ -480,12 +469,8 @@ using letter
   height: 100%;
 }
 
-/* general styling for page 4 stops here */
-
-/* The general styling for page 5 starts here:*/
-
 /*Make the main image fill the screen and centered*/
-#kjeller-picture {
+#kjeller-picture, #accesibility-picture-main{
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -496,15 +481,24 @@ using letter
   width: 100%;
   height: 100%;
 }
+/* general styling for page 4,5 and similar accesibility classes ENDS here */
 
-/* The general styling for page 5 stops here:*/
+
+
 /*END of tags that does not change depending on the size of the screen*/
-
-
 
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-width: 800px) {
+/*Start of mobile styling for navbar*/
+/*Changes the definition of font size so the mobile navbar fits in one line*/
+  .navbar a {
+    font-size: 3.5vw;
+  }
+  .dropdown-meny .dropbtn {
+    font-size: 3.5vw;    
+  }
 
+/*end of mobile styling for navbar*/
   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
   /*Using flex to make content below eachother*/
   #index-body {
@@ -527,7 +521,6 @@ using letter
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-
   }
 
   /*Ads margin to make headers easier to read*/
@@ -577,45 +570,16 @@ using letter
 
   /*Index mobile styling ends here*/
 
-  /*Start of page2 (accesability) mobile styling*/
+   /*Start of page2 (accesability) mobile styling*/
 
-  /*Makes the text bigger for mobile*/
-  .accessibility p {
-    font-size: 1.5em;
+   /*sets height to auto to adjust for large picture sizes*/
+  .accesibility-main-div-pic{
+    height: auto;
   }
-
-  /* places elements below eachother for mobile view*/
-  .accessibility-main-container-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+  .accesibility-main-edge-text-2{
+    margin-bottom: 7vh;
+    height: auto;
   }
-
-  /* places elements below eachother for mobile view*/
-  .accessibility-main-text-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  /* places elements below eachother for mobile view*/
-  .accessibility-main-img-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-  }
-
-  /*Makes the footer fit edge to edge*/
-  .accessibility footer {
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    margin-right: 0em;
-  }
-
   /*end of page2 (accesability) mobile styling*/
 
   /*mobile styling for Topical(page3) starts here*/
@@ -679,25 +643,25 @@ using letter
 
   /*Mobile styling for Topical(page3) ends here*/
 
-  /* The mobile styling for page 4 starts here:*/
+  /* The mobile styling for page 4, 5 and similar accesability classes and ids STARTS here:*/
   /* decides that mobile version only has 1 column */
-  .campuses main {
+  .campuses main, .accesibility main {
     grid-template-columns: 1fr;
   }
 
   /* decides positions of elements with grid-column start and end */
-  .campuses-heading {
+  .campuses-heading, .accesibility-heading {
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
   /* sets fitting font size for mobile */
-  .campuses-heading h1 {
+  .campuses-heading h1, .accesibility-heading h1 {
     font-size: 9vw;
   }
 
   /* places underheading in a mobile frendly format */
-  .campuses-underheading {
+  .campuses-underheading, .accesibility-underheading {
     padding-top: 5vh;
     padding-right: 5vw;
     padding-bottom: 5vh;
@@ -706,53 +670,56 @@ using letter
     grid-row-end: 3;
   }
 
-  /* places elements below eachother and sets their height */
-  .cafeteria {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    height: 60vh;
+  #campus-underhead-text{
+    font-size: 1.5em;
   }
 
   /* places elements below eachother and sets their height */
-  .cafeteria-pic-box {
+  .cafeteria,  .accesibility-main-edge-text-1{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: auto;
+    padding-bottom: 4vh;
+  }
+  /* places elements below eachother and sets their height */
+  .cafeteria-pic-box, .accesibility-main-edge-pic {
     grid-row-start: 4;
     grid-row-end: 5;
-    height: 60vh;
+    height: auto;
   }
 
   /* places elements below eachother and sets their height */
   .library {
     grid-row-start: 5;
-    grid-row-end: 6;
-    height: 60vh;
+    grid-row-end: 6;  
   }
 
   /* places elements below eachother and sets their height */
-  .biblotek-bilde-boks {
+  .library-picture-box {
     grid-row-start: 6;
     grid-row-end: 7;
-    height: 60vh;
+    height: auto;
   }
 
   /* places elements below eachother and sets their height */
-  .computer-square {
+  .computer-square, .accesibility-main-features-box{
     grid-row-start: 7;
     grid-row-end: 8;
-    height: 60vh;
+    height: auto;
+    margin-bottom: 4vh;
   }
-
   /* places elements below eachother and sets their height */
   .computer-picture-box {
     grid-row-start: 8;
     grid-row-end: 9;
-    height: 60vh;
+    height: auto;
   }
 
   /* places elements below eachother and sets their height */
   .campuses-map-text {
     grid-row-start: 9;
     grid-row-end: 10;
-    height: 60vh;
+    height: auto;
   }
 
   /* places elements below eachother and sets their height */
@@ -763,90 +730,187 @@ using letter
   }
 
   /* The mobile styling for page 4 stops here:*/
-
 }
 
 /*STYLING for MOBILE view ENDS HERE*/
 
-
-
-
-
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
-  /*Styling for normal computer view starts here*/
+  
+  /*Footer computer styling starts here*/
 
-  /*Page 4 pilestredet computer styling starts here*/
-
-  /* Makes grid in main two columns with same width */
-  .campuses main {
-    grid-template-columns: 1fr 1fr;
+  /*Makes a container for the footer to be placed in a grid*/
+  #grid-footer-container {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
 
-  /* places heading */
-  .campuses-heading {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  /*Puts som text in the left part of the footer*/
+  #grid-footer-left {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 6;
+    grid-column-end: 8;
   }
 
-  /* places underheading in a computer friendly format */
-  .campuses-underheading {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    font-size: 1.7rem;
-    padding-top: 10vw;
-    padding-right: 20vw;
-    padding-bottom: 10vw;
-    padding-left: 20vw;
+  /*Puts som text in the middle part of the footer*/
+  #grid-footer-middle {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 12;
+    grid-column-end: 14;
   }
 
-  /* Places content in boxes next to eachother in the main*/
-  .cafeteria-pic-box {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  /*Puts som text in the rigth part of the footer*/
+  #grid-footer-right {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 18;
+    grid-column-end: 20;
   }
 
-  /* Places content in boxes next to eachother in the main*/
-  .biblotek-bilde-boks {
+  /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
+  #grid-footer-bottom {
+    background-color: #16171a;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  /*Makes the links white and removes underline*/
+  #footer a {
+    color: #D3D3D3;
+    text-decoration: none;
+  }
+
+  /*Makes the headers larger to make it easier to read*/
+  #footer h4 {
+    font-size: larger;
+  }
+
+  /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
+  /*Makes some of the content edge to edge and all 100% width*/
+  #index-body {
+    width: 100%;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
+    box-sizing: border-box;
+  }
+
+  /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
+  #index-main-container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(28, 1fr);
+  }
+
+  /*Places h1 tag in cloumn 2 start 11 end*/
+  #index-h1-container {
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 11;
   }
 
-  /* Places content in boxes next to eachother in the main*/
-  .computer-picture-box {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  /* Places content in boxes next to eachother in the main*/
-  .cafeteria {
+  /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
+  #index-intro-p {
+    columns: 2;
+    column-gap: 5%;
+    font-size: x-large;
+    grid-row-start: 2;
+    grid-row-end: 5;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 11;
   }
 
-  /* Places content in boxes next to eachother in the main*/
-  .library {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  /* Places content in boxes next to eachother in the main*/
-  .computer-square {
+  /*Places img in the grid in the top half of the page  in the middle*/
+  #index-under-intro-img-div {
+    border-radius: 1%;
+    grid-row-start: 5;
+    grid-row-end: 10;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 11;
   }
 
-  .campuses-map-text {
+  /*places content in the grid, makes the "phone" only visible in 
+  pc-veiw due to that the mobile-screen size would make the text too small */
+  #index-under-intro-area {
+    grid-row-start: 10;
+    grid-row-end: 15;
+    grid-column-start: 4;
+    grid-column-end: 9;
+    background-color: #1f1f1f;
+    text-align: center;
+    box-shadow: 1em 1em 1em #323232;
+    border-radius: 5%;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
+  #index-under-intro-white-area {
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1%;
+  }
+
+  /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
+  #index-secondary-box {
+    grid-row-start: 15;
+    grid-row-end: 22;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 12;
+    margin-top: 3em;
   }
 
-  .campuses-map {
+  /*Ads appropriate heigth and width relative to the main page*/
+  .index-secondary-box-div {
+    width: 20%;
+    height: 40em;
+  }
+
+  /*Places the campus in the bottom half of the page and in the middle of the columns*/
+  #index-third-box {
+    grid-row-start: 22;
+    grid-row-end: 28;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 11;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
-  /*Page 4 pilestredet computer styling ends here*/
+  /*Places campus images next to eachother and ads padding and margin and border radius for style*/
+  .index-third-campus-div {
+    border-radius: 1%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 40em;
+  }
+  /*STYLING OF INDEX IN PC-VEIW ENDS HERE*/
+
 
   /*Page accesability computer styling starts here*/
 
@@ -857,7 +921,6 @@ using letter
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0em;
     grid-row-gap: 0em;
-
   }
 
   /*styles img for readablility*/
@@ -921,7 +984,6 @@ using letter
     margin-bottom: 1em;
   }
 
-
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
   .topical-main-container {
     display: grid;
@@ -973,254 +1035,85 @@ using letter
 
   /*Page Topical computer styling ends here*/
 
-  /*Footer computer styling starts here*/
 
-  /*Makes a container for the footer to be placed in a grid*/
-  .grid-footer-container {
-    display: grid;
-    grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+  /* The Computer styling for page 4, 5 and similar accesability classes and ids STARTS here:*/
+
+  /* Makes grid in main two columns with same width */
+  .campuses main, .accesibility main {
+    grid-template-columns: 1fr 1fr;
   }
 
-  /*Puts som text in the left part of the footer*/
-  .grid-footer-left {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 6;
-    grid-column-end: 8;
-  }
-
-  /*Puts som text in the middle part of the footer*/
-  .grid-footer-middle {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 12;
-    grid-column-end: 14;
-  }
-
-  /*Puts som text in the rigth part of the footer*/
-  .grid-footer-rigth {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 18;
-    grid-column-end: 20;
-  }
-
-  /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
-  #h1-kjeller {
-    position: absolute;
-    left: 15%;
-    top: 20%;
-    font-size: 10em;
-    color: #ffff00;
-    text-align: center;
-    /*background-color: #16171aa7;*/
-    text-shadow: #000000 1em 1em 1em;
-  }
-
-  /*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
-  #kjeller-main-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 0em;
-    grid-row-gap: 0em;
-  }
-
-  /*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
-  .grid-intro-kjeller {
-    grid-row-start: 1;
-    grid-row-end: 3;
+  /* places heading */
+  .campuses-heading, .accesibility-heading{
     grid-column-start: 1;
-    grid-column-end: 4;
-    background-color: #ffffff;
-    border-radius: 1%;
-    height: 75%;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    grid-column-end: 3;
   }
 
-  /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
-  .grid-footer-bottom {
-    background-color: #16171a;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  /*Making the iframe cover the whole div.*/
-  #campus-kjeller-posisjon {
-    width: 100%;
-    height: 100%;
-  }
-
-  /*Using heigth,width and margin to place the div containing the picture.*/
-  #picture-kjeller-cafeteria-div {
+  /* places underheading in a computer friendly format */
+  .campuses-underheading, .accesibility-underheading{
     grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    height: 75%;
-    width: 80%;
-    margin-left: 15%;
+    grid-column-end: 3;
+    font-size: 1.7rem;
+    padding-top: 10vw;
+    padding-right: 20vw;
+    padding-bottom: 10vw;
+    padding-left: 20vw;
   }
 
-  /*Makes the links white and removes underline*/
-  #footer a {
-    color: #D3D3D3;
-    text-decoration: none;
+  #campus-underhead-text{
+    font-size: 2.3vw;
   }
-
-  /*Makes the headers larger to make it easier to read*/
-  #footer h4 {
-    font-size: larger;
-  }
-
-  /*Removes margin to make it edge to edge*/
-  #footer {
-    margin-right: -1%;
-    margin-left: -1%;
-    margin-bottom: -1%;
-  }
-
-  /*Using heigth, width and margin to place the div containing the picture.*/
-  #picture-kjeller-library-div {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    width: 80%;
-    height: 75%;
-    margin-left: 10%;
-  }
-
-  /*Giving the picture some properties such as a set width. The heigth is auto to make sure the picture doesent get distorted.*/
-  #picture-kjeller-library-div>#picture-kjeller-library {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
-  /*Makes some of the content edge to edge and all 100% width*/
-  #index-body {
-    width: 100%;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    margin-right: 0em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0em;
-    padding-right: 0em;
-    box-sizing: border-box;
-  }
-
-  /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
-  #index-main-container {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(30, 1fr);
-  }
-
-  /*Places h1 tag in cloumn 2 start 11 end*/
-  #index-h1-container {
-    grid-column-start: 2;
-    grid-column-end: 11;
-  }
-
-  /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
-  #index-intro-p {
-    columns: 2;
-    column-gap: 5%;
-    font-size: x-large;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 11;
-  }
-
-  /*Places img in the grid in the top half of the page  in the middle*/
-  #index-under-intro-img-div {
-    border-radius: 1%;
-    grid-row-start: 5;
-    grid-row-end: 9;
-    grid-column-start: 2;
-    grid-column-end: 11;
-  }
-
-  /*places content in the grid*/
-  #index-under-intro-area {
-    grid-row-start: 10;
-    grid-row-end: 16;
-    grid-column-start: 4;
-    grid-column-end: 9;
-    background-color: #1f1f1f;
-    text-align: center;
-    box-shadow: 1em 1em 1em #323232;
-    border-radius: 1%;
-  }
-
-  /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
-  #index-under-intro-white-area {
-    background-color: #ffffff;
-    width: 90%;
-    height: 90%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
-  #index-secondary-box {
-    grid-row-start: 17;
-    grid-row-end: 23;
+  
+  /* Places content in boxes next to eachother in the main*/
+  .cafeteria-pic-box, .accesibility-main-edge-pic{
     grid-column-start: 1;
-    grid-column-end: 12;
+    grid-column-end: 2;
   }
 
-  /*Ads appropriate heigth and width relative to the main page*/
-  .index-secondary-box-div {
-    width: 20%;
-    height: 40em;
-  }
-
-  /*Places the campus in the bottom half of the page and in the middle of the columns*/
-  #index-third-box {
-    grid-row-start: 24;
-    grid-row-end: 32;
+  /* Places content in boxes next to eachother in the main*/
+  .library-picture-box {
     grid-column-start: 2;
-    grid-column-end: 11;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    grid-column-end: 3;
   }
 
-  /*Places campus images next to eachother and ads padding and margin and border radius for style*/
-  .index-third-campus-div {
-    border-radius: 1%;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    margin-left: 0.3em;
-    margin-right: 0.3em;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    height: 40em;
+  /* Places content in boxes next to eachother in the main*/
+  .computer-picture-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
+
+  /* Places content in boxes next to eachother in the main*/
+  .cafeteria, .accesibility-main-edge-text-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  /* Places content in boxes next to eachother in the main*/
+  .library {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+    /* Places content in boxes next to eachother in the main*/
+  .computer-square, .accesibility-main-features-box {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 60vh;
+  }
+
+  .campuses-map-text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .campuses-map {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
+
 
 }
 
 /*End of media quearry for pc*/
+
