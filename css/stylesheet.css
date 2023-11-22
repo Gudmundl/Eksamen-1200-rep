@@ -694,9 +694,7 @@ using letter
   /* places elements below eachother and sets their height */
   .library {
     grid-row-start: 5;
-    grid-row-end: 6;
-    height: auto;
-    
+    grid-row-end: 6;  
   }
 
   /* places elements below eachother and sets their height */
