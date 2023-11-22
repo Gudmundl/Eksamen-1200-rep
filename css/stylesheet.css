@@ -406,7 +406,11 @@ using letter
 .campuses-underheading, .accesibility-underheading {
   text-align: center;
 }
-
+/*adjusts text for text paragraph under heading*/
+#campus-underhead-text{
+  font-size: 2.3vw;
+  font-weight: 600;
+}
 /*Aligns the content and make i width 100% to fit the page*/
 .cafeteria-pic-box, .accesibility-main-edge-pic {
   width: 100%;
