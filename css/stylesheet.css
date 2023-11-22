@@ -443,7 +443,7 @@ using letter
 
 /*Makes the content scale with viewheigth */
 .library  {
-  height: 60vh;
+  height: auto;
 }
 
 /*Styles pic to fill grid*/
