@@ -128,7 +128,7 @@ footer {
 }
 
 /*Makes links in the footer white when hovering. Improves accessability*/
-footer a:hover {
+#footer a:hover {
   color: #ffffff;
 }
 
