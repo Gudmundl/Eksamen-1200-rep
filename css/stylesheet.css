@@ -681,7 +681,7 @@ using letter
   }
 
   #campus-underhead-text{
-    font-size: 2.3vw;
+    font-size: 1.6em;
   }
 
   /* places elements below eachother and sets their height */
@@ -772,6 +772,10 @@ using letter
     padding-left: 20vw;
   }
 
+  #campus-underhead-text{
+    font-size: 2.3vw;
+  }
+  
   /* Places content in boxes next to eachother in the main*/
   .cafeteria-pic-box, .accesibility-main-edge-pic{
     grid-column-start: 1;
