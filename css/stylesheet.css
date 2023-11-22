@@ -914,6 +914,59 @@ using letter
     width: 50%;
     height: 40em;
   }
+  /*STYLING OF INDEX IN PC-VEIW ENDS HERE*/
+
+
+  /*Page accesability computer styling starts here*/
+
+  /*grid container for accessibility makes 12 similiar sized columns and 2 rows to put content in*/
+  .accessibility-main-container-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
+  }
+
+  /*styles img for readablility*/
+  .accessibility img {
+    width: 30em;
+  }
+
+  /*ads padding for improved readability*/
+  .accessibility h2 {
+    padding-left: 1em;
+  }
+
+  /*puts header inside the grid to the middle*/
+  .accessibility-main-grid {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 5;
+    grid-column-end: 12;
+
+  }
+
+  /*puts imges in the grid to the rigth of the text*/
+  .accessibility-main-img-grid {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    margin-top: 10em;
+
+  }
+
+  /*puts text in the grid to the left of the images*/
+  .accessibility-main-text-grid {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin-top: 10em;
+  }
+
+  /*Page accesability computer styling ends here*/
 
   /*Page Topical computer styling starts here*/
 
@@ -1062,58 +1115,6 @@ using letter
   }
 
   /*Page 4 pilestredet computer styling ends here*/
-
-  /*Page accesability computer styling starts here*/
-
-  /*grid container for accessibility makes 12 similiar sized columns and 2 rows to put content in*/
-  .accessibility-main-container-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0em;
-    grid-row-gap: 0em;
-  }
-
-  /*styles img for readablility*/
-  .accessibility img {
-    width: 30em;
-  }
-
-  /*ads padding for improved readability*/
-  .accessibility h2 {
-    padding-left: 1em;
-  }
-
-  /*puts header inside the grid to the middle*/
-  .accessibility-main-grid {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 5;
-    grid-column-end: 12;
-
-  }
-
-  /*puts imges in the grid to the rigth of the text*/
-  .accessibility-main-img-grid {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 7;
-    grid-column-end: 10;
-    margin-top: 10em;
-
-  }
-
-  /*puts text in the grid to the left of the images*/
-  .accessibility-main-text-grid {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    margin-top: 10em;
-  }
-
-  /*Page accesability computer styling ends here*/
-
 
 }
 
