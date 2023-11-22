@@ -36,7 +36,7 @@
       <!--main heading in a div to easily place it on the grid-->
       <h1>Campus Pilestredet</h1>
       <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fansatt.oslomet.no%2Fen%2Fsiste-nytt%2F-%2Fnyhet%2Fny-strategi-for-oslomet-ber-om-innspill&psig=AOvVaw0Eh733QU3GIxl8d0HIKYJh&ust=1700590284730000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCNoNGW04IDFQAAAAAdAAAAABAQ-->
-      <img id="pilestredet-picture" src="../media/pilestredet-oversikt.jpeg" alt="Picture of pilestredet campus">
+      <img id="pilestredet-picture" src="/media/pilestredet-oversikt.jpeg" alt="Picture of pilestredet campus">
     </div>
     <div class="campuses-underheading">
       <!-- text under heading in its own div-->
@@ -51,7 +51,7 @@
     <!--Div for cafeteria pic-->
     <div class="cafeteria-pic-box">
       <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fstudent.oslomet.no%2Fauditorier-undervisningsrom%2F-%2Fundervisningsrom%2Fcampus%2FPIL%2Fbygning%2FP32%2From%2FP32_ANDREA_SPISERI&psig=AOvVaw1WYPoIiHeq_PVEmF9UeEXY&ust=1700590371379000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiRuPqW04IDFQAAAAAdAAAAABAE-->
-      <img id="cafeteria-picture" src="../media/pilestredet-kantine.jpeg" alt="Picture of cafeteria at pilestredet">
+      <img id="cafeteria-picture" src="/media/pilestredet-kantine.jpeg" alt="Picture of cafeteria at pilestredet">
     </div>
     <!--Div for cafeteria text-->
     <div class="cafeteria">
@@ -70,12 +70,12 @@
     <!--Div for cafeteria pic-->
     <div class="library-picture-box">
       <!--Photo source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oslomet.no%2Fstudier%2Fstudenthistorier%2Fma-vere-sosial-for-a-vere-bibliotekar&psig=AOvVaw1eZgQhUh9gnJoJir-mc39L&ust=1700590726509000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjYw6OY04IDFQAAAAAdAAAAABAE-->
-      <img id="library-picture" src="../media/pilestredet-bibliotek.jpeg" alt="Picture of pilestredet library">
+      <img id="library-picture" src="/media/pilestredet-bibliotek.jpeg" alt="Picture of pilestredet library">
     </div>
     <div class="computer-picture-box">
       <!--Div for computer pic-->
       <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indeed.com%2Fcareer-advice%2Fcareer-development%2Fhow-to-become-a-computer-programmer&psig=AOvVaw0bEwfroVDY3k34XXXgbQ41&ust=1700591186228000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjplf-Z04IDFQAAAAAdAAAAABAI-->
-      <img id="computer-picture" src="../media/pilestredet-datatorg.jpeg" alt="example-picture of computer-square">
+      <img id="computer-picture" src="/media/pilestredet-datatorg.jpeg" alt="example-picture of computer-square">
     </div>
     <!--Div for computer text-->
     <div class="computer-square">
@@ -101,8 +101,12 @@
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </main>
-  <!--adding the semantic element "footer" so that the browser has the ability to veiw it as a footer, so that for example when entering reader-mode, it will be gone-->
-  <footer id="footer">
+    <!--Took design inspiration for footer based on these two videos. https://www.youtube.com/watch?v=YOb67OKw62s&t=560s
+  https://www.youtube.com/watch?v=nkZz9DOBzBI&t=398s 
+    Makes a footer with a grid container and 3 elemts to be placed in the left center and middle of the footer
+  using a tags to make the text clickable-->
+   <!--adding the semantic element "footer" so that the browser has the ability to veiw it as a footer, so that for example when entering reader-mode, it will be gone-->
+   <footer id="footer">
     <!--div elements that acts like a container for the three different sections inside-->
     <div id="grid-footer-container">
       <!--devides the links in the footer into three different sections, with different links in each. --->

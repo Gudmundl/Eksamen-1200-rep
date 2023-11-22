@@ -2,7 +2,6 @@
 <!--Setting the language to english, so that some browser have the ability to translate the page to the users prefered language-->
 <html lang="en">
 <!--head with all the meta-data for the page-->
-
 <head>
   <!--Setting the charset used on this page to UTF-8-->
   <meta charset="UTF-8">
@@ -14,7 +13,6 @@
   <!--Adds a favicon, where the image is taken from: https://kommunikasjon.ntb.no/data/images/00386/e13af02a-52b6-4701-8766-f0a0d9fab213-w_960.png, and converted on:https://favicon.io/favicon-converter/-->
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
-
 <body class="campuses">
   <header>
     <!--Creating a semantic element to host the nav-->
@@ -31,7 +29,6 @@
         </div>
       </div>
     </nav>
-
   </header>
   <!--this is the start of the main portion of the site-->
   <main>
@@ -40,7 +37,7 @@
       <h1>Campus Kjeller</h1>
       <!-- Link to main picture "kjeller-campus" taken by Benjamin A. Ward:
         https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxxlarge/4/5/8/2/42854-2-nor-NO/kjeller.jpg -->
-      <img id="kjeller-picture" src="../media/kjeller-campus.jpg" alt="Picture of pilestredet campus">
+      <img id="kjeller-picture" src="/media/kjeller-campus.jpg" alt="Picture of pilestredet campus">
     </div>
     <div class="campuses-underheading">
       <!-- text under heading in its own div-->
@@ -51,13 +48,12 @@
         hub. These institutions provide students with access to modern facilities, experienced faculty, and a
         range of academic programs, fostering a dynamic and intellectually stimulating environment.
       </p>
-
     </div>
     <!--Div for cafeteria pic-->
     <div class="cafeteria-pic-box">
       <!-- Link to the cafeteria picture from foodtech's website:
             https://foodtech.no/wp-content/uploads/2019/04/toma_youngskvartalet_artikkel.jpg-->
-      <img id="cafeteria-picture" src="../media/kjeller-kantine.jpg" alt="The cafeteria of Kjeller Campus">
+      <img id="cafeteria-picture" src="/media/kjeller-kantine.jpg" alt="The cafeteria of Kjeller Campus">
     </div>
     <!--Div for cafeteria text-->
     <div class="cafeteria">
@@ -83,24 +79,26 @@
     <!--Div for library pic-->
     <div class="library-picture-box">
       <!--Photo source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oslomet.no%2Fstudier%2Fstudenthistorier%2Fma-vere-sosial-for-a-vere-bibliotekar&psig=AOvVaw1eZgQhUh9gnJoJir-mc39L&ust=1700590726509000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjYw6OY04IDFQAAAAAdAAAAABAE-->
-      <img id="library-picture" src="../media/kjeller-bibliotek.jpg"
+      <img id="library-picture" src="/media/kjeller-bibliotek.jpg"
         alt="A library with multiple rows filled with books">
     </div>
-    <div class="computer-picture-box">
-      <!--Div for computer pic-->
+    <div class="service-picture-box">
+      <!--Div for service pic-->
       <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indeed.com%2Fcareer-advice%2Fcareer-development%2Fhow-to-become-a-computer-programmer&psig=AOvVaw0bEwfroVDY3k34XXXgbQ41&ust=1700591186228000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjplf-Z04IDFQAAAAAdAAAAABAI-->
-      <img id="computer-picture" src="/media/servicetorg.png" alt="example-picture of computer-square">
+      <img id="page5-main-service-img" src="/media/servicetorg.png" alt="image representing the help you could get at the service corner">
     </div>
-    <!--Div for computer text-->
-    <div class="computer-square">
-      <h3>Advanced computer square</h3>
-      <p>The data center on the Pilestredet Campus is an innovative meeting point, equipped with modern computer
-        terminals and
-        technological resources, created to strengthen students' digital skills and support project work.</p>
+    <!--Div for service text-->
+    <div class="service-square">
+      <h3>Service corner</h3>
+      <p>Servicetorg is a service center for students at OsloMet’s Kjeller campus. It is located in the center of the building, on the top floor, next to the library. You can contact the servicetorg by phone or email, or visit them during their opening hours from 08:00 to 15:00. Some of the services that the servicetorg can provide are:
+        General study guidance,
+        Information about application and admission,
+        Assistance with student affairs,
+        Delivery of police certificates and
+        Delivery of exams</p>
     </div>
     <!--Div for map text-->
     <div class="campuses-map-text">
-
       <h3>Campus</h3>
       <p>OsloMet's campus at Kjeller is located in Lillestrøm municipality, approximately 20 kilometers
         north-east of Oslo city centre. This campus is known for being a technological and innovative center for
@@ -114,12 +112,12 @@
       <iframe id="kjeller-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.3297931972374!2d11.041985376855372!3d59.97644015905579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46417b7eb5aaaaab%3A0xb85ada4f69d527c6!2sOsloMet%20%E2%80%93%20storbyuniversitetet%20Studiested%20Kjeller!5e0!3m2!1sno!2sno!4v1699533277733!5m2!1sno!2sno"
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
     </div>
-
-
-
   </main>
+    <!--Took design inspiration for footer based on these two videos. https://www.youtube.com/watch?v=YOb67OKw62s&t=560s
+  https://www.youtube.com/watch?v=nkZz9DOBzBI&t=398s 
+    Makes a footer with a grid container and 3 elemts to be placed in the left center and middle of the footer
+  using a tags to make the text clickable-->
   <!--adding the semantic element "footer" so that the browser has the ability to veiw it as a footer, so that for example when entering reader-mode, it will be gone-->
   <footer id="footer">
     <!--div elements that acts like a container for the three different sections inside-->
@@ -173,5 +171,4 @@
     </section>
   </footer>
 </body>
-
 </html>
