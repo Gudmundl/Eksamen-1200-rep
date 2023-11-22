@@ -165,12 +165,6 @@ footer {
 
 /*  General styling of index STARTS here*/
 
-/*Settinng the width so the page expands to match the current screen. Border-box makes that the padding and border are included in the width and height.*/
-#index-body {
-  width: 100vw;
-  max-width: 100vw;
-  box-sizing: border-box;
-}
 
 /*
 Setting a common font family to nearly all p-elements by using a class
