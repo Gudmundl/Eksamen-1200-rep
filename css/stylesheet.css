@@ -1041,7 +1041,7 @@ using letter
   /*Page Topical computer styling ends here*/
 
 
-  /*Page 4,5 computer styling starts here*/
+  /* The Computer styling for page 4, 5 and similar accesability classes and ids STARTS here:*/
 
   /* Makes grid in main two columns with same width */
   .campuses main, .accesibility main {
@@ -1114,7 +1114,8 @@ using letter
     grid-column-end: 3;
   }
 
-  /*Page 4 pilestredet computer styling ends here*/
+  /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
+
 
 }
 
