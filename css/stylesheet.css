@@ -127,10 +127,6 @@ footer {
   background-color: #24262b;
 }
 
-/*Makes links in the footer white when hovering. Improves accessability*/
-#footer a:hover {
-  color: #ffffff;
-}
 
 /*Makes the bottom footer black and adds padding to remove extra space at the bottom*/
 #grid-footer-bottom {
@@ -153,6 +149,11 @@ footer {
 #footer a {
   color: #D3D3D3;
   text-decoration: none;
+}
+
+/*Makes links in the footer white when hovering. Improves accessability*/
+#footer a:hover {
+  color: #ffffff;
 }
 
 /*Make the h4 larger to make i easier to read*/
@@ -333,7 +334,14 @@ using letter
 
 
 /* START of general styling for topical */
+
+/* Sets default styling for topical page */
+.topical{
+  color: #05153F;
+  background-color:#ffffff;
+}
 /*Makes the text under digi-picture black and flush with the picture*/
+
 #topical-under-header-text {
   color: #000000;
   margin-top: 0;
