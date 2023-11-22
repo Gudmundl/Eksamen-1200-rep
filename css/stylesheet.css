@@ -410,7 +410,6 @@ using letter
 }
 /*adjusts text for text paragraph under heading*/
 #campus-underhead-text{
-  font-size: 2.3vw;
   font-weight: 600;
 }
 /*Aligns the content and make i width 100% to fit the page*/
@@ -679,6 +678,10 @@ using letter
     padding-left: 5vw;
     grid-row-start: 2;
     grid-row-end: 3;
+  }
+
+  #campus-underhead-text{
+    font-size: 2.3vw;
   }
 
   /* places elements below eachother and sets their height */
@@ -972,43 +975,6 @@ using letter
     grid-column-end: 20;
   }
 
-  /*Making a large h1 in the header, to make it stand out i use the yellow color and black shadow for improved visibility.*/
-  #h1-kjeller {
-    position: absolute;
-    left: 15%;
-    top: 20%;
-    font-size: 10em;
-    color: #ffff00;
-    text-align: center;
-    /*background-color: #16171aa7;*/
-    text-shadow: #000000 1em 1em 1em;
-  }
-
-  /*This is where the main content goes within. To be able to place elemnts with precision i use the grid system. grid-template for rows and collumns describes how many pieces the website will be divided into. Removing grid gap aswell.*/
-  #kjeller-main-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 0em;
-    grid-row-gap: 0em;
-  }
-
-  /*Placing the div in the grid and making sure to use margin and padding to improve visibility. Using background color to make the textbox stand out from the background. Changing the width and heigth to shape it.*/
-  .grid-intro-kjeller {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    background-color: #ffffff;
-    border-radius: 1%;
-    height: 75%;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
   /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
   #grid-footer-bottom {
     background-color: #16171a;
@@ -1016,23 +982,6 @@ using letter
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
-  }
-
-  /*Making the iframe cover the whole div.*/
-  #campus-kjeller-posisjon {
-    width: 100%;
-    height: 100%;
-  }
-
-  /*Using heigth,width and margin to place the div containing the picture.*/
-  #picture-kjeller-cafeteria-div {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    height: 75%;
-    width: 80%;
-    margin-left: 15%;
   }
 
   /*Makes the links white and removes underline*/
@@ -1046,24 +995,6 @@ using letter
     font-size: larger;
   }
 
-  /*Using heigth, width and margin to place the div containing the picture.*/
-  #picture-kjeller-library-div {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    width: 80%;
-    height: 75%;
-    margin-left: 10%;
-  }
-
-  /*Giving the picture some properties such as a set width. The heigth is auto to make sure the picture doesent get distorted.*/
-  #picture-kjeller-library-div>#picture-kjeller-library {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
 
   /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
   /*Makes some of the content edge to edge and all 100% width*/
