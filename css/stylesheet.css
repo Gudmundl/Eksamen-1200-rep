@@ -1,3 +1,15 @@
+/*
+CSS setup:
+
+General semantic styling (body,p,navbar,footer)
+Indidual page general styling (1. index, 2. topical, 3. accesability, 4. makerspace)
+
+Media quarry max 800px(mobile) styling, (in order: body,p,navbar,footer, index, topical, accesability, makerspace)
+
+Media quarry min 801px styling (for computer), (same order as mobile)
+*/
+
+
 body {
   margin-top: 0em;
   margin-bottom: 0em;
