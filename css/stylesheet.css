@@ -936,33 +936,6 @@ using letter
     padding-left: 1em;
   }
 
-  /*puts header inside the grid to the middle*/
-  .accessibility-main-grid {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 5;
-    grid-column-end: 12;
-
-  }
-
-  /*puts imges in the grid to the rigth of the text*/
-  .accessibility-main-img-grid {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 7;
-    grid-column-end: 10;
-    margin-top: 10em;
-
-  }
-
-  /*puts text in the grid to the left of the images*/
-  .accessibility-main-text-grid {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    margin-top: 10em;
-  }
 
   /*Page accesability computer styling ends here*/
 
