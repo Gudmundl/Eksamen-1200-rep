@@ -925,14 +925,6 @@ using letter
 
   /*Page accesability computer styling starts here*/
 
-  /*grid container for accessibility makes 12 similiar sized columns and 2 rows to put content in*/
-  .accessibility-main-container-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0em;
-    grid-row-gap: 0em;
-  }
 
   /*styles img for readablility*/
   .accessibility img {
