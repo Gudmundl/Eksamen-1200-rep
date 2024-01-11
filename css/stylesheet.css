@@ -1021,20 +1021,13 @@ using letter
 
   /* Places content in boxes next to eachother in the main*/
   .cafeteria, .accesibility-main-edge-text-1,
-  .library-picture-box,  .campuses-map {
+  .library-picture-box,  .campuses-map,
+  .computer-square, .accesibility-main-features-box {
     grid-column-start: 2;
     grid-column-end: 3;
-  }
-
-    /* Places content in boxes next to eachother in the main*/
-  .computer-square, .accesibility-main-features-box{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    height: 60vh;
   }
 
   /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
-
 
 }
 
