@@ -1033,11 +1033,6 @@ using letter
     height: 60vh;
   }
 
-  .campuses-map {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
   /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
 
 
