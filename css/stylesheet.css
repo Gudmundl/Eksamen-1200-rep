@@ -409,7 +409,7 @@ using letter
 }
 
 /* styles pic to fill gridbox */
-#pilestredet-picture {
+#pilestredet-picture,#accesibility-picture-main {
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -420,7 +420,7 @@ using letter
   text-align: center;
 }
 /*adjusts text for text paragraph under heading*/
-#campus-underhead-text{
+.campuses-underheading p{
   font-weight: 600;
 }
 /*Aligns the content and make i width 100% to fit the page*/
@@ -436,7 +436,7 @@ using letter
 }
 
 /*Aligns the content and make i width 100% to fit the page*/
-.computer-picture-box, .service-picture-box{
+.computer-picture-box{
   width: 100%;
   justify-content: center;
 }
@@ -452,10 +452,6 @@ using letter
   height: 100%;
 }
 
-/*Makes the content scale with viewheigth */
-.library  {
-  height: auto;
-}
 
 /*Styles pic to fill grid*/
 #library-picture, #accesibility-main-pic-edge-2 {
@@ -464,7 +460,7 @@ using letter
 }
 
 /* styles pic to fill gridbox */
-#computer-picture, #accesibility-main-features-image, #page5-main-service-img {
+#computer-picture, #accesibility-main-features-image {
   width: 100%;
   height: 100%;
 }
@@ -480,18 +476,8 @@ using letter
   height: 100%;
 }
 
-/*Make the main image fill the screen and centered*/
-#kjeller-picture, #accesibility-picture-main{
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-}
 
-/*Make the map fill the screen and centered*/
-#kjeller-map {
-  width: 100%;
-  height: 100%;
-}
+
 /* general styling for page 4,5 and similar accesibility classes ENDS here */
 
 
