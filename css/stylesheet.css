@@ -398,7 +398,7 @@ using letter
 }
 
 /*styles h1 and sets its position on top of the background */
-.campuses-heading h1, .accesibility-heading h1 {
+.campuses-heading h1{
   position: absolute;
   top: 30%;
   left: 50%;
@@ -653,7 +653,7 @@ using letter
   }
 
   /* sets fitting font size for mobile */
-  .campuses-heading h1, .accesibility-heading h1 {
+  .campuses-heading h1 {
     font-size: 9vw;
   }
 
