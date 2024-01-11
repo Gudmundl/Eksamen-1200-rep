@@ -445,22 +445,7 @@ using letter
 .cafeteria {
   height: 60vh;
 }
-
-/* styles pic to fill gridbox */
-#cafeteria-picture, #accesibility-main-pic-edge {
-  width: 100%;
-  height: 100%;
-}
-
-
-/*Styles pic to fill grid*/
-#library-picture, #accesibility-main-pic-edge-2 {
-  width: 100%;
-  height: 100%;
-}
-
-/* styles pic to fill gridbox */
-#computer-picture, #accesibility-main-features-image {
+.campuses img, .accesibility img{
   width: 100%;
   height: 100%;
 }
@@ -1027,44 +1012,25 @@ using letter
   }
   
   /* Places content in boxes next to eachother in the main*/
-  .cafeteria-pic-box, .accesibility-main-edge-pic{
+  .cafeteria-pic-box,  .library,
+   .accesibility-main-edge-pic, .computer-picture-box,
+   .campuses-map-text{
     grid-column-start: 1;
     grid-column-end: 2;
   }
 
   /* Places content in boxes next to eachother in the main*/
-  .library-picture-box {
+  .cafeteria, .accesibility-main-edge-text-1,
+  .library-picture-box,  .campuses-map {
     grid-column-start: 2;
     grid-column-end: 3;
   }
 
-  /* Places content in boxes next to eachother in the main*/
-  .computer-picture-box, .service-picture-box {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  /* Places content in boxes next to eachother in the main*/
-  .cafeteria, .accesibility-main-edge-text-1 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  /* Places content in boxes next to eachother in the main*/
-  .library {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
     /* Places content in boxes next to eachother in the main*/
-  .computer-square, .accesibility-main-features-box, .service-square{
+  .computer-square, .accesibility-main-features-box{
     grid-column-start: 2;
     grid-column-end: 3;
     height: 60vh;
-  }
-
-  .campuses-map-text {
-    grid-column-start: 1;
-    grid-column-end: 2;
   }
 
   .campuses-map {
