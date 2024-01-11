@@ -424,19 +424,8 @@ using letter
   font-weight: 600;
 }
 /*Aligns the content and make i width 100% to fit the page*/
-.cafeteria-pic-box, .accesibility-main-edge-pic {
-  width: 100%;
-  justify-content: center;
-}
-
-/*Aligns the content and make i width 100% to fit the page*/
-.library-picture-box {
-  width: 100%;
-  justify-content: center;
-}
-
-/*Aligns the content and make i width 100% to fit the page*/
-.computer-picture-box{
+.cafeteria-pic-box, .accesibility-main-edge-pic,
+.library-picture-box, .computer-picture-box {
   width: 100%;
   justify-content: center;
 }
