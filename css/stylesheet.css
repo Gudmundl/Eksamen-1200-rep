@@ -1002,7 +1002,7 @@ using letter
   
   /* Places content in boxes next to eachother in the main*/
   .cafeteria-pic-box,  .library,
-   .accesibility-main-edge-pic, .computer-picture-box,
+  .figure-box-left, .computer-picture-box,
    .campuses-map-text, .accesibility-main-edge-text-2{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -1011,11 +1011,11 @@ using letter
   /* Places content in boxes next to eachother in the main*/
   .cafeteria, .accesibility-main-edge-text-1,
   .library-picture-box,  .campuses-map,
-  .computer-square, .accesibility-main-features-box {
+  .computer-square, .figure-box-right {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-#long-test-screenshot{
+.figure-box-left img, .figure-box-right img{
   height: 60vh;
   object-fit: contain;
 }
