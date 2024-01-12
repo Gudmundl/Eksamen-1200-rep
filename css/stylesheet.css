@@ -910,20 +910,14 @@ using letter
   }
   
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .cafeteria-pic-box,  .library,
-  .figure-box-left, .computer-picture-box,
-   .campuses-map-text, .accesibility-main-edge-text-2,
-   .text-box-left{
+  .figure-box-left,  .text-box-left{
     grid-column-start: 1;
     grid-column-end: 2;
     margin: auto;
-
   }
 
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .cafeteria, 
-  .library-picture-box,  .campuses-map,
-  .computer-square,.text-box-right, .figure-box-right {
+  .text-box-right, .figure-box-right {
     grid-column-start: 2;
     grid-column-end: 3;
     margin: auto;
@@ -934,14 +928,14 @@ using letter
     object-fit: contain;
     min-height: 410px;
 }
-#long-test-screenshot{
+#test-screenshot-4{
   min-height: 460px;
 }
+
 #pilestred-map{
-  @media (min-height: 601px) {
     height: 64vh;
-    width: ;
-  }
+    width: 49vw;
+    min-height: 410px;
 }
   /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
 
