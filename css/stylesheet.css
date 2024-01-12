@@ -1000,25 +1000,35 @@ using letter
     font-size: 2.3vw;
   }
   
-  /* Places content in boxes next to eachother in the main*/
+  /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
   .cafeteria-pic-box,  .library,
   .figure-box-left, .computer-picture-box,
-   .campuses-map-text, .accesibility-main-edge-text-2{
+   .campuses-map-text, .accesibility-main-edge-text-2,
+   .text-box-left{
     grid-column-start: 1;
     grid-column-end: 2;
+    margin: auto;
+
   }
 
-  /* Places content in boxes next to eachother in the main*/
+  /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
   .cafeteria, .accesibility-main-edge-text-1,
   .library-picture-box,  .campuses-map,
-  .computer-square, .figure-box-right {
+  .computer-square,.text-box-right, .figure-box-right {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin: auto;
   }
 .figure-box-left img, .figure-box-right img{
-  height: 60vh;
-  object-fit: contain;
+
+    height: 64vh;
+    object-fit: contain;
+    min-height: 410px;
 }
+#long-test-screenshot{
+  min-height: 460px;
+}
+
   /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
 
 }
