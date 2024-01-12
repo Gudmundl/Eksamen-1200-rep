@@ -408,13 +408,6 @@ using letter
   background-color: #bebdbd8d;
 }
 
-/* styles pic to fill gridbox */
-#pilestredet-picture,#accesibility-picture-main {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-}
-
 /*aligns the text*/
 .campuses-underheading, .accesibility-underheading {
   text-align: center;
@@ -423,33 +416,10 @@ using letter
 .campuses-underheading p{
   font-weight: 600;
 }
-/*Aligns the content and make i width 100% to fit the page*/
-.cafeteria-pic-box, .accesibility-main-edge-pic,
-.library-picture-box, .computer-picture-box {
-  width: 100%;
-  justify-content: center;
-}
-
-/*Makes the content scale with viewheigth */
-.cafeteria {
-  height: 60vh;
-}
+/*makes images fit the width of the frame*/
 .campuses img, .accesibility img{
   width: 100%;
-  height: 100%;
 }
-
-/*Makes the content scale with viewheigth */
-.campuses-map-text {
-  height: 60vh;
-}
-
-/*Makes the content fit to fill the grid*/
-#pilestred-map {
-  width: 100%;
-  height: 100%;
-}
-
 
 
 /* general styling for page 4,5 and similar accesibility classes ENDS here */
@@ -645,62 +615,8 @@ using letter
     font-size: 1.5em;
   }
 
-  /* places elements below eachother and sets their height */
-  .cafeteria,  .accesibility-main-edge-text-1{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    height: auto;
-    padding-bottom: 4vh;
-  }
-  /* places elements below eachother and sets their height */
-  .cafeteria-pic-box, .accesibility-main-edge-pic {
-    grid-row-start: 4;
-    grid-row-end: 5;
-    height: auto;
-  }
 
-  /* places elements below eachother and sets their height */
-  .library {
-    grid-row-start: 5;
-    grid-row-end: 6;  
-  }
-
-  /* places elements below eachother and sets their height */
-  .library-picture-box {
-    grid-row-start: 6;
-    grid-row-end: 7;
-    height: auto;
-  }
-
-  /* places elements below eachother and sets their height */
-  .computer-square, .accesibility-main-features-box, .service-square{
-    grid-row-start: 7;
-    grid-row-end: 8;
-    height: auto;
-    margin-bottom: 4vh;
-  }
-  /* places elements below eachother and sets their height */
-  .computer-picture-box, .service-picture-box{
-    grid-row-start: 8;
-    grid-row-end: 9;
-    height: auto;
-  }
-
-  /* places elements below eachother and sets their height */
-  .campuses-map-text {
-    grid-row-start: 9;
-    grid-row-end: 10;
-    height: auto;
-  }
-
-  /* places elements below eachother and sets their height */
-  .campuses-map {
-    grid-row-start: 10;
-    grid-row-end: 11;
-    height: 60vh;
-  }
-
-  /* The mobile styling for page 4 stops here:*/
+  /* The mobile styling for accesability and campuses stops here:*/
 }
 
 /*STYLING for MOBILE view ENDS HERE*/
@@ -1012,7 +928,7 @@ using letter
   }
 
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .cafeteria, .accesibility-main-edge-text-1,
+  .cafeteria, 
   .library-picture-box,  .campuses-map,
   .computer-square,.text-box-right, .figure-box-right {
     grid-column-start: 2;
@@ -1028,7 +944,12 @@ using letter
 #long-test-screenshot{
   min-height: 460px;
 }
-
+#pilestred-map{
+  @media (min-height: 601px) {
+    height: 64vh;
+    width: ;
+  }
+}
   /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
 
 }
