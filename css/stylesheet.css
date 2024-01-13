@@ -608,7 +608,14 @@ using letter
   #campus-underhead-text{
     font-size: 1.5em;
   }
-
+/*These next two elements places the elements in a fitting order for mobile*/
+  .figure-box-right-1{
+    grid-row-start: 5;
+  }
+  .figure-box-right-2{
+    grid-row-start: 10;
+    /*We placed this at the end because of its lenght*/
+  }
 
   /* The mobile styling for accesability and campuses stops here:*/
 }
@@ -910,19 +917,21 @@ using letter
   }
   
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .figure-box-left,  .text-box-left{
+  .figure-box-left,  .text-box-left-1,.text-box-left-2{
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: auto;
     margin: auto;
   }
 
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .text-box-right, .figure-box-right {
+  .text-box-right, .figure-box-right-1,.text-box-right-2 {
     grid-column-start: 2;
     grid-column-end: 3;
     margin: auto;
   }
-.figure-box-left img, .figure-box-right img{
+.figure-box-left-1 img, .figure-box-right-1 img,
+.figure-box-left-2 img, .figure-box-right-2 img{
 
     height: 64vh;
     object-fit: contain;
