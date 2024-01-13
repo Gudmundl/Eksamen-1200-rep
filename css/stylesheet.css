@@ -49,7 +49,7 @@ removes the undelines, as well as some margin and padding fixing to improve read
   padding-bottom: .7em;
   padding-left: .7em;
   padding-right: .7em;
-  border-radius: 5%;
+  border-radius: 0.35em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: 0.5em;
@@ -80,7 +80,7 @@ removes the undelines, as well as some margin and padding fixing to improve read
   margin-left: 0.5em;
   margin-right: 0.5em;
   font-family: inherit;
-  border-radius: 5%;
+  border-radius: 0.35em;
   text-align: center;
 }
 
@@ -97,7 +97,7 @@ removes the undelines, as well as some margin and padding fixing to improve read
   background-color: #05153F;
   z-index: 1;
   align-self: center;
-  border-radius: 5%;
+  border-radius: 0.35em;
 }
 
 /* styles the dropdown links to match the nav*/
@@ -107,7 +107,7 @@ removes the undelines, as well as some margin and padding fixing to improve read
   text-decoration: none;
   display: block;
   text-align: center;
-  border-radius: 5%;
+  border-radius: 0.35em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: 0.5em;
@@ -227,7 +227,7 @@ using letter
 #index-under-intro-img {
   width: 100%;
   height: auto;
-  border-radius: 1%;
+  border-radius: 0.8em;
 }
 
 /*Styling of elements in the secondary box in index under*/
@@ -258,7 +258,7 @@ using letter
   padding-bottom: 1%;
   padding-left: 1%;
   padding-right: 1%;
-  border-radius: 2%;
+  border-radius: 0.8em;
   text-align: left;
 }
 
@@ -266,6 +266,7 @@ using letter
 .index-secondary-box-img {
   width: 100%;
   height: 25%;
+  border-radius: 0.67em;
 }
 
 /*END of Styling of elements in the secondary box*/
@@ -280,7 +281,7 @@ using letter
 .index-campus-img {
   width: 100%;
   height: auto;
-  border-radius: 1%
+  border-radius: 0.53em;
 }
 
 /*padding and margin to improve readability*/
@@ -299,7 +300,7 @@ using letter
   padding-top: 1vh;
   padding-bottom: 3vh;
   margin-top: 3vh;
-  border-radius: 2%;
+  border-radius: 1.2em;
 }
 
 /*making the h2 larger as well as positining it out from the left-side*/
@@ -398,7 +399,7 @@ using letter
 }
 
 /*styles h1 and sets its position on top of the background */
-.campuses-heading h1, .accesibility-heading h1 {
+.campuses-heading h1{
   position: absolute;
   top: 30%;
   left: 50%;
@@ -408,90 +409,20 @@ using letter
   background-color: #bebdbd8d;
 }
 
-/* styles pic to fill gridbox */
-#pilestredet-picture {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-}
-
 /*aligns the text*/
 .campuses-underheading, .accesibility-underheading {
   text-align: center;
 }
 /*adjusts text for text paragraph under heading*/
-#campus-underhead-text{
+.campuses-underheading p{
   font-weight: 600;
 }
-/*Aligns the content and make i width 100% to fit the page*/
-.cafeteria-pic-box, .accesibility-main-edge-pic {
+/*makes images fit the width of the frame*/
+.campuses img, .accesibility img{
   width: 100%;
-  justify-content: center;
 }
 
-/*Aligns the content and make i width 100% to fit the page*/
-.library-picture-box {
-  width: 100%;
-  justify-content: center;
-}
 
-/*Aligns the content and make i width 100% to fit the page*/
-.computer-picture-box, .service-picture-box{
-  width: 100%;
-  justify-content: center;
-}
-
-/*Makes the content scale with viewheigth */
-.cafeteria {
-  height: 60vh;
-}
-
-/* styles pic to fill gridbox */
-#cafeteria-picture, #accesibility-main-pic-edge {
-  width: 100%;
-  height: 100%;
-}
-
-/*Makes the content scale with viewheigth */
-.library  {
-  height: auto;
-}
-
-/*Styles pic to fill grid*/
-#library-picture, #accesibility-main-pic-edge-2 {
-  width: 100%;
-  height: 100%;
-}
-
-/* styles pic to fill gridbox */
-#computer-picture, #accesibility-main-features-image, #page5-main-service-img {
-  width: 100%;
-  height: 100%;
-}
-
-/*Makes the content scale with viewheigth */
-.campuses-map-text {
-  height: 60vh;
-}
-
-/*Makes the content fit to fill the grid*/
-#pilestred-map {
-  width: 100%;
-  height: 100%;
-}
-
-/*Make the main image fill the screen and centered*/
-#kjeller-picture, #accesibility-picture-main{
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-}
-
-/*Make the map fill the screen and centered*/
-#kjeller-map {
-  width: 100%;
-  height: 100%;
-}
 /* general styling for page 4,5 and similar accesibility classes ENDS here */
 
 
@@ -564,9 +495,9 @@ using letter
 
   /*Ads styling for aesthetics and flex to for mobile view*/
   .index-third-campus-div {
-    border-radius: 1%;
+    border-radius: 0.53em;
     margin-top: 0em;
-    margin-bottom: 0em;
+    margin-bottom: 1em;
     margin-left: 0em;
     margin-right: 0em;
     padding-top: 0em;
@@ -583,14 +514,7 @@ using letter
 
    /*Start of page2 (accesability) mobile styling*/
 
-   /*sets height to auto to adjust for large picture sizes*/
-  .accesibility-main-div-pic{
-    height: auto;
-  }
-  .accesibility-main-edge-text-2{
-    margin-bottom: 7vh;
-    height: auto;
-  }
+
   /*end of page2 (accesability) mobile styling*/
 
   /*mobile styling for Topical(page3) starts here*/
@@ -667,7 +591,7 @@ using letter
   }
 
   /* sets fitting font size for mobile */
-  .campuses-heading h1, .accesibility-heading h1 {
+  .campuses-heading h1 {
     font-size: 9vw;
   }
 
@@ -684,63 +608,16 @@ using letter
   #campus-underhead-text{
     font-size: 1.5em;
   }
-
-  /* places elements below eachother and sets their height */
-  .cafeteria,  .accesibility-main-edge-text-1{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    height: auto;
-    padding-bottom: 4vh;
-  }
-  /* places elements below eachother and sets their height */
-  .cafeteria-pic-box, .accesibility-main-edge-pic {
-    grid-row-start: 4;
-    grid-row-end: 5;
-    height: auto;
-  }
-
-  /* places elements below eachother and sets their height */
-  .library {
+/*These next two elements places the elements in a fitting order for mobile*/
+  .figure-box-right-1{
     grid-row-start: 5;
-    grid-row-end: 6;  
   }
-
-  /* places elements below eachother and sets their height */
-  .library-picture-box {
-    grid-row-start: 6;
-    grid-row-end: 7;
-    height: auto;
-  }
-
-  /* places elements below eachother and sets their height */
-  .computer-square, .accesibility-main-features-box, .service-square{
-    grid-row-start: 7;
-    grid-row-end: 8;
-    height: auto;
-    margin-bottom: 4vh;
-  }
-  /* places elements below eachother and sets their height */
-  .computer-picture-box, .service-picture-box{
-    grid-row-start: 8;
-    grid-row-end: 9;
-    height: auto;
-  }
-
-  /* places elements below eachother and sets their height */
-  .campuses-map-text {
-    grid-row-start: 9;
-    grid-row-end: 10;
-    height: auto;
-  }
-
-  /* places elements below eachother and sets their height */
-  .campuses-map {
+  .figure-box-right-2{
     grid-row-start: 10;
-    grid-row-end: 11;
-    height: 60vh;
+    /*We placed this at the end because of its lenght*/
   }
 
-  /* The mobile styling for page 4 stops here:*/
+  /* The mobile styling for accesability and campuses stops here:*/
 }
 
 /*STYLING for MOBILE view ENDS HERE*/
@@ -842,7 +719,6 @@ using letter
 
   /*Places img in the grid in the top half of the page  in the middle*/
   #index-under-intro-img-div {
-    border-radius: 1%;
     grid-row-start: 5;
     grid-row-end: 10;
     grid-column-start: 2;
@@ -859,7 +735,7 @@ using letter
     background-color: #1f1f1f;
     text-align: center;
     box-shadow: 1em 1em 1em #323232;
-    border-radius: 5%;
+    border-radius: 0.95em;
     margin-left: 5em;
     margin-right: 5em;
   }
@@ -868,12 +744,12 @@ using letter
   #index-under-intro-white-area {
     background-color: #ffffff;
     width: 95%;
-    height: 90%;
+    height: 95%;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1%;
+    border-radius: 0.42em;
   }
 
   /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
@@ -905,7 +781,7 @@ using letter
 
   /*Places campus images next to eachother and ads padding and margin and border radius for style*/
   .index-third-campus-div {
-    border-radius: 1%;
+    border-radius: 1em;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
     margin-left: 0.3em;
@@ -1040,54 +916,38 @@ using letter
     font-size: 2.3vw;
   }
   
-  /* Places content in boxes next to eachother in the main*/
-  .cafeteria-pic-box, .accesibility-main-edge-pic{
+  /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
+  .figure-box-left,  .text-box-left-1,.text-box-left-2{
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: auto;
+    margin: auto;
   }
 
-  /* Places content in boxes next to eachother in the main*/
-  .library-picture-box {
+  /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
+  .text-box-right, .figure-box-right-1,.text-box-right-2 {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin: auto;
   }
+.figure-box-left-1 img, .figure-box-right-1 img,
+.figure-box-left-2 img, .figure-box-right-2 img{
 
-  /* Places content in boxes next to eachother in the main*/
-  .computer-picture-box, .service-picture-box {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
+    height: 64vh;
+    object-fit: contain;
+    min-height: 410px;
 
-  /* Places content in boxes next to eachother in the main*/
-  .cafeteria, .accesibility-main-edge-text-1 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
+}
+#test-screenshot-4{
+  min-height: 460px;
+}
 
-  /* Places content in boxes next to eachother in the main*/
-  .library {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-    /* Places content in boxes next to eachother in the main*/
-  .computer-square, .accesibility-main-features-box, .service-square{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    height: 60vh;
-  }
-
-  .campuses-map-text {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .campuses-map {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
+#pilestred-map{
+    height: 64vh;
+    width: 49vw;
+    min-height: 410px;
+}
   /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
-
 
 }
 
