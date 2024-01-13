@@ -734,14 +734,16 @@ using letter
   #index-under-intro-area {
     grid-row-start: 10;
     grid-row-end: 15;
-    grid-column-start: 4;
-    grid-column-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 10;
     background-color: #1f1f1f;
     text-align: center;
     box-shadow: 1em 1em 1em #323232;
     border-radius: 0.95em;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin: auto;
+    max-width: 500px;
+    min-width: 400px;
+    padding-bottom: 1em;
   }
 
   /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
@@ -754,6 +756,7 @@ using letter
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.42em;
+    padding-bottom: 1em;
   }
 
   /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
