@@ -206,7 +206,11 @@ using letter
   background-color: whitesmoke;
   color: #000000;
 }
-
+#index-under-intro-area ul{
+  padding-left: 1rem;
+  padding-right: 1.7em;
+  list-style: none;
+}
 /*Increses font weight for readability, removes dot in front of li elements, styling to mimic the FB "messenger" text bubbles*/
 #index-under-intro-area li{
   background-color: #006efe;
@@ -214,13 +218,11 @@ using letter
   font-weight: 485;
   border-radius: 1.45em 1.45em 1.45em 0em;
   box-shadow: 0.1em 0.1em 0.1em #474747;
-  margin-top: 5%;
-  margin-right: 5%;
+  margin-top: 1.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  list-style: none;
 }
 
 /*Streches the img to fit inside the container it is in, smoothing of cornes for asthetics*/
