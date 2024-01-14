@@ -23,6 +23,7 @@ body {
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*general navbar styling STARTS here/*
@@ -181,20 +182,19 @@ footer {
 Setting a common font family to nearly all p-elements by using a class
 using letter 
 */
-.index-p {
-  font-family: Arial, Helvetica, sans-serif;
+#index-body p {
   letter-spacing: 0.1rem;
 }
 
 /*height is set to auto, while that the img is given a width, so that the browser automaticaly calculates the height so that the img keeps its ratio */
-#index-header-img {
+#index-body header img {
   width: 100%;
   height: auto;
 }
 
 /*Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-font-border, on the text-shadow.*/
 /*adding style to make the word oslomet stand out*/
-.index-oslomet-span {
+#index-body h1 span {
   color: #ffbb00;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
   font-size: 1.5em;
@@ -202,13 +202,13 @@ using letter
 }
 
 /*sets background color on the main container as well as sets black as the standard textcolor*/
-#index-main-container {
+#index-body main {
   background-color: whitesmoke;
   color: #000000;
 }
 
 /*Increses font weight for readability, removes dot in front of li elements, styling to mimic the FB "messenger" text bubbles*/
-.index-under-intro-li {
+#index-under-intro-area li{
   background-color: #006efe;
   color: #ffffff;
   font-weight: 600;
@@ -263,7 +263,7 @@ using letter
 }
 
 /*stretching the img to fit the container, forcing the hight insted of auto to have the same size on the pictures*/
-.index-secondary-box-img {
+#index-secondary-box img {
   width: 100%;
   height: 25%;
   border-radius: 0.67em;
@@ -285,12 +285,13 @@ using letter
 }
 
 /*padding and margin to improve readability*/
-.index-campus-p {
+.index-third-campus-div p {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-bottom: 5%;
+  margin-bottom: 1em;
+  letter-spacing: normal;
 }
 
 /*Color-styling, margin and padding for accessability and asthetics, smoothing of corners*/
@@ -324,13 +325,13 @@ using letter
 }
 
 /*removing the underline on the link*/
-.index-campus-clickable-a {
+#index-third-box a {
   text-decoration: none;
   color: #000000;
 }
 
 /*styling on hover, with reduces opacity and underline on text, for accessebility.*/
-.index-campus-clickable-a:hover {
+#index-third-box a:hover {
   text-decoration: underline;
   opacity: 70%;
 }
@@ -450,24 +451,16 @@ using letter
   }
 
   /*Ads padding for improved readability*/
-  #index-main-container {
+  #index-body main {
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
   }
 
-  /*Ads padding for  readability*/
-  .index-p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
 
   /*Ads margin to make headers easier to read*/
-  .index-h2,
-  .index-h3 {
+  index-secondary-box h2,index-third-box h2{
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -698,10 +691,9 @@ using letter
   }
 
   /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
-  #index-main-container {
+  #index-body main {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(28, 1fr);
   }
 
   /*Places h1 tag in cloumn 2 start 11 end*/
@@ -711,20 +703,18 @@ using letter
   }
 
   /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
-  #index-intro-p {
+  #index-intro {
     columns: 2;
     column-gap: 5%;
     font-size: x-large;
-    grid-row-start: 2;
-    grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 11;
   }
-
+  #index-intro h2{
+    margin-top: 0;
+  }
   /*Places img in the grid in the top half of the page  in the middle*/
   #index-under-intro-img-div {
-    grid-row-start: 5;
-    grid-row-end: 10;
     grid-column-start: 2;
     grid-column-end: 11;
   }
@@ -732,18 +722,19 @@ using letter
   /*places content in the grid, makes the "phone" only visible in 
   pc-veiw due to that the mobile-screen size would make the text too small */
   #index-under-intro-area {
-    grid-row-start: 10;
-    grid-row-end: 15;
     grid-column-start: 3;
     grid-column-end: 10;
     background-color: #1f1f1f;
     text-align: center;
     box-shadow: 1em 1em 1em #323232;
     border-radius: 0.95em;
-    margin: auto;
     max-width: 500px;
     min-width: 400px;
     padding-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
@@ -761,21 +752,25 @@ using letter
 
   /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
   #index-secondary-box {
-    grid-row-start: 15;
-    grid-row-end: 22;
     grid-column-start: 1;
     grid-column-end: 12;
     margin-top: 3em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  #index-secondary-box .short-intro{
+    padding-left: 13vw;
+    padding-right: 13vw;
   }
   #index-secondary-box-flex-container {
     @media (max-width:1200px) {
-      flex-wrap: wrap;
-      
+      flex-wrap: wrap; 
     }
   }
   /*Ads appropriate heigth and width relative to the main page*/
   .index-secondary-box-div {
-    
     height: 1fr;
     @media (min-width:1201px) {
       max-width: 328px;
@@ -786,16 +781,20 @@ using letter
 
   /*Places the campus in the bottom half of the page and in the middle of the columns*/
   #index-third-box {
-    grid-row-start: 22;
-    grid-row-end: 28;
     grid-column-start: 2;
     grid-column-end: 11;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    margin-bottom: 4em;
   }
 
+  #index-third-box .short-intro{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
   /*Places campus images next to eachother and ads padding and margin and border radius for style*/
   .index-third-campus-div {
     border-radius: 1em;
@@ -813,6 +812,8 @@ using letter
     width: 50%;
     height: 40em;
   }
+  
+
   /*STYLING OF INDEX IN PC-VEIW ENDS HERE*/
 
 
@@ -965,8 +966,6 @@ using letter
     min-height: 410px;
 }
   /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
-
 }
-
 /*End of media quearry for pc*/
 
