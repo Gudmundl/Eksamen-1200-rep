@@ -263,7 +263,7 @@ using letter
 }
 
 /*stretching the img to fit the container, forcing the hight insted of auto to have the same size on the pictures*/
-.index-secondary-box-img {
+#index-secondary-box img {
   width: 100%;
   height: 25%;
   border-radius: 0.67em;
@@ -460,7 +460,7 @@ using letter
 
 
   /*Ads margin to make headers easier to read*/
-  .index-h2,
+  index-secondary-box h2,index-third-box h2,
   .index-h3 {
     margin-top: 1rem;
     margin-bottom: 1rem;
