@@ -347,21 +347,14 @@ using letter
   color: #05153F;
   background-color:#ffffff;
 }
-/*Makes the text under digi-picture black and flush with the picture*/
 
-#topical-under-header-text {
-  color: #000000;
-  margin-top: 0;
-}
 
 /*Makes the links black instead of blue for aesthetics*/
 .topical aside a {
   color: #000000;
 }
 /*makes topical footer flush with the edges of the page*/
-.topical #footer{
-  margin-bottom: -1em;
-}
+
 
 /*general Styling for Topical(page3 ENDS here)*/
 
@@ -541,7 +534,7 @@ using letter
 
   /*Makes the picture fit edge to edge and not spill over*/
   .topical-header-digi-picture,
-  .topical-body-health-picture {
+  #topical-body-health-picture {
     width: 100%;
   }
 
@@ -552,15 +545,6 @@ using letter
     margin-right: 0em;
     padding-right: 0em;
 
-  }
-
-  /*wraps the aside text in a div and makes a grid for them to be placed in*/
-  .topical-aside-grid-text {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: (1, 1fr);
-    grid-row-gap: 5em;
-    grid-column-gap: 0em;
   }
 
   /*Places the links in the grid to the rigth of the images and adds styling for readability*/
@@ -855,7 +839,7 @@ using letter
   }
 
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
-  .topical-main-container {
+  .topical main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -864,7 +848,7 @@ using letter
   }
 
   /*Makes a grid for the body to put it in the left-middle*/
-  .grid-body-topical {
+  .topical article {
     grid-row-start: 1;
     grid-row-end: 5;
     grid-column-start: 2;
@@ -881,9 +865,8 @@ using letter
   }
 
   /*Styles the healthpicture to fit well inside the grid*/
-  .topical-body-health-picture {
+  #topical-body-health-picture {
     width: 100%;
-    height: 30%;
   }
 
   /*Sizes the aside pictures to an appropriate size relative to the page*/
