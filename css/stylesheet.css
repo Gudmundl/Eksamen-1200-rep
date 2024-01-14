@@ -347,21 +347,14 @@ using letter
   color: #05153F;
   background-color:#ffffff;
 }
-/*Makes the text under digi-picture black and flush with the picture*/
 
-#topical-under-header-text {
-  color: #000000;
-  margin-top: 0;
-}
 
 /*Makes the links black instead of blue for aesthetics*/
 .topical aside a {
   color: #000000;
 }
 /*makes topical footer flush with the edges of the page*/
-.topical #footer{
-  margin-bottom: -1em;
-}
+
 
 /*general Styling for Topical(page3 ENDS here)*/
 
@@ -522,7 +515,7 @@ using letter
   }
 
   /*Adds margin to the paragraf to improve readability*/
-  .topical p {
+  .topical main {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 1em;
@@ -541,36 +534,16 @@ using letter
 
   /*Makes the picture fit edge to edge and not spill over*/
   .topical-header-digi-picture,
-  .topical-body-health-picture {
+  #topical-body-health-picture {
     width: 100%;
   }
 
   /* styling for aesthetics*/
   .topical aside img {
-    height: 6em;
-    width: 35%;
-    margin-right: 0em;
-    padding-right: 0em;
-
+    width: 80%;
   }
-
-  /*wraps the aside text in a div and makes a grid for them to be placed in*/
-  .topical-aside-grid-text {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: (1, 1fr);
-    grid-row-gap: 5em;
-    grid-column-gap: 0em;
-  }
-
-  /*Places the links in the grid to the rigth of the images and adds styling for readability*/
-  .topical aside a {
-    font-size: x-large;
-    margin-top: -7em;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 6;
-    grid-column-end: 12;
+  .topical aside p {
+    margin: 0;
   }
 
   /*Mobile styling for Topical(page3) ends here*/
@@ -839,70 +812,79 @@ using letter
   .topical h1 {
     text-align: center;
     font-size: 3em;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+
+    @media (min-width:1201px) {
+      grid-column-end: 4;
+    }
   }
 
   /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
   .topical-header-digi-picture {
-    width: 60em;
-    height: 30em;
-    padding-left: 19vw;
-  }
-
-  /*Left aligns all text in the body of topical */
-  .topical {
-    text-align: left;
-    margin-bottom: 1em;
+    width: 100%;
   }
 
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
-  .topical-main-container {
+  .topical main {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 3em;
-    grid-row-gap: 3em;
+    column-gap: 3vw;
+    @media(min-width:1201px) {
+      grid-template-columns: 1fr 3fr 1fr 1fr ;
+      grid-template-rows: repeat(4, auto);
+    }
+    @media (max-width:1200px){
+      grid-template-columns: 1fr 7fr 1fr ;
+      grid-template-rows: repeat(5, auto);
+    }
   }
-
+.topical main #intro{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
   /*Makes a grid for the body to put it in the left-middle*/
-  .grid-body-topical {
-    grid-row-start: 1;
+  .topical article {
+    grid-row-start: 3;
     grid-row-end: 5;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
   }
 
   /*Puts the aside to the rigth of the main text*/
   .topical aside {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 5;
-    grid-column-end: 4;
-    justify-content: center;
+    justify-content: center;    
+    @media(min-width:1201px) {
+      grid-row-start: 3;
+      grid-row-end: 5;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+    @media (max-width:1200px){
+      grid-row-start: 5;
+      grid-row-end: 6;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    };
   }
 
   /*Styles the healthpicture to fit well inside the grid*/
-  .topical-body-health-picture {
+  #topical-body-health-picture {
     width: 100%;
-    height: 30%;
   }
 
   /*Sizes the aside pictures to an appropriate size relative to the page*/
   .topical aside img {
-    height: 30%;
     width: 16em;
   }
 
   /*Makes the text flush with the imageand ads some padding for style*/
   .topical aside p {
     margin-top: 0;
-    padding-left: 1%;
+    padding-left: 0.5em;
   }
-
-  /*Makes the footer flush with the main content*/
-  .topical footer {
-    margin-top: -10%;
-  }
-
   /*Page Topical computer styling ends here*/
 
 
