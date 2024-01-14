@@ -831,7 +831,6 @@ using letter
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 4;
-    
   }
   /*Makes a grid for the body to put it in the left-middle*/
   .topical article {
@@ -946,4 +945,5 @@ using letter
   }
   .topical h1 {
     grid-column-end: 4;
+}
 }
