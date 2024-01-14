@@ -182,19 +182,19 @@ footer {
 Setting a common font family to nearly all p-elements by using a class
 using letter 
 */
-#index-body p {
+.index p {
   letter-spacing: 0.1rem;
 }
 
 /*height is set to auto, while that the img is given a width, so that the browser automaticaly calculates the height so that the img keeps its ratio */
-#index-body header img {
+.index header img {
   width: 100%;
   height: auto;
 }
 
 /*Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-font-border, on the text-shadow.*/
 /*adding style to make the word oslomet stand out*/
-#index-body h1 span {
+.index h1 span {
   color: #ffbb00;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
   font-size: 1.5em;
@@ -202,7 +202,7 @@ using letter
 }
 
 /*sets background color on the main container as well as sets black as the standard textcolor*/
-#index-body main {
+.index main {
   background-color: whitesmoke;
   color: #000000;
 }
@@ -382,13 +382,13 @@ using letter
 }
 
 /*aligns the heading to center, and positions it relativ*/
-.campuses-heading, .accesibility-heading {
+.campuses .intro, .accesibility-heading {
   text-align: center;
   position: relative;
 }
 
 /*styles h1 and sets its position on top of the background */
-.campuses-heading h1{
+.campuses .intro h1{
   position: absolute;
   top: 30%;
   left: 50%;
@@ -432,14 +432,14 @@ using letter
 /*end of mobile styling for navbar*/
   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
   /*Using flex to make content below eachother*/
-  #index-body {
+  .index {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   /*Ads padding for improved readability*/
-  #index-body main {
+  .index main {
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
@@ -550,13 +550,13 @@ using letter
   }
 
   /* decides positions of elements with grid-column start and end */
-  .campuses-heading, .accesibility-heading {
+  .campuses .intro, .accesibility-heading {
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
   /* sets fitting font size for mobile */
-  .campuses-heading h1 {
+  .campuses .intro h1 {
     font-size: 9vw;
   }
 
@@ -645,7 +645,7 @@ using letter
 
   /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
   /*Makes some of the content edge to edge and all 100% width*/
-  #index-body {
+  .index {
     width: 100%;
     margin-top: 0em;
     margin-bottom: 0em;
@@ -659,7 +659,7 @@ using letter
   }
 
   /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
-  #index-body main {
+  .index main {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
   }
@@ -671,14 +671,14 @@ using letter
   }
 
   /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
-  #index-intro {
+  .index .intro {
     columns: 2;
     column-gap: 5%;
     font-size: x-large;
     grid-column-start: 2;
     grid-column-end: 11;
   }
-  #index-intro h2{
+  .index .intro h2{
     margin-top: 0;
   }
   /*Places img in the grid in the top half of the page  in the middle*/
@@ -876,7 +876,7 @@ using letter
   }
 
   /* places heading */
-  .campuses-heading, .accesibility-heading{
+  .campuses .intro, .accesibility-heading{
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -897,7 +897,7 @@ using letter
   }
   
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .figure-box-left,  .text-box-left-1,.text-box-left-2{
+  .figure-box-left-1, .figure-box-left-2, .text-box-left-1,.text-box-left-2{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: auto;
@@ -905,18 +905,17 @@ using letter
   }
 
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .text-box-right, .figure-box-right-1,.text-box-right-2 {
+  .text-box-right-1, .figure-box-right-1,.text-box-right-2,
+  .figure-box-right-2{
     grid-column-start: 2;
     grid-column-end: 3;
     margin: auto;
   }
 .figure-box-left-1 img, .figure-box-right-1 img,
 .figure-box-left-2 img, .figure-box-right-2 img{
-
     height: 64vh;
     object-fit: contain;
     min-height: 410px;
-
 }
 #test-screenshot-4{
   min-height: 460px;
