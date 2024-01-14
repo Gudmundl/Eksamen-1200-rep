@@ -1,112 +1,116 @@
 <!DOCTYPE html>
+<!--Setting the language to english, so that some browser have the ability to translate the page to the users prefered language-->
 <html lang="en">
-
+<!--head with all the meta-data for the page-->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campus pilestredet</title>
-  <link rel="stylesheet" href="../css/stylesheet.css" />
-
+    <!--Setting the charset used on this page to UTF-8-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Adding a title to the page visible in the browser-->
+    <title>Campus Pilestredet</title>
+    <!--Links the stylesheet to the html-page-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!--Adds a favicon, where the image is taken from: https://kommunikasjon.ntb.no/data/images/00386/e13af02a-52b6-4701-8766-f0a0d9fab213-w_960.png, and converted on:https://favicon.io/favicon-converter/-->
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
-
 <body class="campuses">
   <header>
-<!--Creating a semantic element to host the nav-->
-<nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="accessibility.html">Accessibility</a>
-  <a href="topical.html">Topical</a>
-  <!--Creating a div to add a dropdown meny-->
-  <div class="dropdown-meny">
-    <button class="dropbtn">Campuses</button>
-    <div class="dropdown-content">
-      <a href="page4.html">Pilestredet</a>
-      <a href="page5.html">Kjeller</a>
-    </div>
-  </div> 
-</nav>
-
+    <!--Creating a semantic element to host the nav-->
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="accessibility.html">Accessibility</a>
+      <a href="topical.html">Topical</a>
+      <!--Creating a div to add a dropdown meny-->
+      <div class="dropdown-meny">
+        <button class="dropbtn">Campuses</button>
+        <div class="dropdown-content">
+          <a href="page4.html">Pilestredet</a>
+          <a href="page5.html">Kjeller</a>
+        </div>
+      </div>
+    </nav>
   </header>
   <!--this is the start of the main portion of the site-->
   <main>
-    <div class="campuses-heading">
-      <!--main heading in a div to easelly place it on the grid-->
+    <section class="intro">
+      <!--main heading in a div to easily place it on the grid-->
       <h1>Campus Pilestredet</h1>
       <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fansatt.oslomet.no%2Fen%2Fsiste-nytt%2F-%2Fnyhet%2Fny-strategi-for-oslomet-ber-om-innspill&psig=AOvVaw0Eh733QU3GIxl8d0HIKYJh&ust=1700590284730000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCNoNGW04IDFQAAAAAdAAAAABAQ-->
-      <img id="pilestredet-picture" src="../media/pilestredet-oversikt.jpeg" 
-      alt="Picture of pilestredet campus">
-    </div>
-    <div class="campuses-underheading">
-        <!-- text under heading in its own div-->
-      <h2>
-        The Pilestredet Campus at OsloMet metropolitan university is a vibrant and modern learning arena right in the heart of
+      <img id="pilestredet-picture" src="/media/pilestredet-oversikt.jpeg" alt="Picture of pilestredet campus">
+    </section>
+    <section class="campuses-underheading">
+      <!-- text under heading in its own div-->
+      <p>
+        The Pilestredet Campus at OsloMet metropolitan university is a vibrant and modern learning arena right in the
+        heart of
         Oslo.
         With a central location in the city's lively centre,
         this campus offers a dynamic and inspiring atmosphere for students and staff.
-      </h2>
-
-    </div>
+      <p>
+    </section>
     <!--Div for cafeteria pic-->
-    <div class="cafeteria-pic-box">
+    <figure class="figure-box-left-1">
       <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fstudent.oslomet.no%2Fauditorier-undervisningsrom%2F-%2Fundervisningsrom%2Fcampus%2FPIL%2Fbygning%2FP32%2From%2FP32_ANDREA_SPISERI&psig=AOvVaw1WYPoIiHeq_PVEmF9UeEXY&ust=1700590371379000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiRuPqW04IDFQAAAAAdAAAAABAE-->
-      <img id="cafeteria-picture" src="../media/pilestredet-kantine.jpeg" 
-      alt="Picture of cafeteria at pilestredet">
-    </div>
-    <!--Div for cafeteria text-->
-    <div class="cafeteria">
+      <img id="cafeteria-picture" src="/media/pilestredet-kantine.jpeg" alt="Picture of cafeteria at pilestredet">
+    </figure>
+    <!--section for cafeteria text-->
+    <section class="text-box-right-1">
       <!--subheading above all small textboxes-->
-      <h3>Modern canteens</h3>
-      <p>The canteen serves as a pleasant social meeting point for students and staff. With a relaxed atmosphere provides
+      <h2>Modern canteens</h2>
+      <p>The canteen serves as a pleasant social meeting point for students and staff. With a relaxed atmosphere
+        provides
         it an ideal place to meet friends, colleagues or work informally between lectures.</p>
-    </div>
-    <div class="library">
-         <!--Div for library text-->
+    </section>
+    <!--section for library text-->
+    <section class="text-box-left-1">
       <h3>The libraries</h3>
       <p>Pilestredet Campus library at OsloMet is a modern knowledge arena, offers a wide selection of resources and
         digital access, supported by helpful staff to promote students' academic success.</p>
-    </div>
-       <!--Div for cafeteria pic-->
-    <div class="library-picture-box">
+    </section>
+    <!--Div for cafeteria pic-->
+    <figure class="figure-box-right-1">
       <!--Photo source: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oslomet.no%2Fstudier%2Fstudenthistorier%2Fma-vere-sosial-for-a-vere-bibliotekar&psig=AOvVaw1eZgQhUh9gnJoJir-mc39L&ust=1700590726509000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjYw6OY04IDFQAAAAAdAAAAABAE-->
-      <img id="library-picture" src="../media/pilestredet-bibliotek.jpeg" 
-      alt="Picture of pilestredet library">
-    </div>
-    <div class="computer-picture-box">
+      <img id="library-picture" src="/media/pilestredet-bibliotek.jpeg" alt="Picture of pilestredet library">
+    </figure>
     <!--Div for computer pic-->
+    <figure class="figure-box-left-2">
       <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indeed.com%2Fcareer-advice%2Fcareer-development%2Fhow-to-become-a-computer-programmer&psig=AOvVaw0bEwfroVDY3k34XXXgbQ41&ust=1700591186228000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjplf-Z04IDFQAAAAAdAAAAABAI-->
-      <img id="computer-picture" src="../media/pilestredet-datatorg.jpeg" 
-      alt="example-picture of computer-square">
-    </div>
-       <!--Div for computer text-->
-    <div class="computer-square">
+      <img id="computer-picture" src="/media/pilestredet-datatorg.jpeg" alt="example-picture of computer-square">
+    </figure>
+    <!--section for computer-square text-->
+    <section class="text-box-right-2">
       <h3>Advanced computer square</h3>
-      <p>The data center on the Pilestredet Campus is an innovative meeting point, equipped with modern computer terminals and
+      <p>The data center on the Pilestredet Campus is an innovative meeting point, equipped with modern computer
+        terminals and
         technological resources, created to strengthen students' digital skills and support project work.</p>
-    </div>
-       <!--Div for map text-->
-    <div class="campuses-map-text">
-      
+    </section>
+    <!--section for map text-->
+    <section class="text-box-left-2">
       <h3>Well positioned</h3>
       <p>Pilestredet Campus is strategically located near public transport, which makes it easy
-        available to students from all over the city. With good connections to trams, buses and the subway, it's easy to get there
+        available to students from all over the city. With good connections to trams, buses and the subway, it's easy to
+        get there
         themselves to and from campus.</p>
-    </div>
-       <!--Div for the map-->
-    <div class="campuses-map">
-   <!--We use the element iframe to insert maps-->
+    </section>
+    <!--Div for the map-->
+    <figure class="figure-box-right-2">
+      <!--We use the element iframe to insert maps-->
       <!-- The src code comes from google maps -->
       <iframe id="pilestred-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1699.1372603251643!2d10.735785914905398!3d59.92009622410797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416fab6bb97e7f%3A0x3f394a77d4dd9299!2sOsloMet!5e0!3m2!1sno!2sus!4v1700436927522!5m2!1sno!2sus"
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </div>
-
-
-
+    </figure>
   </main>
-  <footer id="footer">
-    <div class="grid-footer-container">
-        <div class="grid-footer-left">
+    <!--Took design inspiration for footer based on these two videos. https://www.youtube.com/watch?v=YOb67OKw62s&t=560s
+  https://www.youtube.com/watch?v=nkZz9DOBzBI&t=398s 
+    Makes a footer with a grid container and 3 elemts to be placed in the left center and middle of the footer
+  using a tags to make the text clickable-->
+   <!--adding the semantic element "footer" so that the browser has the ability to veiw it as a footer, so that for example when entering reader-mode, it will be gone-->
+   <footer id="footer">
+    <!--div elements that acts like a container for the three different sections inside-->
+    <div id="grid-footer-container">
+        <!--devides the links in the footer into three different sections, with different links in each. --->
+        <section id="grid-footer-left">
             <h4>Socials</h4>
             <hr>
             <a href="abcde1234@oslomet.no">
@@ -118,8 +122,8 @@
             <a href="https://www.instagram.com/oslomet/">
                 <p>Instagram</p>
             </a>
-        </div>
-        <div class="grid-footer-middle">
+        </section>
+        <section id="grid-footer-middle">
             <h4>Contact</h4>
             <hr>
             <a href="#">
@@ -131,9 +135,8 @@
             <a href="#">
                 <p>Contact us</p>
             </a>
-        </div>
-
-        <div class="grid-footer-rigth">
+        </section>
+        <section id="grid-footer-right">
             <h4>Help</h4>
             <hr>
             <a href="#">
@@ -145,16 +148,15 @@
             <a href="#">
                 <p>Privacy</p>
             </a>
-        </div>
+        </section>
     </div>
-
-    <div class="grid-footer-bottom">
+    <!--Extra footer at the bottom of the footer with the names of the people that have worked on this page-->
+    <section id="grid-footer-bottom">
         <h4>Süssmann Productions</h4>
         <p>Ansvarlig redaktør: Aron Süssmann</p>
         <p>Med: Didrik, Trym og Gudmund</p>
-
+    </section>
 </footer>
-
 </body>
 
 </html>
