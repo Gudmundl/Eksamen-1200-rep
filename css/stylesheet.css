@@ -306,7 +306,6 @@ using letter
 
 /*making the h2 larger as well as positining it out from the left-side*/
 #index-third-box h2 {
-  font-size: 2rem;
   padding-left: 1vw;
 }
 
@@ -448,7 +447,8 @@ using letter
 
 
   /*Ads margin to make headers easier to read*/
-  index-secondary-box h2,index-third-box h2{
+  #index-secondary-box h2,#index-third-box h2{
+    font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -476,6 +476,11 @@ using letter
     flex-direction: column;
     margin-left: 3vw;
     margin-right: 3vw;
+  }
+
+  #index-third-box .short-intro{
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   /*Ads styling for aesthetics and flex to for mobile view*/
@@ -681,6 +686,9 @@ using letter
   .index .intro h2{
     margin-top: 0;
   }
+  #index-secondary-box h2, #index-third-box h2{
+    font-size: 2.7rem;
+  }
   /*Places img in the grid in the top half of the page  in the middle*/
   #index-under-intro-img-div {
     grid-column-start: 2;
@@ -753,11 +761,6 @@ using letter
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 4em;
-  }
-
-  #index-third-box .short-intro{
-    margin-left: 1em;
-    margin-right: 1em;
   }
   
   /*Places campus images next to eachother and ads padding and margin and border radius for style*/
