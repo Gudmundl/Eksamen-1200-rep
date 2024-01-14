@@ -285,7 +285,7 @@ using letter
 }
 
 /*padding and margin to improve readability*/
-.index-campus-p {
+.index-third-campus-div p {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -325,13 +325,13 @@ using letter
 }
 
 /*removing the underline on the link*/
-.index-campus-clickable-a {
+#index-third-box a {
   text-decoration: none;
   color: #000000;
 }
 
 /*styling on hover, with reduces opacity and underline on text, for accessebility.*/
-.index-campus-clickable-a:hover {
+#index-third-box a:hover {
   text-decoration: underline;
   opacity: 70%;
 }
@@ -460,8 +460,7 @@ using letter
 
 
   /*Ads margin to make headers easier to read*/
-  index-secondary-box h2,index-third-box h2,
-  .index-h3 {
+  index-secondary-box h2,index-third-box h2{
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -758,6 +757,12 @@ using letter
     margin-top: 3em;
     margin-bottom: 1em;
     padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  #index-secondary-box .short-intro{
+    padding-left: 13vw;
+    padding-right: 13vw;
   }
   #index-secondary-box-flex-container {
     @media (max-width:1200px) {
@@ -785,6 +790,11 @@ using letter
     margin-bottom: 4em;
   }
 
+  #index-third-box .short-intro{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
   /*Places campus images next to eachother and ads padding and margin and border radius for style*/
   .index-third-campus-div {
     border-radius: 1em;
