@@ -515,7 +515,7 @@ using letter
   }
 
   /*Adds margin to the paragraf to improve readability*/
-  .topical p {
+  .topical main {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 1em;
@@ -540,21 +540,10 @@ using letter
 
   /* styling for aesthetics*/
   .topical aside img {
-    height: 6em;
-    width: 35%;
-    margin-right: 0em;
-    padding-right: 0em;
-
+    width: 80%;
   }
-
-  /*Places the links in the grid to the rigth of the images and adds styling for readability*/
-  .topical aside a {
-    font-size: x-large;
-    margin-top: -7em;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 6;
-    grid-column-end: 12;
+  .topical aside p {
+    margin: 0;
   }
 
   /*Mobile styling for Topical(page3) ends here*/
@@ -823,6 +812,13 @@ using letter
   .topical h1 {
     text-align: center;
     font-size: 3em;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+
+    @media (min-width:1201px) {
+      grid-column-end: 4;
+    }
   }
 
   /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
@@ -836,23 +832,23 @@ using letter
     column-gap: 3vw;
     @media(min-width:1201px) {
       grid-template-columns: 1fr 3fr 1fr 1fr ;
-      grid-template-rows: repeat(3, auto);
+      grid-template-rows: repeat(4, auto);
     }
     @media (max-width:1200px){
-      grid-template-columns: 1fr 3fr 1fr ;
-      grid-template-rows: repeat(4, auto);
+      grid-template-columns: 1fr 7fr 1fr ;
+      grid-template-rows: repeat(5, auto);
     }
   }
 .topical main #intro{
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
   }
   /*Makes a grid for the body to put it in the left-middle*/
   .topical article {
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 3;
   }
@@ -861,14 +857,14 @@ using letter
   .topical aside {
     justify-content: center;    
     @media(min-width:1201px) {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 5;
+      grid-column-start: 3;
+      grid-column-end: 4;
     }
     @media (max-width:1200px){
-      grid-row-start: 4;
-      grid-row-end: 5;
+      grid-row-start: 5;
+      grid-row-end: 6;
       grid-column-start: 2;
       grid-column-end: 3;
     };
