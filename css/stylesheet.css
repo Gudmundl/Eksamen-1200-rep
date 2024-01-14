@@ -842,7 +842,7 @@ using letter
   .topical main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 3em;
     grid-row-gap: 3em;
   }
@@ -877,14 +877,8 @@ using letter
   /*Makes the text flush with the imageand ads some padding for style*/
   .topical aside p {
     margin-top: 0;
-    padding-left: 1%;
+    padding-left: 0.5em;
   }
-
-  /*Makes the footer flush with the main content*/
-  .topical footer {
-    margin-top: -10%;
-  }
-
   /*Page Topical computer styling ends here*/
 
 
