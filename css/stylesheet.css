@@ -208,7 +208,7 @@ using letter
 }
 
 /*Increses font weight for readability, removes dot in front of li elements, styling to mimic the FB "messenger" text bubbles*/
-.index-under-intro-li {
+#index-under-intro-area li{
   background-color: #006efe;
   color: #ffffff;
   font-weight: 600;
@@ -716,7 +716,6 @@ using letter
   }
   /*Places img in the grid in the top half of the page  in the middle*/
   #index-under-intro-img-div {
-
     grid-column-start: 2;
     grid-column-end: 11;
   }
