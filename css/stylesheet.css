@@ -182,7 +182,7 @@ footer {
 Setting a common font family to nearly all p-elements by using a class
 using letter 
 */
-.index-p {
+#index-body p {
   letter-spacing: 0.1rem;
 }
 
@@ -290,7 +290,8 @@ using letter
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-bottom: 5%;
+  margin-bottom: 1em;
+  letter-spacing: normal;
 }
 
 /*Color-styling, margin and padding for accessability and asthetics, smoothing of corners*/
@@ -457,13 +458,6 @@ using letter
     padding-right: 1em;
   }
 
-  /*Ads padding for  readability*/
-  .index-p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
 
   /*Ads margin to make headers easier to read*/
   .index-h2,
@@ -809,6 +803,8 @@ using letter
     width: 50%;
     height: 40em;
   }
+  
+
   /*STYLING OF INDEX IN PC-VEIW ENDS HERE*/
 
 
