@@ -23,6 +23,7 @@ body {
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*general navbar styling STARTS here/*
@@ -182,19 +183,18 @@ Setting a common font family to nearly all p-elements by using a class
 using letter 
 */
 .index-p {
-  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.1rem;
 }
 
 /*height is set to auto, while that the img is given a width, so that the browser automaticaly calculates the height so that the img keeps its ratio */
-#index-header-img {
+#index-body header img {
   width: 100%;
   height: auto;
 }
 
 /*Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-font-border, on the text-shadow.*/
 /*adding style to make the word oslomet stand out*/
-.index-oslomet-span {
+#index-body h1 span {
   color: #ffbb00;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
   font-size: 1.5em;
@@ -202,7 +202,7 @@ using letter
 }
 
 /*sets background color on the main container as well as sets black as the standard textcolor*/
-#index-main-container {
+#index-body main {
   background-color: whitesmoke;
   color: #000000;
 }
@@ -450,7 +450,7 @@ using letter
   }
 
   /*Ads padding for improved readability*/
-  #index-main-container {
+  #index-body main {
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
@@ -698,7 +698,7 @@ using letter
   }
 
   /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
-  #index-main-container {
+  #index-body main {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
   }
@@ -710,14 +710,14 @@ using letter
   }
 
   /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
-  #index-intro-p {
+  #index-intro {
     columns: 2;
     column-gap: 5%;
     font-size: x-large;
     grid-column-start: 2;
     grid-column-end: 11;
   }
-  #index-intro-p h2{
+  #index-intro h2{
     margin-top: 0;
   }
   /*Places img in the grid in the top half of the page  in the middle*/
