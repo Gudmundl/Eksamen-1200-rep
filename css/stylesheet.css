@@ -701,7 +701,6 @@ using letter
   #index-main-container {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(28, 1fr);
   }
 
   /*Places h1 tag in cloumn 2 start 11 end*/
@@ -715,16 +714,15 @@ using letter
     columns: 2;
     column-gap: 5%;
     font-size: x-large;
-    grid-row-start: 2;
-    grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 11;
   }
-
+  #index-intro-p h2{
+    margin-top: 0;
+  }
   /*Places img in the grid in the top half of the page  in the middle*/
   #index-under-intro-img-div {
-    grid-row-start: 5;
-    grid-row-end: 10;
+
     grid-column-start: 2;
     grid-column-end: 11;
   }
@@ -732,18 +730,19 @@ using letter
   /*places content in the grid, makes the "phone" only visible in 
   pc-veiw due to that the mobile-screen size would make the text too small */
   #index-under-intro-area {
-    grid-row-start: 10;
-    grid-row-end: 15;
     grid-column-start: 3;
     grid-column-end: 10;
     background-color: #1f1f1f;
     text-align: center;
     box-shadow: 1em 1em 1em #323232;
     border-radius: 0.95em;
-    margin: auto;
     max-width: 500px;
     min-width: 400px;
     padding-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
@@ -761,21 +760,19 @@ using letter
 
   /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
   #index-secondary-box {
-    grid-row-start: 15;
-    grid-row-end: 22;
     grid-column-start: 1;
     grid-column-end: 12;
     margin-top: 3em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
   }
   #index-secondary-box-flex-container {
     @media (max-width:1200px) {
-      flex-wrap: wrap;
-      
+      flex-wrap: wrap; 
     }
   }
   /*Ads appropriate heigth and width relative to the main page*/
   .index-secondary-box-div {
-    
     height: 1fr;
     @media (min-width:1201px) {
       max-width: 328px;
@@ -786,14 +783,13 @@ using letter
 
   /*Places the campus in the bottom half of the page and in the middle of the columns*/
   #index-third-box {
-    grid-row-start: 22;
-    grid-row-end: 28;
     grid-column-start: 2;
     grid-column-end: 11;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    margin-bottom: 4em;
   }
 
   /*Places campus images next to eachother and ads padding and margin and border radius for style*/
