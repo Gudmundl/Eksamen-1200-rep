@@ -767,11 +767,20 @@ using letter
     grid-column-end: 12;
     margin-top: 3em;
   }
-
+  #index-secondary-box-flex-container {
+    @media (max-width:1200px) {
+      flex-wrap: wrap;
+      
+    }
+  }
   /*Ads appropriate heigth and width relative to the main page*/
   .index-secondary-box-div {
     width: 20%;
-    height: 40em;
+    max-width: 340px;
+    height: 1fr;
+    @media (max-width:1200px) {
+      width: 40vw;
+    }
   }
 
   /*Places the campus in the bottom half of the page and in the middle of the columns*/
