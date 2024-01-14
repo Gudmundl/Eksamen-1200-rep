@@ -830,12 +830,6 @@ using letter
     width: 100%;
   }
 
-  /*Left aligns all text in the body of topical */
-  .topical {
-    text-align: left;
-    margin-bottom: 1em;
-  }
-
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
   .topical main {
     display: grid;
