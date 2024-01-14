@@ -871,7 +871,6 @@ using letter
 
   /*Sizes the aside pictures to an appropriate size relative to the page*/
   .topical aside img {
-    height: 30%;
     width: 16em;
   }
 
