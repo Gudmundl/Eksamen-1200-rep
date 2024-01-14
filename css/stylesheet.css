@@ -348,17 +348,12 @@ using letter
   background-color:#ffffff;
 }
 
-
 /*Makes the links black instead of blue for aesthetics*/
 .topical aside a {
   color: #000000;
 }
-/*makes topical footer flush with the edges of the page*/
 
-
-/*general Styling for Topical(page3 ENDS here)*/
-
-
+/*general Styling for Topical ENDS here*/
 
 /* general styling for page 4,5 and similar accesibility classes STARTS here */
 
@@ -844,6 +839,7 @@ using letter
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 4;
+    
   }
   /*Makes a grid for the body to put it in the left-middle*/
   .topical article {
@@ -950,4 +946,6 @@ using letter
   /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
 }
 /*End of media quearry for pc*/
-
+@media screen and (min-width:1201px) {
+  
+}
