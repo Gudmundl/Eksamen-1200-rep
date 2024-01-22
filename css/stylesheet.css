@@ -8,7 +8,9 @@ Media quarry max 800px(mobile) styling, (in order: body,p,navbar,footer, index, 
 
 Media quarry min 801px styling (for computer), (same order as mobile)
 */
-
+:root{
+  --THEMECOLOR: #05153F;
+}
 
 body {
   margin-top: 0em;
@@ -32,7 +34,7 @@ p {
 hides elements when elements overflow in navbar box*/
 .navbar {
   overflow: hidden;
-  background-color: #05153F;
+  background-color: var(--THEMECOLOR);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
@@ -71,7 +73,7 @@ removes the undelines, as well as some margin and padding fixing to improve read
   border: none;
   outline: none;
   color: #ffffff;
-  background-color: #05153F;
+  background-color: var(--THEMECOLOR);
   padding-top: .7em;
   padding-bottom: .7em;
   padding-left: .7em;
@@ -95,7 +97,7 @@ removes the undelines, as well as some margin and padding fixing to improve read
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #05153F;
+  background-color: var(--THEMECOLOR);
   z-index: 1;
   align-self: center;
   border-radius: 0.35em;
@@ -236,7 +238,7 @@ using letter
 
 /*aligning the text in the container to center as well as color-styling*/
 #index-secondary-box {
-  background-color: #05153F;
+  background-color: var(--THEMECOLOR);
   color: #ffffff;
   text-align: center;
 }
@@ -298,7 +300,7 @@ using letter
 
 /*Color-styling, margin and padding for accessability and asthetics, smoothing of corners*/
 #index-third-box {
-  background-color: #05153F;
+  background-color: var(--THEMECOLOR);
   color: #ffffff;
   padding-top: 1vh;
   padding-bottom: 0;
@@ -345,7 +347,7 @@ using letter
 
 /* Sets default styling for topical page */
 .topical{
-  color: #05153F;
+  color: var(--THEMECOLOR);
   background-color:#ffffff;
 }
 
@@ -362,7 +364,7 @@ using letter
 .campuses main, .accesibility main {
   display: grid;
   text-align: center;
-  background-color: #05153F;
+  background-color: var(--THEMECOLOR);
   color: #ffffff;
 }
 
