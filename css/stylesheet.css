@@ -702,9 +702,9 @@ using letter
     border-radius: 0.95em;
     max-width: 500px;
     min-width: 400px;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
     margin-top: 2em;
-    margin-bottom: auto;
+    margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -726,7 +726,7 @@ using letter
   .index-secondary-box {
     grid-column-start: 1;
     grid-column-end: 12;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-bottom: 1em;
     padding-bottom: 1em;
     padding-left: 2em;
@@ -756,7 +756,7 @@ using letter
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
   
   /*Places campus images next to eachother and ads padding and margin and border radius for style*/
