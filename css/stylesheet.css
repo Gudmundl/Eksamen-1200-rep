@@ -237,14 +237,14 @@ using letter
 /*Styling of elements in the secondary box in index under*/
 
 /*aligning the text in the container to center as well as color-styling*/
-#index-secondary-box {
+.index-secondary-box {
   background-color: var(--THEMECOLOR);
   color: #ffffff;
   text-align: center;
 }
 
 /*Displaying flex on the container to center the element inside, nowrap on the elements to prevent them from wrapping*/
-#index-secondary-box-flex-container {
+.index-secondary-box-flex-container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -267,9 +267,8 @@ using letter
 }
 
 /*stretching the img to fit the container, forcing the hight insted of auto to have the same size on the pictures*/
-#index-secondary-box img {
+.index-secondary-box img {
   width: 100%;
-  height: 25%;
   border-radius: 0.67em;
 }
 
@@ -300,7 +299,7 @@ using letter
 
 /*Color-styling, margin and padding for accessability and asthetics, smoothing of corners*/
 #index-third-box {
-  background-color: var(--THEMECOLOR);
+  background-color: #24262b;
   color: #ffffff;
   padding-top: 1vh;
   padding-bottom: 0;
@@ -451,7 +450,7 @@ using letter
 
 
   /*Ads margin to make headers easier to read*/
-  #index-secondary-box h2,#index-third-box h2{
+  .index-secondary-box h2,#index-third-box h2{
     font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -460,12 +459,12 @@ using letter
   }
 
   /*Align content to a coloumn each below eachother for mobile view*/
-  #index-secondary-box-flex-container {
+  .index-secondary-box-flex-container {
     flex-direction: column;
     align-items: center;
   }
   /*Rounds corners for cleaner look*/
-  #index-secondary-box {
+  .index-secondary-box {
     border-radius: 1.2em;
     padding-bottom: 1em;
   }
@@ -634,17 +633,10 @@ using letter
 
   /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
   #grid-footer-bottom {
-    background-color: #16171a;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
-  }
-
-  /*Makes the links white and removes underline*/
-  #footer a {
-    color: #D3D3D3;
-    text-decoration: none;
   }
 
   /*Makes the headers larger to make it easier to read*/
@@ -690,7 +682,7 @@ using letter
   .index .intro h2{
     margin-top: 0;
   }
-  #index-secondary-box h2, #index-third-box h2{
+  .index-secondary-box h2, #index-third-box h2{
     font-size: 2.7rem;
   }
   /*Places img in the grid in the top half of the page  in the middle*/
@@ -731,7 +723,7 @@ using letter
   }
 
   /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
-  #index-secondary-box {
+  .index-secondary-box {
     grid-column-start: 1;
     grid-column-end: 12;
     margin-top: 3em;
@@ -740,11 +732,11 @@ using letter
     padding-left: 2em;
     padding-right: 2em;
   }
-  #index-secondary-box .short-intro{
+  .index-secondary-box .short-intro{
     padding-left: 13vw;
     padding-right: 13vw;
   }
-  #index-secondary-box-flex-container {
+  .index-secondary-box-flex-container {
     @media (max-width:1200px) {
       flex-wrap: wrap; 
     }
