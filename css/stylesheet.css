@@ -1,5 +1,5 @@
 /*
-CSS setup:
+CSS table of contents:
 
 General semantic styling (body,p,navbar,footer)
 Indidual page general styling (1. index, 2. topical, 3. accesability, 4. makerspace)
@@ -20,6 +20,7 @@ body {
   padding-left: 0em;
   padding-right: 0em;
 }
+
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
@@ -126,9 +127,9 @@ removes the undelines, as well as some margin and padding fixing to improve read
 
 .dropdown-meny:hover .dropdown-content {
   display: block;
-}
+}/*general navbar styling ENDS here*/
 
-/*general navbar styling ENDS here*/
+
 
 /*general footer styling STARTS here*/
 /*Sets background and text colours for all the footers, hides overflow and centers bottom footer*/
@@ -150,7 +151,7 @@ footer {
 }
 
 /*Makes a yellow underline under the footers links for stylistic choices*/
-#footer hr {
+footer hr {
   width: 1.5em;
   border-style: solid;
   border-color: #ffcc00;
@@ -158,18 +159,18 @@ footer {
 }
 
 /*Makes the links white and removes underline*/
-#footer a {
+footer a {
   color: #D3D3D3;
   text-decoration: none;
 }
 
 /*Makes links in the footer white when hovering. Improves accessability*/
-#footer a:hover {
+footer a:hover {
   color: #ffffff;
 }
 
 /*Make the h4 larger to make i easier to read*/
-#footer h4 {
+footer h4 {
   font-size: larger;
 }
 
@@ -206,13 +207,15 @@ using letter
   background-color: whitesmoke;
   color: #000000;
 }
-#index-under-intro-area ul{
+
+#index-under-intro-area ul {
   padding-left: 1rem;
   padding-right: 1.7em;
   list-style: none;
 }
+
 /*Increses font weight for readability, removes dot in front of li elements, styling to mimic the FB "messenger" text bubbles*/
-#index-under-intro-area li{
+#index-under-intro-area li {
   background-color: #006efe;
   color: #ffffff;
   font-weight: 485;
@@ -344,9 +347,9 @@ using letter
 /* START of general styling for topical */
 
 /* Sets default styling for topical page */
-.topical{
+.topical {
   color: #05153F;
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 /*Makes the links black instead of blue for aesthetics*/
@@ -359,7 +362,8 @@ using letter
 /* general styling for page 4,5 and similar accesibility classes STARTS here */
 
 /* styles main inside page 4(pilestredet), aligns the text*/
-.campuses main, .accesibility main {
+.campuses main,
+.accesibility main {
   display: grid;
   text-align: center;
   background-color: #05153F;
@@ -367,13 +371,15 @@ using letter
 }
 
 /* styles level 3 headings inside page 4 main */
-.campuses main h3, .accesibility main h3 {
+.campuses main h3,
+.accesibility main h3 {
   padding-top: 7%;
   font-size: 1.7rem;
 }
 
 /* styles all p inside page 4 main */
-.campuses main p, .accesibility main p {
+.campuses main p,
+.accesibility main p {
   padding-top: 5%;
   padding-left: 8%;
   padding-right: 8%;
@@ -383,13 +389,14 @@ using letter
 }
 
 /*aligns the heading to center, and positions it relativ*/
-.campuses .intro, .accesibility-heading {
+.campuses .intro,
+.accesibility-heading {
   text-align: center;
   position: relative;
 }
 
 /*styles h1 and sets its position on top of the background */
-.campuses .intro h1{
+.campuses .intro h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -400,15 +407,19 @@ using letter
 }
 
 /*aligns the text*/
-.campuses-underheading, .accesibility-underheading {
+.campuses-underheading,
+.accesibility-underheading {
   text-align: center;
 }
+
 /*adjusts text for text paragraph under heading*/
-.campuses-underheading p{
+.campuses-underheading p {
   font-weight: 600;
 }
+
 /*makes images fit the width of the frame*/
-.campuses img, .accesibility img{
+.campuses img,
+.accesibility img {
   width: 100%;
 }
 
@@ -421,16 +432,18 @@ using letter
 
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-width: 800px) {
-/*Start of mobile styling for navbar*/
-/*Changes the definition of font size so the mobile navbar fits in one line*/
+
+  /*Start of mobile styling for navbar*/
+  /*Changes the definition of font size so the mobile navbar fits in one line*/
   .navbar a {
     font-size: 3.5vw;
   }
+
   .dropdown-meny .dropbtn {
-    font-size: 3.5vw;    
+    font-size: 3.5vw;
   }
 
-/*end of mobile styling for navbar*/
+  /*end of mobile styling for navbar*/
   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
   /*Using flex to make content below eachother*/
   .index {
@@ -449,7 +462,8 @@ using letter
 
 
   /*Ads margin to make headers easier to read*/
-  #index-secondary-box h2,#index-third-box h2{
+  #index-secondary-box h2,
+  #index-third-box h2 {
     font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -462,11 +476,13 @@ using letter
     flex-direction: column;
     align-items: center;
   }
+
   /*Rounds corners for cleaner look*/
   #index-secondary-box {
     border-radius: 1.2em;
     padding-bottom: 1em;
   }
+
   /*Styling for to make it an appropriate size for mobile view */
   .index-secondary-box-div {
     width: 90%;
@@ -480,7 +496,7 @@ using letter
     margin-right: 3vw;
   }
 
-  #index-third-box .short-intro{
+  #index-third-box .short-intro {
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -504,7 +520,7 @@ using letter
 
   /*Index mobile styling ends here*/
 
-   /*Start of page2 (accesability) mobile styling*/
+  /*Start of page2 (accesability) mobile styling*/
 
 
   /*end of page2 (accesability) mobile styling*/
@@ -544,6 +560,7 @@ using letter
   .topical aside img {
     width: 80%;
   }
+
   .topical aside p {
     margin: 0;
   }
@@ -552,12 +569,14 @@ using letter
 
   /* The mobile styling for page 4, 5 and similar accesability classes and ids STARTS here:*/
   /* decides that mobile version only has 1 column */
-  .campuses main, .accesibility main {
+  .campuses main,
+  .accesibility main {
     grid-template-columns: 1fr;
   }
 
   /* decides positions of elements with grid-column start and end */
-  .campuses .intro, .accesibility-heading {
+  .campuses .intro,
+  .accesibility-heading {
     grid-row-start: 1;
     grid-row-end: 2;
   }
@@ -568,7 +587,8 @@ using letter
   }
 
   /* places underheading in a mobile frendly format */
-  .campuses-underheading, .accesibility-underheading {
+  .campuses-underheading,
+  .accesibility-underheading {
     padding-top: 5vh;
     padding-right: 5vw;
     padding-bottom: 5vh;
@@ -577,14 +597,16 @@ using letter
     grid-row-end: 3;
   }
 
-  #campus-underhead-text{
+  #campus-underhead-text {
     font-size: 1.5em;
   }
-/*These next two elements places the elements in a fitting order for mobile*/
-  .figure-box-right-1{
+
+  /*These next two elements places the elements in a fitting order for mobile*/
+  .figure-box-right-1 {
     grid-row-start: 5;
   }
-  .figure-box-right-2{
+
+  .figure-box-right-2 {
     grid-row-start: 10;
     /*We placed this at the end because of its lenght*/
   }
@@ -596,7 +618,7 @@ using letter
 
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
-  
+
   /*Footer computer styling starts here*/
 
   /*Makes a container for the footer to be placed in a grid*/
@@ -628,15 +650,6 @@ using letter
     grid-row-end: 6;
     grid-column-start: 18;
     grid-column-end: 20;
-  }
-
-  /*Makes the bottom footer be black and ads padding to remove extra space at the bottom*/
-  #grid-footer-bottom {
-    background-color: #16171a;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
   }
 
   /*Makes the links white and removes underline*/
@@ -685,12 +698,16 @@ using letter
     grid-column-start: 2;
     grid-column-end: 11;
   }
-  .index .intro h2{
+
+  .index .intro h2 {
     margin-top: 0;
   }
-  #index-secondary-box h2, #index-third-box h2{
+
+  #index-secondary-box h2,
+  #index-third-box h2 {
     font-size: 2.7rem;
   }
+
   /*Places img in the grid in the top half of the page  in the middle*/
   #index-under-intro-img-div {
     grid-column-start: 2;
@@ -738,20 +755,25 @@ using letter
     padding-left: 2em;
     padding-right: 2em;
   }
-  #index-secondary-box .short-intro{
+
+  #index-secondary-box .short-intro {
     padding-left: 13vw;
     padding-right: 13vw;
   }
+
   #index-secondary-box-flex-container {
     @media (max-width:1200px) {
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
     }
   }
+
   /*Ads appropriate heigth and width relative to the main page*/
   .index-secondary-box-div {
     height: 1fr;
+
     @media (max-width:1200px) {
-      width: 40vw;}
+      width: 40vw;
+    }
   }
 
   /*Places the campus in the bottom half of the page and in the middle of the columns*/
@@ -764,7 +786,7 @@ using letter
     padding-right: 1em;
     margin-bottom: 4em;
   }
-  
+
   /*Places campus images next to eachother and ads padding and margin and border radius for style*/
   .index-third-campus-div {
     border-radius: 1em;
@@ -782,7 +804,7 @@ using letter
     width: 50%;
     height: 40em;
   }
-  
+
 
   /*STYLING OF INDEX IN PC-VEIW ENDS HERE*/
 
@@ -823,19 +845,23 @@ using letter
   .topical main {
     display: grid;
     column-gap: 3vw;
-    @media (max-width:1200px){
-      grid-template-columns: 1fr 7fr 1fr ;
+
+    @media (max-width:1200px) {
+      grid-template-columns: 1fr 7fr 1fr;
       grid-template-rows: repeat(5, auto);
     }
   }
-.topical main .intro{
+
+  .topical main .intro {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
+
     @media (max-width:1200px) {
       grid-column-end: 3;
     }
   }
+
   /*Makes a grid for the body to put it in the left-middle*/
   .topical article {
     grid-row-start: 3;
@@ -846,13 +872,16 @@ using letter
 
   /*Puts the aside to the rigth of the main text*/
   .topical aside {
-    justify-content: center;    
-    @media (max-width:1200px){
+    justify-content: center;
+
+    @media (max-width:1200px) {
       grid-row-start: 5;
       grid-row-end: 6;
       grid-column-start: 2;
       grid-column-end: 3;
-    };
+    }
+
+    ;
   }
 
   /*Styles the healthpicture to fit well inside the grid*/
@@ -870,24 +899,28 @@ using letter
     margin-top: 0;
     padding-left: 0.5em;
   }
+
   /*Page Topical computer styling ends here*/
 
 
   /* The Computer styling for page 4, 5 and similar accesability classes and ids STARTS here:*/
 
   /* Makes grid in main two columns with same width */
-  .campuses main, .accesibility main {
+  .campuses main,
+  .accesibility main {
     grid-template-columns: 1fr 1fr;
   }
 
   /* places heading */
-  .campuses .intro, .accesibility-heading{
+  .campuses .intro,
+  .accesibility-heading {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
   /* places underheading in a computer friendly format */
-  .campuses-underheading, .accesibility-underheading{
+  .campuses-underheading,
+  .accesibility-underheading {
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.7rem;
@@ -897,12 +930,15 @@ using letter
     padding-left: 20vw;
   }
 
-  #campus-underhead-text{
+  #campus-underhead-text {
     font-size: 2.3vw;
   }
-  
+
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .figure-box-left-1, .figure-box-left-2, .text-box-left-1,.text-box-left-2{
+  .figure-box-left-1,
+  .figure-box-left-2,
+  .text-box-left-1,
+  .text-box-left-2 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: auto;
@@ -910,49 +946,61 @@ using letter
   }
 
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .text-box-right-1, .figure-box-right-1,.text-box-right-2,
-  .figure-box-right-2{
+  .text-box-right-1,
+  .figure-box-right-1,
+  .text-box-right-2,
+  .figure-box-right-2 {
     grid-column-start: 2;
     grid-column-end: 3;
     margin: auto;
   }
-.figure-box-left-1 img, .figure-box-right-1 img,
-.figure-box-left-2 img, .figure-box-right-2 img{
+
+  .figure-box-left-1 img,
+  .figure-box-right-1 img,
+  .figure-box-left-2 img,
+  .figure-box-right-2 img {
     height: 64vh;
     object-fit: contain;
     min-height: 410px;
-}
-#test-screenshot-4{
-  min-height: 460px;
-}
+  }
 
-#pilestred-map{
+  #test-screenshot-4 {
+    min-height: 460px;
+  }
+
+  #pilestred-map {
     height: 64vh;
     width: 49vw;
     min-height: 410px;
-}
+  }
+
   /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
 }
+
 /*End of media quearry for pc*/
 @media screen and (min-width:1201px) {
-  .index-secondary-box-div{
+  .index-secondary-box-div {
     max-width: 328px;
     width: 20vw;
-    }
-  .topical main {
-      grid-template-columns: 1fr 3fr 1fr 1fr ;
-      grid-template-rows: repeat(4, auto);
   }
-  .topical .intro{
+
+  .topical main {
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .topical .intro {
     grid-column-end: 4;
   }
-  .topical aside {  
-      grid-row-start: 3;
-      grid-row-end: 5;
-      grid-column-start: 3;
-      grid-column-end: 4;
+
+  .topical aside {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
+
   .topical h1 {
     grid-column-end: 4;
-}
+  }
 }
