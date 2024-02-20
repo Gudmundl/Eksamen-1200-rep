@@ -150,7 +150,7 @@ footer {
 }
 
 /*Makes a yellow underline under the footers links for stylistic choices*/
-#footer hr {
+footer hr {
   width: 1.5em;
   border-style: solid;
   border-color: #ffcc00;
@@ -158,18 +158,18 @@ footer {
 }
 
 /*Makes the links white and removes underline*/
-#footer a {
+footer a {
   color: #D3D3D3;
   text-decoration: none;
 }
 
 /*Makes links in the footer white when hovering. Improves accessability*/
-#footer a:hover {
+footer a:hover {
   color: #ffffff;
 }
 
 /*Make the h4 larger to make i easier to read*/
-#footer h4 {
+footer h4 {
   font-size: larger;
 }
 
@@ -361,9 +361,9 @@ using letter
 
 /*general Styling for Topical ENDS here*/
 
-/* general styling for page 4,5 and similar accesibility classes STARTS here */
+/* general styling for page makerspace and similar accesibility classes STARTS here */
 
-/* styles main inside page 4(pilestredet), aligns the text*/
+/* styles main inside page makerspace, aligns the text*/
 .campuses main, .accesibility main {
   display: grid;
   text-align: center;
@@ -371,13 +371,13 @@ using letter
   color: #ffffff;
 }
 
-/* styles level 3 headings inside page 4 main */
+/* styles level 3 headings inside makerspace main */
 .campuses main h3, .accesibility main h3 {
   padding-top: 7%;
   font-size: 1.7rem;
 }
 
-/* styles all p inside page 4 main */
+/* styles all p inside makerspace main */
 .campuses main p, .accesibility main p {
   padding-top: 5%;
   padding-left: 8%;
@@ -418,7 +418,7 @@ using letter
 }
 
 
-/* general styling for page 4,5 and similar accesibility classes ENDS here */
+/* general styling for page makerspace and similar accesibility classes ENDS here */
 
 
 
@@ -555,7 +555,7 @@ using letter
 
   /*Mobile styling for Topical(page3) ends here*/
 
-  /* The mobile styling for page 4, 5 and similar accesability classes and ids STARTS here:*/
+  /* The mobile styling for page makerspace and similar accesability classes and ids STARTS here:*/
   /* decides that mobile version only has 1 column */
   .campuses main, .accesibility main {
     grid-template-columns: 1fr;
@@ -645,13 +645,13 @@ using letter
   }
 
   /*Makes the links white and removes underline*/
-  #footer a {
+  footer a {
     color: #D3D3D3;
     text-decoration: none;
   }
 
   /*Makes the headers larger to make it easier to read*/
-  #footer h4 {
+  footer h4 {
     font-size: larger;
   }
 
@@ -878,7 +878,7 @@ using letter
   /*Page Topical computer styling ends here*/
 
 
-  /* The Computer styling for page 4, 5 and similar accesability classes and ids STARTS here:*/
+  /* The Computer styling for page makerspace and similar accesability classes and ids STARTS here:*/
 
   /* Makes grid in main two columns with same width */
   .campuses main, .accesibility main {
@@ -936,7 +936,7 @@ using letter
     width: 49vw;
     min-height: 410px;
 }
-  /* The Computer styling for page 4, 5 and similar accesability classes and ids ENDS here:*/
+  /* The Computer styling for page makerspace and similar accesability classes and ids ENDS here:*/
 }
 /*End of media quearry for pc*/
 @media screen and (min-width:1201px) {
