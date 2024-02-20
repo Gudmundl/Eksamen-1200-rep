@@ -796,3 +796,13 @@ footer h4 {
     grid-column-end: 4;
 }
 }
+
+
+@media (min-width: 1200px) {
+  .index-section-two article {
+      background-color: var(--LIGHTCOLOR);
+      width: 42vw;
+      color: #24262b;
+  }
+
+}
