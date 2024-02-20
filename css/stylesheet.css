@@ -175,174 +175,115 @@ footer h4 {
 
 /*general footer styling ENDS here*/
 
-/*  General styling of index STARTS here*/
+/*-----------------------------------------------*/
+/*Index*/
 
-
-/*
-Setting a common font family to nearly all p-elements by using a class
-using letter 
-*/
-.index p {
-  letter-spacing: 0.1rem;
-}
-
-/*height is set to auto, while that the img is given a width, so that the browser automaticaly calculates the height so that the img keeps its ratio */
-.index header img {
-  width: 100%;
-  height: auto;
-}
-
-/*Taken inspiration and code from:https://stackoverflow.com/questions/2570972/css-font-border, on the text-shadow.*/
-/*adding style to make the word oslomet stand out*/
-.index h1{
-  /*The clamp makes a minimal valua prefered value and a max value*/
-  font-size: clamp(2.5em, 4vw, 7em);
-}
-.index h1 span {
-  color: #ffbb00;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  font-weight: bolder;
-  font-size: 1.2em; /*Slightly increases size of this part of the headline*/
-
-}
-
-/*sets background color on the main container as well as sets black as the standard textcolor*/
-.index main {
-  background-color: whitesmoke;
-  color: #000000;
-}
-#index-under-intro-area ul{
-  padding-left: 1rem;
-  padding-right: 1.7em;
-  list-style: none;
-}
-/*Increses font weight for readability, removes dot in front of li elements, styling to mimic the FB "messenger" text bubbles*/
-#index-under-intro-area li{
-  background-color: #006efe;
-  color: #ffffff;
-  font-weight: 485;
-  border-radius: 1.45em 1.45em 1.45em 0em;
-  box-shadow: 0.1em 0.1em 0.1em #474747;
-  margin-top: 1.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
-
-/*Streches the img to fit inside the container it is in, smoothing of cornes for asthetics*/
-#index-under-intro-img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.8em;
-}
-
-/*Styling of elements in the secondary box in index under*/
-
-/*aligning the text in the container to center as well as color-styling*/
-#index-secondary-box {
-  background-color: #05153F;
-  color: #ffffff;
-  text-align: center;
-}
-
-/*Displaying flex on the container to center the element inside, nowrap on the elements to prevent them from wrapping*/
-#index-secondary-box-flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-/*aligned the text to left to improve the readability, as well as asthetic styling*/
-.index-secondary-box-div {
-  background-color: #e4e4e4;
-  color: #000000;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 1%;
-  padding-right: 1%;
-  border-radius: 0.8em;
-  text-align: left;
-}
-
-/*stretching the img to fit the container, forcing the hight insted of auto to have the same size on the pictures*/
-#index-secondary-box img {
-  width: 100%;
-  height: 25%;
-  border-radius: 0.67em;
-}
-
-/*END of Styling of elements in the secondary box*/
-
-/*Styling of third box*/
-/*Displaying flex on the content inside the container, for later to set colum/row in the media-quarries*/
-#index-third-box-flex {
-  display: flex
-}
-
-/*Streches the img to the containers width, some smoothing of corners*/
-.index-campus-img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.53em;
-}
-
-/*padding and margin to improve readability*/
-.index-third-campus-div p {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1em;
-  letter-spacing: normal;
-}
-
-/*Color-styling, margin and padding for accessability and asthetics, smoothing of corners*/
-#index-third-box {
-  background-color: #05153F;
-  color: #ffffff;
-  padding-top: 1vh;
-  padding-bottom: 0;
-  margin-top: 3vh;
-  border-radius: 1.2em;
-}
-
-/*making the h2 larger as well as positining it out from the left-side*/
-#index-third-box h2 {
-  padding-left: 1vw;
-}
-
-/*making the h3 larger as well as positining it out from the left-side*/
-#index-third-box h3 {
-  font-size: 1.7rem;
-  padding-left: 1vw;
-}
-
-/*Color-styling for readability and asthetics, displaying flex to position the elements inside in the center*/
-.index-third-campus-div {
-  background-color: #f0f8ff;
-  color: #000000;
-  display: flex;
-  justify-content: center;
-}
-
-/*removing the underline on the link*/
-#index-third-box a {
+.index a{
   text-decoration: none;
-  color: #000000;
 }
 
-/*styling on hover, with reduces opacity and underline on text, for accessebility.*/
-#index-third-box a:hover {
+.index-1em-padding {
+  padding: 1em;
+}
+
+.index-main h2 {
+  font-size: clamp(1.7rem, 4vw, 5rem);
+  margin: 0em;
+  min-width: 100%;
+}
+
+.index-main h3 {
+  font-size: clamp(1.5rem, 2.5vw, 5rem);
+  margin-top: 0;
+}
+
+.index main p {
+  font-size: clamp(1rem, 1.5vw, 4rem);
+  margin: 0em;
+}
+
+.index-flex-inside-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: space-around;
+}
+
+.index-main figure {
+  margin: 0;
+}
+
+.index-main img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.index-section-two {
+  background-image: url("/media/index-section-background.svg");
+  color: var(--LIGHTCOLOR);
+}
+
+.index-section-two div div {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 4em;
+  width: 100%;
+}
+
+.index-section-two article {
+  background-color: var(--LIGHTCOLOR);
+  color: #24262b;
+}
+
+.hover:hover {
+  cursor: pointer;
   text-decoration: underline;
-  opacity: 70%;
 }
 
-/*END og styling of third box*/
+.index-section-three div div{
+  background-color: var(--THEMECOLOR);
+  color: var(--LIGHTCOLOR);
+}
+
+.index-section-four {
+  background-color: #16171a;
+  color: var(--LIGHTCOLOR);
+}
+
+.index-campus-container {
+  background-color: var(--LIGHTCOLOR);
+  display: flex;
+}
+
+.index-section-four div img {
+  height: 100%;
+}
+
+.index-section-four a {
+  color: #24262b;
+}
+
+.index-section-five div div {
+  display: grid;
+  gap: 0.1em;
+}
+
+.index-section-five a{
+  background-color: var(--THEMECOLOR);
+  color: var(--LIGHTCOLOR);
+  font-size: clamp(1rem, 1.5vw, 4rem);
+  padding-bottom: 2em;
+  padding-top: 2em;
+  text-align: center;
+  width: 10em;
+}
+
+/*-----------------------------------------------*/
+
 /*END of styling for index outside of the media-quarry*/
 
 
