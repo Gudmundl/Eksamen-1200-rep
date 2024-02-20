@@ -378,77 +378,36 @@ footer h4 {
 
 /*end of mobile styling for navbar*/
   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
-  /*Using flex to make content below eachother*/
-  .index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+ /*------------------------------------------*/
+ .index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  /*Ads padding for improved readability*/
-  .index main {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
+/*Index*/
+.index-main section {
+  padding-top: var(--TB-MARGIN-MOBILE);
+  padding-bottom: var(--TB-MARGIN-MOBILE);
+  padding-left: var(--LR-MARGIN-MOBILE);
+  padding-right: var(--LR-MARGIN-MOBILE);
+}
 
+.index-section-two div div {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
 
-  /*Ads margin to make headers easier to read*/
-  #index-secondary-box h2,#index-third-box h2{
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+.index-campus-container {
+  flex-direction: column;
+}
 
-  /*Align content to a coloumn each below eachother for mobile view*/
-  #index-secondary-box-flex-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  /*Rounds corners for cleaner look*/
-  #index-secondary-box {
-    border-radius: 1.2em;
-    padding-bottom: 1em;
-  }
-  /*Styling for to make it an appropriate size for mobile view */
-  .index-secondary-box-div {
-    width: 90%;
-    height: auto;
-  }
+.index-section-five div div {
+  grid-template-columns: repeat(2, 1fr);
+}
 
-  /*Styling for to make it an appropriate size for mobile view */
-  #index-third-box-flex {
-    flex-direction: column;
-    margin-left: 3vw;
-    margin-right: 3vw;
-  }
-
-  #index-third-box .short-intro{
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-
-  /*Ads styling for aesthetics and flex to for mobile view*/
-  .index-third-campus-div {
-    border-radius: 0.53em;
-    margin-top: 0em;
-    margin-bottom: 1em;
-    margin-left: 0em;
-    margin-right: 0em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0em;
-    padding-right: 0em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  /*Index mobile styling ends here*/
+/*------------------------------------------*/
+}
 
    /*Start of page2 (accesability) mobile styling*/
 
