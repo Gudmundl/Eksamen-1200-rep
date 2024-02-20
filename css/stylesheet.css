@@ -598,9 +598,6 @@ using letter
     grid-row-end: 3;
   }
 
-  #campus-underhead-text {
-    font-size: 1.5em;
-  }
 
   /*These next two elements places the elements in a fitting order for mobile*/
   .figure-box-right-1 {
@@ -895,7 +892,7 @@ using letter
   }
 
   /*Styles the healthpicture to fit well inside the grid*/
-  #topical-body-health-picture {
+  .topical img {
     width: 100%;
   }
 
@@ -940,10 +937,6 @@ using letter
     padding-left: 20vw;
   }
 
-  #campus-underhead-text {
-    font-size: 2.3vw;
-  }
-
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
   .figure-box-left-1,
   .figure-box-left-2,
@@ -971,16 +964,6 @@ using letter
   .figure-box-right-2 img {
     height: 64vh;
     object-fit: contain;
-    min-height: 410px;
-  }
-
-  #test-screenshot-4 {
-    min-height: 460px;
-  }
-
-  #pilestred-map {
-    height: 64vh;
-    width: 49vw;
     min-height: 410px;
   }
 
