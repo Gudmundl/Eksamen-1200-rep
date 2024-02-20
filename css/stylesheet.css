@@ -255,7 +255,7 @@ footer h4 {
   text-decoration: underline;
 }
 
-.index-section-three div div{
+.index-section-three div a{
   background-color: var(--THEMECOLOR);
   color: var(--LIGHTCOLOR);
 }
@@ -595,13 +595,13 @@ footer h4 {
   }
 
   
-  .index-section-three div div{
+  .index-section-three div a{
       display: flex;
       flex-direction: row;
       justify-content: center;
   }
 
-  .index-section-three div div img{
+  .index-section-three div a img{
       width: 20%;
   }
 
