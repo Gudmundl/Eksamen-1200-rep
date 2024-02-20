@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--Setting the language to english, so that some browser have the ability to translate the page to the users prefered language-->
+<html lang="en">
+  <!--head with all the meta-data for the page-->
+  <head>
+    <!--Setting the charset used on this page to UTF-8-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Adding a title to the page visible in the browser-->
+    <title>Oslomet Makerspace</title>
+    <!--Links the stylesheet to the html-page-->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <!--Adds a favicon, where the image is taken from: https://kommunikasjon.ntb.no/data/images/00386/e13af02a-52b6-4701-8766-f0a0d9fab213-w_960.png, and converted on:https://favicon.io/favicon-converter/-->
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico" />
+  </head>
+  <body class="campuses">
+    <header>
+      <!--Creating a semantic element to host the nav-->
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="topical.html">Topical</a>
+        <a href="makerspace.html">Makerspace</a>
+        <!--Creating a div to add a dropdown meny-->
+        <div class="dropdown-meny">
+          <button class="dropbtn">Campuses</button>
+          <div class="dropdown-content">
+            <a href="https://www.oslomet.no/en/about/pilestredet-campus"
+              >Pilestredet</a
+            >
+            <a href="https://www.oslomet.no/en/about/kjeller-campus">Kjeller</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--this is the start of the main portion of the site-->
+    <main>
+      <section class="intro">
+        <!--main heading in a div to easily place it on the grid-->
+        <h1>Oslomet Makerspace</h1>
+        <!--Photo source:https://www.oslomet.no/studier/studenthistorier/makerspace-for-studenter-->
+        <img
+          src="media/makerspacefirst/personer.jpg"
+          alt="Picture of people working in the makerspace"
+        />
+      </section>
+      <section class="campuses-underheading">
+        <!-- text under heading in its own div-->
+        <p>
+          OsloMet Makerspace is an open workshop at OsloMet where students can
+          bring their own ideas and receive assistance with their projects. This
+          creative space provides students with the opportunity to explore,
+          create, and collaborate across disciplines. Here are some key points
+          about Makerspace:
+        </p>
+
+        <p></p>
+      </section>
+
+      <!--Div for cafeteria pic-->
+      <figure class="figure-box-left-1">
+        <!--Photo source:-->
+        <img
+          src="media/makerspacefirst/ambitious-studio-rick-barrett-O9BznaWPO2M-unsplash.jpg"
+          alt="Picture of some of the tools in the makerspace"
+        />
+      </figure>
+      <!--section for cafeteria text-->
+      <section class="text-box-right-1">
+        <!--subheading above all small textboxes-->
+        <h2>Modern facilities</h2>
+        <p>
+          This community-driven workshop provides students and staff at OsloMet
+          with the opportunity to meet, collaborate, share knowledge, and create
+          new things in innovative ways. The makerspace is a room filled with
+          tools and cutting-edge technology that allows you to explore various
+          creative fields
+        </p>
+      </section>
+      <!--section for library text-->
+      <section class="text-box-left-1">
+        <h3>3D Printing</h3>
+        <p>
+          Makerspace has both simple FDM printers (suitable for most projects)
+          and SLA printers (for parts with special properties like high thermal
+          resistance) .
+        </p>
+      </section>
+      <!--Div for cafeteria pic-->
+      <figure class="figure-box-right-1">
+        <!--Photo source: -->
+        <img
+          src="media/makerspacefirst/3dprinting.jpg"
+          alt="Picture of the 3D printing area in the makerspace"
+        />
+      </figure>
+      <!--Div for computer pic-->
+      <figure class="figure-box-left-2">
+        <!--Photo source:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indeed.com%2Fcareer-advice%2Fcareer-development%2Fhow-to-become-a-computer-programmer&psig=AOvVaw0bEwfroVDY3k34XXXgbQ41&ust=1700591186228000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjplf-Z04IDFQAAAAAdAAAAABAI-->
+        <img
+          id="computer-picture"
+          src="media/pilestredet-datatorg.jpeg"
+          alt="Someone using a computer to represent the programming stations in the makerspace"
+        />
+      </figure>
+      <!--section for computer-square text-->
+      <section class="text-box-right-2">
+        <h3>Programming stations</h3>
+        <p>
+          Programming Stations: Dive into coding and software development.
+          Collaboration Areas: Work together on projects and exchange ideas.
+        </p>
+      </section>
+    </main>
+    <!--Took design inspiration for footer based on these two videos. https://www.youtube.com/watch?v=YOb67OKw62s&t=560s
+  https://www.youtube.com/watch?v=nkZz9DOBzBI&t=398s 
+    Makes a footer with a grid container and 3 elemts to be placed in the left center and middle of the footer
+  using a tags to make the text clickable-->
+    <!--adding the semantic element "footer" so that the browser has the ability to veiw it as a footer, so that for example when entering reader-mode, it will be gone-->
+    <footer>
+      <!--div elements that acts like a container for the three different sections inside-->
+      <div id="grid-footer-container">
+        <!--devides the links in the footer into three different sections, with different links in each. --->
+        <section id="grid-footer-left">
+          <h4>Socials</h4>
+          <hr />
+          <a href="abcde1234@oslomet.no">
+            <p>Mail</p>
+          </a>
+          <a href="https://www.facebook.com/oslomet/?locale=nb_NO">
+            <p>Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/oslomet/">
+            <p>Instagram</p>
+          </a>
+        </section>
+        <section id="grid-footer-middle">
+          <h4>Contact</h4>
+          <hr />
+          <a href="#">
+            <p>Jobs</p>
+          </a>
+          <a href="#">
+            <p>About us</p>
+          </a>
+          <a href="#">
+            <p>Contact us</p>
+          </a>
+        </section>
+        <section id="grid-footer-right">
+          <h4>Help</h4>
+          <hr />
+          <a href="#">
+            <p>User support</p>
+          </a>
+          <a href="accessibility.html">
+            <p>Accessibility</p>
+          </a>
+          <a href="#">
+            <p>Privacy</p>
+          </a>
+        </section>
+      </div>
+      <!--Extra footer at the bottom of the footer with the names of the people that have worked on this page-->
+      <section id="grid-footer-bottom">
+        <h4>Süssmann Productions</h4>
+        <p>Chief editor: Aron Süssmann</p>
+        <p>Contributors: Didrik, Trym og Gudmund</p>
+      </section>
+    </footer>
+  </body>
+</html>
