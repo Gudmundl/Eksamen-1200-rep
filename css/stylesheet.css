@@ -1,30 +1,44 @@
 /*
-CSS setup:
+CSS Structure:
 
-General semantic styling (body,p,navbar,footer)
-Indidual page general styling (1. index, 2. topical, 3. accesability, 4. makerspace)
+1. Base Styles:
+   - Body
+   - Paragraphs (p)
+   - Navigation Bar (navbar)
+   - Footer
 
-Media quarry max 800px(mobile) styling, (in order: body,p,navbar,footer, index, topical, accesability, makerspace)
+2. Page-Specific Styles:
+   - Home Page (index)
+   - Topic Page (topical)
+   - Accessibility Page (accessibility)
+   - Makerspace Page (makerspace)
 
-Media quarry min 801px styling (for computer), (same order as mobile)
+3. Responsive Styles:
+   - Mobile Devices (max-width: 800px)
+     - Body, Paragraphs, Navigation Bar, Footer
+     - Home Page, Topic Page, Accessibility Page, Makerspace Page
+
+   - Desktop Devices (min-width: 801px)
+     - Body, Paragraphs, Navigation Bar, Footer
+     - Home Page, Topic Page, Accessibility Page, Makerspace Page
 */
 
-
+/* Set the default font for the body and remove default margins and padding */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/*Set line height to 1.5 to make text more readable*/
+/* Set line height to 1.5 to make text more readable */
 p {
   line-height: 1.5;
 }
 
-/*general navbar styling STARTS here/*
+/* General navbar styling STARTS here */
 
-/*Styling the navbar behind the buttons
-hides elements when elements overflow in navbar box*/
+/* Styling the navbar behind the buttons
+   Hides elements when elements overflow in navbar box */
 .navbar {
   overflow: hidden;
   background-color: #05153F;
@@ -34,8 +48,8 @@ hides elements when elements overflow in navbar box*/
   padding-right: 0.5em;
 }
 
-/*Styles the text in the "navbar buttons to white, right size, aligns them to the senter of the element,
-removes the undelines, as well as some margin and padding fixing to improve readability*/
+/* Styles the text in the "navbar buttons to white, right size, aligns them to the center of the element,
+   Removes the underlines, as well as some margin and padding fixing to improve readability */
 .navbar a {
   float: left;
   font-size: 1rem;
