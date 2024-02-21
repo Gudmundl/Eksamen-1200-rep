@@ -221,7 +221,6 @@ footer h4 {
 }
 
 .index main p {
-  font-size: clamp(1rem, 1.5vw, 4rem);
   margin: 0em;
 }
 
