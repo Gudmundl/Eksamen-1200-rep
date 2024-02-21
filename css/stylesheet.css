@@ -965,6 +965,10 @@ using letter
   }
 
   /* The Computer styling for page makerspace and similar accesability classes and ids ENDS here:*/
+
+  #electronics{
+    width: 95%;
+  }
 }
 
 /*End of media quearry for pc*/
