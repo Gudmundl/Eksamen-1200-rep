@@ -197,10 +197,12 @@ footer h4 {
 /*-----------------------------------------------*/
 /*Index*/
 
+/* Removes all blue hyperlinks from index page
 .index a {
   text-decoration: none;
 }
 
+/* This is a class used for when 1em padding is used on an element.
 .index-1em-padding {
   padding: 1em;
 }
