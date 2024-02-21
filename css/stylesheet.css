@@ -241,6 +241,7 @@ footer h4 {
   min-width: 100%;
 }
 
+/*Using flexbox to position all elements centered. Aranging the elements into columns. Space-around distributes the elements evenly on the page.*/
 .index-flex-inside-section {
   align-items: center;
   display: flex;
