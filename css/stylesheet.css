@@ -215,6 +215,12 @@ footer h4 {
 
 .index img {
   max-width: 100%;
+  width: 100%;
+}
+
+
+.index header img{
+  min-width: 100%;
 }
 
 .index-flex-inside-section {
