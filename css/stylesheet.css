@@ -284,17 +284,19 @@ footer h4 {
   text-decoration: underline;
 }
 
-/**/
+/*Changed background- and textcolor*/
 .index-section-three div a {
   background-color: var(--THEMECOLOR);
   color: var(--LIGHTCOLOR);
 }
 
+/*Changing background- textcolor.*/
 .index-section-four {
   background-color: #16171a;
   color: var(--LIGHTCOLOR);
 }
 
+/*Changing the backgroundcolor */
 .index-campus-container {
   background-color: var(--LIGHTCOLOR);
   display: flex;
