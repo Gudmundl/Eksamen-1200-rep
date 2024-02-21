@@ -1,838 +1,868 @@
-/*
-CSS Structure:
-
-1. Base Styles:
-   - Body
-   - Paragraphs (p)
-   - Navigation Bar (navbar)
-   - Footer
-
-2. Page-Specific Styles:
-   - Home Page (index)
-   - Topic Page (topical)
-   - Accessibility Page (accessibility)
-   - Makerspace Page (makerspace)
-
-3. Responsive Styles:
-   - Mobile Devices (max-width: 800px)
-     - Body, Paragraphs, Navigation Bar, Footer
-     - Home Page, Topic Page, Accessibility Page, Makerspace Page
-
-   - Desktop Devices (min-width: 801px)
-     - Body, Paragraphs, Navigation Bar, Footer
-     - Home Page, Topic Page, Accessibility Page, Makerspace Page
-*/
-:root {
-  --LIGHTCOLOR: #F4F6F8;
-  --THEMECOLOR: #05153F;
-  --LR-MARGIN-PC: 5vw;
-  --LR-MARGIN-MOBILE: 1em;
-  --TB-MARGIN-PC: 1em;
-  --TB-MARGIN-MOBILE: 0.5em;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Set the default font, remove default margins and padding, and set a responsive font size for the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: clamp(0.9rem,1vw,5rem);
-}
-
-/* Set line height to 1.5 for paragraphs to improve readability */
-p {
-  line-height: 1.5;
-}
-
-/* Start of general navbar styling */
-/* Style the navbar with a specific background color, hide overflow, and set padding */
-.navbar {
-  overflow: hidden;
-  background-color: #05153F;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
-
-/* Styles the links in the navbar to have a specific font size, color, alignment, padding, margin, border radius, and removes the text decoration (underline) */
-.navbar a {
-  float: left;
-  font-size: 1em;
-  color: #ffffff;
-  text-align: center;
-  padding-top: .7em;
-  padding-bottom: .7em;
-  padding-left: .7em;
-  padding-right: .7em;
-  border-radius: 0.35em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  text-decoration: none;
-}
-
-/* Styles the dropdown menu to float to the left and hide overflow, based on the template from W3Schools (https://www.w3schools.com/css/css_dropdowns.asp) */
-.dropdown-meny {
-  float: left;
-  overflow: hidden;
-}
-
-/* Styles the dropdown menu button to match the styling of the other links in the navbar */
-.dropdown-meny .dropbtn {
-  font-size: 1em;
-  border: none;
-  outline: none;
-  color: #ffffff;
-  background-color: #05153F;
-  padding-top: .7em;
-  padding-bottom: .7em;
-  padding-left: .7em;
-  padding-right: .7em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  font-family: inherit;
-  border-radius: 0.35em;
-  text-align: center;
-}
-
-/* Changes the background color of the navbar links and dropdown menu button when hovered over */
-.navbar a:hover,
-.dropdown-meny:hover .dropbtn {
-  background-color: #064b88;
-}
-
-/* Hides the dropdown content by default, positions it absolutely, and styles it to match the rest of the navbar */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #05153F;
-  z-index: 1;
-  align-self: center;
-  border-radius: 0.35em;
-}
-/* Styles the dropdown links to match the navbar, setting color, text decoration, display, alignment, border radius, margin, and padding */
-.dropdown-content a {
-  float: none;
-  color: #ffffff;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  border-radius: 0.35em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
-  padding-left: 0.7em;
-  padding-right: 0.7em;
-}
-
-/* Changes the background color of the dropdown links when hovered over */
-.dropdown-content a:hover {
-  background-color: #064b88;
-}
-
-/* Displays the dropdown content when the dropdown menu is hovered over */
-.dropdown-meny:hover .dropdown-content {
-  display: block;
-}
-
-/* End of general navbar styling */
-
-/* Start of general footer styling */
-
-/* Styles the footer with a specific color, hides overflow, and centers the text */
-footer {
-  color: #ffffff;
-  overflow: hidden;
-  text-align: center;
-  background-color: #24262b;
-}
-
-
-/* Styles the bottom footer with a specific background color and padding */
-#grid-footer-bottom {
-  background-color: #16171a;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-/* Adds a yellow underline to the footer links for stylistic purposes */
-footer hr {
-  width: 1.5em;
-  border-style: solid;
-  border-color: #ffcc00;
-  border-width: 0.07em;
-}
-
-/* Styles the footer links to have a specific color and removes the underline */
-footer a {
-  color: #D3D3D3;
-  text-decoration: none;
-}
-
-/* Changes the color of the footer links to white when hovered over for better accessibility */
-footer a:hover {
-  color: #ffffff;
-}
-
-/* Increases the font size of h4 elements in the footer to improve readability */
-footer h4 {
-  font-size: 1.35em;
-}
-
-/* End of general footer styling */
-
-/*-----------------------------------------------*/
-/*Index*/
-
-.index a {
-  text-decoration: none;
-}
-
-.index-1em-padding {
-  padding: 1em;
-}
-
-/* Styles the h1 in the index to stand out, with a font size that adjusts within a specified range (inspired by https://stackoverflow.com/questions/2570972/css-font-border) */
-.index h1 {
-  font-size: clamp(2.5em, 4vw, 7em);
-}
-.index-main h2 {
-  font-size: clamp(1.7rem, 4vw, 5rem);
-  margin: 0em;
-  min-width: 100%;
-}
-
-.index-main h3 {
-  font-size: clamp(1.5rem, 2.5vw, 5rem);
-  margin-top: 0;
-}
-
-.index main p {
-  margin: 0em; 
-}
-
-.index img {
-  max-width: 100%;
-  width: 100%;
-}
-
-.index header img {
-  min-width: 100%;
-}
-
-.index-flex-inside-section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  justify-content: space-around;
-}
-
-.index-main figure {
-  margin: 0;
-}
-
-
-.index-section-two {
-  background-image: url("/media/index-section-background.svg");
-  color: var(--LIGHTCOLOR);
-}
-
-.index-section-two div div {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 4em;
-  width: 100%;
-}
-
-.index-section-two article {
-  background-color: var(--LIGHTCOLOR);
-  color: #24262b;
-}
-
-.hover:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.index-section-three div a {
-  background-color: var(--THEMECOLOR);
-  color: var(--LIGHTCOLOR);
-}
-
-.index-section-four {
-  background-color: #16171a;
-  color: var(--LIGHTCOLOR);
-}
-
-.index-campus-container {
-  background-color: var(--LIGHTCOLOR);
-  display: flex;
-}
-
-.index-section-four div img {
-  height: 100%;
-}
-
-.index-section-four a {
-  color: #24262b;
-}
-
-.index-section-five div div {
-  display: grid;
-  gap: 0.1em;
-}
-
-.index-section-five a {
-  background-color: var(--THEMECOLOR);
-  color: var(--LIGHTCOLOR);
-  font-size: clamp(1rem, 1.5vw, 4rem);
-  padding-bottom: 2em;
-  padding-top: 2em;
-  text-align: center;
-  width: 10em;
-}
-/*-----------------------------------------------*/
-/*END of styling for index outside of the media-quarry*/
-
-/* Start of general styling for the topical page */
-
-/* START of general styling for topical */
-
-/* Sets default styling for topical page */
-/* Sets the default color and background color for the .topical class */
-.topical {
-  color: #05153F;
-  background-color: #ffffff;
-}
-
-/* Changes the color of the links in the aside of the .topical class to black for aesthetics */
-.topical aside a {
-  color: #000000;
-}
-
-/* End of general styling for the topical page */
-
-/* Start of general styling for the makerspace page and similar accessibility classes */
-
-/* Styles the main element inside the .makerspace and .accessibility classes with a specific display type, text alignment, background color, and color */
-.makerspace main,
-.accesibility main {
-  display: grid;
-  text-align: center;
-  background-color: #05153F;
-  color: #ffffff;
-}
-/* Styles the level 3 headings inside the main element of the .makerspace and .accessibility classes */
-.makerspace main h3,
-.accesibility main h3 {
-  padding-top: 7%;
-  font-size: 1.7em;
-}
-
-/* Styles all p elements inside the main element of the .makerspace and .accessibility classes */
-.makerspace main p,
-.accesibility main p {
-  padding-top: 5%;
-  padding-left: 8%;
-  padding-right: 8%;
-  text-align: left;
-}
-
-/* Aligns the text in the .intro of the .makerspace class and the .accessibility-heading to the center and sets their position to relative */
-.makerspace .intro,
-.accesibility-heading {
-  text-align: center;
-  position: relative;
-}
-
-/* Styles the h1 in the .intro of the .makerspace class and sets its position to absolute on top of the background */
-.makerspace .intro h1 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: clamp(3em,8vw,8em);
-  color: #05153F;
-  background-color: #bebdbd8d;
-}
-/* Aligns the text in the .makerspace-underheading and .accessibility-underheading classes */
-.makerspace-underheading,
-.accesibility-underheading {
-  text-align: center;
-}
-
-/* Adjusts the font weight for the p elements in the .makerspace-underheading class */
-.makerspace-underheading p {
-  font-weight: 600;
-}
-
-/* Sets the width of the images in the .makerspace and .accessibility classes to 100% of their container */
-.makerspace img,
-.accesibility img {
-  width: 100%;
-}
-
-/* End of general styling for the makerspace page and similar accessibility classes */
-
-/* End of styles that do not change depending on the screen size */
-
-/* Start of media query for screens with a maximum width of 800px */
-
-/* Changes the font size of the links in the .navbar class and the .dropbtn in the .dropdown-menu class to fit on one line on mobile screens */
-@media(max-width: 800px) {
-  .navbar a, .dropdown-meny .dropbtn {
-    font-size: 2.8vw;
-  }
-  .dropdown-meny .dropbtn {
-    font-size: 3.5vw;    
-  }
-
-  /* End of mobile styling for the navbar */
-
-  /* Start of mobile styling for the index */
-
-  /* Sets the display of the .index class to flex to stack the content vertically on mobile screens */
-  .index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  /*Index*/
-  .index-main section {
-    padding-top: var(--TB-MARGIN-MOBILE);
-    padding-bottom: var(--TB-MARGIN-MOBILE);
-    padding-left: var(--LR-MARGIN-MOBILE);
-    padding-right: var(--LR-MARGIN-MOBILE);
-  }
-
-  .index-section-two div div {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  /*Rounds corners for cleaner look*/
-  #index-secondary-box {
-    border-radius: 1.2em;
-    padding-bottom: 1em;
-  }
-  /*Styling for to make it an appropriate size for mobile view */
-  .index-secondary-box-div {
-    width: 90%;
-    height: auto;
-  }
-
-  .index-campus-container {
-    flex-direction: column;
-  }
-
-  .index-section-five div div {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /*------------------------------------------*/
-
-  /* End of mobile styling for the index page */
-
-  /* Start of mobile styling for the accessibility (page2) */
-
-  /* End of mobile styling for the accessibility (page2) */
-
-  /* Start of mobile styling for the Topical (page3) */
-
-  /* Adds left margin to the aside elements in the .topical class to improve visibility of images */
-  .topical aside {
-    margin-left: 1em;
-  }
-
-  /* Adds margin to the main element in the .topical class to improve readability */
-  .topical main {
-    margin: 1em;
-  }
-
-  /*Adds margin to the h1,h2 and h3 to improve readability*/
-  .topical h1,
-  .topical h2,
-  .topical h3 {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-
-  /*Makes the picture fit edge to edge and not spill over*/
-.topical img {
-    width: 100%;
-  }
-
-  /* styling for aesthetics*/
-  .topical aside img {
-    width: 80%;
-  }
-
-  .topical aside p {
-    margin: 0;
-  }
-
-  /*Mobile styling for Topical(page3) ends here*/
-
-  /* The mobile styling for page makerspace and similar accesability classes and ids STARTS here:*/
-  /* decides that mobile version only has 1 column */
-  .makerspace main,
-  .accesibility main {
-    grid-template-columns: 1fr;
-  }
-
-  /* decides positions of elements with grid-column start and end */
-  .makerspace .intro,
-  .accesibility-heading {
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-/* Adds padding and sets the grid row start and end for the underheadings in the .makerspace and .accessibility classes for a mobile-friendly format */
-.makerspace-underheading,
-.accesibility-underheading {
-  padding: 5vh 5vw;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-/* Sets the grid row start for the .figure-box-right-1 class to order the elements for mobile view */
-.figure-box-right-1 {
-  grid-row-start: 5;
-}
-
-  #campus-underhead-text{
-    font-size: 1.5em;
-  }
-/*These next two elements places the elements in a fitting order for mobile*/
-  .figure-box-right-1{
-    grid-row-start: 5;
-  }
-  .figure-box-right-2{
-    grid-row-start: 10;
-    /*We placed this at the end because of its lenght*/
-  }
-
-
-  /* The mobile styling for accesability and makerspace stops here:*/
-}
-
-/*STYLING for MOBILE view ENDS HERE*/
-
-/*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
-@media (min-width: 801px) {
-
-  /*Footer computer styling starts here*/
-
-  /*Makes a container for the footer to be placed in a grid*/
-  #grid-footer-container {
-    display: grid;
-    grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-/* Positions text in the left part of the footer */
-    #grid-footer-left {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 6;
-    grid-column-end: 8;
-  }
-
-/* Positions text in the middle part of the footer */
-  #grid-footer-middle {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 12;
-    grid-column-end: 14;
-  }
-
-/* Positions text in the rigth part of the footer */
-  #grid-footer-right {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 18;
-    grid-column-end: 20;
-  }
-  /* Styles the bottom footer with a black background and equal padding on all sides */
-  #grid-footer-bottom {
-    background-color: #16171a;
-    padding: 1em;
-  }
-
-  /* Styles footer links with a light grey color and no underline */
-  footer a {
-    color: #D3D3D3;
-    text-decoration: none;
-  }
-
-
-  /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
-  /*Makes some of the content edge to edge and all 100% width*/
-  /*------------------------------------------*/
-  /*Index*/
-  .index-main section {
-    padding-top: var(--TB-MARGIN-PC);
-    padding-bottom: var(--TB-MARGIN-PC);
-    padding-left: var(--LR-MARGIN-PC);
-    padding-right: var(--LR-MARGIN-PC);
-  }
-
-  .index-section-one p {
-    column-count: 2;
-  }
-
-  .index-section-two div div {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .index-section-two article {
-    width: 100%;
-    height: auto;
-  }
-  .index .intro h2{
-    margin-top: 0;
-  }
-
-  .index-section-three div a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .index-gallery-grid-2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-
-  .index-gallery-grid-3 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
-  }
-
-  .index-gallery-grid-4 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 7;
-  }
-  
-  /*------------------------------------------*/
-  /*STYLING OF INDEX IN PC-VEIW ENDS HERE*/
-
-
-  /*Page accesability computer styling starts here*/
-
-  /*styles img for readablility*/
-  .accessibility img {
-    width: 30em;
-  }
-
-  /*ads padding for improved readability*/
-  .accessibility h2 {
-    padding-left: 1em;
-  }
-  /*Page accesability computer styling ends here*/
-
-  /*Page Topical computer styling starts here*/
-  /*Centers the first heading*/
-  .topical h1 {
-    text-align: center;
-    font-size: 3em;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-  }
-
-
-
-  /* Styles the main element inside .topical to be a grid container with a column gap of 3vw */
-  .topical main {
-    display: grid;
-    column-gap: 3vw;
-
-    /* When the viewport width is 1200px or less, the grid layout changes to have 3 columns and 5 rows */
-    @media (max-width:1200px) {
-      grid-template-columns: 1fr 7fr 1fr;
-      grid-template-rows: repeat(5, auto);
-    }
-  }
-  /* Positions the .intro element in the second row of the grid within .topical main */
-  .topical main .intro {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-
-    /* When the viewport width is 1200px or less, the .intro element extends to the end of the third column */
-    @media (max-width:1200px) {
-      grid-column-end: 3;
-    }
-  }
-  /*Places topical article inside the grid*/
-  .topical article {
-    grid-row-start: 3;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  /* Styles the aside element inside .topical to center its content */
-  .topical aside {
-    justify-content: center;
-
-    /* When the viewport width is 1200px or less, the aside element is positioned in the fifth row and second column of the grid */
-    @media (max-width:1200px) {
-      grid-row-start: 5;
-      grid-row-end: 6;
-      grid-column-start: 2;
-      grid-column-end: 3;
-    }
-  }
-
-  /*Styles the healthpicture to fit well inside the grid*/
-  .topical img {
-    width: 100%;
-  }
-
-  /*Sizes the aside pictures to an appropriate size relative to the page*/
-  .topical aside img {
-    width: 16em;
-  }
-
-  /*Makes the text flush with the image and ads some padding for style*/
-  .topical aside p {
-    margin-top: 0;
-    padding-left: 0.5em;
-  }
-
-  /*Page Topical computer styling ends here*/
-
-
-  /* The Computer styling for page makerspace and similar accesability classes and ids STARTS here:*/
-
-  /* Makes grid in main two columns with same width */
-  .makerspace main,
-  .accesibility main {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* places heading */
-  .makerspace .intro,
-  .accesibility-heading {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  /* places underheading in a computer friendly format */
-  .makerspace-underheading,
-  .accesibility-underheading {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    font-size: 1.8em;
-    padding-top: 10vw;
-    padding-right: 20vw;
-    padding-bottom: 10vw;
-    padding-left: 20vw;
-  }
-
-  /* Positions the specified elements in the first column of the grid and centers them */
-  .figure-box-left-1,
-  .figure-box-left-2,
-  .figure-box-left-3,
-  .text-box-left-1,
-  .text-box-left-2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: auto;
-    margin: auto;
-  }
-
-  /* Positions the specified elements in the second column of the grid and centers them */
-  .text-box-right-1,
-  .figure-box-right-1,
-  .text-box-right-2,
-  .figure-box-right-2,
-  .text-box-right-3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin: auto;
-  }
-
-  /* Sets the height of the images in the specified elements, ensures they maintain their aspect ratio, and sets a minimum height */
-  .figure-box-left-1 img,
-  .figure-box-right-1 img,
-  .figure-box-left-2 img,
-  .figure-box-right-2 img,
-  .figure-box-left-3{
-    height: 64vh;
-    object-fit: contain;
-    min-height: 410px;
-  }
-
+/* 
+CSS Structure: 
  
-  /*Makes the electronics IoT picture fit better*/
-  #electronics{
-    width: 95%;
-  }
-   /* The Computer styling for page makerspace and similar accesability classes and ids ENDS here:*/
-}
-
-/* Media query for screens with a minimum width of 1201px */
-@media screen and (min-width:1201px) {
-
-  /* Sets the grid layout of .topical main to have 4 columns and 4 rows */
-  .topical main {
-    grid-template-columns: 1fr 3fr 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
-  }
-
-  /* Extends the .intro element within .topical to the end of the fourth column */
-  .topical .intro {
-    grid-column-end: 4;
-  }
-
-  /* Positions the aside element within .topical to span from the third to the fifth row and from the third to the fourth column */
-  .topical aside {
-    grid-row-start: 3;
-    grid-row-end: 5;
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
-
-  /* Extends the h1 element within .topical to the end of the fourth column */
-  .topical h1 {
-    grid-column-end: 4;
-  }
-}
-
-@media (min-width: 1200px) {
-  .index-section-two article {
-    background-color: var(--LIGHTCOLOR);
-    width: 42vw;
-    color: #24262b;
-  }
-
-}
+1. Base Styles: 
+   - Body 
+   - Paragraphs (p) 
+   - Navigation Bar (navbar) 
+   - Footer 
+ 
+2. Page-Specific Styles: 
+   - Home Page (index) 
+   - Topic Page (topical) 
+   - Accessibility Page (accessibility) 
+   - Makerspace Page (makerspace) 
+ 
+3. Responsive Styles: 
+   - Mobile Devices (max-width: 800px) 
+     - Body, Paragraphs, Navigation Bar, Footer 
+     - Home Page, Topic Page, Accessibility Page, Makerspace Page 
+ 
+   - Desktop Devices (min-width: 801px) 
+     - Body, Paragraphs, Navigation Bar, Footer 
+     - Home Page, Topic Page, Accessibility Page, Makerspace Page 
+*/ 
+:root { 
+  --LIGHTCOLOR: #F4F6F8; 
+  --THEMECOLOR: #05153F; 
+  --LR-MARGIN-PC: 5vw; 
+  --LR-MARGIN-MOBILE: 1em; 
+  --TB-MARGIN-PC: 1em; 
+  --TB-MARGIN-MOBILE: 0.5em; 
+} 
+ 
+html { 
+  scroll-behavior: smooth; 
+} 
+ 
+/* Set the default font, remove default margins and padding, and set a responsive font size for the body */ 
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  font-size: clamp(0.9rem,1vw,5rem); 
+} 
+ 
+/* Set line height to 1.5 for paragraphs to improve readability */ 
+p { 
+  line-height: 1.5; 
+} 
+ 
+/* Start of general navbar styling */ 
+/* Style the navbar with a specific background color, hide overflow, and set padding */ 
+.navbar { 
+  overflow: hidden; 
+  background-color: #05153F; 
+  padding-top: 0.5em; 
+  padding-bottom: 0.5em; 
+  padding-left: 0.5em; 
+  padding-right: 0.5em; 
+} 
+ 
+/* Styles the links in the navbar to have a specific font size, color, alignment, padding, margin, border radius, and removes the text decoration (underline) */ 
+.navbar a { 
+  float: left; 
+  font-size: 1em; 
+  color: #ffffff; 
+  text-align: center; 
+  padding-top: .7em; 
+  padding-bottom: .7em; 
+  padding-left: .7em; 
+  padding-right: .7em; 
+  border-radius: 0.35em; 
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em; 
+  margin-left: 0.5em; 
+  margin-right: 0.5em; 
+  text-decoration: none; 
+} 
+ 
+/* Styles the dropdown menu to float to the left and hide overflow, based on the template from W3Schools (https://www.w3schools.com/css/css_dropdowns.asp) */ 
+.dropdown-meny { 
+  float: left; 
+  overflow: hidden; 
+} 
+ 
+/* Styles the dropdown menu button to match the styling of the other links in the navbar */ 
+.dropdown-meny .dropbtn { 
+  font-size: 1em; 
+  border: none; 
+  outline: none; 
+  color: #ffffff; 
+  background-color: #05153F; 
+  padding-top: .7em; 
+  padding-bottom: .7em; 
+  padding-left: .7em; 
+  padding-right: .7em; 
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em; 
+  margin-left: 0.5em; 
+  margin-right: 0.5em; 
+  font-family: inherit; 
+  border-radius: 0.35em; 
+  text-align: center; 
+} 
+ 
+/* Changes the background color of the navbar links and dropdown menu button when hovered over */ 
+.navbar a:hover, 
+.dropdown-meny:hover .dropbtn { 
+  background-color: #064b88; 
+} 
+ 
+/* Hides the dropdown content by default, positions it absolutely, and styles it to match the rest of the navbar */ 
+.dropdown-content { 
+  display: none; 
+  position: absolute; 
+  background-color: #05153F; 
+  z-index: 1; 
+  align-self: center; 
+  border-radius: 0.35em; 
+} 
+/* Styles the dropdown links to match the navbar, setting color, text decoration, display, alignment, border radius, margin, and padding */ 
+.dropdown-content a { 
+  float: none; 
+  color: #ffffff; 
+  text-decoration: none; 
+  display: block; 
+  text-align: center; 
+  border-radius: 0.35em; 
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em; 
+  margin-left: 0.5em; 
+  margin-right: 0.5em; 
+  padding-top: 0.7em; 
+  padding-bottom: 0.7em; 
+  padding-left: 0.7em; 
+  padding-right: 0.7em; 
+} 
+ 
+/* Changes the background color of the dropdown links when hovered over */ 
+.dropdown-content a:hover { 
+  background-color: #064b88; 
+} 
+ 
+/* Displays the dropdown content when the dropdown menu is hovered over */ 
+.dropdown-meny:hover .dropdown-content { 
+  display: block; 
+} 
+ 
+/* End of general navbar styling */ 
+ 
+/* Start of general footer styling */ 
+ 
+/* Styles the footer with a specific color, hides overflow, and centers the text */ 
+footer { 
+  color: #ffffff; 
+  overflow: hidden; 
+  text-align: center; 
+  background-color: #24262b; 
+} 
+ 
+ 
+/* Styles the bottom footer with a specific background color and padding */ 
+#grid-footer-bottom { 
+  background-color: #16171a; 
+  padding-top: 1em; 
+  padding-bottom: 1em; 
+  padding-left: 1em; 
+  padding-right: 1em; 
+} 
+ 
+/* Adds a yellow underline to the footer links for stylistic purposes */ 
+footer hr { 
+  width: 1.5em; 
+  border-style: solid; 
+  border-color: #ffcc00; 
+  border-width: 0.07em; 
+} 
+ 
+/* Styles the footer links to have a specific color and removes the underline */ 
+footer a { 
+  color: #D3D3D3; 
+  text-decoration: none; 
+} 
+ 
+/* Changes the color of the footer links to white when hovered over for better accessibility */ 
+footer a:hover { 
+  color: #ffffff; 
+} 
+ 
+/* Increases the font size of h4 elements in the footer to improve readability */ 
+footer h4 { 
+  font-size: 1.35em; 
+} 
+ 
+/* End of general footer styling */ 
+ 
+/*-----------------------------------------------*/ 
+/*Index*/ 
+ 
+/* Removes all blue hyperlinks from index page.*/ 
+.index a { 
+  text-decoration: none; 
+} 
+ 
+/* This is a class used for when 1em padding is used on an element.*/ 
+.index-1em-padding { 
+  padding: 1em; 
+} 
+ 
+/* Styles the h1 in the index to stand out, with a font size that adjusts within a specified range (inspired by https://stackoverflow.com/questions/2570972/css-font-border). */ 
+.index h1 { 
+  font-size: clamp(2.5em, 4vw, 7em); 
+} 
+ 
+/* Styles all h2 on the index page so that they stand out. Used clamp function to adjust h2 within a specified range when scaling.*/ 
+.index-main h2 { 
+  font-size: clamp(1.7rem, 4vw, 5rem); 
+  margin: 0em; 
+  min-width: 100%; 
+} 
+ 
+/*Used clamp function to make h3 adjust as specified.*/ 
+.index-main h3 { 
+  font-size: clamp(1.5rem, 2.5vw, 5rem); 
+  margin-top: 0; 
+} 
+ 
+/*This is a CSS reset, that sets all paragraph tags inside the index page to use a margin of 0em.*/ 
+.index main p { 
+  margin: 0em; 
+} 
+ 
+/* Setting a max-width and a baseline width at 100% for all images in the index page. This is uses to ensure that it scales as supposed to.*/ 
+.index img { 
+  max-width: 100%; 
+  width: 100%; 
+} 
+ 
+/* Setting min-width to 100% to make on all screens.*/ 
+.index header img { 
+  min-width: 100%; 
+} 
+ 
+/*Using flexbox to position all elements centered. Aranging the elements into columns. Space-around distributes the elements evenly on the page.*/ 
+.index-flex-inside-section { 
+  align-items: center; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 2em; 
+  justify-content: space-around; 
+} 
+ 
+/*CSS reset for figure elements.*/ 
+.index-main figure { 
+  margin: 0; 
+} 
+ 
+/*Setting a background picture and changing the text color to white to make it more visible.*/ 
+.index-section-two { 
+  background-image: url("/media/index-section-background.svg"); 
+  color: var(--LIGHTCOLOR); 
+} 
+ 
+/*Using flexbox to align elements at the center and adding space-between to distribute all elemnts evenly. Flex-wrap makes the elements wrap when overflowing. Setting the direction of the flex box to rows.*/ 
+.index-section-two div div { 
+  align-items: center; 
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  row-gap: 4em; 
+  width: 100%; 
+} 
+ 
+/*Setting a new background- and textcolor.*/ 
+.index-section-two article { 
+  background-color: var(--LIGHTCOLOR); 
+  color: #24262b; 
+} 
+ 
+/*Hover is astyling class used for hover effects on elements.*/ 
+.hover:hover { 
+  cursor: pointer; 
+  text-decoration: underline; 
+} 
+ 
+/*Changed background- and textcolor.*/ 
+.index-section-three div a { 
+  background-color: var(--THEMECOLOR); 
+  color: var(--LIGHTCOLOR); 
+} 
+ 
+/*Changing background- and textcolor.*/ 
+.index-section-four { 
+  background-color: #16171a; 
+  color: var(--LIGHTCOLOR); 
+} 
+ 
+/*Changing the backgroundcolor and using flex-box to position all elements the right way.*/ 
+.index-campus-container { 
+  background-color: var(--LIGHTCOLOR); 
+  display: flex; 
+} 
+ 
+/*Setting a baseline height for this image to 100%.*/ 
+.index-section-four div img { 
+  height: 100%; 
+} 
+ 
+/*Changing text-color.*/ 
+.index-section-four a { 
+  color: #24262b; 
+} 
+ 
+/*Displaying elemnts in a grid system and setting gap to 0,1em. This makes the picture gallery systematic.*/ 
+.index-section-five div div { 
+  display: grid; 
+  gap: 0.1em; 
+} 
+ 
+/*Styling "back to the top button.*/ 
+.index-section-five a { 
+  background-color: var(--THEMECOLOR); 
+  color: var(--LIGHTCOLOR); 
+  font-size: clamp(1rem, 1.5vw, 4rem); 
+  padding-bottom: 2em; 
+  padding-top: 2em; 
+  text-align: center; 
+  width: 10em; 
+} 
+/*-----------------------------------------------*/ 
+/*END of styling for index outside of the media-quarry*/ 
+ 
+/* Start of general styling for the topical page */ 
+ 
+/* START of general styling for topical */ 
+ 
+/* Sets default styling for topical page */ 
+/* Sets the default color and background color for the .topical class */ 
+.topical { 
+  color: #05153F; 
+  background-color: #ffffff; 
+} 
+ 
+/* Changes the color of the links in the aside of the .topical class to black for aesthetics */ 
+.topical aside a { 
+  color: #000000; 
+} 
+ 
+/* End of general styling for the topical page */ 
+ 
+/* Start of general styling for the makerspace page and similar accessibility classes */ 
+ 
+/* Styles the main element inside the .makerspace and .accessibility classes with a specific display type, text alignment, background color, and color */ 
+.makerspace main, 
+.accesibility main { 
+  display: grid; 
+  text-align: center; 
+  background-color: #05153F; 
+  color: #ffffff; 
+} 
+/* Styles the level 3 headings inside the main element of the .makerspace and .accessibility classes */ 
+.makerspace main h3, 
+.accesibility main h3 { 
+  padding-top: 7%; 
+  font-size: 1.7em; 
+} 
+ 
+/* Styles all p elements inside the main element of the .makerspace and .accessibility classes */ 
+.makerspace main p, 
+.accesibility main p { 
+  padding-top: 5%; 
+  padding-left: 8%; 
+  padding-right: 8%; 
+  text-align: left; 
+} 
+ 
+/* Aligns the text in the .intro of the .makerspace class and the .accessibility-heading to the center and sets their position to relative */ 
+.makerspace .intro, 
+.accesibility-heading { 
+  text-align: center; 
+  position: relative; 
+} 
+ 
+/* Styles the h1 in the .intro of the .makerspace class and sets its position to absolute on top of the background */ 
+.makerspace .intro h1 { 
+  position: absolute; 
+  top: 30%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-size: clamp(3em,8vw,8em); 
+  color: #05153F; 
+  background-color: #bebdbd8d; 
+} 
+/* Aligns the text in the .makerspace-underheading and .accessibility-underheading classes */ 
+.makerspace-underheading, 
+.accesibility-underheading { 
+  text-align: center; 
+} 
+ 
+/* Adjusts the font weight for the p elements in the .makerspace-underheading class */ 
+.makerspace-underheading p { 
+  font-weight: 600; 
+} 
+ 
+/* Sets the width of the images in the .makerspace and .accessibility classes to 100% of their container */ 
+.makerspace img, 
+.accesibility img { 
+  width: 100%; 
+} 
+ 
+/* End of general styling for the makerspace page and similar accessibility classes */ 
+ 
+/* End of styles that do not change depending on the screen size */ 
+ 
+/* Start of media query for screens with a maximum width of 800px */ 
+ 
+/* Changes the font size of the links in the .navbar class and the .dropbtn in the .dropdown-menu class to fit on one line on mobile screens */ 
+@media(max-width: 800px) { 
+ 
+  /*Setting a general font-size for the navbar.*/ 
+  .navbar a, .dropdown-meny .dropbtn { 
+    font-size: 2.8vw; 
+  } 
+ 
+  /*Styling the font of the dropdown menu for phone sized screens.*/ 
+  .dropdown-meny .dropbtn { 
+    font-size: 3.5vw;     
+  } 
+ 
+  /* End of mobile styling for the navbar.*/ 
+ 
+  /* Start of mobile styling for the index.*/ 
+ 
+  /* Sets the display of the .index class to flex to stack the content vertically on mobile screens.*/ 
+  .index { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+  } 
+ 
+  /*Index*/ 
+ 
+  /*Added padding for index main section.*/ 
+  .index-main section { 
+    padding-top: var(--TB-MARGIN-MOBILE); 
+    padding-bottom: var(--TB-MARGIN-MOBILE); 
+    padding-left: var(--LR-MARGIN-MOBILE); 
+    padding-right: var(--LR-MARGIN-MOBILE); 
+  } 
+ 
+/*Using flexbox presented in columns. Setting nowrap so that when the page overflows the text moves downward to still make it readable.*/ 
+  .index-section-two div div { 
+    flex-direction: column; 
+    flex-wrap: nowrap; 
+  } 
+ 
+  /*Rounds corners for cleaner look.*/ 
+  #index-secondary-box { 
+    border-radius: 1.2em; 
+    padding-bottom: 1em; 
+  } 
+  /*Styling for to make it an appropriate size for mobile view.*/ 
+  .index-secondary-box-div { 
+    width: 90%; 
+    height: auto; 
+  } 
+ 
+  /*Using flexbox to place elements, setting the flex-direction to columns which is better on a smaller screen.*/ 
+  .index-campus-container { 
+    flex-direction: column; 
+  } 
+ 
+  /*Setting up a grid system.*/ 
+  .index-section-five div div { 
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+ 
+  /*------------------------------------------*/ 
+ 
+  /* End of mobile styling for the index page */ 
+ 
+  /* Start of mobile styling for the accessibility (page2) */ 
+ 
+  /* End of mobile styling for the accessibility (page2) */ 
+ 
+  /* Start of mobile styling for the Topical (page3) */ 
+ 
+  /* Adds left margin to the aside elements in the .topical class to improve visibility of images */ 
+  .topical aside { 
+    margin-left: 1em; 
+  } 
+ 
+  /* Adds margin to the main element in the .topical class to improve readability */ 
+  .topical main { 
+    margin: 1em; 
+  } 
+ 
+  /*Adds margin to the h1,h2 and h3 to improve readability*/ 
+  .topical h1, 
+  .topical h2, 
+  .topical h3 { 
+    margin-top: 0.5em; 
+    margin-bottom: 0.5em; 
+    margin-left: 0.5em; 
+    margin-right: 0.5em; 
+  } 
+ 
+  /*Makes the picture fit edge to edge and not spill over*/ 
+.topical img { 
+    width: 100%; 
+  } 
+ 
+  /* styling for aesthetics*/ 
+  .topical aside img { 
+    width: 80%; 
+  } 
+ 
+  .topical aside p { 
+    margin: 0; 
+  } 
+ 
+  /*Mobile styling for Topical(page3) ends here*/ 
+ 
+  /* The mobile styling for page makerspace and similar accesability classes and ids STARTS here:*/ 
+  /* decides that mobile version only has 1 column */ 
+  .makerspace main, 
+  .accesibility main { 
+    grid-template-columns: 1fr; 
+  } 
+ 
+  /* decides positions of elements with grid-column start and end */ 
+  .makerspace .intro, 
+  .accesibility-heading { 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+  } 
+ 
+/* Adds padding and sets the grid row start and end for the underheadings in the .makerspace and .accessibility classes for a mobile-friendly format */ 
+.makerspace-underheading, 
+.accesibility-underheading { 
+  padding: 5vh 5vw; 
+  grid-row-start: 2; 
+  grid-row-end: 3; 
+} 
+ 
+/* Sets the grid row start for the .figure-box-right-1 class to order the elements for mobile view */ 
+.figure-box-right-1 { 
+  grid-row-start: 5; 
+} 
+ 
+  #campus-underhead-text{ 
+    font-size: 1.5em; 
+  } 
+/*These next two elements places the elements in a fitting order for mobile*/ 
+  .figure-box-right-1{ 
+    grid-row-start: 5; 
+  } 
+  .figure-box-right-2{ 
+    grid-row-start: 10; 
+    /*We placed this at the end because of its lenght*/ 
+  } 
+ 
+ 
+  /* The mobile styling for accesability and makerspace stops here:*/ 
+} 
+ 
+/*STYLING for MOBILE view ENDS HERE*/ 
+ 
+/*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/ 
+@media (min-width: 801px) { 
+ 
+  /*Footer computer styling starts here*/ 
+ 
+  /*Makes a container for the footer to be placed in a grid*/ 
+  #grid-footer-container { 
+    display: grid; 
+    grid-template-columns: repeat(24, 1fr); 
+    grid-template-rows: repeat(6, 1fr); 
+  } 
+ 
+/* Positions text in the left part of the footer */ 
+    #grid-footer-left { 
+    grid-row-start: 2; 
+    grid-row-end: 6; 
+    grid-column-start: 6; 
+    grid-column-end: 8; 
+  } 
+ 
+/* Positions text in the middle part of the footer */ 
+  #grid-footer-middle { 
+    grid-row-start: 2; 
+    grid-row-end: 6; 
+    grid-column-start: 12; 
+    grid-column-end: 14; 
+  } 
+ 
+/* Positions text in the rigth part of the footer */ 
+  #grid-footer-right { 
+    grid-row-start: 2; 
+    grid-row-end: 6; 
+    grid-column-start: 18; 
+    grid-column-end: 20; 
+  } 
+  /* Styles the bottom footer with a black background and equal padding on all sides */ 
+  #grid-footer-bottom { 
+    background-color: #16171a; 
+    padding: 1em; 
+  } 
+ 
+  /* Styles footer links with a light grey color and no underline */ 
+  footer a { 
+    color: #D3D3D3; 
+    text-decoration: none; 
+  } 
+ 
+ 
+  /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/ 
+  /*Makes some of the content edge to edge and all 100% width*/ 
+  /*------------------------------------------*/ 
+  /*Index*/ 
+  .index-main section { 
+    padding-top: var(--TB-MARGIN-PC); 
+    padding-bottom: var(--TB-MARGIN-PC); 
+    padding-left: var(--LR-MARGIN-PC); 
+    padding-right: var(--LR-MARGIN-PC); 
+  } 
+ 
+  .index-section-one p { 
+    column-count: 2; 
+  } 
+ 
+  .index-section-two div div { 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+  } 
+ 
+  .index-section-two article { 
+    width: 100%; 
+    height: auto; 
+  } 
+  .index .intro h2{ 
+    margin-top: 0; 
+  } 
+ 
+  .index-section-three div a { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+  } 
+ 
+  .index-gallery-grid-2 { 
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+  } 
+ 
+  .index-gallery-grid-3 { 
+    grid-column-start: 3; 
+    grid-column-end: 5; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+  } 
+ 
+  .index-gallery-grid-4 { 
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 5; 
+    grid-row-end: 7; 
+  } 
+   
+  /*------------------------------------------*/ 
+  /*STYLING OF INDEX IN PC-VEIW ENDS HERE*/ 
+ 
+ 
+  /*Page accesability computer styling starts here*/ 
+ 
+  /*styles img for readablility*/ 
+  .accessibility img { 
+    width: 30em; 
+  } 
+ 
+  /*ads padding for improved readability*/ 
+  .accessibility h2 { 
+    padding-left: 1em; 
+  } 
+  /*Page accesability computer styling ends here*/ 
+ 
+  /*Page Topical computer styling starts here*/ 
+  /*Centers the first heading*/ 
+  .topical h1 { 
+    text-align: center; 
+    font-size: 3em; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+    grid-column-start: 2; 
+  } 
+ 
+ 
+ 
+  /* Styles the main element inside .topical to be a grid container with a column gap of 3vw */ 
+  .topical main { 
+    display: grid; 
+    column-gap: 3vw; 
+ 
+    /* When the viewport width is 1200px or less, the grid layout changes to have 3 columns and 5 rows */ 
+    @media (max-width:1200px) { 
+      grid-template-columns: 1fr 7fr 1fr; 
+      grid-template-rows: repeat(5, auto); 
+    } 
+  } 
+  /* Positions the .intro element in the second row of the grid within .topical main */ 
+  .topical main .intro { 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    grid-column-start: 2; 
+ 
+    /* When the viewport width is 1200px or less, the .intro element extends to the end of the third column */ 
+    @media (max-width:1200px) { 
+      grid-column-end: 3; 
+    } 
+  } 
+  /*Places topical article inside the grid*/ 
+  .topical article { 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+  } 
+ 
+  /* Styles the aside element inside .topical to center its content */ 
+  .topical aside { 
+    justify-content: center; 
+ 
+    /* When the viewport width is 1200px or less, the aside element is positioned in the fifth row and second column of the grid */ 
+    @media (max-width:1200px) { 
+      grid-row-start: 5; 
+      grid-row-end: 6; 
+      grid-column-start: 2; 
+      grid-column-end: 3; 
+    } 
+  } 
+ 
+  /*Styles the healthpicture to fit well inside the grid*/ 
+  .topical img { 
+    width: 100%; 
+  } 
+ 
+  /*Sizes the aside pictures to an appropriate size relative to the page*/ 
+  .topical aside img { 
+    width: 16em; 
+  } 
+ 
+  /*Makes the text flush with the image and ads some padding for style*/ 
+  .topical aside p { 
+    margin-top: 0; 
+    padding-left: 0.5em; 
+  } 
+ 
+  /*Page Topical computer styling ends here*/ 
+ 
+ 
+  /* The Computer styling for page makerspace and similar accesability classes and ids STARTS here:*/ 
+ 
+  /* Makes grid in main two columns with same width */ 
+  .makerspace main, 
+  .accesibility main { 
+    grid-template-columns: 1fr 1fr; 
+  } 
+ 
+  /* places heading */ 
+  .makerspace .intro, 
+  .accesibility-heading { 
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+  } 
+ 
+  /* places underheading in a computer friendly format */ 
+  .makerspace-underheading, 
+  .accesibility-underheading { 
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    font-size: 1.8em; 
+    padding-top: 10vw; 
+    padding-right: 20vw; 
+    padding-bottom: 10vw; 
+    padding-left: 20vw; 
+  } 
+ 
+  /* Positions the specified elements in the first column of the grid and centers them */ 
+  .figure-box-left-1, 
+  .figure-box-left-2, 
+  .figure-box-left-3, 
+  .text-box-left-1, 
+  .text-box-left-2 { 
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: auto; 
+    margin: auto; 
+  } 
+ 
+  /* Positions the specified elements in the second column of the grid and centers them */ 
+  .text-box-right-1, 
+  .figure-box-right-1, 
+  .text-box-right-2, 
+  .figure-box-right-2, 
+  .text-box-right-3 { 
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    margin: auto; 
+  } 
+ 
+  /* Sets the height of the images in the specified elements, ensures they maintain their aspect ratio, and sets a minimum height */ 
+  .figure-box-left-1 img, 
+  .figure-box-right-1 img, 
+  .figure-box-left-2 img, 
+  .figure-box-right-2 img, 
+  .figure-box-left-3{ 
+    height: 64vh; 
+    object-fit: contain; 
+    min-height: 410px; 
+  } 
+ 
+  
+  /*Makes the electronics IoT picture fit better*/ 
+  #electronics{ 
+    width: 95%; 
+  } 
+   /* The Computer styling for page makerspace and similar accesability classes and ids ENDS here:*/ 
+} 
+ 
+/* Media query for screens with a minimum width of 1201px */ 
+@media screen and (min-width:1201px) { 
+ 
+  /* Sets the grid layout of .topical main to have 4 columns and 4 rows */ 
+  .topical main { 
+    grid-template-columns: 1fr 3fr 1fr 1fr; 
+    grid-template-rows: repeat(4, auto); 
+  } 
+ 
+  /* Extends the .intro element within .topical to the end of the fourth column */ 
+  .topical .intro { 
+    grid-column-end: 4; 
+  } 
+ 
+  /* Positions the aside element within .topical to span from the third to the fifth row and from the third to the fourth column */ 
+  .topical aside { 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+  } 
+ 
+  /* Extends the h1 element within .topical to the end of the fourth column */ 
+  .topical h1 { 
+    grid-column-end: 4; 
+  } 
+} 
+ 
+@media (min-width: 1200px) { 
+  .index-section-two article { 
+    background-color: var(--LIGHTCOLOR); 
+    width: 42vw; 
+    color: #24262b; 
+  } 
+ 
+} 
