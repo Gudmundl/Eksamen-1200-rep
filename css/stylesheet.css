@@ -225,7 +225,7 @@ footer h4 {
   margin-top: 0;
 }
 
-/*Set all paragraph tags inside the index page to use a margin of 0em.*/
+/*This is a CSS reset, that sets all paragraph tags inside the index page to use a margin of 0em.*/
 .index main p {
   margin: 0em;
 }
@@ -250,16 +250,18 @@ footer h4 {
   justify-content: space-around;
 }
 
+/*CSS reset for figure elements*/
 .index-main figure {
   margin: 0;
 }
 
-
+/*Setting a background picture and changing the text color to white to make it more visible.*/
 .index-section-two {
   background-image: url("/media/index-section-background.svg");
   color: var(--LIGHTCOLOR);
 }
 
+/*Using flexbox to align elements at the center and adding space-between to distribute all elemnts evenly. flex-wrap makes the elements wrap when overflowing. Setting the direction of the flex box to rows.*/
 .index-section-two div div {
   align-items: center;
   display: flex;
@@ -270,6 +272,7 @@ footer h4 {
   width: 100%;
 }
 
+/*Setting */
 .index-section-two article {
   background-color: var(--LIGHTCOLOR);
   color: #24262b;
