@@ -52,7 +52,7 @@ p {
    Removes the underlines, as well as some margin and padding fixing to improve readability */
 .navbar a {
   float: left;
-  font-size: 1rem;
+  font-size: clamp(1.2rem,1.2vw,5rem);
   color: #ffffff;
   text-align: center;
   padding-top: .7em;
@@ -76,7 +76,7 @@ p {
 
 /*styles the button that activates the menu so that they have similare styling to the other a elements in the nav*/
 .dropdown-meny .dropbtn {
-  font-size: 1rem;
+  font-size: clamp(1.2rem,1.2vw,5rem);
   border: none;
   outline: none;
   color: #ffffff;
