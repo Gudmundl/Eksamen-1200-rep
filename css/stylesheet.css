@@ -228,6 +228,7 @@ footer h4 {
 /*This is a CSS reset, that sets all paragraph tags inside the index page to use a margin of 0em.*/ 
 .index main p { 
   margin: 0em; 
+  font-size: 1.4em;
 } 
  
 /* Setting a max-width and a baseline width at 100% for all images in the index page. This is uses to ensure that it scales as supposed to.*/ 
@@ -634,6 +635,10 @@ footer h4 {
     flex-direction: row; 
     flex-wrap: wrap; 
   } 
+
+  .index-section-three div img { 
+    width: 70%;
+    } 
  
   .index-section-two article { 
     width: 100%; 
