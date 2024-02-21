@@ -598,10 +598,6 @@ footer h4 {
 }
 
 
- /* Sets the grid row start for the .figure-box-right-2 class to order the elements for mobile view. This element is placed at the end due to its length */
-.figure-box-right-2 {
-  grid-row-start: 10;
-}
 
   /* The mobile styling for accesability and makerspace stops here:*/
 }
@@ -922,6 +918,7 @@ footer h4 {
   /* Positions the specified elements in the first column of the grid and centers them */
   .figure-box-left-1,
   .figure-box-left-2,
+  .figure-box-left-3,
   .text-box-left-1,
   .text-box-left-2 {
     grid-column-start: 1;
@@ -934,7 +931,8 @@ footer h4 {
   .text-box-right-1,
   .figure-box-right-1,
   .text-box-right-2,
-  .figure-box-right-2 {
+  .figure-box-right-2,
+  .text-box-right-3 {
     grid-column-start: 2;
     grid-column-end: 3;
     margin: auto;
@@ -944,7 +942,8 @@ footer h4 {
   .figure-box-left-1 img,
   .figure-box-right-1 img,
   .figure-box-left-2 img,
-  .figure-box-right-2 img {
+  .figure-box-right-2 img,
+  .figure-box-left-3{
     height: 64vh;
     object-fit: contain;
     min-height: 410px;
