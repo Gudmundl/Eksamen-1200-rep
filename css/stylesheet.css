@@ -197,7 +197,7 @@ footer h4 {
 /*-----------------------------------------------*/
 /*Index*/
 
-/* Removes all blue hyperlinks from index page*/
+/* Removes all blue hyperlinks from index page.*/
 .index a {
   text-decoration: none;
 }
@@ -207,7 +207,7 @@ footer h4 {
   padding: 1em;
 }
 
-/* Styles the h1 in the index to stand out, with a font size that adjusts within a specified range (inspired by https://stackoverflow.com/questions/2570972/css-font-border) */
+/* Styles the h1 in the index to stand out, with a font size that adjusts within a specified range (inspired by https://stackoverflow.com/questions/2570972/css-font-border). */
 .index h1 {
   font-size: clamp(2.5em, 4vw, 7em);
 }
@@ -236,7 +236,7 @@ footer h4 {
   width: 100%;
 }
 
-/* Setting min-width to 100% to make on all screens*/
+/* Setting min-width to 100% to make on all screens.*/
 .index header img {
   min-width: 100%;
 }
@@ -250,7 +250,7 @@ footer h4 {
   justify-content: space-around;
 }
 
-/*CSS reset for figure elements*/
+/*CSS reset for figure elements.*/
 .index-main figure {
   margin: 0;
 }
@@ -261,7 +261,7 @@ footer h4 {
   color: var(--LIGHTCOLOR);
 }
 
-/*Using flexbox to align elements at the center and adding space-between to distribute all elemnts evenly. flex-wrap makes the elements wrap when overflowing. Setting the direction of the flex box to rows.*/
+/*Using flexbox to align elements at the center and adding space-between to distribute all elemnts evenly. Flex-wrap makes the elements wrap when overflowing. Setting the direction of the flex box to rows.*/
 .index-section-two div div {
   align-items: center;
   display: flex;
@@ -284,7 +284,7 @@ footer h4 {
   text-decoration: underline;
 }
 
-/*Changed background- and textcolor*/
+/*Changed background- and textcolor.*/
 .index-section-three div a {
   background-color: var(--THEMECOLOR);
   color: var(--LIGHTCOLOR);
