@@ -401,7 +401,6 @@ using letter
   padding-right: 8%;
   padding-left: 8%;
   text-align: left;
-  font-size: 1.3rem;
 }
 
 /*aligns the heading to center, and positions it relativ*/
@@ -417,7 +416,7 @@ using letter
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 8vw;
+  font-size: clamp(3em,8vw,10em);
   color: #05153F;
   background-color: #bebdbd8d;
 }
@@ -591,11 +590,6 @@ using letter
   .accesibility-heading {
     grid-row-start: 1;
     grid-row-end: 2;
-  }
-
-  /* sets fitting font size for mobile */
-  .campuses .intro h1 {
-    font-size: 9vw;
   }
 
   /* places underheading in a mobile frendly format */
