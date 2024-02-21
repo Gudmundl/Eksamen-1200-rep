@@ -440,6 +440,8 @@ footer h4 {
   }
 
   /*Index*/
+
+  /*Added padding for index main section.*/
   .index-main section {
     padding-top: var(--TB-MARGIN-MOBILE);
     padding-bottom: var(--TB-MARGIN-MOBILE);
@@ -447,10 +449,12 @@ footer h4 {
     padding-right: var(--LR-MARGIN-MOBILE);
   }
 
+/*Using flexbox presented in columns. Setting nowrap so that when the page overflows the text moves downward to still make it readable.*/
   .index-section-two div div {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   /*Rounds corners for cleaner look*/
   #index-secondary-box {
     border-radius: 1.2em;
@@ -462,6 +466,7 @@ footer h4 {
     height: auto;
   }
 
+  /*Using flexbox to place elements, setting the flex-direction to columns which is better on a smaller screen.*/
   .index-campus-container {
     flex-direction: column;
   }
