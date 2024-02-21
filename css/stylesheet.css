@@ -278,7 +278,7 @@ footer h4 {
   color: #24262b;
 }
 
-/*Hover is astyling class used for hover effects on elements*/
+/*Hover is astyling class used for hover effects on elements.*/
 .hover:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -290,31 +290,35 @@ footer h4 {
   color: var(--LIGHTCOLOR);
 }
 
-/*Changing background- textcolor.*/
+/*Changing background- and textcolor.*/
 .index-section-four {
   background-color: #16171a;
   color: var(--LIGHTCOLOR);
 }
 
-/*Changing the backgroundcolor */
+/*Changing the backgroundcolor and using flex-box to position all elements the right way.*/
 .index-campus-container {
   background-color: var(--LIGHTCOLOR);
   display: flex;
 }
 
+/*Setting a baseline height for this image to 100%.*/
 .index-section-four div img {
   height: 100%;
 }
 
+/*Changing text-color.*/
 .index-section-four a {
   color: #24262b;
 }
 
+/*Displaying elemnts in a grid system and setting gap to 0,1em. This makes the picture gallery systematic.*/
 .index-section-five div div {
   display: grid;
   gap: 0.1em;
 }
 
+/*Styling "back to the top button.*/
 .index-section-five a {
   background-color: var(--THEMECOLOR);
   color: var(--LIGHTCOLOR);
