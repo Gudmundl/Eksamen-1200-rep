@@ -401,9 +401,6 @@ footer h4 {
   .navbar a, .dropdown-meny .dropbtn {
     font-size: 2.8vw;
   }
-  .dropdown-meny .dropbtn {
-    font-size: 3.5vw;    
-  }
 
   /* End of mobile styling for the navbar */
 
