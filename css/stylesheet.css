@@ -608,10 +608,6 @@ using letter
     grid-row-start: 5;
   }
 
-  .figure-box-right-2 {
-    grid-row-start: 10;
-    /*We placed this at the end because of its lenght*/
-  }
 
   /* The mobile styling for accesability and makerspace stops here:*/
 }
@@ -937,6 +933,7 @@ using letter
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
   .figure-box-left-1,
   .figure-box-left-2,
+  .figure-box-left-3,
   .text-box-left-1,
   .text-box-left-2 {
     grid-column-start: 1;
@@ -949,7 +946,8 @@ using letter
   .text-box-right-1,
   .figure-box-right-1,
   .text-box-right-2,
-  .figure-box-right-2 {
+  .figure-box-right-2,
+  .text-box-right-3 {
     grid-column-start: 2;
     grid-column-end: 3;
     margin: auto;
@@ -958,7 +956,8 @@ using letter
   .figure-box-left-1 img,
   .figure-box-right-1 img,
   .figure-box-left-2 img,
-  .figure-box-right-2 img {
+  .figure-box-right-2 img,
+  .figure-box-left-3{
     height: 64vh;
     object-fit: contain;
     min-height: 410px;
