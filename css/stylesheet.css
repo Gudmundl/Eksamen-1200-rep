@@ -416,7 +416,7 @@ using letter
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: clamp(3em,8vw,10em);
+  font-size: clamp(3em,8vw,8em);
   color: #05153F;
   background-color: #bebdbd8d;
 }
@@ -931,7 +931,7 @@ using letter
   .accesibility-underheading {
     grid-column-start: 1;
     grid-column-end: 3;
-    font-size: 1.7rem;
+    font-size: 1.8em;
     padding-top: 10vw;
     padding-right: 20vw;
     padding-bottom: 10vw;
