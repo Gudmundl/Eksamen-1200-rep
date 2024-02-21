@@ -624,10 +624,6 @@ footer h4 {
     justify-content: center;
   }
 
-  .index-section-three div a img {
-    width: 20%;
-  }
-
   .index-gallery-grid-2 {
     grid-column-start: 1;
     grid-column-end: 3;
