@@ -46,18 +46,8 @@
         The making of an accessible website
       </h1>
     </section>
-    <!--Div for test screenshot-->
-    <figure class="figure-box-left-1">
-      <!-- Source to image https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/lighthouse edge lighthouse function -->
-      <picture>
-        <source media="(max-width:550px)" srcset="media/acessibilty-zoom1.png">
-        <img src="media/accessibility-picture-3.PNG"
-        alt="An image from an automated accesibility test showing we had low contrast in the navigational bar">
-      </picture>
-      
-    </figure>
     <!--Div for text next to pics-->
-    <section class="text-box-right-1">
+    <section class="standard-box-right">
       <!--subheading above all small textboxes-->
       <h3>How we tested accessibility</h3>
       <p> We used ligthhouse in microsoft edge and Wave web accessibility evaluation tool to evaluate the site pages
@@ -66,9 +56,18 @@
         phone and pc view. To use wave i forked the github repository and ran the repo on my own github pages. After
         github pages is set up i paste the link from github pages into Wave and get the results.
       </p>
-    </section>
-     
-    <section class="text-box-left-1">
+    </section>    
+    <!--Div for test screenshot-->
+    <figure class="standard-box-left" id="pic-align-1">
+      <!-- Source to image https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/lighthouse edge lighthouse function -->
+      <picture>
+        <source media="(max-width:550px)" srcset="media/acessibilty-zoom1.png">
+        <img src="media/accessibility-picture-3.PNG"
+        alt="An image from an automated accesibility test showing we had low contrast in the navigational bar">
+      </picture>
+      
+    </figure>
+    <section class="standard-box-left">
       <!--Div for text-->
       <h3>The page we used to test accesibility</h3>
       <p>
@@ -79,22 +78,15 @@
         elderly. So that is what we had to fix! We also testet our outher pages because you can never be to accesible.
       </p>
     </section>
-<!--figure for test screenshots-->
-    <figure class="figure-box-right-1">
+    <figure class="standard-box-right">
       <!-- Source to image https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/lighthouse edge lighthouse function -->
       <picture>
         <source media="(max-width:550px)" srcset="media/accesibility-zoom2.png">
       <img  src="media/accessibility-picture-4.PNG"
         alt="An image showcasing results from accesibility test showing we had low contrast">
       </picture>
-    </figure>   
-    <figure class="figure-box-left-2">
-      <!--Source: https://wave.webaim.org/ our own wave accesibility test-->
-      <img  src="media/accesibility-picture-6.png"
-        alt="A picture showing accesibility features. LIke alternative text">
-    </figure>
-    <!--section for text-->
-    <section class="text-box-right-2">
+    </figure>        
+    <section class="standard-box-right">
       <h3>What we did to improve accessibility</h3>
       <p>To fix these changes we changes the colors of the low contrasting text to text with higher contrasting
         colors making the text more visible and easier to see. Other things we have done to make our page more
@@ -104,8 +96,17 @@
         want.
       </p>
     </section>
+<!--figure for test screenshots-->
+
+    <figure class="standard-box-left" id="pic-align-2">
+      <!--Source: https://wave.webaim.org/ our own wave accesibility test-->
+      <img  src="media/accesibility-picture-6.png"
+        alt="A picture showing accesibility features. LIke alternative text">
+    </figure>
     <!--section for text-->
-    <section class="text-box-left-2">
+
+    <!--section for text-->
+    <section class="standard-box-left">
       <h3>Structure of the page</h3>
       <p>We have also used text shadow on some of the h1 tags to increase readability and make the h1 tags stand out
         from the background. Having text blend into to the background may cause the viewer of the page to not
@@ -114,7 +115,7 @@
         For example here you can see the tools says we have a good structure </p>
     </section>
     <!--Div for test screenshot-->
-    <figure class="figure-box-right-2">
+    <figure class="standard-box-right">
       <!-- https://wave.webaim.org/ source of the image an automated accessibility test-->
       <img src="media/accesibility-picture-7.png"
         alt="Screenshot of accesibility test. Showing we had a good structure of the page">
