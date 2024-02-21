@@ -272,17 +272,19 @@ footer h4 {
   width: 100%;
 }
 
-/*Setting */
+/*Setting a new background- and textcolor.*/
 .index-section-two article {
   background-color: var(--LIGHTCOLOR);
   color: #24262b;
 }
 
+/*Hover is astyling class used for hover effects on elements*/
 .hover:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
+/**/
 .index-section-three div a {
   background-color: var(--THEMECOLOR);
   color: var(--LIGHTCOLOR);
