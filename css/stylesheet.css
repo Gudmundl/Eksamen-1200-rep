@@ -417,9 +417,13 @@ footer h4 {
 
 /* Changes the font size of the links in the .navbar class and the .dropbtn in the .dropdown-menu class to fit on one line on mobile screens */
 @media(max-width: 800px) {
+
+  /*Setting a general font-size for the navbar. */
   .navbar a, .dropdown-meny .dropbtn {
     font-size: 2.8vw;
   }
+
+  /*Styling the font of the dropdown menu for phone sized screens.*/
   .dropdown-meny .dropbtn {
     font-size: 3.5vw;    
   }
