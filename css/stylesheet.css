@@ -213,6 +213,10 @@ footer h4 {
   margin: 0em;
 }
 
+.index img {
+  max-width: 100%;
+}
+
 .index-flex-inside-section {
   align-items: center;
   display: flex;
@@ -225,10 +229,6 @@ footer h4 {
   margin: 0;
 }
 
-.index-main img {
-  max-width: 100%;
-  width: 100%;
-}
 
 .index-section-two {
   background-image: url("/media/index-section-background.svg");
