@@ -592,11 +592,6 @@ footer h4 {
   grid-row-end: 3;
 }
 
-/* Sets the grid row start for the .figure-box-right-1 class to order the elements for mobile view */
-.figure-box-right-1 {
-  grid-row-start: 5;
-}
-
 
 
   /* The mobile styling for accesability and makerspace stops here:*/
@@ -916,11 +911,7 @@ footer h4 {
   }
 
   /* Positions the specified elements in the first column of the grid and centers them */
-  .figure-box-left-1,
-  .figure-box-left-2,
-  .figure-box-left-3,
-  .text-box-left-1,
-  .text-box-left-2 {
+  .standard-box-left {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: auto;
@@ -928,31 +919,28 @@ footer h4 {
   }
 
   /* Positions the specified elements in the second column of the grid and centers them */
-  .text-box-right-1,
-  .figure-box-right-1,
-  .text-box-right-2,
-  .figure-box-right-2,
-  .text-box-right-3 {
+  .standard-box-right {
     grid-column-start: 2;
     grid-column-end: 3;
     margin: auto;
   }
 
   /* Sets the height of the images in the specified elements, ensures they maintain their aspect ratio, and sets a minimum height */
-  .figure-box-left-1 img,
-  .figure-box-right-1 img,
-  .figure-box-left-2 img,
-  .figure-box-right-2 img,
-  .figure-box-left-3{
+  .makerspace figure img,
+  .accesibility figure img{
     height: 64vh;
     object-fit: contain;
     min-height: 410px;
   }
 
- 
-  /*Makes the electronics IoT picture fit better*/
-  #electronics{
-    width: 95%;
+  #pic-align-1{
+    grid-row-start: 3;
+  }
+  #pic-align-2{
+    grid-row-start: 5;
+  }
+  #pic-align-3{
+    grid-row-start: 7;
   }
    /* The Computer styling for page makerspace and similar accesability classes and ids ENDS here:*/
 }
