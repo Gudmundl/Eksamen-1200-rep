@@ -28,6 +28,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  font-size: clamp(1rem,1.1vw,5rem);
 }
 
 /* Set line height to 1.5 to make text more readable */
@@ -177,9 +178,9 @@ footer a:hover {
   color: #ffffff;
 }
 
-/*Make the h4 larger to make i easier to read*/
+/*Make the h4 35% larger to make i easier to read*/
 footer h4 {
-  font-size: larger;
+  font-size: 1.35em;
 }
 
 /*general footer styling ENDS here*/
@@ -450,12 +451,8 @@ using letter
 
   /*Start of mobile styling for navbar*/
   /*Changes the definition of font size so the mobile navbar fits in one line*/
-  .navbar a {
-    font-size: 3.5vw;
-  }
-
-  .dropdown-meny .dropbtn {
-    font-size: 3.5vw;
+  .navbar a, .dropdown-meny .dropbtn {
+    font-size: 2.8vw;
   }
 
   /*end of mobile styling for navbar*/
@@ -679,10 +676,6 @@ using letter
     text-decoration: none;
   }
 
-  /*Makes the headers larger to make it easier to read*/
-  footer h4 {
-    font-size: larger;
-  }
 
   /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
   /*Makes some of the content edge to edge and all 100% width*/
