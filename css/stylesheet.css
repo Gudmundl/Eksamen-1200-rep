@@ -562,8 +562,7 @@ using letter
   }
 
   /*Makes the picture fit edge to edge and not spill over*/
-  .topical-header-digi-picture,
-  #topical-body-health-picture {
+.topical img {
     width: 100%;
   }
 
@@ -844,10 +843,7 @@ using letter
     grid-column-start: 2;
   }
 
-  /*Sizes the main picture for aesthetics and adds padding for aesthetics*/
-  .topical-header-digi-picture {
-    width: 100%;
-  }
+
 
   /*Makes a container the has a grid with 5 columns and 5 rows that are each 1 fraction and the gaps are each 3em */
   .topical main {
