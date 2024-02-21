@@ -20,12 +20,13 @@
       <a href="index.html">Home</a>
       <a href="accessibility.html">Accessibility</a>
       <a href="topical.html">Topical</a>
+      <a href="makerspace.html">Makerspace</a>
       <!--Creating a div to add a dropdown meny-->
       <div class="dropdown-meny">
         <button class="dropbtn">Campuses</button>
         <div class="dropdown-content">
-          <a href="page4.html">Pilestredet</a>
-          <a href="page5.html">Kjeller</a>
+          <a href="https://www.oslomet.no/en/about/pilestredet-campus">Pilestredet</a>
+          <a href="https://www.oslomet.no/en/about/kjeller-campus">Kjeller</a>
         </div>
       </div>
     </nav>
@@ -36,7 +37,7 @@
       <!--main heading in a div to easily place it on the grid-->
       <!-- Link to main picture
         https://epicassist.org/digital-accessibility-benefits-everyone/-->
-      <img id="accesibility-picture-main" src="/media/accesibility-main.png"
+      <img id="accesibility-picture-main" src="media/accesibility-main.png"
         alt="Backgroundphoto with title: Accessibility benefits everyone, showing disabled people utalising techonolgy">
     </section>
     <section class="accesibility-underheading">
@@ -48,13 +49,17 @@
     <!--Div for test screenshot-->
     <figure class="figure-box-left-1">
       <!-- Source to image https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/lighthouse edge lighthouse function -->
-      <img id="test-screenshot-1" src="/media/accessibility-picture-3.PNG"
+      <picture>
+        <source media="(max-width:550px)" srcset="media/acessibilty-zoom1.png">
+        <img src="media/accessibility-picture-3.PNG"
         alt="An image from an automated accesibility test showing we had low contrast in the navigational bar">
+      </picture>
+      
     </figure>
     <!--Div for text next to pics-->
     <section class="text-box-right-1">
       <!--subheading above all small textboxes-->
-      <h2>How we tested accessibility</h2>
+      <h3>How we tested accessibility</h3>
       <p> We used ligthhouse in microsoft edge and Wave web accessibility evaluation tool to evaluate the site pages
         accessibility. To use these tests firstly download the extension live server. After that paste the live
         server link in edge and go to settings and developer tools. Then click on lighthouse and run the tests for
@@ -77,12 +82,15 @@
 <!--figure for test screenshots-->
     <figure class="figure-box-right-1">
       <!-- Source to image https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/lighthouse edge lighthouse function -->
-      <img id="test-screenshot-2" src="/media/accessibility-picture-4.PNG"
+      <picture>
+        <source media="(max-width:550px)" srcset="media/accesibility-zoom2.png">
+      <img  src="media/accessibility-picture-4.PNG"
         alt="An image showcasing results from accesibility test showing we had low contrast">
+      </picture>
     </figure>   
     <figure class="figure-box-left-2">
       <!--Source: https://wave.webaim.org/ our own wave accesibility test-->
-      <img id="test-screenshot-3" src="/media/accesibility-picture-6.png"
+      <img  src="media/accesibility-picture-6.png"
         alt="A picture showing accesibility features. LIke alternative text">
     </figure>
     <!--section for text-->
@@ -108,7 +116,7 @@
     <!--Div for test screenshot-->
     <figure class="figure-box-right-2">
       <!-- https://wave.webaim.org/ source of the image an automated accessibility test-->
-      <img id="test-screenshot-4" src="/media/accesibility-picture-7.png"
+      <img src="media/accesibility-picture-7.png"
         alt="Screenshot of accesibility test. Showing we had a good structure of the page">
     </figure>
   </main>
@@ -117,7 +125,7 @@
     Makes a footer with a grid container and 3 elemts to be placed in the left center and middle of the footer
   using a tags to make the text clickable-->
   <!--adding the semantic element "footer" so that the browser has the ability to veiw it as a footer, so that for example when entering reader-mode, it will be gone-->
-  <footer id="footer">
+  <footer>
     <!--div elements that acts like a container for the three different sections inside-->
     <div id="grid-footer-container">
       <!--devides the links in the footer into three different sections, with different links in each. --->
@@ -164,8 +172,8 @@
     <!--Extra footer at the bottom of the footer with the names of the people that have worked on this page-->
     <section id="grid-footer-bottom">
       <h4>Süssmann Productions</h4>
-      <p>Chief editor: Aron Süssmann</p>
-      <p>Contributors: Didrik, Trym og Gudmund</p>
+      <p>Chief editor: Gudmund the Pusher</p>
+      <p>Contributors: Didrik, Trym og Aron</p>
     </section>
   </footer>
 </body>
