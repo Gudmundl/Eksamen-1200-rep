@@ -32,6 +32,7 @@ body {
   padding-right: 0em;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /*Set line height to 1.5 to make text more readable*/
 p {
   line-height: 1.5;
@@ -189,7 +190,7 @@ footer h4 {
 /*-----------------------------------------------*/
 /*Index*/
 
-.index a{
+.index a {
   text-decoration: none;
 }
 
@@ -219,7 +220,7 @@ footer h4 {
 }
 
 
-.index header img{
+.index header img {
   min-width: 100%;
 }
 
@@ -261,7 +262,7 @@ footer h4 {
   text-decoration: underline;
 }
 
-.index-section-three div a{
+.index-section-three div a {
   background-color: var(--THEMECOLOR);
   color: var(--LIGHTCOLOR);
 }
@@ -289,7 +290,7 @@ footer h4 {
   gap: 0.1em;
 }
 
-.index-section-five a{
+.index-section-five a {
   background-color: var(--THEMECOLOR);
   color: var(--LIGHTCOLOR);
   font-size: clamp(1rem, 1.5vw, 4rem);
@@ -307,9 +308,9 @@ footer h4 {
 /* START of general styling for topical */
 
 /* Sets default styling for topical page */
-.topical{
+.topical {
   color: #05153F;
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 /*Makes the links black instead of blue for aesthetics*/
@@ -322,7 +323,8 @@ footer h4 {
 /* general styling for page makerspace and similar accesibility classes STARTS here */
 
 /* styles main inside page makerspace, aligns the text*/
-.campuses main, .accesibility main {
+.campuses main,
+.accesibility main {
   display: grid;
   text-align: center;
   background-color: #05153F;
@@ -330,13 +332,15 @@ footer h4 {
 }
 
 /* styles level 3 headings inside makerspace main */
-.campuses main h3, .accesibility main h3 {
+.campuses main h3,
+.accesibility main h3 {
   padding-top: 7%;
   font-size: 1.7rem;
 }
 
 /* styles all p inside makerspace main */
-.campuses main p, .accesibility main p {
+.campuses main p,
+.accesibility main p {
   padding-top: 5%;
   padding-left: 8%;
   padding-right: 8%;
@@ -346,13 +350,14 @@ footer h4 {
 }
 
 /*aligns the heading to center, and positions it relativ*/
-.campuses .intro, .accesibility-heading {
+.campuses .intro,
+.accesibility-heading {
   text-align: center;
   position: relative;
 }
 
 /*styles h1 and sets its position on top of the background */
-.campuses .intro h1{
+.campuses .intro h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -363,15 +368,19 @@ footer h4 {
 }
 
 /*aligns the text*/
-.campuses-underheading, .accesibility-underheading {
+.campuses-underheading,
+.accesibility-underheading {
   text-align: center;
 }
+
 /*adjusts text for text paragraph under heading*/
-.campuses-underheading p{
+.campuses-underheading p {
   font-weight: 600;
 }
+
 /*makes images fit the width of the frame*/
-.campuses img, .accesibility img{
+.campuses img,
+.accesibility img {
   width: 100%;
 }
 
@@ -384,48 +393,50 @@ footer h4 {
 
 /*Media query makes the website scale diffrently from pc to mobile*/
 @media(max-width: 800px) {
-/*Start of mobile styling for navbar*/
-/*Changes the definition of font size so the mobile navbar fits in one line*/
+
+  /*Start of mobile styling for navbar*/
+  /*Changes the definition of font size so the mobile navbar fits in one line*/
   .navbar a {
     font-size: 3.5vw;
   }
+
   .dropdown-meny .dropbtn {
-    font-size: 3.5vw;    
+    font-size: 3.5vw;
   }
 
-/*end of mobile styling for navbar*/
+  /*end of mobile styling for navbar*/
   /*STYLING OF INDEX IN MOBILE VEIW STARTS HERE*/
- /*------------------------------------------*/
- .index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  /*------------------------------------------*/
+  .index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-/*Index*/
-.index-main section {
-  padding-top: var(--TB-MARGIN-MOBILE);
-  padding-bottom: var(--TB-MARGIN-MOBILE);
-  padding-left: var(--LR-MARGIN-MOBILE);
-  padding-right: var(--LR-MARGIN-MOBILE);
-}
+  /*Index*/
+  .index-main section {
+    padding-top: var(--TB-MARGIN-MOBILE);
+    padding-bottom: var(--TB-MARGIN-MOBILE);
+    padding-left: var(--LR-MARGIN-MOBILE);
+    padding-right: var(--LR-MARGIN-MOBILE);
+  }
 
-.index-section-two div div {
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
+  .index-section-two div div {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 
-.index-campus-container {
-  flex-direction: column;
-}
+  .index-campus-container {
+    flex-direction: column;
+  }
 
-.index-section-five div div {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .index-section-five div div {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-/*------------------------------------------*/
+  /*------------------------------------------*/
 
-   /*Start of page2 (accesability) mobile styling*/
+  /*Start of page2 (accesability) mobile styling*/
 
 
   /*end of page2 (accesability) mobile styling*/
@@ -465,6 +476,7 @@ footer h4 {
   .topical aside img {
     width: 80%;
   }
+
   .topical aside p {
     margin: 0;
   }
@@ -473,12 +485,14 @@ footer h4 {
 
   /* The mobile styling for page makerspace and similar accesability classes and ids STARTS here:*/
   /* decides that mobile version only has 1 column */
-  .campuses main, .accesibility main {
+  .campuses main,
+  .accesibility main {
     grid-template-columns: 1fr;
   }
 
   /* decides positions of elements with grid-column start and end */
-  .campuses .intro, .accesibility-heading {
+  .campuses .intro,
+  .accesibility-heading {
     grid-row-start: 1;
     grid-row-end: 2;
   }
@@ -489,7 +503,8 @@ footer h4 {
   }
 
   /* places underheading in a mobile frendly format */
-  .campuses-underheading, .accesibility-underheading {
+  .campuses-underheading,
+  .accesibility-underheading {
     padding-top: 5vh;
     padding-right: 5vw;
     padding-bottom: 5vh;
@@ -498,14 +513,16 @@ footer h4 {
     grid-row-end: 3;
   }
 
-  #campus-underhead-text{
+  #campus-underhead-text {
     font-size: 1.5em;
   }
-/*These next two elements places the elements in a fitting order for mobile*/
-  .figure-box-right-1{
+
+  /*These next two elements places the elements in a fitting order for mobile*/
+  .figure-box-right-1 {
     grid-row-start: 5;
   }
-  .figure-box-right-2{
+
+  .figure-box-right-2 {
     grid-row-start: 10;
     /*We placed this at the end because of its lenght*/
   }
@@ -517,7 +534,7 @@ footer h4 {
 
 /*media-quarry that justifies what "styling-rules" that is used when on a screen larger then 801px*/
 @media (min-width: 801px) {
-  
+
   /*Footer computer styling starts here*/
 
   /*Makes a container for the footer to be placed in a grid*/
@@ -574,60 +591,62 @@ footer h4 {
   /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
   /*Makes some of the content edge to edge and all 100% width*/
   /*------------------------------------------*/
-    /*Index*/
-    .index-main section {
-      padding-top: var(--TB-MARGIN-PC);
-      padding-bottom: var(--TB-MARGIN-PC);
-      padding-left: var(--LR-MARGIN-PC);
-      padding-right: var(--LR-MARGIN-PC);
+  /*Index*/
+  .index-main section {
+    padding-top: var(--TB-MARGIN-PC);
+    padding-bottom: var(--TB-MARGIN-PC);
+    padding-left: var(--LR-MARGIN-PC);
+    padding-right: var(--LR-MARGIN-PC);
   }
 
   .index-section-one p {
-      column-count: 2;
+    column-count: 2;
   }
 
   .index-section-two div div {
-      flex-direction: row;
-      flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .index-section-two article {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 
   .index-campus-container div {
-      width: 50%;
+    width: 50%;
   }
 
-  
-  .index-section-three div a{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+
+  .index-section-three div a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .index-section-three div a img{
-      width: 20%;
+  .index-section-three div a img {
+    width: 20%;
   }
 
-  .index-gallery-grid-2{
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 3;
+  .index-gallery-grid-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
-  .index-gallery-grid-3{
-      grid-column-start: 3;
-      grid-column-end: 5;
-      grid-row-start: 3;
-      grid-row-end: 5;
+
+  .index-gallery-grid-3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
   }
-  .index-gallery-grid-4{
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 5;
-      grid-row-end: 7;
+
+  .index-gallery-grid-4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
   }
 
   /*------------------------------------------*/
@@ -669,19 +688,23 @@ footer h4 {
   .topical main {
     display: grid;
     column-gap: 3vw;
-    @media (max-width:1200px){
-      grid-template-columns: 1fr 7fr 1fr ;
+
+    @media (max-width:1200px) {
+      grid-template-columns: 1fr 7fr 1fr;
       grid-template-rows: repeat(5, auto);
     }
   }
-.topical main .intro{
+
+  .topical main .intro {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
+
     @media (max-width:1200px) {
       grid-column-end: 3;
     }
   }
+
   /*Makes a grid for the body to put it in the left-middle*/
   .topical article {
     grid-row-start: 3;
@@ -692,13 +715,16 @@ footer h4 {
 
   /*Puts the aside to the rigth of the main text*/
   .topical aside {
-    justify-content: center;    
-    @media (max-width:1200px){
+    justify-content: center;
+
+    @media (max-width:1200px) {
       grid-row-start: 5;
       grid-row-end: 6;
       grid-column-start: 2;
       grid-column-end: 3;
-    };
+    }
+
+    ;
   }
 
   /*Styles the healthpicture to fit well inside the grid*/
@@ -716,24 +742,28 @@ footer h4 {
     margin-top: 0;
     padding-left: 0.5em;
   }
+
   /*Page Topical computer styling ends here*/
 
 
   /* The Computer styling for page makerspace and similar accesability classes and ids STARTS here:*/
 
   /* Makes grid in main two columns with same width */
-  .campuses main, .accesibility main {
+  .campuses main,
+  .accesibility main {
     grid-template-columns: 1fr 1fr;
   }
 
   /* places heading */
-  .campuses .intro, .accesibility-heading{
+  .campuses .intro,
+  .accesibility-heading {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
   /* places underheading in a computer friendly format */
-  .campuses-underheading, .accesibility-underheading{
+  .campuses-underheading,
+  .accesibility-underheading {
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.7rem;
@@ -743,12 +773,15 @@ footer h4 {
     padding-left: 20vw;
   }
 
-  #campus-underhead-text{
+  #campus-underhead-text {
     font-size: 2.3vw;
   }
-  
+
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .figure-box-left-1, .figure-box-left-2, .text-box-left-1,.text-box-left-2{
+  .figure-box-left-1,
+  .figure-box-left-2,
+  .text-box-left-1,
+  .text-box-left-2 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: auto;
@@ -756,58 +789,70 @@ footer h4 {
   }
 
   /* Places content in boxes next to eachother in the main, and aligns them in the centre*/
-  .text-box-right-1, .figure-box-right-1,.text-box-right-2,
-  .figure-box-right-2{
+  .text-box-right-1,
+  .figure-box-right-1,
+  .text-box-right-2,
+  .figure-box-right-2 {
     grid-column-start: 2;
     grid-column-end: 3;
     margin: auto;
   }
-.figure-box-left-1 img, .figure-box-right-1 img,
-.figure-box-left-2 img, .figure-box-right-2 img{
+
+  .figure-box-left-1 img,
+  .figure-box-right-1 img,
+  .figure-box-left-2 img,
+  .figure-box-right-2 img {
     height: 64vh;
     object-fit: contain;
     min-height: 410px;
-}
-#test-screenshot-4{
-  min-height: 460px;
-}
+  }
 
-#pilestred-map{
+  #test-screenshot-4 {
+    min-height: 460px;
+  }
+
+  #pilestred-map {
     height: 64vh;
     width: 49vw;
     min-height: 410px;
-}
+  }
+
   /* The Computer styling for page makerspace and similar accesability classes and ids ENDS here:*/
 }
+
 /*End of media quearry for pc*/
 @media screen and (min-width:1201px) {
-  .index-secondary-box-div{
+  .index-secondary-box-div {
     max-width: 328px;
     width: 20vw;
-    }
-  .topical main {
-      grid-template-columns: 1fr 3fr 1fr 1fr ;
-      grid-template-rows: repeat(4, auto);
   }
-  .topical .intro{
+
+  .topical main {
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .topical .intro {
     grid-column-end: 4;
   }
-  .topical aside {  
-      grid-row-start: 3;
-      grid-row-end: 5;
-      grid-column-start: 3;
-      grid-column-end: 4;
+
+  .topical aside {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
+
   .topical h1 {
     grid-column-end: 4;
-}
+  }
 }
 
 @media (min-width: 1200px) {
   .index-section-two article {
-      background-color: var(--LIGHTCOLOR);
-      width: 42vw;
-      color: #24262b;
+    background-color: var(--LIGHTCOLOR);
+    width: 42vw;
+    color: #24262b;
   }
 
 }
