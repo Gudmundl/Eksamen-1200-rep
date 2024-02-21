@@ -378,7 +378,7 @@ using letter
 /* general styling for page makerspace and similar accesibility classes STARTS here */
 
 /* styles main inside page makerspace, aligns the text*/
-.campuses main,
+.makerspace main,
 .accesibility main {
   display: grid;
   text-align: center;
@@ -387,14 +387,14 @@ using letter
 }
 
 /* styles level 3 headings inside makerspace main */
-.campuses main h3,
+.makerspace main h3,
 .accesibility main h3 {
   padding-top: 7%;
   font-size: 1.7em;
 }
 
 /* styles all p inside makerspace main */
-.campuses main p,
+.makerspace main p,
 .accesibility main p {
   padding-top: 5%;
   padding-left: 8%;
@@ -404,14 +404,14 @@ using letter
 }
 
 /*aligns the heading to center, and positions it relativ*/
-.campuses .intro,
+.makerspace .intro,
 .accesibility-heading {
   text-align: center;
   position: relative;
 }
 
 /*styles h1 and sets its position on top of the background */
-.campuses .intro h1 {
+.makerspace .intro h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -422,18 +422,18 @@ using letter
 }
 
 /*aligns the text*/
-.campuses-underheading,
+.makerspace-underheading,
 .accesibility-underheading {
   text-align: center;
 }
 
 /*adjusts text for text paragraph under heading*/
-.campuses-underheading p {
+.makerspace-underheading p {
   font-weight: 600;
 }
 
 /*makes images fit the width of the frame*/
-.campuses img,
+.makerspace img,
 .accesibility img {
   width: 100%;
 }
@@ -580,20 +580,20 @@ using letter
 
   /* The mobile styling for page makerspace and similar accesability classes and ids STARTS here:*/
   /* decides that mobile version only has 1 column */
-  .campuses main,
+  .makerspace main,
   .accesibility main {
     grid-template-columns: 1fr;
   }
 
   /* decides positions of elements with grid-column start and end */
-  .campuses .intro,
+  .makerspace .intro,
   .accesibility-heading {
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
   /* places underheading in a mobile frendly format */
-  .campuses-underheading,
+  .makerspace-underheading,
   .accesibility-underheading {
     padding-top: 5vh;
     padding-right: 5vw;
@@ -614,7 +614,7 @@ using letter
     /*We placed this at the end because of its lenght*/
   }
 
-  /* The mobile styling for accesability and campuses stops here:*/
+  /* The mobile styling for accesability and makerspace stops here:*/
 }
 
 /*STYLING for MOBILE view ENDS HERE*/
@@ -914,20 +914,20 @@ using letter
   /* The Computer styling for page makerspace and similar accesability classes and ids STARTS here:*/
 
   /* Makes grid in main two columns with same width */
-  .campuses main,
+  .makerspace main,
   .accesibility main {
     grid-template-columns: 1fr 1fr;
   }
 
   /* places heading */
-  .campuses .intro,
+  .makerspace .intro,
   .accesibility-heading {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
   /* places underheading in a computer friendly format */
-  .campuses-underheading,
+  .makerspace-underheading,
   .accesibility-underheading {
     grid-column-start: 1;
     grid-column-end: 3;
