@@ -34,14 +34,18 @@
                 </div>
             </div>
         </nav>
+        <!--Picture element making it possible having two different header-pictures, one for smaller screens aswell as one for bigger ones-->
         <picture>
             <source media="(max-width:800px)" srcset="media/index-header-mobile.jpg">
-            <img src="media/index-header-pc.jpg" alt="Flowers" style="width:auto;">
+            <img src="media/index-header-pc.jpg" alt=".LEGGINNFOTOGRAF. oslomet-logo on top of the fasade of p32, an oslomet-building" style="width:auto;">
         </picture>
     </header>
 
+    <!--Giving the main a spesific class, so that it is easier to style elements belonging to the index.-->
     <main class="index-main">
+        <!--Using sections thruout the index for easier understanding of what elements/information that belongs to what-->
         <section class="index-section-one">
+            <!--'index-flex-inside-section' is a class used to style element inside the sections throughout the index-->
             <div class="index-flex-inside-section">
                 <h2>Welcome to Oslomet</h2>
                 <p> Oslomet is a public university in Norway that offers a wide
@@ -52,12 +56,14 @@
                     state and a better society for everyone. <strong>Join us and discover your potential at
                         OsloMet!</strong>
                 </p>
+                <!--Using a figure-element to group a picture with a caption(figcaption) belonging to it -->
                 <figure>
                     <picture>
                         <source media="(max-width:800px)" srcset="media/index-intro-picture-mobile.jpg">
-                        <img src="media/index-intro-picture.jpg" alt="Flowers" style="width:auto;">
+                        <img src="media/index-intro-picture.jpg" alt="Foto: Benjamin A. Ward. P35 in beautiful sunlight" style="width:auto;">
                     </picture>
                     <figcaption> Foto: Benjamin A. Ward</figcaption>
+                   <!--Hr for underline under the figcaption-->
                     <hr>
                 </figure>
             </div>
@@ -65,8 +71,10 @@
         <section class="index-section-two">
             <div class="index-flex-inside-section">
                 <h2>Faculties</h2>
+                <!--Using a div here to devide the h2 from the rest of the content, the different boxes giving information about the faculties, in this section-->
                 <div>
                     <a href="https://www.oslomet.no/om/hv">
+                        <!--The class hover is used to style every element that is going to have a hover effect alike-->
                         <article class="hover">
                             <figure>
                                 <img src="media/index-helse.jpg" alt="" width="" height="">
@@ -146,7 +154,8 @@
                             architecto ad deleniti consequatur delectus labore rem.</p>
                     </section>
                 </a>
-                <a src="https://www.sio.no/mat-og-drikke/vare-spisesteder-og-kaffebarer?campus=OsloMet" class="hover"><img src="media/index-kantine.jpg" alt="">
+                <a src="https://www.sio.no/mat-og-drikke/vare-spisesteder-og-kaffebarer?campus=OsloMet"
+                    class="hover"><img src="media/index-kantine.jpg" alt="">
                     <section>
                         <h3>Cantines</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quia repudiandae nostrum fugit
@@ -204,11 +213,13 @@
         <section class="index-section-five">
             <div class="index-flex-inside-section">
                 <h2>Gallery</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus molestias deserunt, architecto provident, neque alias debitis nemo voluptas fugiat at error iste sequi enim facere a deleniti id. Voluptates.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus molestias deserunt, architecto
+                    provident, neque alias debitis nemo voluptas fugiat at error iste sequi enim facere a deleniti id.
+                    Voluptates.</p>
                 <div>
-                 <img class="index-gallery-grid-2" src="media/index-gallery-library.jpg"
+                    <img class="index-gallery-grid-2" src="media/index-gallery-library.jpg"
                         alt="Foto: Benjamin A. Ward">
-                
+
                     <img src="media/index-gallery-p48.jpg" alt="Foto: Skjalg Bøhmer Vold">
                     <img src="media/index-gallery-readingspot.jpg" alt="Foto: Skjalg Bøhmer Vold">
                     <img src="media/index-gallery-sofa.jpg" alt="Foto: Skjalg Bøhmer Vold">
