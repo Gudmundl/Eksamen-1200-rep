@@ -22,7 +22,18 @@ CSS Structure:
      - Body, Paragraphs, Navigation Bar, Footer
      - Home Page, Topic Page, Accessibility Page, Makerspace Page
 */
+:root {
+  --LIGHTCOLOR: #F4F6F8;
+  --THEMECOLOR: #05153F;
+  --LR-MARGIN-PC: 5vw;
+  --LR-MARGIN-MOBILE: 1em;
+  --TB-MARGIN-PC: 1em;
+  --TB-MARGIN-MOBILE: 0.5em;
+}
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* Set the default font, remove default margins and padding, and set a responsive font size for the body */
 body {
@@ -183,46 +194,42 @@ footer h4 {
 
 /* End of general footer styling */
 
-/* Start of general styling for index */
+/*-----------------------------------------------*/
+/*Index*/
 
-/* Sets the letter spacing for all p elements in the index */
-.index p {
-  letter-spacing: 0.1rem;
+.index a {
+  text-decoration: none;
 }
 
-/* Sets the width of the image in the header of the index to 100% and the height to auto to maintain the image's aspect ratio */
-.index header img {
-  width: 100%;
-  height: auto;
+.index-1em-padding {
+  padding: 1em;
 }
 
 /* Styles the h1 in the index to stand out, with a font size that adjusts within a specified range (inspired by https://stackoverflow.com/questions/2570972/css-font-border) */
 .index h1 {
   font-size: clamp(2.5em, 4vw, 7em);
+.index-main h2 {
+  font-size: clamp(1.7rem, 4vw, 5rem);
+  margin: 0em;
+  min-width: 100%;
 }
 
-/* Styles a span within the h1 in the index to have a specific color, text shadow, font weight, and slightly larger font size */
-.index h1 span {
-  color: #ffbb00;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  font-weight: bolder;
-  font-size: 1.2em;
+.index-main h3 {
+  font-size: clamp(1.5rem, 2.5vw, 5rem);
+  margin-top: 0;
 }
 
-/* Sets the background color and text color for the main section of the index */
-.index main {
-  background-color: whitesmoke;
-  color: #000000;
+.index main p {
+  font-size: clamp(1rem, 1.5vw, 4rem);
+  margin: 0em;
 }
-/* Removes the default list style and adds padding to the left and right of the ul in the #index-under-intro-area */
-#index-under-intro-area ul {
+#index-under-intro-area ul{
   padding-left: 1rem;
   padding-right: 1.7em;
   list-style: none;
 }
-
-/* Styles the li elements in the #index-under-intro-area to mimic the appearance of Facebook Messenger text bubbles, with a specific background color, text color, font weight, border radius, box shadow, margin, and padding */
-#index-under-intro-area li {
+/*Increses font weight for readability, removes dot in front of li elements, styling to mimic the FB "messenger" text bubbles*/
+#index-under-intro-area li{
   background-color: #006efe;
   color: #ffffff;
   font-weight: 485;
@@ -235,122 +242,106 @@ footer h4 {
   padding-right: 0.5em;
 }
 
-/* Stretches the image in the #index-under-intro-img to fit its container and smooths the corners for aesthetics */
-#index-under-intro-img {
+.index img {
+  max-width: 100%;
   width: 100%;
-  height: auto;
-  border-radius: 0.8em;
 }
 
-/* Start of styling for elements in the secondary box in the index under section */
-/* Styles the #index-secondary-box with a specific background color, text color, and text alignment */
-#index-secondary-box {
-  background-color: #05153F;
-  color: #ffffff;
-  text-align: center;
+
+.index header img {
+  min-width: 100%;
 }
 
-/* Sets the #index-secondary-box-flex-container to display as flex, preventing the elements inside from wrapping and centering them */
-#index-secondary-box-flex-container {
+.index-flex-inside-section {
+  align-items: center;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: space-around;
 }
 
-/* Styles the .index-secondary-box-div with a specific background color, text color, margin, padding, border radius, and text alignment for improved readability and aesthetics */
-.index-secondary-box-div {
-  background-color: #e4e4e4;
-  color: #000000;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 1%;
-  padding-right: 1%;
-  border-radius: 0.8em;
-  text-align: left;
+.index-main figure {
+  margin: 0;
 }
-/* Stretches the image in the #index-secondary-box to fit its container and sets a specific height to ensure all images are the same size */
+
+/*stretching the img to fit the container, forcing the hight insted of auto to have the same size on the pictures*/
 #index-secondary-box img {
   width: 100%;
   height: 25%;
   border-radius: 0.67em;
 }
 
-/* End of styling for elements in the secondary box */
-
-/* Start of styling for the third box */
-
-/* Sets the content inside the #index-third-box-flex to display as flex for future column/row adjustments in media queries */
-#index-third-box-flex {
-  display: flex
+.index-section-two {
+  background-image: url("/media/index-section-background.svg");
+  color: var(--LIGHTCOLOR);
 }
 
-/* Stretches the .index-campus-img to the width of its container and smooths the corners */
-.index-campus-img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.53em;
-}
-
-/* Adds padding and margin to the p elements in the .index-third-campus-div to improve readability */
-.index-third-campus-div p {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1em;
-  letter-spacing: normal;
-}
-
-/* Styles the #index-third-box with a specific background color, text color, padding, margin, and border radius for accessibility and aesthetics */
-#index-third-box {
-  background-color: #05153F;
-  color: #ffffff;
-  padding-top: 1vh;
-  padding-bottom: 0;
-  margin-top: 3vh;
-  border-radius: 1.2em;
-}
-
-/* Adds padding to the left of the h2 in the #index-third-box to position it away from the left side */
-#index-third-box h2 {
-  padding-left: 1vw;
-}
-
-/* Increases the font size of the h3 in the #index-third-box and adds padding to the left to position it away from the left side */
-#index-third-box h3 {
-  font-size: 1.7rem;
-  padding-left: 1vw;
-}
-
-/* Styles the .index-third-campus-div with a specific background color, text color, and display type, and centers the elements inside */
-.index-third-campus-div {
-  background-color: #f0f8ff;
-  color: #000000;
+.index-section-two div div {
+  align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 4em;
+  width: 100%;
 }
 
-/* Removes the underline from the link in the #index-third-box and sets a specific text color */
-#index-third-box a {
-  text-decoration: none;
-  color: #000000;
+.index-section-two article {
+  background-color: var(--LIGHTCOLOR);
+  color: #24262b;
 }
 
-/* Styles the hover state of the link in the #index-third-box with an underline and reduced opacity for accessibility */
-#index-third-box a:hover {
+.hover:hover {
+  cursor: pointer;
   text-decoration: underline;
-  opacity: 70%;
 }
 
-/* End of styling for the third box */
-/* End of styling for the index outside of the media query */
+.index-section-three div a {
+  background-color: var(--THEMECOLOR);
+  color: var(--LIGHTCOLOR);
+}
+
+.index-section-four {
+  background-color: #16171a;
+  color: var(--LIGHTCOLOR);
+}
+
+.index-campus-container {
+  background-color: var(--LIGHTCOLOR);
+  display: flex;
+}
+
+.index-section-four div img {
+  height: 100%;
+}
+
+.index-section-four a {
+  color: #24262b;
+}
+
+.index-section-five div div {
+  display: grid;
+  gap: 0.1em;
+}
+
+.index-section-five a {
+  background-color: var(--THEMECOLOR);
+  color: var(--LIGHTCOLOR);
+  font-size: clamp(1rem, 1.5vw, 4rem);
+  padding-bottom: 2em;
+  padding-top: 2em;
+  text-align: center;
+  width: 10em;
+}
+/*-----------------------------------------------*/
+/*END of styling for index outside of the media-quarry*/
 
 /* Start of general styling for the topical page */
 
+/* START of general styling for topical */
+
+/* Sets default styling for topical page */
+.topical {
 /* Sets the default color and background color for the .topical class */
 .topical {
   color: #05153F;
@@ -435,6 +426,9 @@ footer h4 {
   .navbar a, .dropdown-meny .dropbtn {
     font-size: 2.8vw;
   }
+  .dropdown-meny .dropbtn {
+    font-size: 3.5vw;    
+  }
 
   /* End of mobile styling for the navbar */
 
@@ -447,84 +441,38 @@ footer h4 {
     justify-content: center;
   }
 
-  /*Ads padding for improved readability*/
-  .index main {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+  /*Index*/
+  .index-main section {
+    padding-top: var(--TB-MARGIN-MOBILE);
+    padding-bottom: var(--TB-MARGIN-MOBILE);
+    padding-left: var(--LR-MARGIN-MOBILE);
+    padding-right: var(--LR-MARGIN-MOBILE);
   }
 
-
-  /*Ads margin to make headers easier to read*/
-  #index-secondary-box h2,
-  #index-third-box h2 {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
- /* Sets the display of the .index class to flex to stack the content vertically on mobile screens */
-/* Sets the display of the .index class to flex to stack the content vertically on mobile screens */
-.index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Adds padding to the main element in the .index class for improved readability */
-.index main {
-  padding: 1em;
-}
-
-/* Adds margin to the h2 elements in the #index-secondary-box and #index-third-box to improve readability and sets their font size */
-#index-secondary-box h2,
-#index-third-box h2 {
-  font-size: 2rem;
-  margin: 1rem;
-}
-  /* Aligns the content in the #index-secondary-box-flex-container to a column for mobile view */
-  #index-secondary-box-flex-container {
+  .index-section-two div div {
     flex-direction: column;
-    align-items: center;
+    flex-wrap: nowrap;
   }
-
-  /* Rounds the corners of the #index-secondary-box for a cleaner look and adds padding to the bottom */
+  /*Rounds corners for cleaner look*/
   #index-secondary-box {
     border-radius: 1.2em;
     padding-bottom: 1em;
   }
-
-  /* Adjusts the width and height of the .index-secondary-box-div for mobile view */
+  /*Styling for to make it an appropriate size for mobile view */
   .index-secondary-box-div {
     width: 90%;
     height: auto;
   }
 
-  /* Adjusts the flex direction and margins of the #index-third-box-flex for mobile view */
-  #index-third-box-flex {
+  .index-campus-container {
     flex-direction: column;
-    margin-left: 3vw;
-    margin-right: 3vw;
   }
 
-  /* Adjusts the left and right margins of the .short-intro in the #index-third-box */
-  #index-third-box .short-intro {
-    margin-left: 1em;
-    margin-right: 1em;
+  .index-section-five div div {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Adds styling for aesthetics and sets the display to flex for mobile view in the .index-third-campus-div class */
-  .index-third-campus-div {
-    border-radius: 0.53em;
-    margin: 0em 0em 1em 0em;
-    padding: 0em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-  }
+  /*------------------------------------------*/
 
   /* End of mobile styling for the index page */
 
@@ -597,6 +545,17 @@ footer h4 {
   grid-row-start: 5;
 }
 
+  #campus-underhead-text{
+    font-size: 1.5em;
+  }
+/*These next two elements places the elements in a fitting order for mobile*/
+  .figure-box-right-1{
+    grid-row-start: 5;
+  }
+  .figure-box-right-2{
+    grid-row-start: 10;
+    /*We placed this at the end because of its lenght*/
+  }
 
  /* Sets the grid row start for the .figure-box-right-2 class to order the elements for mobile view. This element is placed at the end due to its length */
 .figure-box-right-2 {
@@ -658,130 +617,83 @@ footer h4 {
 
   /*STYLING OF INDEX IN PC-VEIW STARTS HERE*/
   /*Makes some of the content edge to edge and all 100% width*/
-  .index {
+  /*------------------------------------------*/
+  /*Index*/
+  .index-main section {
+    padding-top: var(--TB-MARGIN-PC);
+    padding-bottom: var(--TB-MARGIN-PC);
+    padding-left: var(--LR-MARGIN-PC);
+    padding-right: var(--LR-MARGIN-PC);
+  }
+
+  .index-section-one p {
+    column-count: 2;
+  }
+
+  .index-section-two div div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .index-section-two article {
     width: 100%;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    margin-right: 0em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0em;
-    padding-right: 0em;
-    box-sizing: border-box;
+    height: auto;
   }
-
-  /*Creates and container for the main content ahve 11 1fr columns and 30 1fr rows*/
-  .index main {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-  }
-
-  /*Places h1 tag in cloumn 2 start 11 end*/
-  #index-h1-container {
-    grid-column-start: 2;
-    grid-column-end: 11;
-  }
-
-  /*Places into paragraphs in the grid in column 2 and row 2 and ending 11 and 5*/
-  .index .intro {
-    columns: 2;
-    column-gap: 5%;
-    font-size: x-large;
-    grid-column-start: 2;
-    grid-column-end: 11;
-  }
-
-  .index .intro h2 {
+  .index .intro h2{
     margin-top: 0;
   }
-
-  #index-secondary-box h2,
-  #index-third-box h2 {
+  #index-secondary-box h2, #index-third-box h2{
     font-size: 2.7rem;
   }
-
   /*Places img in the grid in the top half of the page  in the middle*/
   #index-under-intro-img-div {
     grid-column-start: 2;
     grid-column-end: 11;
   }
 
-  /*places content in the grid, makes the "phone" only visible in 
-  pc-veiw due to that the mobile-screen size would make the text too small */
-  #index-under-intro-area {
-    grid-column-start: 3;
-    grid-column-end: 10;
-    background-color: #1f1f1f;
-    text-align: center;
-    box-shadow: 1em 1em 1em #323232;
-    border-radius: 0.95em;
-    max-width: 500px;
-    min-width: 400px;
-    padding-bottom: 1em;
-    margin-top: 2em;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+  .index-campus-container div {
+    width: 50%;
   }
 
-  /*Make content phone white and ads width heigth and margin to make it look good relative to the page*/
-  #index-under-intro-white-area {
-    background-color: #ffffff;
-    width: 95%;
-    height: 95%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0.42em;
-    padding-bottom: 1em;
+
+  .index-section-three div a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  /*Places the faculties boxes in the middle rows of  the page and fills the columns of the grid*/
-  #index-secondary-box {
+  .index-gallery-grid-2 {
     grid-column-start: 1;
-    grid-column-end: 12;
-    margin-top: 3em;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
 
-  #index-secondary-box .short-intro {
-    padding-left: 13vw;
-    padding-right: 13vw;
+  .index-gallery-grid-3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
   }
-
   #index-secondary-box-flex-container {
     @media (max-width:1200px) {
-      flex-wrap: wrap;
+      flex-wrap: wrap; 
     }
   }
-
   /*Ads appropriate heigth and width relative to the main page*/
   .index-secondary-box-div {
     height: 1fr;
-
-    /* When the viewport width is 1200px or less */
     @media (max-width:1200px) {
-        /* The width of the selected element will be 40% of the viewport width */
-      width: 40vw;
-    }
+      width: 40vw;}
   }
 
-  /*Places the campus in the bottom half of the page and in the middle of the columns*/
-  #index-third-box {
-    grid-column-start: 2;
-    grid-column-end: 11;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-bottom: 4em;
+  .index-gallery-grid-4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
   }
-
+  
   /*Places campus images next to eachother and ads padding and margin and border radius for style*/
   .index-third-campus-div {
     border-radius: 1em;
@@ -799,13 +711,13 @@ footer h4 {
     width: 50%;
     height: 40em;
   }
+  
 
-
+  /*------------------------------------------*/
   /*STYLING OF INDEX IN PC-VEIW ENDS HERE*/
 
 
   /*Page accesability computer styling starts here*/
-
 
   /*styles img for readablility*/
   .accessibility img {
@@ -989,4 +901,13 @@ footer h4 {
   .topical h1 {
     grid-column-end: 4;
   }
+}
+
+@media (min-width: 1200px) {
+  .index-section-two article {
+    background-color: var(--LIGHTCOLOR);
+    width: 42vw;
+    color: #24262b;
+  }
+
 }
