@@ -225,15 +225,18 @@ footer h4 {
   margin-top: 0;
 }
 
+/*Set all paragraph tags inside the index page to use a margin of 0em.*/
 .index main p {
   margin: 0em;
 }
 
+/* Setting a max-width and a baseline width at 100% for all images in the index page. This is uses to ensure that it scales as supposed to.*/
 .index img {
   max-width: 100%;
   width: 100%;
 }
 
+/* Setting min-width to 100% to make on all screens*/
 .index header img {
   min-width: 100%;
 }
