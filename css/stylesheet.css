@@ -609,6 +609,8 @@ footer h4 {
   /*Makes some of the content edge to edge and all 100% width*/
   /*------------------------------------------*/
   /*Index*/
+
+  /*Giving the sections in the main of index some padding*/
   .index-main section {
     padding-top: var(--TB-MARGIN-PC);
     padding-bottom: var(--TB-MARGIN-PC);
@@ -616,33 +618,38 @@ footer h4 {
     padding-right: var(--LR-MARGIN-PC);
   }
 
+  /*Splitting the introduction of index into two colums*/
   .index-section-one p {
     column-count: 2;
   }
-
+  /*Wrapping the faculties divs*/
   .index-section-two div div {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
+  /*Forcing the article element in section two to take up 100% of the width of the parrent*/
   .index-section-two article {
     width: 100%;
     height: auto;
   }
+  /*Resetting the normal margin-values of h2*/
   .index .intro h2{
     margin-top: 0;
   }
-
+  /*Using flex for positioning*/
   .index-section-three div a {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
+  /*Making the img scalable and small enough to not interfere with the text*/
   .index-section-three div img {
     width: 27vw;
   }
 
+  /*Adding grid values to different classes to enlarge some of the pictures*/
   .index-gallery-grid-2 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -845,6 +852,7 @@ footer h4 {
   }
 }
 
+/*Adding another media quarry to make the content of section two on index behave better for larger screens*/
 @media (min-width: 1200px) {
   .index-section-two article {
     background-color: var(--LIGHTCOLOR);
