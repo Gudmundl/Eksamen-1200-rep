@@ -209,7 +209,7 @@ footer h4 {
 
 /* Styles the h1 in the index to stand out, with a font size that adjusts within a specified range (inspired by https://stackoverflow.com/questions/2570972/css-font-border). */
 .index h1 {
-  font-size: clamp(2.5em, 4vw, 7em);
+  font-size: clamp(2.5em, 4.7vw, 7em);
 }
 
 /* Styles all h2 on the index page so that they stand out. Used clamp function to adjust h2 within a specified range when scaling.*/
